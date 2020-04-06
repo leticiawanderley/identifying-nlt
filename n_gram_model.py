@@ -49,10 +49,10 @@ def deleted_interpolation(n, dataset):
     best_gama = 0
     best_p = 0
     for j in range(n):
-      candidate_count = dataset.count(dataset[i:i+(n-j)])
+      candidate_count = sublist_count(dataset[i:i+(n-j)], dataset)
       candidate_p = 0
-      if dataset.count(dataset[i:i+(n-j-1)]) > 1:
-        candidate_p = (candidate_count - 1)/(dataset.count(dataset[i:i+(n-j-1)])-1)
+      if sublist_count(dataset[i:i+(n-j-1)], dataset) > 1:
+        candidate_p = (candidate_count - 1)/(sublist_count(dataset[i:i+(n-j-1)], dataset) - 1)
       if candidate_p > best_p:
         best_count = candidate_count
         best_gama = j
@@ -106,14 +106,19 @@ def test_ngram(method, n, ngram, language_model):
   return prob
 
 def main(method, dataset_filename):
-  methods = {'unsmoothed': [1, 'unsmoothed'], 'laplace': [3, 'add-one'], 'interpolation': [4, 'interpolation']}
+  methods = {'unsmoothed': [1, 'unsmoothed'], 'laplace': [3, 'add-one'], 'interpolation': [3, 'interpolation']}
   n = methods[method][0]
   langs = process_training_data(dataset_filename, method, n)
   test_ngrams = [['DET', 'NOUN', 'VERB'], ['PUNCT', 'VERB', 'DET'], ['|', 'VERB', 'DET']]
   for ngram in test_ngrams:
     for l in langs.keys():
       processed_ngram = pre_process_test(ngram, langs[l][1])
-      probability = test_ngram(method, n, processed_ngram, langs[l])
+      probability = 0
+      if len(processed_ngram) > n:
+        for i in range(0, len(processed_ngram)):
+          probability += test_ngram(method, n, processed_ngram[i:i+n], langs[l])
+      else:
+        probability += test_ngram(method, n, processed_ngram, langs[l])
       print(l, probability)
 
 def parse_arg_list():
