@@ -12,12 +12,22 @@ def pre_process_data(filename):
   return es_syntactic_errors_df
 
 def test(train_dataset, method, test_df):
+  data_dict = {
+    'student_id': [], 'error_type': [],
+    'correct_trigram_poss': [], 'incorrect_trigram_poss': [],
+    'en': [], 'es': [],
+    'correct_sentence': [], 'incorrect_sentence': []
+  }
   methods = {'unsmoothed': [1, 'unsmoothed'], 'laplace': [3, 'add-one'], 'interpolation': [3, 'interpolation']}
   n = methods[method][0]
   langs = process_training_data(train_dataset, method, n)
-  test_df = test_df.head()
   for index, row in test_df.iterrows():
-    print(row['error_type'], row['incorrect_sentence'], row['incorrect_trigram_poss'], row['correct_trigram_poss'])
+    data_dict['student_id'].append(row['student_id'])
+    data_dict['error_type'].append(row['error_type'])
+    data_dict['correct_trigram_poss'].append(row['correct_trigram_poss'])
+    data_dict['incorrect_trigram_poss'].append(row['incorrect_trigram_poss'])
+    data_dict['correct_sentence'].append(row['correct_sentence'])
+    data_dict['incorrect_sentence'].append(row['incorrect_sentence'])
     for l in langs.keys():
       processed_ngram = pre_process_test(row['incorrect_trigram_poss'].split(), langs[l][1])
       probability = 0
@@ -26,7 +36,9 @@ def test(train_dataset, method, test_df):
           probability += test_ngram(method, n, processed_ngram[i:i+n], langs[l])
       else:
         probability += test_ngram(method, n, processed_ngram, langs[l])
-      print(l, probability)
+      data_dict[l].append(probability)
+  df = pd.DataFrame.from_dict(data_dict)
+  df.to_csv('results.csv')
 
 df = pre_process_data('main_parser.csv')
-test('tagged_sentences.csv', 'laplace', df)
+test('tagged_sentences.csv', 'interpolation', df)
