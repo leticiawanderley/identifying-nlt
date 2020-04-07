@@ -40,5 +40,5 @@ def test(train_dataset, method, test_df):
   df = pd.DataFrame.from_dict(data_dict)
   df.to_csv('results.csv')
 
-df = pre_process_data('main_parser.csv')
-test('tagged_sentences.csv', 'interpolation', df)
+df = pre_process_data('data/main_parser.csv')
+test('data/tagged_sentences.csv', 'interpolation', df)

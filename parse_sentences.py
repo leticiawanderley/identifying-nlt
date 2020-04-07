@@ -26,9 +26,9 @@ def get_tags(sentence, language):
   return tags
 
 def main():
-  df = read_sentences('1000sents.csv')
+  df = read_sentences('data/1000sents.csv')
   df = pos_tag(df)
-  df.to_csv('tagged_sentences.csv', index=True)
+  df.to_csv('data/tagged_sentences.csv', index=True)
 
 if __name__ == "__main__":
   main()
