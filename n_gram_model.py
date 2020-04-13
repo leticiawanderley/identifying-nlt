@@ -5,6 +5,10 @@ import pandas as pd
 from utils import sublist_count
 
 def pre_process_data(filename):
+  """Format training data
+
+  Concatenate values with a pipe separators between sentences.
+  """
   df = pd.read_csv(filename)
   datasets = {}
   datasets['en'] = df.en_pos.str.cat(sep='| ')
@@ -13,7 +17,8 @@ def pre_process_data(filename):
 
 def extract_vocabulary(dataset):
   """Extract pos tag alphabet.
-  Filtering tags with frequency lower than 0.5%."""
+
+  Removing less frequente tags (frequency < 0.5%.)"""
   vocabulary = []
   tag_set = set(dataset)
   threshold = 0.005*len(dataset)
@@ -23,7 +28,7 @@ def extract_vocabulary(dataset):
   return vocabulary
 
 def replace_oov(dataset, vocabulary):
-  """Replace out of vocabulary tags with a special symbol."""
+  """Replace out of vocabulary tags with a special symbol (#)."""
   for i in range(len(dataset)):
     if dataset[i] not in vocabulary:
       dataset[i] = '#'
@@ -105,11 +110,10 @@ def test_ngram(method, n, ngram, language_model):
     prob = interpolation(n, ngram, language_model[0], language_model[2])
   return prob
 
-def main(method, dataset_filename):
+def main(method, dataset_filename, test_ngrams):
   methods = {'unsmoothed': [1, 'unsmoothed'], 'laplace': [3, 'add-one'], 'interpolation': [3, 'interpolation']}
   n = methods[method][0]
   langs = process_training_data(dataset_filename, method, n)
-  test_ngrams = [['DET', 'NOUN', 'VERB'], ['PUNCT', 'VERB', 'DET'], ['|', 'VERB', 'DET']]
   for ngram in test_ngrams:
     for l in langs.keys():
       processed_ngram = pre_process_test(ngram, langs[l][1])
@@ -133,4 +137,5 @@ def parse_arg_list():
 
 if __name__ == "__main__":
   args = parse_arg_list()
-  main(args.method, args.dataset_file)
+  test_ngrams = [['DET', 'NOUN', 'VERB'], ['PUNCT', 'VERB', 'DET'], ['|', 'VERB', 'DET']]
+  main(args.method, args.dataset_file, test_ngram)

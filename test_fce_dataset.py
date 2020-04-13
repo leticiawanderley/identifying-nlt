@@ -43,7 +43,7 @@ def test(train_dataset, method, test_df):
         probability += test_ngram(method, n, processed_ngram, langs[l])
       data_dict[l].append(probability)
   df = pd.DataFrame.from_dict(data_dict)
-  df.to_csv('data/results.csv')
+  df.to_csv('data/results_english_spanish.csv')
 
 df = pre_process_data('data/main_parser.csv')
-test('data/tagged_sentences.csv', 'interpolation', df)
+test('data/tagged_sentences_english_spanish.csv', 'interpolation', df)
