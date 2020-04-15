@@ -1,0 +1,1001 @@
+,english,spanish,en_pos,es_pos
+0,The store opens at 10 A.M.,El almacén abre a las 10 de la mañana.,DET NOUN VERB ADP NUM PROPN ,DET NOUN VERB ADP DET NOUN ADP DET NOUN PUNCT 
+1,Do you like it? What's the price?,¿Te gusta? ¿Cuál es el precio?,VERB PRON VERB PRON PUNCT PRON VERB DET NOUN PUNCT ,PUNCT PRON VERB PUNCT PUNCT PRON AUX DET NOUN PUNCT 
+2,My house is near my school.,Mi casa está cerca de mi escuela.,DET NOUN VERB ADP DET NOUN PUNCT ,DET NOUN AUX ADV ADP DET NOUN PUNCT 
+3,I sometimes drink beer.,A veces bebo cerveza.,PRON ADV VERB NOUN PUNCT ,ADP NOUN NOUN NOUN PUNCT 
+4,"Come tomorrow, if possible.","Venga mañana, si es posible.",VERB NOUN PUNCT ADP ADJ PUNCT ,VERB ADV PUNCT SCONJ AUX ADJ PUNCT 
+5,My father went to Seoul early in the morning.,Mi padre fue a Seul temprano por la mañana.,DET NOUN VERB ADP PROPN ADV ADP DET NOUN PUNCT ,DET NOUN AUX ADP PROPN ADV ADP DET NOUN PUNCT 
+6,I taught her how to drive.,Le enseñé cómo conducir.,PRON VERB PRON ADV PART VERB PUNCT ,PRON VERB PRON VERB PUNCT 
+7,Have you looked inside your bag?,¿Has mirado dentro de tu bolso?,VERB PRON VERB ADP DET NOUN PUNCT ,PUNCT AUX VERB ADV ADP DET NOUN PUNCT 
+8,Oil is lighter than water.,El aceite es más ligero que el agua.,NOUN VERB ADJ ADP NOUN PUNCT ,DET NOUN AUX ADV ADJ SCONJ DET NOUN PUNCT 
+9,My favorite singer is Yongpil Jo.,Mi cantante preferido es Yongpil Jo.,DET ADJ NOUN VERB PROPN PROPN PUNCT ,DET NOUN ADJ AUX PROPN PROPN PUNCT 
+10,My chest was hurting since last night.,Me duele el pecho desde el ayer por la noche.,DET NOUN VERB VERB ADP ADJ NOUN PUNCT ,PRON VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+11,"Sit there, in the middle.","Sientate allí, en el centro.",VERB ADV PUNCT ADP DET NOUN PUNCT ,ADV ADV PUNCT ADP DET NOUN PUNCT 
+12,It is good to read books in the fall.,Es bueno leer los libros en otoño.,PRON VERB ADJ PART VERB NOUN ADP DET NOUN PUNCT ,AUX ADJ VERB DET NOUN ADP NOUN PUNCT 
+13,I like skiing the most.,Me gusta más el esquí.,PRON VERB VERB DET ADJ PUNCT ,PRON VERB ADV DET NOUN PUNCT 
+14,Almost every home is hooked up to the internet now.,Ahora casi todos los hogares estan conectados al internet.,ADV DET NOUN VERB VERB PART ADP DET NOUN ADV PUNCT ,ADV ADV DET DET NOUN VERB ADJ ADP NOUN PUNCT 
+15,Did you bring towels?,¿Trajiste las toallas?,VERB PRON VERB NOUN PUNCT ,PUNCT VERB DET NOUN PUNCT 
+16,The whole family has caught a cold.,La familia entera se ha resfriado.,DET ADJ NOUN VERB VERB DET NOUN PUNCT ,DET NOUN ADJ PRON AUX VERB PUNCT 
+17,They sell various kinds of things at the shop.,Venden varias clases de cosas en la tienda.,PRON VERB ADJ NOUN ADP NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP NOUN ADP DET NOUN PUNCT 
+18,She has a beautiful voice.,Ella tiene una voz hermosa.,PRON VERB DET ADJ NOUN PUNCT ,PRON VERB DET NOUN ADJ PUNCT 
+19,The other three classes are one hour each.,Las otras tres clases restantes son de una hora cada una.,DET ADJ NUM NOUN VERB NUM NOUN DET PUNCT ,DET DET NUM NOUN ADJ AUX ADP DET NOUN DET PRON PUNCT 
+20,I wanted to be a nurse when I was younger.,Deseé ser enfermera cuando era más joven.,PRON VERB PART VERB DET NOUN ADV PRON VERB ADJ PUNCT ,VERB AUX NOUN SCONJ AUX ADV ADJ PUNCT 
+21,Do you like ribs?,¿Te gustan las costillas?,VERB PRON ADP NOUN PUNCT ,PUNCT PRON VERB DET NOUN PUNCT 
+22,I think I have a cold.,Creo que me he resfriado.,PRON VERB PRON VERB DET NOUN PUNCT ,VERB SCONJ PRON AUX VERB PUNCT 
+23,Thank you.,Gracias.,VERB PRON PUNCT ,NOUN PUNCT 
+24,I got a strange feeling when I saw him.,Tuve una sensación extraña cuando lo vi.,PRON VERB DET ADJ NOUN ADV PRON VERB PRON PUNCT ,VERB DET NOUN ADJ SCONJ PRON VERB PUNCT 
+25,It's getting cold suddenly.,De repente está haciendo frío.,PRON VERB VERB ADJ ADV PUNCT ,ADP NOUN AUX VERB NOUN PUNCT 
+26,The price of vegetables rose this year.,El precio de los vegetales ha subido este año.,DET NOUN ADP NOUN VERB DET NOUN PUNCT ,DET NOUN ADP DET NOUN AUX VERB DET NOUN PUNCT 
+27,The Han river is the biggest river in Korea.,El río de Han es el río más grande de Corea.,DET PROPN NOUN VERB DET ADJ NOUN ADP PROPN PUNCT ,DET NOUN ADP PROPN AUX DET NOUN ADV ADJ ADP PROPN PUNCT 
+28,My teacher emphasized process over results.,Mi profesor acentuó más el proceso que los resultados.,DET NOUN VERB NOUN ADP NOUN PUNCT ,DET NOUN VERB ADV DET NOUN PRON DET NOUN PUNCT 
+29,Wow! she has a very strong serve.,¡Waw! Ella tiene un saque muy fuerte.,INTJ PUNCT PRON VERB DET ADV ADJ NOUN PUNCT ,PUNCT INTJ PUNCT PRON VERB DET NOUN ADV ADJ PUNCT 
+30,We went to the same school as children.,Fuimos a la misma escuela de niños.,PRON VERB ADP DET ADJ NOUN ADP NOUN PUNCT ,VERB ADP DET DET NOUN ADP NOUN PUNCT 
+31,Let's do it together.,Hagámoslo juntos.,VERB PRON VERB PRON ADV PUNCT ,PROPN ADJ PUNCT 
+32,I'd like to raise a dog.,Quisiera criar un perro.,PRON AUX VERB PART VERB DET NOUN PUNCT ,VERB VERB DET NOUN PUNCT 
+33,These candies cost a hundred won a piece.,Estos caramelos costaron cien won cada uno.,DET NOUN VERB DET NUM VERB DET NOUN PUNCT ,DET NOUN VERB NUM PROPN DET PRON PUNCT 
+34,Hyean and I have been married for three months.,Hyean y yo nos casamos hace tres meses.,PROPN CCONJ PRON VERB VERB VERB ADP NUM NOUN PUNCT ,PROPN CONJ PRON PRON VERB AUX NUM NOUN PUNCT 
+35,See you there.,Te veo allí.,VERB PRON ADV PUNCT ,PRON VERB ADV PUNCT 
+36,There are many cars in this street.,Hay muchos coches en esta calle.,ADV VERB ADJ NOUN ADP DET NOUN PUNCT ,AUX DET NOUN ADP DET NOUN PUNCT 
+37,Look at yourself in the mirror.,Mirar se en el espejo.,VERB ADP PRON ADP DET NOUN PUNCT ,VERB PRON ADP DET NOUN PUNCT 
+38,It's almost finished.,Casi listo.,PRON VERB ADV VERB PUNCT ,ADV ADJ PUNCT 
+39,I'm not telling a lie.,No estoy mintiendo.,PRON VERB ADV VERB DET NOUN PUNCT ,ADV AUX VERB PUNCT 
+40,You look worried today.,Hoy pareces preocupado.,PRON VERB ADJ NOUN PUNCT ,ADV VERB ADJ PUNCT 
+41,Alcohol is bad for your health.,El alcohol es malo para tu salud.,NOUN VERB ADJ ADP DET NOUN PUNCT ,DET NOUN AUX ADJ ADP DET NOUN PUNCT 
+42,It is at the back of this building.,Está en la parte posterior de este edificio.,PRON VERB ADP DET NOUN ADP DET NOUN PUNCT ,VERB ADP DET NOUN ADJ ADP DET NOUN PUNCT 
+43,Why are you walking so fast?,¿Por qué estás caminando tan rápido?,ADV VERB PRON VERB ADV ADV PUNCT ,PUNCT ADP PRON AUX VERB ADV ADJ PUNCT 
+44,Hang clothes on a hanger.,Cuelga la ropa en la percha.,VERB NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+45,A picture is hanging on the wall.,El cuadro está colgado en la pared.,DET NOUN VERB VERB ADP DET NOUN PUNCT ,DET NOUN AUX ADJ ADP DET NOUN PUNCT 
+46,Would you like to go on foot or by car?,¿Prefieres ir a pie o en coche?,VERB PRON VERB PART VERB ADP NOUN CCONJ ADP NOUN PUNCT ,PUNCT VERB AUX ADP NOUN CONJ ADP NOUN PUNCT 
+47,How far have we come on foot?,¿Cuánto hemos venido a pie?,ADV ADV VERB PRON VERB ADP NOUN PUNCT ,PUNCT PRON AUX VERB ADP NOUN PUNCT 
+48,A man was carrying a black bag.,Un hombre llevaba un bolso negro.,DET NOUN VERB VERB DET ADJ NOUN PUNCT ,DET NOUN VERB DET NOUN ADJ PUNCT 
+49,Show me another one in the same color.,Muéstrame otro en el mismo color.,VERB PRON DET NUM ADP DET ADJ NOUN PUNCT ,VERB PRON ADP DET DET NOUN PUNCT 
+50,Do you like computer games?,¿A ti te gustan los juegos de computadora?,VERB PRON VERB NOUN NOUN PUNCT ,PUNCT ADP PRON PRON VERB DET NOUN ADP NOUN PUNCT 
+51,Winter in Korea sure is cold. ,El invierno en Corea es muy frío.,NOUN ADP PROPN ADV VERB ADJ PUNCT ,DET NOUN ADP PROPN AUX ADV ADJ PUNCT 
+52,The married couple next door finally got divorced.,"La pareja de la puerta de al lado, finalmente se divorciaron.",DET ADJ NOUN ADJ NOUN ADV VERB VERB PUNCT ,DET NOUN ADP DET NOUN ADP ADP NOUN PUNCT ADV PRON VERB PUNCT 
+53,I haven't decided yet.,No lo he decidido todavía.,PRON VERB ADV VERB ADV PUNCT ,ADV PRON AUX VERB ADV PUNCT 
+54,Will you marry me?,¿Te casarías conmigo?,VERB PRON VERB PRON PUNCT ,PUNCT PRON VERB PRON PUNCT 
+55,Where is he going to have the wedding ceremony?,¿En dónde se va a realizar la boda?,ADV VERB PRON VERB PART VERB DET NOUN NOUN PUNCT ,PUNCT ADP PRON PRON AUX ADP VERB DET NOUN PUNCT 
+56,The soccer game ended in a tie.,El partido del fútbol terminó en un empate.,DET NOUN NOUN VERB ADP DET NOUN PUNCT ,DET NOUN ADP NOUN VERB ADP DET NOUN PUNCT 
+57,"In some cases, I tend to jump to conclusions.",En ciertos casos tomo las decisiones muy rápido.,ADP DET NOUN PUNCT PRON VERB PART VERB ADP NOUN PUNCT ,ADP DET NOUN NOUN DET NOUN ADV ADJ PUNCT 
+58,Did you call the police?,¿Llamaste a policía?,VERB PRON VERB DET NOUN PUNCT ,PUNCT VERB ADP NOUN PUNCT 
+59,The scenery is really beautiful.,El paisaje es realmente hermoso.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN AUX ADV ADJ PUNCT 
+60,It would be a good experience.,Sería una buena experiencia.,PRON VERB VERB DET ADJ NOUN PUNCT ,AUX DET ADJ NOUN PUNCT 
+61,How many eggs are there in the refrigerator?,¿Cuántos huevos hay en el refrigerador?,ADV ADJ NOUN VERB ADV ADP DET NOUN PUNCT ,PUNCT DET NOUN AUX ADP DET NOUN PUNCT 
+62,My nose bleeds continuously.,Mi nariz está sangrando continuamente.,DET NOUN VERB ADV PUNCT ,DET NOUN AUX VERB ADV PUNCT 
+63,Goodbye.,Adiós.,INTJ PUNCT ,INTJ PUNCT 
+64,What season do you like best?,¿Qué estación te gusta más?,DET NOUN VERB PRON VERB ADV PUNCT ,PUNCT DET NOUN PRON VERB ADV PUNCT 
+65,Any special plans?,¿Algún plan en especial?,DET ADJ NOUN PUNCT ,PUNCT DET NOUN ADP ADJ PUNCT 
+66,Let's go have some meat.,Vayamos a comer carne.,VERB PRON VERB VERB DET NOUN PUNCT ,AUX ADP VERB NOUN PUNCT 
+67,I learned Japanese as a second foreign language in high school.,Aprendí japonés como segundo idioma extranjero en la secundaria.,PRON VERB PROPN ADP DET ADJ ADJ NOUN ADP ADJ NOUN PUNCT ,VERB ADJ SCONJ ADJ NOUN ADJ ADP DET NOUN PUNCT 
+68,I'll be in high school next year.,Seré un estudiante secundario el próximo año.,PRON AUX VERB ADP ADJ NOUN ADJ NOUN PUNCT ,AUX DET NOUN ADJ DET ADJ NOUN PUNCT 
+69,Thank you.,Gracias.,VERB PRON PUNCT ,NOUN PUNCT 
+70,I think it is the cat.,Yo pienso que es el gato.,PRON VERB PRON VERB DET NOUN PUNCT ,PRON VERB SCONJ AUX DET NOUN PUNCT 
+71,I couldn’t endure the pain.,No puedo aguantar el dolor.,PRON AUX ADV VERB DET NOUN PUNCT ,ADV AUX VERB DET NOUN PUNCT 
+72,"I'm really hungry, too.",Yo también tengo hambre.,PRON VERB ADV ADJ PUNCT ADV PUNCT ,PRON ADV VERB NOUN PUNCT 
+73,Many Koreans return to their hometown during Chusok.,Muchos coreanos vuelven a su ciudad natal durante Chusok.,ADJ PROPN VERB ADP DET NOUN ADP PROPN PUNCT ,DET NOUN VERB ADP DET NOUN ADJ ADP PROPN PUNCT 
+74,I'll be there soon.,Estaré allí pronto.,PRON AUX VERB ADV ADV PUNCT ,VERB ADV ADV PUNCT 
+75,This city is a good place to live.,Esta ciudad es un buen lugar a vivir.,DET NOUN VERB DET ADJ NOUN PART VERB PUNCT ,DET NOUN AUX DET ADJ NOUN ADP VERB PUNCT 
+76,"Sorry, I threw the ball too hard.","Perdón, lancé la bola demasiado fuerte.",INTJ PUNCT PRON VERB DET NOUN ADV ADV PUNCT ,NOUN PUNCT VERB DET NOUN ADV ADJ PUNCT 
+77,Wow! There's a lot to study.,¡Waw! Hay mucho para estudiar.,INTJ PUNCT ADV VERB DET NOUN PART VERB PUNCT ,PUNCT INTJ PUNCT AUX ADV ADP VERB PUNCT 
+78,How big is the park?,¿Qué tan grande es el parque?,ADV ADJ VERB DET NOUN PUNCT ,PUNCT PRON ADV ADJ AUX DET NOUN PUNCT 
+79,I worked in a shoe factory.,Trabajé en una fábrica de zapato.,PRON VERB ADP DET NOUN NOUN PUNCT ,VERB ADP DET NOUN ADP NOUN PUNCT 
+80,"These days, it is hard to find a pay phone.","Actualmente, es duro encontrar un teléfono público.",DET NOUN PUNCT PRON VERB ADJ PART VERB DET NOUN NOUN PUNCT ,ADV PUNCT AUX ADJ VERB DET NOUN ADJ PUNCT 
+81,Can I borrow your notebook?,¿Me prestas tu cuaderno?,VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON ADJ DET NOUN PUNCT 
+82,Can you give me a ride to Incheon airport?,¿Puede llevarme hasta el aeropuerto de Incheon?,VERB PRON VERB PRON DET NOUN ADP PROPN NOUN PUNCT ,PUNCT AUX ADJ ADP DET NOUN ADP PROPN PUNCT 
+83,March 1 is a national holiday in Korea.,El 1 de marzo es feriado nacional en Corea.,PROPN NUM VERB DET ADJ NOUN ADP PROPN PUNCT ,DET NUM ADP NOUN AUX VERB ADJ ADP PROPN PUNCT 
+84,What lesson are we on today?,¿Qué lección nos toca hoy?,DET NOUN VERB PRON ADP NOUN PUNCT ,PUNCT DET NOUN PRON VERB ADV PUNCT 
+85,Is the tomato a fruit or a vegetable?,¿Es el tomate una fruta o un vegetal?,VERB DET NOUN DET NOUN CCONJ DET NOUN PUNCT ,PUNCT AUX DET NOUN DET NOUN CONJ DET NOUN PUNCT 
+86,Leave some cookies for me.,Déjame algunas galletas para mí.,VERB DET NOUN ADP PRON PUNCT ,VERB DET NOUN ADP PRON PUNCT 
+87,Our relationship is over.,Nuestra relación se terminó. ,DET NOUN VERB ADV PUNCT ,DET NOUN PRON VERB PUNCT 
+88,I'm OK.,Estoy bien.,PRON VERB ADJ PUNCT ,AUX ADV PUNCT 
+89,Open your English textbook to page 10.,Abra su libro de inglés en la página 10.,VERB DET ADJ NOUN ADP NOUN NUM PUNCT ,VERB DET NOUN ADP NOUN ADP DET NOUN NUM PUNCT 
+90,I want to be a history professor.,Deseo ser profesor de Historia.,PRON VERB PART VERB DET NOUN NOUN PUNCT ,VERB AUX NOUN ADP PROPN PUNCT 
+91,"Oops, I left my wallet in the classroom.","Oops, dejé mi billetera en la sala de clases.",INTJ PUNCT PRON VERB DET NOUN ADP DET NOUN PUNCT ,PROPN PUNCT VERB DET NOUN ADP DET NOUN ADP NOUN PUNCT 
+92,It is better to use public transportation.,Es mejor utilizar el transporte público.,PRON VERB ADJ PART VERB ADJ NOUN PUNCT ,AUX ADJ VERB DET NOUN ADJ PUNCT 
+93,I go to church every Sunday morning.,Voy a la iglesia cada domingo por la mañana..,PRON VERB ADP NOUN DET PROPN NOUN PUNCT ,VERB ADP DET NOUN DET NOUN ADP DET NOUN PUNCT 
+94,The man was looking around the shop.,El hombre miraba alrededor de la tienda.,DET NOUN VERB VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADV ADP DET NOUN PUNCT 
+95,Please shine my shoes.,"Lústreme los zapatos, por favor.",INTJ VERB DET NOUN PUNCT ,PROPN DET NOUN PUNCT ADP NOUN PUNCT 
+96,There are no clouds in the sky.,No hay nubes en el cielo.,ADV VERB DET NOUN ADP DET NOUN PUNCT ,ADV AUX NOUN ADP DET NOUN PUNCT 
+97,How many soldiers are there in Korea?,¿Cuántos soldados hay en Corea?,ADV ADJ NOUN VERB ADV ADP PROPN PUNCT ,PUNCT DET NOUN AUX ADP PROPN PUNCT 
+98,How many books have you published?,¿Cuántos tomos has publicado?,ADV ADJ NOUN VERB PRON VERB PUNCT ,PUNCT DET NOUN AUX VERB PUNCT 
+99,Why are you plugging your ears?,¿Por qué estás tapando tus oídos?,ADV VERB PRON VERB DET NOUN PUNCT ,PUNCT ADP PRON AUX VERB ADP NOUN PUNCT 
+100,You're cute when you smile.,Eres lindo cuando sonríes.,PRON VERB ADJ ADV PRON VERB PUNCT ,AUX VERB SCONJ VERB PUNCT 
+101,Give me that book.,Dame ese libro.,VERB PRON DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+102,Will he come?,¿Él vendrá?,VERB PRON VERB PUNCT ,PUNCT PRON VERB PUNCT 
+103,It sounds fun.,Eso suena divertido.,PRON VERB ADJ PUNCT ,PRON VERB ADJ PUNCT 
+104,How's the weather over there?,¿Cómo está el tiempo allí?,ADV VERB DET NOUN ADV ADV PUNCT ,PUNCT PRON VERB DET NOUN ADV PUNCT 
+105,What were you doing that night?,¿Qué hacías ese día por la noche?,PRON VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON NOUN DET NOUN ADP DET NOUN PUNCT 
+106,We're just friends.,Somos solo amigos.,PRON VERB ADV NOUN PUNCT ,AUX NOUN NOUN PUNCT 
+107,Leave it as it is.,Dejarlo como es.,VERB PRON ADP PRON VERB PUNCT ,ADJ SCONJ AUX PUNCT 
+108,Long time no see! How have you been?,¡Tanto tiempo sin verte! ¿Cómo has estado durante este tiempo?,ADJ NOUN INTJ VERB PUNCT ADV VERB PRON VERB PUNCT ,PUNCT DET NOUN ADP INTJ PUNCT PUNCT PRON AUX VERB ADP DET NOUN PUNCT 
+109,I have not seen her since then.,No la he visto desde entonces.,PRON VERB ADV VERB PRON ADP ADV PUNCT ,ADV PRON AUX VERB ADP ADV PUNCT 
+110,"Why not come along? - Oh, OK.","¿Quieres venir? - Sí, está bien.",ADV ADV VERB PART PUNCT PUNCT INTJ PUNCT INTJ PUNCT ,PUNCT AUX VERB PUNCT PUNCT ADV PUNCT AUX ADV PUNCT 
+111,"She is short, but still taller than me.","Ella es baja, pero todavia es más alta que yo. ",PRON VERB ADJ PUNCT CCONJ ADV ADJ ADP PRON PUNCT ,PRON AUX ADJ PUNCT CONJ ADV AUX ADV ADJ SCONJ PRON PUNCT 
+112,So what did you say at that time?,"Por lo tanto, ¿qué es lo que has dicho?",ADV PRON VERB PRON VERB ADP DET NOUN PUNCT ,ADP DET NOUN PUNCT PUNCT PRON AUX DET PRON AUX ADJ PUNCT 
+113,I'll be back late. So don't wait up for me.,Regresaré tarde asi que no me esperen.,PRON AUX VERB ADV ADV PUNCT ADV VERB ADV VERB PART ADP PRON PUNCT ,VERB ADV NOUN SCONJ ADV PRON VERB PUNCT 
+114,"Well then, let's go there on Friday.",Entonces vayamos allí el viernes.,INTJ ADV PUNCT VERB PRON VERB ADV ADP PROPN PUNCT ,ADV VERB ADV DET NOUN PUNCT 
+115,Nobody can do such a thing.,Nadie puede hacer tal cosa.,NOUN VERB VERB DET DET NOUN PUNCT ,PRON AUX VERB DET NOUN PUNCT 
+116,"By the way, what brings you here?","¿A propósito, qué te trae por aquí?",ADP DET NOUN PUNCT PRON VERB PRON ADV PUNCT ,PUNCT ADP NOUN PUNCT PRON PRON VERB ADP ADV PUNCT 
+117,Then I'll see you there.,Entonces te veré allí.,ADV PRON AUX VERB PRON ADV PUNCT ,ADV PRON VERB ADV PUNCT 
+118,"Yes, it is.","Sí, lo es.",INTJ PUNCT PRON VERB PUNCT ,ADV PUNCT PRON AUX PUNCT 
+119,"It looks really good on you, though.",Pero te queda bien.,PRON VERB ADV ADJ ADP PRON PUNCT ADV PUNCT ,CONJ PRON VERB ADV PUNCT 
+120,Work in groups of six.,Divídansen en grupos de seis.,VERB ADP NOUN ADP NUM PUNCT ,VERB ADP NOUN ADP NUM PUNCT 
+121,"This costs 5,000 won per bowl.",Esto cuesta 5.000 won por vajilla.,DET VERB NUM VERB ADP NOUN PUNCT ,PRON VERB NUM NOUN ADP NOUN PUNCT 
+122,"We need milk, butter and jam.","Necesitamos leche, mantequilla y jamón.",PRON VERB NOUN PUNCT NOUN CCONJ NOUN PUNCT ,VERB NOUN PUNCT NOUN CONJ NOUN PUNCT 
+123,How did you draw this?,¿Cómo dibujaste esto?,ADV VERB PRON VERB DET PUNCT ,PUNCT PRON VERB PRON PUNCT 
+124,My mom bought me a picture book.,Mi mamá me compró un libro de dibujos.,DET NOUN VERB PRON DET NOUN NOUN PUNCT ,DET NOUN PRON VERB DET NOUN ADP NOUN PUNCT 
+125,Stop crying.,Para de gritar.,VERB VERB PUNCT ,ADP ADP VERB PUNCT 
+126,Does he know you?,¿Él te conoce?,VERB PRON VERB PRON PUNCT ,PUNCT PRON PRON VERB PUNCT 
+127,Is there a bus going that way?,¿Hay un autobús que va por esa dirección?,VERB ADV DET NOUN VERB DET NOUN PUNCT ,PUNCT AUX DET NOUN PRON VERB ADP DET NOUN PUNCT 
+128,I want to go to the movie theater.,Quireo ir al cine.,PRON VERB PART VERB ADP DET NOUN NOUN PUNCT ,ADJ VERB ADP NOUN PUNCT 
+129,Do you live in this neighborhood?,¿Vives en esta vecindad?,VERB PRON VERB ADP DET NOUN PUNCT ,PUNCT VERB ADP DET NOUN PUNCT 
+130,Which one is more important between speaking and writing?,¿Qué es más importante enre leer y redactar?,DET NOUN VERB ADV ADJ ADP VERB CCONJ NOUN PUNCT ,PUNCT PRON AUX ADV ADJ NOUN VERB CONJ VERB PUNCT 
+131,This machine seems to be broken.,Esta máquina parece estar rota.,DET NOUN VERB PART VERB VERB PUNCT ,DET NOUN AUX AUX ADJ PUNCT 
+132,I'll wait here.,Esperaré aquí.,PRON AUX VERB ADV PUNCT ,VERB ADV PUNCT 
+133,My mom raised two children by herself.,Mi mamá crió a dos niños ella misma.,DET NOUN VERB NUM NOUN ADP PRON PUNCT ,DET NOUN VERB ADP NUM NOUN PRON ADJ PUNCT 
+134,What is the basics of a healthy life?,¿Cuáles son las bases para una vida sana?,PRON VERB DET NOUN ADP DET ADJ NOUN PUNCT ,PUNCT PRON AUX DET NOUN ADP DET NOUN ADJ PUNCT 
+135,I'm not in the mood.,No estoy de humor.,PRON VERB ADV ADP DET NOUN PUNCT ,ADV AUX ADP NOUN PUNCT 
+136,How's life in your dormitory?,¿Cómo es tu vida en el nuevo refugio universitario?,ADV PART NOUN ADP DET NOUN PUNCT ,PUNCT PRON AUX DET NOUN ADP DET ADJ NOUN ADJ PUNCT 
+137,It's a painful memory for me.,Es un recuerdo doloroso para mí.,PRON VERB DET ADJ NOUN ADP PRON PUNCT ,AUX DET NOUN ADJ ADP PRON PUNCT 
+138,I just missed train.,Acabo de perder el tren.,PRON ADV VERB NOUN PUNCT ,AUX ADP VERB DET NOUN PUNCT 
+139,"Give me another chance, please.","Déme otra oportunidad, por favor.",VERB PRON DET NOUN PUNCT INTJ PUNCT ,VERB DET NOUN PUNCT ADP NOUN PUNCT 
+140,Let's cross the street.,Crucemos la calle.,VERB PRON VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+141,"In the winter, night is longer than day.","En el invierno, la noche es más larga que día.",ADP DET NOUN PUNCT NOUN VERB ADJ ADP NOUN PUNCT ,ADP DET NOUN PUNCT DET NOUN AUX ADV ADJ SCONJ NOUN PUNCT 
+142,He ordered cheese gimbap.,Él pidió el gimbap de queso.,PRON VERB NOUN NOUN PUNCT ,PRON VERB DET NOUN ADP NOUN PUNCT 
+143,I love Kimchi more than anything else.,Amo el kimchi más que cualquier otra cosa.,PRON VERB PROPN ADJ ADP NOUN ADV PUNCT ,VERB DET NOUN ADV SCONJ DET DET NOUN PUNCT 
+144,I didn't know that the water was so deep.,No sabía que el agua era tan profundo.,PRON VERB ADV VERB ADP DET NOUN VERB ADV ADJ PUNCT ,ADV VERB SCONJ DET NOUN AUX ADV ADJ PUNCT 
+145,Please peel me an apple.,"Córtame una manzana, por favor.",INTJ VERB PRON DET NOUN PUNCT ,VERB DET NOUN PUNCT ADP NOUN PUNCT 
+146,Do you think this room is clean?,¿Piensas que este sitio está limpio?,VERB PRON VERB DET NOUN VERB ADJ PUNCT ,PUNCT VERB SCONJ DET NOUN AUX ADJ PUNCT 
+147,I pretended to take out some money from my purse.,Fingí tomar dinero de mi monedero.,PRON VERB PART VERB PART DET NOUN ADP DET NOUN PUNCT ,VERB VERB NOUN ADP DET NOUN PUNCT 
+148,I'll be there for sure.,"Estaré allí, sin lugar a dudas.",PRON AUX VERB ADV ADP ADJ PUNCT ,VERB ADV PUNCT ADP NOUN ADP NOUN PUNCT 
+149,Water the flowers in an hour.,Regar las flores en una hora.,NOUN DET NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+150,I had a dream about eating pizza last night.,Ayer por la noche soñé que estaba comiendo pizza.,PRON VERB DET NOUN ADP VERB NOUN ADJ NOUN PUNCT ,ADV ADP DET NOUN ADJ PRON AUX VERB NOUN PUNCT 
+151,Did you put out the fire? (or Did you switch off the light?),¿Apagaste la luz?,VERB PRON VERB PART DET NOUN PUNCT PUNCT CCONJ VERB PRON VERB PART DET NOUN PUNCT PUNCT ,PUNCT PROPN DET NOUN PUNCT 
+152,The building is at the end of this street.,El edificio está a lo último de esta calle.,DET NOUN VERB ADP DET NOUN ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET ADJ ADP DET NOUN PUNCT 
+153,School vacation ends tomorrow.,Las vacaciones (de la escuela) terminan mañana.,NOUN NOUN VERB NOUN PUNCT ,DET NOUN PUNCT ADP DET NOUN PUNCT VERB ADV PUNCT 
+154,We have to finish all the work today.,Tenemos que acabar todo el trabajo hoy.,PRON VERB PART VERB DET DET NOUN NOUN PUNCT ,VERB SCONJ VERB DET DET NOUN ADV PUNCT 
+155,Who's there? - It's me.,¿Quién está allí? - Soy yo.,PRON VERB ADV PUNCT PUNCT PRON VERB PRON PUNCT ,PUNCT PRON VERB ADV PUNCT PUNCT AUX PRON PUNCT 
+156,Let's go out for lunch.,Salgamos para el almuerzo.,VERB PRON VERB PART ADP NOUN PUNCT ,VERB ADP DET NOUN PUNCT 
+157,He split the apple into two with his bare hands.,Él partió la manzana en dos sólo con sus manos.,PRON VERB DET NOUN ADP NUM ADP DET ADJ NOUN PUNCT ,PRON VERB DET NOUN ADP NUM ADV ADP DET NOUN PUNCT 
+158,I guess an accident has happened up ahead.,Presiento que un accidente ha sucedido alli adelante. ,PRON VERB DET NOUN VERB VERB PART ADV PUNCT ,PROPN SCONJ DET NOUN AUX VERB ADP ADV PUNCT 
+159,which country do you want to visit?,¿qué país deseas visitar?,DET NOUN VERB PRON VERB PART VERB PUNCT ,PUNCT DET NOUN AUX VERB PUNCT 
+160,He is sitting under the tree.,Él está sentando debajo del árbol.,PRON VERB VERB ADP DET NOUN PUNCT ,PRON AUX VERB ADV ADP NOUN PUNCT 
+161,How's that? - Not bad.,¿Cómo estuvo? - No tan malo.,ADV VERB DET PUNCT PUNCT ADV ADJ PUNCT ,PUNCT PRON VERB PUNCT PUNCT ADV ADV ADJ PUNCT 
+162,Don't come out of your room.,No salgas de tu habitación.,VERB ADV VERB ADP ADP DET NOUN PUNCT ,ADV VERB ADP DET NOUN PUNCT 
+163,She looks younger than her age.,Ella parece más joven a comparación de la edad que tiene.,PRON VERB ADJ ADP DET NOUN PUNCT ,PRON AUX ADV ADJ ADP NOUN ADP DET NOUN PRON VERB PUNCT 
+164,See you later.,Nos vemos después.,VERB PRON ADV PUNCT ,PRON VERB ADV PUNCT 
+165,My ex-girlfriend appeared in my dream last night.,Mi ex-novia apareció en mis sueños ayer por la noche.,DET NOUN NOUN NOUN VERB ADP DET NOUN ADJ NOUN PUNCT ,DET ADJ PUNCT NOUN VERB ADP DET NOUN ADV ADP DET NOUN PUNCT 
+166,Her eyes expressed her true feelings.,Sus ojos expresaron sus verdaderos sentimientos.,DET NOUN VERB DET ADJ NOUN PUNCT ,DET NOUN VERB DET ADJ NOUN PUNCT 
+167,Tomorrow is a special day. ,Mañana es un día especial.,NOUN VERB DET ADJ NOUN PUNCT ,ADV AUX DET NOUN ADJ PUNCT 
+168,"The highter a bird flies, the farther it can see.","Más alto vuela el pajaro, más lejos puede ver.",DET ADJ DET NOUN VERB PUNCT DET ADV PRON VERB VERB PUNCT ,ADV ADJ VERB DET NOUN PUNCT ADV ADV AUX VERB PUNCT 
+169,How is the weather? ,¿Cómo está el clima?,ADV VERB DET NOUN PUNCT ,PUNCT PRON VERB DET NOUN PUNCT 
+170,What's the date today? ,¿Qué fecha hoy?,PRON VERB DET NOUN NOUN PUNCT ,PUNCT DET NOUN ADV PUNCT 
+171,Leave a message.,Déjame un mensaje.,VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+172,No one can know the relationship between a man and a woman.,Nadie pueden saber la relación entre un hombre y una mujer.,DET NOUN VERB VERB DET NOUN ADP DET NOUN CCONJ DET NOUN PUNCT ,PRON AUX VERB DET NOUN ADP DET NOUN CONJ DET NOUN PUNCT 
+173,There's no food left over.,No sobró comida.,ADV VERB DET NOUN VERB PART PUNCT ,ADV VERB NOUN PUNCT 
+174,This is my younger brother.,Éste es mi hermano menor.,DET VERB DET ADJ NOUN PUNCT ,PRON AUX DET NOUN ADJ PUNCT 
+175,"Generally speaking, a woman will live longer than a man.","Generalmente, la mujer vive más que el hombre.",ADV VERB PUNCT DET NOUN VERB VERB ADV ADP DET NOUN PUNCT ,ADV PUNCT DET NOUN VERB ADV SCONJ DET NOUN PUNCT 
+176,She is looking for a family man.,Ella está buscando un hombre de hogar.,PRON VERB VERB ADP DET NOUN NOUN PUNCT ,PRON AUX VERB DET NOUN ADP NOUN PUNCT 
+177,Which way is south?,¿En qué dirección está el Sur?,DET NOUN VERB ADJ PUNCT ,PUNCT ADP DET NOUN VERB DET PROPN PUNCT 
+178,Hyean wants a perfect husband.,Hyean desea a marido perfecto.,PROPN VERB DET ADJ NOUN PUNCT ,PROPN VERB ADP NOUN ADJ PUNCT 
+179,There were few male students in the class.,Había pocos estudiantes varones en la clase.,ADV VERB ADJ ADJ NOUN ADP DET NOUN PUNCT ,AUX DET NOUN ADJ ADP DET NOUN PUNCT 
+180,Bats sleep during the day.,Los murciélagos duermen durante el día.,NOUN VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN PUNCT 
+181,Your grades are too low.,Tus grados son demasiado bajos.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN AUX ADV ADJ PUNCT 
+182,My wife gave birth to a son last night.,Mi esposa nació un hijo el ayer por la noche.,DET NOUN VERB NOUN ADP DET NOUN ADJ NOUN PUNCT ,DET NOUN VERB DET NOUN DET ADV ADP DET NOUN PUNCT 
+183,I'm going to get married next year.,Me voy a casar el próximo año. ,PRON VERB VERB PART VERB VERB ADJ NOUN PUNCT ,PRON AUX ADP VERB DET ADJ NOUN PUNCT 
+184,Hand in your answer sheet.,Entreguen la hoja con las respuestas.,VERB ADP DET NOUN NOUN PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+185,Go down the stairs carefully.,Bajar las escaleras cuidadosamente.,VERB ADP DET NOUN ADV PUNCT ,VERB DET NOUN ADV PUNCT 
+186,It is more difficult to come down the mountain.,Es más difícil bajar las montañas.,PRON VERB ADV ADJ PART VERB PART DET NOUN PUNCT ,AUX ADV ADJ VERB DET NOUN PUNCT 
+187,Did you see the snow fall yesterday?,¿Ayer has visto caer la nieve?,VERB PRON VERB DET NOUN NOUN NOUN PUNCT ,PUNCT ADV AUX VERB VERB DET NOUN PUNCT 
+188,Tomorrow is Monday. ,La mañana es lunes.,NOUN VERB PROPN PUNCT ,DET NOUN AUX NOUN PUNCT 
+189,What is this smell?,¿Qué es este olor?,PRON VERB DET NOUN PUNCT ,PUNCT PRON AUX DET NOUN PUNCT 
+190,That restaurant is famous for naengmyeon.,Ese restaurante es famoso por negmion.,DET NOUN VERB ADJ ADP NOUN PUNCT ,DET NOUN AUX ADJ ADP NOUN PUNCT 
+191,I need a refrigerator for kimchi.,Necesito un refrigerador para el kimchi.,PRON VERB DET NOUN ADP NOUN PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+192,I'll always be with you.,Estaré siempre contigo.,PRON AUX ADV VERB ADP PRON PUNCT ,VERB ADV VERB PUNCT 
+193,The dress is too small for me.,El vestido es demasiado pequeño para mí.,DET NOUN VERB ADV ADJ ADP PRON PUNCT ,DET ADJ AUX ADV ADJ ADP PRON PUNCT 
+194,She wants to live in a large house.,Ella desea vivir en una casa amplia.,PRON VERB PART VERB ADP DET ADJ NOUN PUNCT ,PRON VERB VERB ADP DET NOUN ADJ PUNCT 
+195,Don’t  put  your hand in your pocket.,No poner tu mano en tu bolsillo.,VERB ADV SPACE VERB SPACE DET NOUN ADP DET NOUN PUNCT ,ADV VERB DET NOUN ADP DET NOUN PUNCT 
+196,Did you go to school yesterday? - Yes.,¿Fuiste a la escuela ayer? - Sí.,VERB PRON VERB ADP NOUN NOUN PUNCT PUNCT INTJ PUNCT ,PUNCT ADJ ADP DET NOUN ADV PUNCT PUNCT ADV PUNCT 
+197,How about wearing another necktie?,¿Qué tal usar otra corbata?,ADV ADP VERB DET NOUN PUNCT ,PUNCT PRON NUM VERB DET NOUN PUNCT 
+198,I go abroad twice a year.,Voy al extranjero dos veces al año.,PRON VERB ADV ADV DET NOUN PUNCT ,VERB ADP NOUN NUM NOUN ADP NOUN PUNCT 
+199,This yellow hat suits you well.,Este sombrero amarillo te queda bien.,DET ADJ NOUN VERB PRON ADV PUNCT ,DET NOUN ADJ PRON VERB ADV PUNCT 
+200,We sang and danced  all night long.,Cantamos y bailamos toda la noche.,PRON VERB CCONJ VERB SPACE DET NOUN ADV PUNCT ,VERB CONJ VERB DET DET NOUN PUNCT 
+201,I made an effort to smile in front of others.,Hice un esfuerzo para sonreír delante de otros.,PRON VERB DET NOUN PART VERB ADP NOUN ADP NOUN PUNCT ,VERB DET NOUN ADP VERB ADV ADP PRON PUNCT 
+202,You can take notes in this lecture.,Puedes tomar notas en esta conferencia.,PRON VERB VERB NOUN ADP DET NOUN PUNCT ,AUX VERB NOUN ADP DET NOUN PUNCT 
+203,Let's play at the playground.,Juguemos en el patio.,VERB PRON VERB ADP DET NOUN PUNCT ,VERB ADP DET NOUN PUNCT 
+204,I was surprised by her sudden death.,Fui sorprendido por su muerte repentina.,PRON VERB ADJ ADP DET ADJ NOUN PUNCT ,AUX VERB ADP DET NOUN ADJ PUNCT 
+205,What traditional Korean games are there?,¿Qué juegos coreanos tradicionales hay?,DET ADJ ADJ NOUN VERB ADV PUNCT ,PUNCT DET NOUN ADJ ADJ AUX PUNCT 
+206,No kidding!,¡Sin embromar!,DET NOUN PUNCT ,PUNCT ADP VERB PUNCT 
+207,This building is really high!,¡Este edificio es realmente alto!,DET NOUN VERB ADV ADJ PUNCT ,PUNCT DET NOUN AUX ADV ADJ PUNCT 
+208,Where do I put this box?,¿Dónde pongo esta caja?,ADV VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON VERB DET NOUN PUNCT 
+209,Who are you?,¿Quién es usted?,PRON VERB PRON PUNCT ,PUNCT PRON AUX PRON PUNCT 
+210,My older sister looks like my mom.,Mi hermana mayor se parece a mi mamá.,DET ADJ NOUN VERB ADP DET NOUN PUNCT ,DET NOUN ADJ PRON VERB ADP DET NOUN PUNCT 
+211,His eyes met mine on the street.,Sus ojos se econtraron con los mios en la calle.,DET NOUN VERB PRON ADP DET NOUN PUNCT ,DET NOUN PRON VERB ADP DET NOUN ADP DET NOUN PUNCT 
+212,"As the snow melted, the roads became very slippery.",Los caminos están muy revaladizos porque la nieve se ha derretido.,ADP DET NOUN VERB PUNCT DET NOUN VERB ADV ADJ PUNCT ,DET NOUN AUX ADV ADJ SCONJ DET NOUN PRON AUX VERB PUNCT 
+213,The teacher cried tears of joy after the students left.,El profesor derramó sus lágrimas de felicidad cuando sus alumnos se marcharon.,DET NOUN VERB NOUN ADP NOUN ADP DET NOUN VERB PUNCT ,DET NOUN VERB DET NOUN ADP NOUN SCONJ DET NOUN PRON VERB PUNCT 
+214,He was lying on the bed reading a book.,Él estaba acostado en la cama leyendo un libro.,PRON VERB VERB ADP DET NOUN VERB DET NOUN PUNCT ,PRON AUX ADJ ADP DET NOUN VERB DET NOUN PUNCT 
+215,What's the big news?,¿Cuál es la gran noticia?,PRON VERB DET ADJ NOUN PUNCT ,PUNCT PRON AUX DET ADJ NOUN PUNCT 
+216,I suddenly felt a sharp pain in my chest.,Sentía repentinamente un dolor agudo en mi pecho.,PRON ADV VERB DET ADJ NOUN ADP DET NOUN PUNCT ,VERB NOUN DET NOUN ADJ ADP DET NOUN PUNCT 
+217,Is it always hot in Korea?,¿Corea es siempre caluroso?,VERB PRON ADV ADJ ADP PROPN PUNCT ,PUNCT PROPN AUX ADV ADJ PUNCT 
+218,I won't wear this sweater again. It has stretched.,No usaré este suéter otra vez. Se estiró.,PRON AUX ADV VERB DET NOUN ADV PUNCT PRON VERB VERB PUNCT ,ADV VERB DET NOUN DET NOUN PUNCT PRON VERB PUNCT 
+219,Only one with special abilities can do this work.,Solamente uno con capacidades especiales puede hacer este trabajo.,ADV NUM ADP ADJ NOUN VERB VERB DET NOUN PUNCT ,ADV PRON ADP NOUN ADJ AUX VERB DET NOUN PUNCT 
+220,Hurry up. We are going to be late.,Apúrate. Vamos a llegar tarde.,VERB PART PUNCT PRON VERB VERB PART VERB ADJ PUNCT ,PROPN PUNCT AUX ADP VERB ADV PUNCT 
+221,The party was almost finished when we all arrived.,Cuando llegamos el partido estaba casi terminado.,DET NOUN VERB ADV VERB ADV PRON DET VERB PUNCT ,SCONJ VERB DET NOUN AUX ADV ADJ PUNCT 
+222,Is it possible to go to Japan and get back in a day?,¿Es posible ir y volver a Japón en un solo día?,VERB PRON ADJ PART VERB ADP PROPN CCONJ VERB ADV ADP DET NOUN PUNCT ,PUNCT AUX ADJ VERB CONJ VERB ADP PROPN ADP DET ADJ NOUN PUNCT 
+223,"When I was young, I used to go to a public bath.","Cuando era joven, solía ir a un baño público.",ADV PRON VERB ADJ PUNCT PRON VERB PART VERB ADP DET ADJ NOUN PUNCT ,SCONJ AUX NOUN PUNCT AUX VERB ADP DET NOUN ADJ PUNCT 
+224,"Although they are twins, their personalities are totally different.","Aunque son gemelos, sus personalidades son totalmente diferentes.",ADP PRON VERB NOUN PUNCT DET NOUN VERB ADV ADJ PUNCT ,SCONJ AUX NOUN PUNCT DET NOUN AUX ADV ADJ PUNCT 
+225,Who is the girl sitting with her legs crossed over there?,¿Quién es la muchacha que se sienta con las piernas cruzadas?,PRON VERB DET NOUN VERB ADP DET NOUN VERB ADV ADV PUNCT ,PUNCT PRON AUX DET NOUN PRON PRON VERB ADP DET NOUN ADJ PUNCT 
+226,Let's cross the bridge.,Crucemos el puente.,VERB PRON VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+227,I'll never do that again.,Nunca haré eso otra vez.,PRON AUX ADV VERB DET ADV PUNCT ,ADV VERB PRON DET NOUN PUNCT 
+228,They offer various services.,Ofrecen varios servicios.,PRON VERB ADJ NOUN PUNCT ,VERB DET NOUN PUNCT 
+229,When is the next flight?,¿Cuándo es el siguiente vuelo?,ADV VERB DET ADJ NOUN PUNCT ,PUNCT PRON AUX DET ADJ NOUN PUNCT 
+230,How did you get hurt?,¿Cómo se lastimó?,ADV VERB PRON VERB VERB PUNCT ,PUNCT PRON PRON VERB PUNCT 
+231,The player wiped the sweat off his face with a towel.,El jugador limpió el sudor de su cara con una toalla.,DET NOUN VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT ,DET NOUN VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+232,I don't even know these basic words.,Incluso no sé estas palabras básicas.,PRON VERB ADV ADV VERB DET ADJ NOUN PUNCT ,ADV ADV VERB DET NOUN ADJ PUNCT 
+233,Close the window.,Cerrar la ventana.,VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+234,When can we see a full moon this month?,¿Cuándo podemos ver la Luna Llena este mes?,ADV VERB PRON VERB DET ADJ NOUN DET NOUN PUNCT ,PUNCT PRON AUX VERB DET PROPN PROPN DET NOUN PUNCT 
+235,This cake tastes sweet.,Esta torta sale dulce.,DET NOUN VERB ADJ PUNCT ,DET NOUN VERB ADJ PUNCT 
+236,The world has changed a lot during the last ten years.,El mundo ha cambiado mucho durante estos diez años.,DET NOUN VERB VERB DET NOUN ADP DET ADJ NUM NOUN PUNCT ,DET NOUN AUX VERB ADV ADP DET NUM NOUN PUNCT 
+237,Five hundred dollars a month.,Quinientos dólares por mes.,NUM NUM NOUN DET NOUN PUNCT ,NUM NOUN ADP NOUN PUNCT 
+238,Mark your mother's birthday on the calendar.,Marque el cumpleaños de tu madre en el calendario.,VERB DET NOUN PART NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+239,"Which came first, the chicken or the egg?","¿Qué vino primero, el pollo o el huevo?",DET VERB ADV PUNCT DET NOUN CCONJ DET NOUN PUNCT ,PUNCT PRON VERB ADV PUNCT DET NOUN CONJ DET NOUN PUNCT 
+240,Please look up a recipe for chicken soup on the internet.,"Por favor, busca por internet una receta para la sopa de carne de pollo.",INTJ VERB PART DET NOUN ADP NOUN NOUN ADP DET NOUN PUNCT ,ADP NOUN PUNCT VERB ADP NOUN DET NOUN ADP DET NOUN ADP NOUN ADP NOUN PUNCT 
+241,Put this item in a bag.,Pon estos artículos en un bolso.,VERB DET NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+242,How many cigarettes do you smoke a day?,¿Cuántos cigarrillos fumas en un día?,ADV ADJ NOUN VERB PRON VERB DET NOUN PUNCT ,PUNCT DET NOUN ADJ ADP DET NOUN PUNCT 
+243,"Don't ask me, just answer.","No me preguntes, solo responde.",VERB ADV VERB PRON PUNCT ADV VERB PUNCT ,ADV PRON VERB PUNCT ADV VERB PUNCT 
+244,Most of the article is false.,La mayor parte del artículo es falso.,ADJ ADP DET NOUN VERB ADJ PUNCT ,DET ADJ NOUN ADP NOUN AUX ADJ PUNCT 
+245,Americans use forks instead of chopsticks.,Los americanos usan tenedores en vez de palillos.,PROPN VERB NOUN ADV ADP NOUN PUNCT ,DET NOUN VERB NOUN ADP NOUN ADP NOUN PUNCT 
+246,Who was your favorite past president?,¿Quién fue tu presidente favorito?,PRON VERB DET ADJ ADJ NOUN PUNCT ,PUNCT PRON AUX DET NOUN ADJ PUNCT 
+247,Which university do you want to go to?,¿A qué universidad deseas ir?,DET NOUN VERB PRON VERB PART VERB ADP PUNCT ,PUNCT ADP DET NOUN AUX VERB PUNCT 
+248,My girlfriend is an undergraduate who is four years younger than me.,Mi novia es una estudiante universitaria y es cuatro años menor que yo.,DET NOUN VERB DET NOUN PRON VERB NUM NOUN ADJ ADP PRON PUNCT ,DET NOUN AUX DET NOUN ADJ CONJ AUX NUM NOUN ADJ PRON PRON PUNCT 
+249,"After a long talk, they decided to break up.","Después de que una charla larga, ellos decidieron cortar.",ADP DET ADJ NOUN PUNCT PRON VERB PART VERB PART PUNCT ,ADV ADP SCONJ DET NOUN ADJ PUNCT PRON VERB VERB PUNCT 
+250,This is my teacher's house.,Ésta es la residencia de mi profesor.,DET VERB DET NOUN PART NOUN PUNCT ,PRON AUX DET NOUN ADP DET NOUN PUNCT 
+251,Do you have anything more to say?,¿Tienes otra cosa más para decir?,VERB PRON VERB NOUN ADJ PART VERB PUNCT ,PUNCT VERB DET NOUN ADV ADP VERB PUNCT 
+252,He threw the ball as far as he could.,Él lanzó la bola lo más alto que pudo.,PRON VERB DET NOUN ADV ADV ADP PRON VERB PUNCT ,PRON VERB DET NOUN DET ADV ADJ PRON VERB PUNCT 
+253,Korea is very hot in the summer.,En Corea hace mucho calor en verano.,PROPN VERB ADV ADJ ADP DET NOUN PUNCT ,ADP PROPN AUX DET NOUN ADP NOUN PUNCT 
+254,You should return those books to the library.,Debes devolver esos libros a la biblioteca.,PRON VERB VERB DET NOUN ADP DET NOUN PUNCT ,AUX VERB DET NOUN ADP DET NOUN PUNCT 
+255,I don't like driving in the city.,No me gusta conducir en la ciudad.,PRON VERB ADV VERB VERB ADP DET NOUN PUNCT ,ADV PRON VERB VERB ADP DET NOUN PUNCT 
+256,I need your help.,Necesito ayuda.,PRON VERB DET NOUN PUNCT ,VERB NOUN PUNCT 
+257,The train will be arriving shortly.,El tren arrivará pronto.,DET NOUN VERB VERB VERB ADV PUNCT ,DET NOUN VERB ADV PUNCT 
+258,Give me the money.,Dame el dinero.,VERB PRON DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+259,Turn right at the corner.,Dar vuelta a la derecha en la esquina.,VERB ADV ADP DET NOUN PUNCT ,VERB NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+260,Children are playing by spinning a top.,Los niños están jugando haciendo girar una peonza.,NOUN VERB VERB ADP VERB DET NOUN PUNCT ,DET NOUN AUX VERB AUX VERB DET NOUN PUNCT 
+261,"Because we were lost, we had to go back the way we came.","Porque nos perdimos, tuvimos que regresar de la manera en que vinimos.",ADP PRON VERB VERB PUNCT PRON VERB PART VERB ADV DET NOUN PRON VERB PUNCT ,SCONJ PRON VERB PUNCT VERB SCONJ VERB ADP DET NOUN ADP PRON VERB PUNCT 
+262,When is Dad coming back?,¿Cuándo vuelve papá?,ADV VERB PROPN VERB ADV PUNCT ,PUNCT PRON VERB VERB PUNCT 
+263,Please help me!,¡Ayudenme por favor!,INTJ VERB PRON PUNCT ,PUNCT PROPN ADP NOUN PUNCT 
+264,A stranger was wandering through our village.,Un extranjero merodeaba a través de nuestra aldea.,DET NOUN VERB VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP NOUN ADP DET NOUN PUNCT 
+265,He accidently found an unknown animal.,Él accidentalmente encontró un animal desconocido.,PRON ADV VERB DET ADJ NOUN PUNCT ,PRON ADV VERB DET NOUN ADJ PUNCT 
+266,I am not on good terms with my younger brother(sister).,No estoy de buen humor con mi hermano (hermana) menor.,PRON VERB ADV ADP ADJ NOUN ADP DET ADJ NOUN PUNCT PUNCT ,ADV AUX ADP ADJ NOUN ADP DET NOUN PUNCT NOUN PUNCT ADJ PUNCT 
+267,Take care while I'm gone.,Cuídate mientras no estoy.,VERB NOUN ADP PRON VERB VERB PUNCT ,VERB SCONJ ADV AUX PUNCT 
+268,The window of our house faces east.,La ventana de nuestra casa hace frente al Este.,DET NOUN ADP DET NOUN VERB ADV PUNCT ,DET NOUN ADP DET NOUN VERB NOUN ADP PROPN PUNCT 
+269,Koreans believe that dreams about pigs are the luckiest.,Los coreanos creen que los sueños sobre cerdos son los más afortunados.,PROPN VERB ADP NOUN ADP NOUN VERB DET ADJ PUNCT ,DET NOUN VERB SCONJ DET NOUN ADP NOUN AUX DET ADV ADJ PUNCT 
+270,Wine goes best with beef or pork.,El vino va bien con el bife o la carne de cerdo.,NOUN VERB ADV ADP NOUN CCONJ NOUN PUNCT ,DET NOUN VERB ADV ADP DET NOUN CONJ DET NOUN ADP NOUN PUNCT 
+271,My parents wanted me to become a doctor.,Mis padres quisieron convertirme en doctor.,DET NOUN VERB PRON PART VERB DET NOUN PUNCT ,DET NOUN VERB NOUN ADP NOUN PUNCT 
+272,Put it on the desk.,Pónlo arriba del escritorio.,VERB PRON ADP DET NOUN PUNCT ,PROPN ADV ADP NOUN PUNCT 
+273,From the back I couldn't tell who he was.,Desde atrás no se podía reconocer quiénes eran.,ADP DET NOUN PRON AUX ADV VERB PRON PRON VERB PUNCT ,ADP ADV ADV PRON AUX VERB PRON AUX PUNCT 
+274,Do you give pocket money to your parents?,¿Les das dinero a tus padres?,VERB PRON VERB NOUN NOUN ADP DET NOUN PUNCT ,PUNCT PRON VERB NOUN ADP DET NOUN PUNCT 
+275,"Please, listen to me.","Por favor, escúchame.",INTJ PUNCT VERB ADP PRON PUNCT ,ADP NOUN PUNCT VERB PUNCT 
+276,It took me a lot of time to finish the work.,Me tomó mucho tiempo acabar con el trabajo.,PRON VERB PRON DET NOUN ADP NOUN PART VERB DET NOUN PUNCT ,PRON VERB DET NOUN VERB ADP DET NOUN PUNCT 
+277,Raise your hand!,¡Levánta tu mano!,VERB DET NOUN PUNCT ,PUNCT PROPN DET NOUN PUNCT 
+278,"Strange as it may sound, what I said was true.","Te puede sonar extraño, pero lo que yo dije era cierto.",ADJ ADP PRON VERB VERB PUNCT PRON PRON VERB VERB ADJ PUNCT ,PRON AUX VERB ADJ PUNCT CONJ DET PRON PRON VERB AUX ADJ PUNCT 
+279,Do not enter!,¡No entrar!,VERB ADV VERB PUNCT ,PUNCT ADV VERB PUNCT 
+280,Please come in. ,"Entre, por favor.",INTJ VERB PART PUNCT ,ADP PUNCT ADP NOUN PUNCT 
+281,Carry the baby on your back.,Carga el niño en la espalda. ,VERB DET NOUN ADP DET NOUN PUNCT ,NOUN DET NOUN ADP DET NOUN PUNCT 
+282,Yesterday's weather was good for climbing.,Ayer hacía un lindo clima para ir a escalar. ,NOUN PART NOUN VERB ADJ ADP VERB PUNCT ,ADV VERB DET ADJ NOUN ADP AUX ADP VERB PUNCT 
+283,It is warm today.,Hoy el clima es caluroso.,PRON VERB ADJ NOUN PUNCT ,ADV DET NOUN AUX ADJ PUNCT 
+284,My husband wants to have a daughter.,Mi marido desea tener una hija.,DET NOUN VERB PART VERB DET NOUN PUNCT ,DET NOUN VERB VERB DET NOUN PUNCT 
+285,This toothpaste is strawberry-flavored.,Pasta dental sabor a frutilla.,DET NOUN VERB NOUN PUNCT VERB PUNCT ,PROPN ADJ NOUN ADP NOUN PUNCT 
+286,Who does this land belong to?,¿De quién es esta Tierra?,PRON VERB DET NOUN VERB ADP PUNCT ,PUNCT ADP PRON AUX DET PROPN PUNCT 
+287,She said she liked him the first time she met him.,Ella dijo que le gustó desde la primera vez en que lo vio.,PRON VERB PRON VERB PRON DET ADJ NOUN PRON VERB PRON PUNCT ,PRON VERB SCONJ PRON VERB ADP DET ADJ NOUN ADP PRON PRON VERB PUNCT 
+288,It's all because of you.,Es toda debido a ti.,PRON VERB ADV ADP ADP PRON PUNCT ,AUX DET ADJ ADP PRON PUNCT 
+289,When are you leaving?,¿Cuándo te estás yendo?,ADV VERB PRON VERB PUNCT ,PUNCT PRON PRON AUX VERB PUNCT 
+290,A good idea occurred to me.,Se me ocurrió una buena idea.,DET ADJ NOUN VERB ADP PRON PUNCT ,PRON PRON VERB DET ADJ NOUN PUNCT 
+291,Have you ever tried this rice cake? It's delicious.,¿Has probado esta torta de arroz? Es deliciosa.,VERB PRON ADV VERB DET NOUN NOUN PUNCT PRON VERB ADJ PUNCT ,PUNCT AUX VERB DET NOUN ADP NOUN PUNCT AUX ADJ PUNCT 
+292,Were you late for school again?,¿Llegaste a la escuela tarde otra vez?,VERB PRON ADJ ADP NOUN ADV PUNCT ,PUNCT VERB ADP DET NOUN ADV DET NOUN PUNCT 
+293,I bought the same MP3 player as his.,Compré el mismo  MP3 que el suyo.,PRON VERB DET ADJ NOUN NOUN ADP PRON PUNCT ,VERB DET DET SPACE PROPN SCONJ DET DET PUNCT 
+294,Stand straight and speak clearly.,Estar parado recto y hablar correctamente.,VERB ADV CCONJ VERB ADV PUNCT ,AUX ADJ ADJ CONJ VERB ADV PUNCT 
+295,You mean the girl running on the playground?,¿Te refieres a esa muchacha que esta corriendo en el campo de deportes?,PRON VERB DET NOUN VERB ADP DET NOUN PUNCT ,PUNCT PRON VERB ADP DET NOUN PRON DET VERB ADP DET NOUN ADP NOUN PUNCT 
+296,Please give me some hot water.,Por favor deme un poco de agua caliente.,INTJ VERB PRON DET ADJ NOUN PUNCT ,ADP NOUN NOUN DET PRON ADP NOUN ADJ PUNCT 
+297,Do you know this word's meaning?,¿Sabes el significado de esta palabra?,VERB PRON VERB DET NOUN PART NOUN PUNCT ,PUNCT VERB DET NOUN ADP DET NOUN PUNCT 
+298,Turn the radio on.,Girar la radio.,VERB DET NOUN ADP PUNCT ,VERB DET NOUN PUNCT 
+299,How about a bowl of ramen?,¿Cómo sobre un tazón de fuente de ramion?,ADV ADP DET NOUN ADP NOUN PUNCT ,PUNCT PRON ADP DET NOUN ADP NOUN ADP NOUN PUNCT 
+300,I am going to Russia to learn ballet next year.,Voy a Rusia a aprender ballet clásico el año próximo.,PRON VERB VERB ADP PROPN PART VERB NOUN ADJ NOUN PUNCT ,VERB ADP PROPN ADP VERB NOUN ADJ DET NOUN ADJ PUNCT 
+301,How many fishes did you catch?,¿Cuántos pescados cogiste?,ADV ADJ NOUN VERB PRON VERB PUNCT ,PUNCT DET NOUN PRON PUNCT 
+302,Can I get you something to drink?,¿Puedo conseguirte algo para beber?,VERB PRON VERB PRON NOUN PART VERB PUNCT ,PUNCT AUX VERB PRON ADP VERB PUNCT 
+303,You may change your mind when you get to the sea.,Puedes cambiar de opinión cuando llegues al mar.,PRON VERB VERB DET NOUN ADV PRON VERB ADP DET NOUN PUNCT ,AUX VERB ADP NOUN SCONJ VERB ADP NOUN PUNCT 
+304,It's the last day of this month.,Es el último día de este mes.,PRON VERB DET ADJ NOUN ADP DET NOUN PUNCT ,AUX DET ADJ NOUN ADP DET NOUN PUNCT 
+305,It will take three days to finish this work.,Tomará tres días para acabar este trabajo.,PRON VERB VERB NUM NOUN PART VERB DET NOUN PUNCT ,VERB NUM NOUN ADP VERB DET NOUN PUNCT 
+306,Don't stand there blocking the gateway.,No estar parado allí bloqueando la entrada.,VERB ADV VERB ADV VERB DET NOUN PUNCT ,ADV AUX ADJ ADV VERB DET NOUN PUNCT 
+307,When would you like to meet?,¿Cúando nos podemos ver?,ADV VERB PRON VERB PART VERB PUNCT ,PUNCT VERB PRON AUX VERB PUNCT 
+308,I am thinking about making a Valentine's day present myself.,Estoy pensando preparar yo mismo el regalo para San Valentín.,PRON VERB VERB ADP VERB DET PROPN PART NOUN VERB PRON PUNCT ,AUX AUX VERB PRON DET DET NOUN ADP PROPN PROPN PUNCT 
+309,We have much in common.,Tenemos mucho en común.,PRON VERB ADJ ADP ADJ PUNCT ,VERB ADV ADP NOUN PUNCT 
+310,Do you work out a lot?,¿Haces mucho deporte?,VERB PRON VERB PART DET NOUN PUNCT ,PUNCT VERB DET NOUN PUNCT 
+311,Equus means horse in Latin.,Equus significa caballo en latín.,PROPN VERB NOUN ADP PROPN PUNCT ,PROPN VERB NOUN ADP NOUN PUNCT 
+312,Don't say that.,No diga eso.,VERB ADV VERB DET PUNCT ,ADV VERB PRON PUNCT 
+313,Stop worrying and take a break.,Deja de preocuparte y descansa.,VERB ADJ CCONJ VERB DET NOUN PUNCT ,VERB ADP NOUN CONJ NOUN PUNCT 
+314,You should have said it earlier.,Me lo hubiese dicho anteriormente.,PRON VERB VERB VERB PRON ADV PUNCT ,PRON PRON AUX VERB ADV PUNCT 
+315,It is good to live where the water and air are clear.,Es bueno vivir en un ambiente donde el agua y el aire son puros. ,PRON VERB ADJ PART VERB ADV DET NOUN CCONJ NOUN VERB ADJ PUNCT ,AUX ADJ VERB ADP DET NOUN PRON DET NOUN CONJ DET NOUN AUX ADJ PUNCT 
+316,How's the taste?,¿Cómo es el sabor?,ADV VERB DET NOUN PUNCT ,PUNCT PRON AUX DET NOUN PUNCT 
+317,"If you let the ramen sit for too long, it tastes bad.","Si dejas el ramion por mucho tiempo, tiene mal gusto. ",ADP PRON VERB DET NOUN VERB ADP ADV ADV PUNCT PRON VERB ADJ PUNCT ,SCONJ VERB DET NOUN ADP DET NOUN PUNCT VERB ADV NOUN PUNCT 
+318,How delicious!,¡Qué delicioso!,ADV ADJ PUNCT ,PUNCT INTJ ADJ PUNCT 
+319,The correct answer is number 3.,La respuesta correcta es el número 3.,DET ADJ NOUN VERB NOUN NUM PUNCT ,DET NOUN ADJ AUX DET NOUN NUM PUNCT 
+320,Did you adjust the clock to Korean time?,¿Ajustaste el reloj al tiempo coreano?,VERB PRON VERB DET NOUN ADP ADJ NOUN PUNCT ,PUNCT VERB DET NOUN ADP NOUN ADJ PUNCT 
+321,I guessed two questions correctly.,Respondí las dos preguntas correctamente.,PRON VERB NUM NOUN ADV PUNCT ,VERB DET NUM NOUN ADV PUNCT 
+322,I'll take care of this job.,Yo me haré cargo de este trabajo.,PRON AUX VERB NOUN ADP DET NOUN PUNCT ,PRON PRON VERB NOUN ADP DET NOUN PUNCT 
+323,It's very cold.,Es muy frío.,PRON VERB ADV ADJ PUNCT ,AUX ADV ADJ PUNCT 
+324,I have breakfast everyday.,Desayuno diario.,PRON VERB NOUN ADV PUNCT ,ADJ NOUN PUNCT 
+325,I'll have a beer.,Tomaré una cerveza.,PRON AUX VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+326,Spicy and salty foods are not good for the body.,Los alimentos picantes y salados no son buenos para el cuerpo.,ADJ CCONJ ADJ NOUN VERB ADV ADJ ADP DET NOUN PUNCT ,DET NOUN ADJ CONJ ADJ ADV AUX ADJ ADP DET NOUN PUNCT 
+327,My hair has been falling out since I got hit on the head.,Mi pelo ha estado cayendo desde que me di un golpe en la cabeza.,DET NOUN VERB VERB VERB PART ADP PRON VERB VERB ADP DET NOUN PUNCT ,DET NOUN AUX AUX VERB ADP SCONJ PRON VERB DET NOUN ADP DET NOUN PUNCT 
+328,I can't eat anymore.,No puedo comer más.,PRON AUX ADV VERB ADV PUNCT ,ADV AUX VERB ADV PUNCT 
+329,Go first.,Ve primero. ,VERB ADV PUNCT ,VERB ADV PUNCT 
+330,It's not far from here.,No está lejos de aquí.,PRON VERB ADV ADV ADP ADV PUNCT ,ADV AUX ADV ADP ADV PUNCT 
+331,No problem. She can't hear me because she's far away.,Está todo bien. Ella no puede oirme porque está lejos de aquí.,DET NOUN PUNCT PRON AUX ADV VERB PRON ADP PRON VERB ADV ADV PUNCT ,AUX PRON ADV PUNCT PRON ADV AUX VERB SCONJ AUX ADV ADP ADV PUNCT 
+332,Here's the menu.,Aquí está el menú.,ADV VERB DET NOUN PUNCT ,ADV VERB DET NOUN PUNCT 
+333,"Do you know when he left here? - Well, I think a few days ago.","¿Sabes cuando él se fue aquí? - No lo sé, pero  pienso que fue hace algunos días atrás.",VERB PRON VERB ADV PRON VERB ADV PUNCT PUNCT INTJ PUNCT PRON VERB DET ADJ NOUN ADV PUNCT ,PUNCT VERB SCONJ PRON PRON AUX ADV PUNCT PUNCT ADV PRON VERB PUNCT CONJ SPACE VERB SCONJ AUX AUX DET NOUN ADV PUNCT 
+334,There are two girls there.,Hay dos muchachas allí.,ADV VERB NUM NOUN ADV PUNCT ,AUX NUM NOUN ADV PUNCT 
+335,I have several questions. How old are you? How many brothers do you have?,Tengo varias preguntas. ¿Qué edad tienes? ¿Cuántos hermanos tienes?,PRON VERB ADJ NOUN PUNCT ADV ADJ VERB PRON PUNCT ADV ADJ NOUN VERB PRON VERB PUNCT ,VERB DET NOUN PUNCT PUNCT DET NOUN VERB PUNCT PUNCT DET NOUN VERB PUNCT 
+336,This time is a good chance to get all together.,Esta vez es una buena ocasión de estar todos juntos.,DET NOUN VERB DET ADJ NOUN PART VERB ADV ADV PUNCT ,DET NOUN AUX DET ADJ NOUN ADP VERB PRON ADJ PUNCT 
+337,Every employee knows about it.,Todos los empleados lo saben.,DET NOUN VERB ADP PRON PUNCT ,DET DET NOUN PRON VERB PUNCT 
+338,It was clear that he did not know me.,Estaba claro que él no me conocía.,PRON VERB ADJ ADP PRON VERB ADV VERB PRON PUNCT ,AUX ADV SCONJ PRON ADV PRON VERB PUNCT 
+339,His figure disappeared into the darkness.,Su figura desapareció en la oscuridad.,DET NOUN VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN PUNCT 
+340,These products are different in shape.,Estos productos son diferentes en forma.,DET NOUN VERB ADJ ADP NOUN PUNCT ,DET NOUN AUX ADJ ADP NOUN PUNCT 
+341,How long have you collected coins?,¿En cuánto tiempo has recogido las monedas?,ADV ADV VERB PRON VERB NOUN PUNCT ,PUNCT ADP DET NOUN AUX VERB DET NOUN PUNCT 
+342,The children gathered on the playground.,Los niños están reunidos en el patio.,DET NOUN VERB ADP DET NOUN PUNCT ,DET NOUN AUX ADJ ADP DET NOUN PUNCT 
+343,Will you attend the meeting?,¿Assistirás a la reunión?,VERB PRON VERB DET NOUN PUNCT ,PUNCT PROPN ADP DET NOUN PUNCT 
+344,Is she wearing a cap?,¿Ella está usando un casquillo?,VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON AUX VERB DET NOUN PUNCT 
+345,He was involved in a car accident and now his neck is in a cast.,Él tiene su cuello vendado porque tuvo un accidente de tráfico. ,PRON VERB VERB ADP DET NOUN NOUN CCONJ ADV DET NOUN VERB ADP DET NOUN PUNCT ,PRON VERB DET NOUN ADJ SCONJ VERB DET NOUN ADP NOUN PUNCT 
+346,I can’t forget her beautiful voice.,No puedo olvidarme de su hermosa voz.,PRON AUX ADV VERB DET ADJ NOUN PUNCT ,ADV AUX VERB ADP DET ADJ NOUN PUNCT 
+347,My kids like taking a bath.,A mis niños les gusta bañarse.,DET NOUN ADP VERB DET NOUN PUNCT ,ADP DET NOUN PRON VERB VERB PUNCT 
+348,What is the purpose of your visit?,¿Cuál es el propósito de tu visita?,PRON VERB DET NOUN ADP DET NOUN PUNCT ,PUNCT PRON AUX DET NOUN ADP DET NOUN PUNCT 
+349,"Though present in body, your mind is elsewhere.","Tu cuerpo esta aquí, pero tu mente está en otra parte.",ADP ADJ ADP NOUN PUNCT DET NOUN VERB ADV PUNCT ,DET NOUN DET ADV PUNCT CONJ DET NOUN VERB ADP DET NOUN PUNCT 
+350,Hyean can not eat or sleep these days.,Hyean estos días no puede comer ni dormir.,PROPN VERB ADV VERB CCONJ VERB DET NOUN PUNCT ,PROPN DET NOUN ADV AUX VERB CONJ VERB PUNCT 
+351,I am poor at singing.,No soy buen cantor.,PRON VERB ADJ ADP NOUN PUNCT ,ADV AUX ADJ NOUN PUNCT 
+352,This bag is so heavy.,Este bolso es muy pesado.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN AUX ADV ADJ PUNCT 
+353,"Have you seen Scary Movie""? I was not scared at all.""""ave you seen ""Scary Movie""? I was not """"ve you seen ""Scary Movie""""e you seen """,¿Has visto “Película de Terror”? No me austó ni un poco.,VERB PRON VERB PROPN PROPN PUNCT PUNCT PRON VERB ADV ADJ ADP X PRON VERB PUNCT PROPN PROPN PUNCT PUNCT PRON VERB ADV PUNCT PUNCT INTJ PRON VERB PUNCT PROPN PROPN PRON VERB PUNCT ,PUNCT AUX VERB PROPN PROPN ADP PROPN PROPN PUNCT ADV PRON VERB ADV DET PRON PUNCT 
+354,What kind of work do you do?,¿Qué clase de trabajo haces?,DET NOUN ADP NOUN VERB PRON VERB PUNCT ,PUNCT DET NOUN ADP NOUN VERB PUNCT 
+355,What is that?,¿Cuál es eso?,PRON VERB DET PUNCT ,PUNCT PRON AUX PRON PUNCT 
+356,Lock the door.,Cierra la puerta.,VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+357,Skip the difficult question and solve the others first.,Salta la preguntas difíciles y soluciona las otras primero.,VERB DET ADJ NOUN CCONJ VERB DET NOUN ADV PUNCT ,VERB DET NOUN ADJ CONJ VERB DET PRON ADJ PUNCT 
+358,I was not familiar with the culture here in the first time I came here.,La primera vez que vine aquí no me acostumbraba a la cultura.,PRON VERB ADV ADJ ADP DET NOUN ADV ADP DET ADJ NOUN PRON VERB ADV PUNCT ,DET ADJ NOUN PRON VERB ADV ADV PRON VERB ADP DET NOUN PUNCT 
+359,Asking for directions is hard for me to do.,Para mi es difícil preguntar las direcciones.,VERB ADP NOUN VERB ADJ ADP PRON PART VERB PUNCT ,ADP DET AUX ADJ VERB DET NOUN PUNCT 
+360,A car drove by and splashed water on me.,Un coche condujo cerca de mí y me salpicó todo el agua.,DET NOUN VERB ADV CCONJ VERB NOUN ADP PRON PUNCT ,DET NOUN VERB ADV ADP PRON CONJ PRON VERB DET DET NOUN PUNCT 
+361,Give the stuff back after using it.,Devolver el material luego de usarlo.,VERB DET NOUN ADV ADP VERB PRON PUNCT ,VERB DET NOUN ADV ADP NOUN PUNCT 
+362,"I'll pay you back in time, of course, it'll be in cash.","Te pagaré a tiempo, por supuesto, será en efectivo.",PRON AUX VERB PRON ADV ADP NOUN PUNCT ADP NOUN PUNCT PRON AUX VERB ADP NOUN PUNCT ,PRON VERB ADP NOUN PUNCT ADP NOUN PUNCT AUX ADP NOUN PUNCT 
+363,Can I ask you a question?,¿Puedo hacerte una pregunta?,VERB PRON VERB PRON DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN PUNCT 
+364,She had a baby in the U.S.,Ella dio luz a un bebe en Estados Unidos.,PRON VERB DET NOUN ADP DET PROPN ,PRON VERB NOUN ADP DET NOUN ADP PROPN PROPN PUNCT 
+365,I'm so sorry.,Realmente perdón.,PRON VERB ADV ADJ PUNCT ,ADV NOUN PUNCT 
+366,"Look, I think that guy is over two meters tall.","Mira, yo pienso que el individuo que esta allí debe medir cerca de dos metros.",VERB PUNCT PRON VERB ADP NOUN VERB ADP NUM NOUN ADJ PUNCT ,VERB PUNCT PRON VERB SCONJ DET NOUN PRON DET ADV AUX VERB ADV ADP NUM NOUN PUNCT 
+367,Don't believe me if you don't want to.,"Si no quieres creerme, no me creas.",VERB ADV VERB PRON ADP PRON VERB ADV VERB PART PUNCT ,SCONJ ADV VERB VERB PUNCT ADV PRON VERB PUNCT 
+368,The ship sank to the bottom of the sea.,La nave se hundió al fondo del mar.,DET NOUN VERB ADP DET NOUN ADP DET NOUN PUNCT ,DET NOUN PRON VERB ADP NOUN ADP NOUN PUNCT 
+369,Do you know how to change a tire?,¿Sabes cambiar un neumático?,VERB PRON VERB ADV PART VERB DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN PUNCT 
+370,The lights changed to green.,Las luces se cambiaron a verde.,DET NOUN VERB ADP ADJ PUNCT ,DET NOUN PRON VERB ADP ADJ PUNCT 
+371,I would like to go to the sea with my friends in the winter.,Quisiera ir al mar con mis amigos en el invierno.,PRON VERB VERB PART VERB ADP DET NOUN ADP DET NOUN ADP DET NOUN PUNCT ,VERB VERB ADP NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+372,I hope you will get better soon.,Espero que pronto consigas ponerte mejor.,PRON VERB PRON VERB VERB ADJ ADV PUNCT ,VERB SCONJ ADV VERB PRON ADJ PUNCT 
+373,A couple was looking at each other lovingly.,Cierta pareja se están mirando cariñosamente.,DET NOUN VERB VERB ADP DET ADJ ADV PUNCT ,DET NOUN PRON AUX VERB ADV PUNCT 
+374,The wind has stopped.,El viento ha parado.,DET NOUN VERB VERB PUNCT ,DET NOUN AUX VERB PUNCT 
+375,The game was canceled because of the rain.,El partido fue cancelado debido a la lluvia.,DET NOUN VERB VERB ADP ADP DET NOUN PUNCT ,DET NOUN AUX VERB ADJ ADP DET NOUN PUNCT 
+376,I'm coming right away.,Estoy llendo enseguida. ,PRON VERB VERB ADV ADV PUNCT ,AUX VERB ADV PUNCT 
+377,Why are you so busy these days?,¿Por qué estás tan ocupado ultimamente?,ADV VERB PRON ADV ADJ DET NOUN PUNCT ,PUNCT ADP PRON AUX ADV ADJ ADV PUNCT 
+378,I found a nice pair of pants to match my sweater.,Encontré unos pantalones que hace juego con mi suéter.,PRON VERB DET ADJ NOUN ADP NOUN PART VERB DET NOUN PUNCT ,VERB DET NOUN PRON VERB NOUN ADP DET NOUN PUNCT 
+379,Have you been to the national museum in Kwacheon?,¿Has estado en el museo nacional en Kwacheon?,VERB PRON VERB ADP DET ADJ NOUN ADP PROPN PUNCT ,PUNCT AUX VERB ADP DET NOUN ADJ ADP PROPN PUNCT 
+380,Is it snowing outside?,¿Está nevando afuera?,VERB PRON VERB ADV PUNCT ,PUNCT AUX VERB ADV PUNCT 
+381,Mix in half a cup of water.,Vierte media taza de agua y bate.,VERB ADP DET DET NOUN ADP NOUN PUNCT ,PROPN NUM NOUN ADP NOUN CONJ NOUN PUNCT 
+382,They were in the same class in fifth grade.,Estaban en la misma clase en quinto grado.,PRON VERB ADP DET ADJ NOUN ADP ADJ NOUN PUNCT ,VERB ADP DET DET NOUN ADP ADJ NOUN PUNCT 
+383,Glad to meet you.,Gusto en conocerlo. ,ADJ PART VERB PRON PUNCT ,NOUN ADP NOUN PUNCT 
+384,My sister is the complete opposite of me.,Mi hermana es completamente opuesta a mí.,DET NOUN VERB DET ADJ NOUN ADP PRON PUNCT ,DET NOUN AUX ADV ADJ ADP PRON PUNCT 
+385,I get dozens of spam mail everyday.,Recibo docenas de correos no desados diariamente.,PRON VERB NOUN ADP NOUN NOUN NOUN PUNCT ,NOUN NOUN ADP NOUN ADV ADJ ADV PUNCT 
+386,I'll take it as a compliment.,Lo tomaré como elogio.,PRON AUX VERB PRON ADP DET NOUN PUNCT ,PRON VERB SCONJ NOUN PUNCT 
+387,Somebody stepped on my foot.,Alguien caminó en mi pie.,NOUN VERB ADP DET NOUN PUNCT ,PRON VERB ADP DET NOUN PUNCT 
+388,The city has developed rapidly over the past 20 years.,La ciudad ha progresado rápidamente durante los últimos 20 años.,DET NOUN VERB VERB ADV ADP DET ADJ NUM NOUN PUNCT ,DET NOUN AUX VERB ADV ADP DET ADJ NUM NOUN PUNCT 
+389,No one knew such a big problem would occur.,Nadie hubiese sabido que iba a ocurrir un problema tan grande.,DET NOUN VERB DET DET ADJ NOUN VERB VERB PUNCT ,PRON AUX VERB SCONJ AUX ADP VERB DET NOUN ADV ADJ PUNCT 
+390,There are two pronunciations of this word.,Hay dos pronunciaciones en esta palabra.,ADV VERB NUM NOUN ADP DET NOUN PUNCT ,AUX NUM NOUN ADP DET NOUN PUNCT 
+391,The desk lamp is so bright it hurts my eyes.,La lámpara del escritorio es tan luminoso que  lastima mis ojos.,DET NOUN NOUN VERB ADV ADJ PRON VERB DET NOUN PUNCT ,DET NOUN ADP NOUN AUX ADV ADJ PRON SPACE VERB DET NOUN PUNCT 
+392,I sleep during the day and wake up at night.,Duermo durante el día y me despierto a la noche.,PRON VERB ADP DET NOUN CCONJ VERB PART ADP NOUN PUNCT ,VERB ADP DET NOUN CONJ PRON VERB ADP DET NOUN PUNCT 
+393,How about some more rice?,¿Qué tal un poco más de arroz?,ADV ADP DET ADJ NOUN PUNCT ,PUNCT PRON NOUN DET ADV ADV ADP NOUN PUNCT 
+394,I want to have a meeting in this room.,Deseo tener una reunión en este cuarto.,PRON VERB PART VERB DET NOUN ADP DET NOUN PUNCT ,VERB VERB DET NOUN ADP DET NOUN PUNCT 
+395,Isn't there a quicker way to become rich?,¿No hay una manera más rápida de llegar a ser rico?,VERB ADV ADV DET ADJ NOUN PART VERB ADJ PUNCT ,PUNCT ADV AUX DET NOUN ADV ADJ ADP AUX ADP AUX ADJ PUNCT 
+396,I have to do this vacation homework today.,Hoy tengo que hacer  la tarea de vacaciones.,PRON VERB PART VERB DET NOUN NOUN NOUN PUNCT ,ADV VERB SCONJ VERB SPACE DET NOUN ADP NOUN PUNCT 
+397,I am so hungry that my stomach is growling.,Tengo tan hambre que mi estómago está gruñiendo.,PRON VERB ADV ADJ ADP DET NOUN VERB VERB PUNCT ,VERB ADV NOUN SCONJ DET NOUN AUX VERB PUNCT 
+398,Please get off the ship carefully.,Descender cuidadosamente de la  nave.,INTJ VERB ADP DET NOUN ADV PUNCT ,VERB ADV ADP DET SPACE NOUN PUNCT 
+399,I developed a stomachache after I ate the pear in the ship.,Comí una pera en la nave y ahora me duele el estómago.,PRON VERB DET NOUN ADP PRON VERB DET NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET NOUN CONJ ADV PRON VERB DET NOUN PUNCT 
+400,I am so hungry. I can eat a horse.,Tengo tan hambre que hasta puedo comerme un caballo.,PRON VERB ADV ADJ PUNCT PRON VERB VERB DET NOUN PUNCT ,VERB ADV NOUN SCONJ ADP AUX VERB DET NOUN PUNCT 
+401,"I'm so full, I can't eat any more.",Estoy tan completo que ya no puedo comer más. ,PRON VERB ADV ADJ PUNCT PRON AUX ADV VERB ADV ADV PUNCT ,AUX ADV ADJ SCONJ ADV ADV AUX VERB ADV PUNCT 
+402,My new year's resolution is to learn how to drive.,Mi resolución del Año Nuevo es aprender a conducir.,DET ADJ NOUN PART NOUN VERB PART VERB ADV PART VERB PUNCT ,DET NOUN ADP PROPN ADJ AUX AUX ADP VERB PUNCT 
+403,Let's go shopping at the department store.,Vayamos a hacer compras en el almacén grande.,VERB PRON VERB VERB ADP DET NOUN NOUN PUNCT ,AUX ADP VERB NOUN ADP DET NOUN ADJ PUNCT 
+404,Somebody threw away the gabage.,Alguien tiró la basura.,NOUN VERB ADV DET NOUN PUNCT ,PRON VERB DET NOUN PUNCT 
+405,Get on the bus for Seoul.,Coger un autobús que va para Seoul.,VERB ADP DET NOUN ADP PROPN PUNCT ,VERB DET NOUN PRON VERB ADP PROPN PUNCT 
+406,I take a shower twice a day.,Tomo una ducha dos veces al día.,PRON VERB DET NOUN ADV DET NOUN PUNCT ,VERB DET NOUN NUM NOUN ADP NOUN PUNCT 
+407,You dialed the wrong number.,Marcaste a un número incorrecto.,PRON VERB DET ADJ NOUN PUNCT ,PROPN ADP DET NOUN ADJ PUNCT 
+408,I'll take care of the children if you make money.,Tú ganas dinero y yo me haré cargo de lo niños.,PRON AUX VERB NOUN ADP DET NOUN ADP PRON VERB NOUN PUNCT ,PRON NOUN NOUN CONJ PRON PRON VERB NOUN ADP DET NOUN PUNCT 
+409,Are you leaving already?,¿Ya te estás yendo?,VERB PRON VERB ADV PUNCT ,PUNCT ADV PRON AUX VERB PUNCT 
+410,I've never broken the law.,Nunca quebranto la ley.,PRON VERB ADV VERB DET NOUN PUNCT ,ADV NOUN DET NOUN PUNCT 
+411,Why don't you take off your hat?,¿Por qué no te sacas tu sombrero?,ADV VERB ADV PRON VERB PART DET NOUN PUNCT ,PUNCT ADP PRON ADV PRON NOUN DET NOUN PUNCT 
+412,You've changed a lot.,Has cambiado mucho.,PRON VERB VERB DET NOUN PUNCT ,AUX VERB ADV PUNCT 
+413,Why can't we see the stars during the day?,¿Por qué no podemos ver las estrellas durante el día?,ADV AUX ADV PRON VERB DET NOUN ADP DET NOUN PUNCT ,PUNCT ADP PRON ADV AUX VERB DET NOUN ADP DET NOUN PUNCT 
+414,How do you feel? - Not good.,¿Cómo te sientes? - No muy bien.,ADV VERB PRON VERB PUNCT PUNCT ADV ADJ PUNCT ,PUNCT PRON PRON VERB PUNCT PUNCT ADV ADV ADV PUNCT 
+415,I drank a whole bottle of wine and drove.,Bebí una botella entera de vino y conduje.,PRON VERB DET ADJ NOUN ADP NOUN CCONJ VERB PUNCT ,VERB DET NOUN ADJ ADP NOUN CONJ VERB PUNCT 
+416,He suffered from a terrible disease last year.,Él sufrió de una enfermedad terrible el año pasado.,PRON VERB ADP DET ADJ NOUN ADJ NOUN PUNCT ,PRON VERB ADP DET NOUN ADJ DET NOUN ADJ PUNCT 
+417,My grandmother is in the hospital.,Mi abuela está en el hospital.,DET NOUN VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN PUNCT 
+418,He sent 100 roses on my birthday.,Él envió 100 rosas en mi cumpleaños.,PRON VERB NUM NOUN ADP DET NOUN PUNCT ,PRON VERB NUM NOUN ADP DET NOUN PUNCT 
+419,Stop looking in the mirror.,Para de mirarte en  el espejo.,VERB VERB ADP DET NOUN PUNCT ,ADP ADP NOUN ADP SPACE DET NOUN PUNCT 
+420,We should find a more practical way.,Debemos encontrar una manera más práctica.,PRON VERB VERB DET ADV ADJ NOUN PUNCT ,AUX VERB DET NOUN ADV ADJ PUNCT 
+421,You look sad today.,Pareces triste hoy.,PRON VERB ADJ NOUN PUNCT ,NOUN ADJ ADV PUNCT 
+422,What time do you usually go to bed?,¿Cuándo te vas a la cama usalmente?,DET NOUN VERB PRON ADV VERB ADP NOUN PUNCT ,PUNCT PRON PRON VERB ADP DET NOUN ADJ PUNCT 
+423,This necklace will protect you.,Este collar te protegerá.,DET NOUN VERB VERB PRON PUNCT ,DET NOUN PRON VERB PUNCT 
+424,Don't make things more complicated.,No hacer las cosas aun más complicadas.,VERB ADV VERB NOUN ADV ADJ PUNCT ,ADV VERB DET NOUN ADV ADV ADJ PUNCT 
+425,Do you have a ballpoint pen?,¿Tienes un bolígrafo?,VERB PRON VERB DET NOUN NOUN PUNCT ,PUNCT VERB DET NOUN PUNCT 
+426,Winter is gone and spring is arriving.,Se va el invierno y la primavera está llegando.,NOUN VERB VERB CCONJ NOUN VERB VERB PUNCT ,PRON VERB DET NOUN CONJ DET NOUN AUX VERB PUNCT 
+427,This cat has very soft fur.,El pelo de este gato es muy  suave.,DET NOUN VERB ADV ADJ NOUN PUNCT ,DET NOUN ADP DET NOUN AUX ADV SPACE ADJ PUNCT 
+428,I heard someone calling my name.,Oí a alguien llamar mi nombre.,PRON VERB NOUN VERB DET NOUN PUNCT ,VERB ADP PRON VERB DET NOUN PUNCT 
+429,She lost her parents in a car accident.,Ella perdió a sus padres en un accidente de coche.,PRON VERB DET NOUN ADP DET NOUN NOUN PUNCT ,PRON VERB ADP DET NOUN ADP DET NOUN ADP NOUN PUNCT 
+430,"These days, many couples don't want to have kids.","Actualmente, muchas parejas no desean tener hijos.",DET NOUN PUNCT ADJ NOUN VERB ADV VERB PART VERB NOUN PUNCT ,ADV PUNCT DET NOUN ADV VERB VERB NOUN PUNCT 
+431,What was your favorite part in that movie?,¿Cuál fue la mejor parte de la película?,PRON VERB DET ADJ NOUN ADP DET NOUN PUNCT ,PUNCT PRON AUX DET ADJ NOUN ADP DET NOUN PUNCT 
+432,There is some rice cake in the kitchen.,Hay un poco de torta del arroz en la cocina.,ADV VERB DET NOUN NOUN ADP DET NOUN PUNCT ,AUX DET PRON ADP NOUN ADP NOUN ADP DET NOUN PUNCT 
+433,Where is your wife? Didn't you come with her?,¿Dónde está tu esposa? ¿No viniste con ella?,ADV VERB DET NOUN PUNCT VERB ADV PRON VERB ADP PRON PUNCT ,PUNCT PRON VERB DET NOUN PUNCT PUNCT ADV VERB ADP PRON PUNCT 
+434,Just walk toward the north. ,Camina por el Norte.,ADV VERB ADP DET NOUN PUNCT ,VERB ADP DET PROPN PUNCT 
+435,How many in your party? - Three.,¿Cuántas personas son?- Tres personas en total.,ADV ADJ ADP DET NOUN PUNCT PUNCT NUM PUNCT ,PUNCT DET NOUN CONJ NUM NOUN ADP ADJ PUNCT 
+436,What time is it? - It's three forty.,¿Qué hora es?- Son las tres y cuarenta y cinco minutos.,DET NOUN VERB PRON PUNCT PUNCT PRON VERB NUM NUM PUNCT ,PUNCT DET NOUN PROPN AUX DET NUM CONJ NUM CONJ NUM NOUN PUNCT 
+437,I like the atmosphere here.,Me gusta la atmósfera  de aquí.,PRON VERB DET NOUN ADV PUNCT ,PRON VERB DET ADJ SPACE ADP ADV PUNCT 
+438,There must be a fire.,Debe de haberse prendido fuego.,ADV VERB VERB DET NOUN PUNCT ,AUX ADP AUX VERB NOUN PUNCT 
+439,Bulgogi is popular with foreigners.,Bulgogi es popular entre los extranjeros.,PROPN VERB ADJ ADP NOUN PUNCT ,PROPN AUX ADJ ADP DET NOUN PUNCT 
+440,The wind is blowing from the south to the north.,El viento está soplando del Sur al Norte.,DET NOUN VERB VERB ADP DET NOUN ADP DET NOUN PUNCT ,DET NOUN AUX VERB ADP PROPN ADP PROPN PUNCT 
+441,I have gum stuck in my hair.,Tienes goma de mascar pegado en el pelo. ,PRON VERB NOUN VERB ADP DET NOUN PUNCT ,VERB NOUN ADP VERB ADJ ADP DET NOUN PUNCT 
+442,Did you stick a stamp on the envelope?,¿Pegaste una estampilla en el sobre?,VERB PRON VERB DET NOUN ADP DET NOUN PUNCT ,PUNCT PROPN DET NOUN ADP DET ADP PUNCT 
+443,I think I caught a cold because I walked in the rain.,Caminé por la lluvia y me agarró un resfriado.,PRON VERB PRON VERB DET NOUN ADP PRON VERB ADP DET NOUN PUNCT ,VERB ADP DET NOUN CONJ PRON VERB DET NOUN PUNCT 
+444,Soap makes my skin dry.,El jabón me seca la piel.,NOUN VERB DET NOUN ADJ PUNCT ,DET NOUN PRON ADJ DET NOUN PUNCT 
+445,He can't live without video games.,Él no puede vivir sin los video juegos.,PRON AUX ADV VERB ADP NOUN NOUN PUNCT ,PRON ADV AUX VERB ADP DET NOUN NOUN PUNCT 
+446,I don't like bibimbap very much.,No me gusta mucho el bibimbap.,PRON VERB ADV VERB NOUN ADV ADV PUNCT ,ADV PRON VERB ADV DET NOUN PUNCT 
+447,"The married couple has a similar hobby, sleeping.",Cuando dormimos nuestra pareja tenemos costumbres similares.,DET ADJ NOUN VERB DET ADJ NOUN PUNCT VERB PUNCT ,SCONJ VERB DET NOUN VERB NOUN ADJ PUNCT 
+448,Isn't it too expensive? Look for something cheaper.,¿No es muy caro? Consíguete algo mas barato.,VERB ADV PRON ADV ADJ PUNCT VERB ADP NOUN ADJ PUNCT ,PUNCT ADV AUX ADV ADJ PUNCT PROPN PRON ADV ADJ PUNCT 
+449,The plane will take off in 5 minutes.,El avión despegará en 5 minutos.,DET NOUN VERB VERB PART ADP NUM NOUN PUNCT ,DET NOUN VERB ADP NUM NOUN PUNCT 
+450,What's that little light in the sky?,¿Qué es esa pequeña luz que brilla en el cielo?,PRON VERB DET ADJ NOUN ADP DET NOUN PUNCT ,PUNCT PRON AUX DET ADJ NOUN PRON VERB ADP DET NOUN PUNCT 
+451,Let's ask people walking by. It's faster.,"Preguntemos a la gente que pasa, va ser mas rápido.",VERB PRON VERB NOUN VERB ADV PUNCT PRON VERB ADJ PUNCT ,VERB ADP DET NOUN PRON VERB PUNCT AUX AUX ADV ADJ PUNCT 
+452,I'm worried that you'll fall in the water by accident.,Me preocupa que caigas al agua y tengas un accidente.,PRON VERB ADJ ADP PRON AUX VERB ADP DET NOUN ADP NOUN PUNCT ,PRON VERB SCONJ VERB ADP NOUN CONJ VERB DET NOUN PUNCT 
+453,The red dress looks good on you.,El vestido rojo te queda muy lindo.,DET ADJ NOUN VERB ADJ ADP PRON PUNCT ,DET ADJ ADJ PRON VERB ADV ADJ PUNCT 
+454,How many times should I rinse this laundry?,¿Cuántas veces debo aclarar este lavadero?,ADV ADJ NOUN VERB PRON VERB DET NOUN PUNCT ,PUNCT DET NOUN AUX VERB DET NOUN PUNCT 
+455,I can't hurry up. I'm going as fast as I can.,"No puedo apresurarme más, voy tan rápido como puedo.",PRON AUX ADV VERB PART PUNCT PRON VERB VERB ADV ADV ADP PRON VERB PUNCT ,ADV VERB ADV ADV PUNCT VERB ADV ADJ SCONJ AUX PUNCT 
+456,"Actually, bread has many calories.","Realmente, el pan tiene muchas calorías.",ADV PUNCT NOUN VERB ADJ NOUN PUNCT ,ADV PUNCT DET NOUN VERB DET NOUN PUNCT 
+457,What happened to you? - I had a mole removed from my face yesterday. ,¿Qué te sucedió? - Ayer me quité un lunar de la cara.,PRON VERB ADP PRON PUNCT PUNCT PRON VERB DET NOUN VERB ADP DET NOUN NOUN PUNCT ,PUNCT PRON PRON VERB PUNCT PUNCT ADV PRON VERB DET NOUN ADP DET NOUN PUNCT 
+458,The drunk driver finally got a car accident.,El conductor borracho finalmente tuvo un accidente de coche.,DET ADJ NOUN ADV VERB DET NOUN NOUN PUNCT ,DET NOUN ADJ ADV VERB DET NOUN ADP NOUN PUNCT 
+459,These apples are fresh. Try them.,Estas manzanas están frescas. Pruébalas.,DET NOUN VERB ADJ PUNCT VERB PRON PUNCT ,DET NOUN AUX ADJ PUNCT PROPN PUNCT 
+460,What did you buy?,¿Qué compraste?,PRON VERB PRON VERB PUNCT ,PUNCT PRON NOUN PUNCT 
+461,The car disappeared into the dark.,El coche desapareció en la obscuridad.,DET NOUN VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN PUNCT 
+462,I think he is a really nice person.,Pienso que él es una persona realmente agradable.,PRON VERB PRON VERB DET ADV ADJ NOUN PUNCT ,VERB SCONJ PRON AUX DET NOUN ADV ADJ PUNCT 
+463,How much do you love me?,¿Cuánto me amas?,ADV ADJ VERB PRON VERB PRON PUNCT ,PUNCT VERB PRON VERB PUNCT 
+464,"Oops, I left my keys at the office!","¡Oops, dejé mis llaves en la oficina!",INTJ PUNCT PRON VERB DET NOUN ADP DET NOUN PUNCT ,PUNCT PROPN PUNCT VERB DET NOUN ADP DET NOUN PUNCT 
+465,Her remarks are completely different from the truth.,Las palabras de ella son totalmente diferentes a la realidad.,DET NOUN VERB ADV ADJ ADP DET NOUN PUNCT ,DET NOUN ADP PRON AUX ADV ADJ ADP DET NOUN PUNCT 
+466,Can I use this credit card here?,¿Puedo utilizar esta tarjeta de crédito aquí?,VERB PRON VERB DET NOUN NOUN ADV PUNCT ,PUNCT AUX VERB DET NOUN ADP NOUN ADV PUNCT 
+467,I have a good relationship with my parents.,Tengo una buena relación con mis padres.,PRON VERB DET ADJ NOUN ADP DET NOUN PUNCT ,VERB DET ADJ NOUN ADP DET NOUN PUNCT 
+468,My dream is to be the CEO of this company.,Mi sueño es ser el CEO de esta compañía.,DET NOUN VERB PART VERB DET NOUN ADP DET NOUN PUNCT ,DET NOUN AUX AUX DET PROPN ADP DET NOUN PUNCT 
+469,You can't check out the dictionary.,No puedes llevarte el diccionario hacia afuera.,PRON AUX ADV VERB PART DET NOUN PUNCT ,ADV AUX VERB DET NOUN ADP ADV PUNCT 
+470,You are not allowed to take pictures here. ,Aquí no se permite tomar fotos.,PRON VERB ADV VERB PART VERB NOUN ADV PUNCT ,ADV ADV PRON VERB VERB NOUN PUNCT 
+471,The child was sucking on a candy.,El niño chupaba el caramelo.,DET NOUN VERB VERB ADP DET NOUN PUNCT ,DET NOUN VERB DET NOUN PUNCT 
+472,The documentary reflects the reality of society.,El documentario refleja la realidad de la sociedad.,DET NOUN VERB DET NOUN ADP NOUN PUNCT ,DET NOUN VERB DET NOUN ADP DET NOUN PUNCT 
+473,I sprained my ankle coming down the mountain yesterday.,Ayer me torcí el tobillo bajando las montañas.,PRON VERB DET NOUN VERB ADP DET NOUN NOUN PUNCT ,ADV PRON VERB DET NOUN VERB DET NOUN PUNCT 
+474,The weather is good for a walk. Let's go out.,El tiempo es bueno para una caminata. Salgamos.,DET NOUN VERB ADJ ADP DET NOUN PUNCT VERB PRON VERB PART PUNCT ,DET NOUN AUX ADJ ADP DET NOUN PUNCT VERB PUNCT 
+475,How old are you? -Twenty three years old.,¿Cuánto años tienes? - Veinte tres años.,ADV ADJ VERB PRON PUNCT PUNCT NUM NOUN ADJ PUNCT ,PUNCT NUM NOUN VERB PUNCT PUNCT NUM NUM NOUN PUNCT 
+476,I live alone in the city and my parents live in the country.,Vivo solamente en la ciudad y mis padres viven en el campo.,PRON VERB ADV ADP DET NOUN CCONJ DET NOUN VERB ADP DET NOUN PUNCT ,VERB ADV ADP DET NOUN CONJ DET NOUN VERB ADP DET NOUN PUNCT 
+477,It's my job to plan new products.,Mi trabajo es planear productos nuevos.,PRON VERB DET NOUN PART VERB ADJ NOUN PUNCT ,DET NOUN AUX VERB NOUN ADJ PUNCT 
+478,I love to hear birds sing.,Me gusta oír a los pájaros cantar.,PRON VERB PART VERB NOUN VERB PUNCT ,PRON VERB VERB ADP DET NOUN VERB PUNCT 
+479,My computer is new.,Mi computadora es nueva.,DET NOUN VERB ADJ PUNCT ,DET NOUN AUX ADJ PUNCT 
+480,I have to wake up at dawn.,Tengo que despertar en el amanecer.,PRON VERB PART VERB PART ADP NOUN PUNCT ,VERB SCONJ VERB ADP DET NOUN PUNCT 
+481,The child painted the sky in a dark color.,El niño pintó el cielo en un color oscuro.,DET NOUN VERB DET NOUN ADP DET ADJ NOUN PUNCT ,DET NOUN VERB DET NOUN ADP DET NOUN ADJ PUNCT 
+482,I'll bring some sandwiches.,Traeré algunos emparedados.,PRON AUX VERB DET NOUN PUNCT ,VERB DET NOUN PUNCT 
+483,That's a good idea.,Eso es una buena idea.,DET VERB DET ADJ NOUN PUNCT ,PRON AUX DET ADJ NOUN PUNCT 
+484,What does he look like?,¿Qué le parece?,PRON VERB PRON VERB ADP PUNCT ,PUNCT PRON PRON AUX PUNCT 
+485,I eat only fish and vegetables.,Yo como solamente pescados y vegetales.,PRON VERB ADV NOUN CCONJ NOUN PUNCT ,PRON SCONJ ADV NOUN CONJ NOUN PUNCT 
+486,He died the day before his birthday.,Él murió el día antes de su cumpleaños.,PRON VERB DET NOUN ADP DET NOUN PUNCT ,PRON VERB DET NOUN ADV ADP DET NOUN PUNCT 
+487,"After a long vacation, I can't get used to school life.",Luego de unas largas vacaciones es difíl adaptarse nuevamente a la vida colegial.,ADP DET ADJ NOUN PUNCT PRON AUX ADV VERB VERB ADP NOUN NOUN PUNCT ,ADV ADP DET ADJ NOUN AUX ADJ VERB ADV ADP DET NOUN ADJ PUNCT 
+488,Did you take a shower?,¿Tomaste una ducha?,VERB PRON VERB DET NOUN PUNCT ,PUNCT VERB DET NOUN PUNCT 
+489,That's her standing over there by the stage.,La mujer que estaba parada cerca del escenario era ella.,DET VERB DET VERB ADV ADV ADP DET NOUN PUNCT ,DET NOUN PRON AUX ADJ ADV ADP NOUN AUX PRON PUNCT 
+490,My brother and I don't know each other well.,Mi hermano y yo no nos conocemos bien mutuamente.,DET NOUN CCONJ PRON VERB ADV VERB DET ADJ ADV PUNCT ,DET NOUN CONJ PRON ADV PRON VERB ADV ADV PUNCT 
+491,The hotel is known for the best services.,El hotel es reconocido por los mejores servicios.,DET NOUN VERB VERB ADP DET ADJ NOUN PUNCT ,DET NOUN AUX VERB ADP DET ADJ NOUN PUNCT 
+492,Can you tell me where the nearest bookstore is?,¿Puedes decirme donde está la librería más cercana?,VERB PRON VERB PRON ADV DET ADJ NOUN VERB PUNCT ,PUNCT VERB ADV SCONJ VERB DET NOUN ADV ADJ PUNCT 
+493,The sun rises in the east and sets in the west.,El sol se levanta en el Este y se opone en el Oeste.,DET NOUN VERB ADP DET NOUN CCONJ NOUN ADP DET NOUN PUNCT ,DET NOUN PRON VERB ADP DET PROPN CONJ PRON VERB ADP DET PROPN PUNCT 
+494,This is a farewell present.,Es un regalo de despedida,DET VERB DET NOUN NOUN PUNCT ,AUX DET NOUN ADP NOUN 
+495,She quit the job to become a teacher.,Ella renunció el trabajo de profesor.,PRON VERB DET NOUN PART VERB DET NOUN PUNCT ,PRON VERB DET NOUN ADP NOUN PUNCT 
+496,Can you explain what happened?,¿Puedes explicar qué sucedió?,VERB PRON VERB PRON VERB PUNCT ,PUNCT AUX AUX PRON VERB PUNCT 
+497,Do you take sugar in your coffee?,¿Tomas el azúcar en tu café?,VERB PRON VERB NOUN ADP DET NOUN PUNCT ,PUNCT VERB DET NOUN ADP DET NOUN PUNCT 
+498,Many couples get divorced because of their personality differences.,Muchas parejas consiguen divorciarse porque tienen diferentes personalidades.,ADJ NOUN VERB VERB ADP ADP DET NOUN NOUN PUNCT ,DET NOUN VERB VERB SCONJ VERB DET NOUN PUNCT 
+499,"At the age of 15, he entered university.","En la edad de 15, él entró en la universidad.",ADP DET NOUN ADP NUM PUNCT PRON VERB NOUN PUNCT ,ADP DET NOUN ADP NUM PUNCT PRON VERB ADP DET NOUN PUNCT 
+500,The First World War,La  primera Guerra Mundial.,DET PROPN PROPN PROPN ,DET SPACE ADJ PROPN PROPN PUNCT 
+501,What a small world!,¡Qué mundo pequeño!,DET DET ADJ NOUN PUNCT ,PUNCT DET NOUN ADJ PUNCT 
+502,You need to go wash your face.,Ve a lavarte la cara.,PRON VERB PART VERB VERB DET NOUN PUNCT ,VERB ADP VERB DET NOUN PUNCT 
+503,Make the students stand in a row.,Para a los estudiantes en una fila. ,VERB DET NOUN VERB ADP DET NOUN PUNCT ,ADP ADP DET NOUN ADP DET NOUN PUNCT 
+504,This washing machine doesn't work. Did you turn it on?,Esta lavadora no funciona. ¿La prendiste?,DET NOUN NOUN VERB ADV VERB PUNCT VERB PRON VERB PRON PART PUNCT ,DET NOUN ADV VERB PUNCT PUNCT DET VERB PUNCT 
+505,"Those shoes make you look 5 centimeters taller, sir.",Estos zapatos hacen verte unos cinco centímetros más alta.,DET NOUN VERB PRON VERB NUM NOUN ADJ PUNCT NOUN PUNCT ,DET NOUN VERB VERB PRON NUM NOUN ADV ADJ PUNCT 
+506,Let me introduce myself.,Déjenme introducirme.,VERB PRON VERB PRON PUNCT ,VERB ADJ PUNCT 
+507,"If it's too bland, add some salt.","Está demasiado aguado, agrégale un poco mas de sal. ",ADP PRON VERB ADV ADJ PUNCT VERB DET NOUN PUNCT ,AUX ADV ADJ PUNCT VERB DET ADV NOUN ADP NOUN PUNCT 
+508,"When the concert starts, please don't make any sounds.","Cuando comienze el concierto, haga el favor de no hacer ruido.",ADV DET NOUN VERB PUNCT INTJ VERB ADV VERB DET NOUN PUNCT ,SCONJ VERB DET NOUN PUNCT VERB DET NOUN ADP ADV VERB NOUN PUNCT 
+509,I usually read novels in my free time.,"Generalmente, en mi tiempo libre suelo leer novelas.",PRON ADV VERB NOUN ADP DET ADJ NOUN PUNCT ,ADV PUNCT ADP DET NOUN ADJ AUX VERB NOUN PUNCT 
+510,I have some good news for you.,Tengo algunas buenas noticias para ti.,PRON VERB DET ADJ NOUN ADP PRON PUNCT ,VERB DET ADJ NOUN ADP PRON PUNCT 
+511,"When I returned home, my husband was cleaning the sofa.","Cuando volví a casa, mi marido limpiaba el sofá.",ADV PRON VERB ADV PUNCT DET NOUN VERB VERB DET NOUN PUNCT ,SCONJ VERB ADP NOUN PUNCT DET NOUN VERB DET NOUN PUNCT 
+512,Where would you like to go for a picnic?,¿Dónde quieres ir de picnic?,ADV VERB PRON VERB PART VERB ADP DET NOUN PUNCT ,PUNCT PRON VERB AUX ADP NOUN PUNCT 
+513,The author signed the inside cover of the book.,El autor firmó la cubierta interior del libro.,DET NOUN VERB DET ADJ NOUN ADP DET NOUN PUNCT ,DET NOUN VERB DET NOUN ADJ ADP NOUN PUNCT 
+514,They are walking hand in hand. I'm sure they are dating.,Están caminando de la mano. Es obvio que los dos están saliendo. ,PRON VERB VERB NOUN ADP NOUN PUNCT PRON VERB ADJ PRON VERB VERB PUNCT ,AUX VERB ADP DET NOUN PUNCT AUX ADJ SCONJ DET NUM AUX VERB PUNCT 
+515,My mother pointed out the mountain with her finger.,Mi madre precisó la montaña con su dedo.,DET NOUN VERB PART DET NOUN ADP DET NOUN PUNCT ,DET NOUN VERB DET NOUN ADP DET NOUN PUNCT 
+516,The customer is always right.,El cliente siempre tiene la razón.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN ADV VERB DET NOUN PUNCT 
+517,"Which is cheaper, beef or pork?","¿Cuál es más barato, la carne de vaca o la de cerdo?",DET VERB ADJ PUNCT NOUN CCONJ NOUN PUNCT ,PUNCT PRON AUX ADV ADJ PUNCT DET NOUN ADP NOUN CONJ DET ADP NOUN PUNCT 
+518,It's hard for me to go shopping with my girlfriend.,Es duro que vaya a hacer compras con mi novia.,PRON VERB ADJ ADP PRON PART VERB VERB ADP DET NOUN PUNCT ,AUX ADJ PRON AUX ADP VERB NOUN ADP DET NOUN PUNCT 
+519,There's no other way but to just wait.,No hay otra posibilidad que esperar.,ADV VERB DET ADJ NOUN ADP PART ADV VERB PUNCT ,ADV AUX DET NOUN SCONJ VERB PUNCT 
+520,Do you have a towel to dry your hair with?,¿Tienes una toalla para secarme el pelo?,VERB PRON VERB DET NOUN PART VERB DET NOUN ADP PUNCT ,PUNCT VERB DET NOUN ADP VERB DET NOUN PUNCT 
+521,"In the summer, eating watermelon is very refreshing.",Es bueno comer una fría sandía en verano.,ADP DET NOUN PUNCT VERB NOUN VERB ADV ADJ PUNCT ,AUX ADJ VERB DET ADJ NOUN ADP NOUN PUNCT 
+522,I have class in an hour.,Tengo clase en una hora.,PRON VERB NOUN ADP DET NOUN PUNCT ,VERB NOUN ADP DET NOUN PUNCT 
+523,Let's go swimming somewhere else. ,Vayamos a nadar a otro lugar.,VERB PRON VERB VERB ADV ADV PUNCT ,AUX ADP VERB ADP DET NOUN PUNCT 
+524,Wow! I heard you have a swimming pool at your house.,¡Wow! Te oí tener una piscina en tu casa.,INTJ PUNCT PRON VERB PRON VERB DET NOUN NOUN ADP DET NOUN PUNCT ,PUNCT INTJ PUNCT INTJ VERB VERB DET NOUN ADP DET NOUN PUNCT 
+525,Did you do your homework?,¿Hiciste tu preparación?,VERB PRON VERB DET NOUN PUNCT ,PUNCT INTJ DET NOUN PUNCT 
+526,Are you sure? Don't change your mind at the last moment.,¿Estás seguro? No cambies tu parecer a último momento.,VERB PRON ADJ PUNCT VERB ADV VERB DET NOUN ADP DET ADJ NOUN PUNCT ,PUNCT VERB ADV PUNCT ADV VERB DET AUX ADP ADJ NOUN PUNCT 
+527,Usually Koreans use spoons for rice and chopsticks for side dishes.,Los coreanos utilizan generalmente las cucharas para el arroz y los palillos para los platos laterales.,ADV PROPN VERB NOUN ADP NOUN CCONJ NOUN ADP NOUN NOUN PUNCT ,DET NOUN VERB ADV DET NOUN ADP DET NOUN CONJ DET NOUN ADP DET NOUN ADJ PUNCT 
+528,I think you have had enough alcohol.,Pienso que has tenido bastante alcohol.,PRON VERB PRON VERB VERB ADJ NOUN PUNCT ,VERB SCONJ AUX VERB ADV NOUN PUNCT 
+529,I got lost in the forest.,Me perdí en el bosque.,PRON VERB VERB ADP DET NOUN PUNCT ,PRON VERB ADP DET NOUN PUNCT 
+530,You look tired. Why don't you rest for a while?,Pareces cansado. ¿Por qué no descansas por algún tiempo?,PRON VERB ADJ PUNCT ADV VERB ADV PRON VERB ADP DET NOUN PUNCT ,VERB ADJ PUNCT PUNCT ADP PRON ADV VERB ADP DET NOUN PUNCT 
+531,It's easy for you to say. Do it yourself.,"Es fácil decirlo, por qué no lo haces tú mismo.",PRON VERB ADJ ADP PRON PART VERB PUNCT VERB PRON PRON PUNCT ,AUX ADJ NOUN PUNCT ADP PRON ADV PRON VERB VERB PRON PUNCT 
+532,I'm going to the supermarket. Do you want anything?,Voy al supermercado. ¿Deseas algo?,PRON VERB VERB ADP DET NOUN PUNCT VERB PRON VERB NOUN PUNCT ,AUX ADP NOUN PUNCT PUNCT VERB PRON PUNCT 
+533,Figure out the solution by yourself.,Busca tú mismo la solución.,VERB PART DET NOUN ADP PRON PUNCT ,VERB PRON DET DET NOUN PUNCT 
+534,Our ski trip has been canceled because of the snow.,El viaje de esquí ha sido cancelado debido a la nieve.,DET NOUN NOUN VERB VERB VERB ADP ADP DET NOUN PUNCT ,DET NOUN ADP NOUN AUX AUX VERB ADJ ADP DET NOUN PUNCT 
+535,Get a massage to reduce your stress.,Toma cursos de masajes para reducir el estres.,VERB DET NOUN PART VERB DET NOUN PUNCT ,VERB NOUN ADP NOUN ADP VERB DET NOUN PUNCT 
+536,I only read the sports section in the newspaper.,Leí solamente la sección de los deportes en el periódico.,PRON ADV VERB DET NOUN NOUN ADP DET NOUN PUNCT ,VERB ADV DET NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+537,"I am crying not because I'm sad, but because I'm happy. ","Estoy llorando no de tristeza, sino de alegría.",PRON VERB VERB ADV ADP PRON VERB ADJ PUNCT CCONJ ADP PRON VERB ADJ PUNCT ,AUX VERB ADV ADP NOUN PUNCT CONJ ADP NOUN PUNCT 
+538,The Han River flows through the city of Seoul.,El río de Han atraviesa la ciudad de Seul.,DET PROPN PROPN VERB ADP DET NOUN ADP PROPN PUNCT ,DET NOUN ADP PROPN VERB DET NOUN ADP PROPN PUNCT 
+539,What time is it now? - Half past three.,¿Qué hora es?- Son las tres y media.,DET NOUN VERB PRON ADV PUNCT PUNCT NOUN ADP NUM PUNCT ,PUNCT DET NOUN PROPN AUX DET NUM CONJ NUM PUNCT 
+540,I work twelve hours a day and do not have time to rest.,Trabajo doce horas por día y no tengo tiempo para descansar.,PRON VERB NUM NOUN DET NOUN CCONJ VERB ADV VERB NOUN PART VERB PUNCT ,VERB NUM NOUN ADP NOUN CONJ ADV VERB NOUN ADP VERB PUNCT 
+541,My watch is 5 minutes behind.,Mi reloj está 5 minutos atrazado.,DET NOUN VERB NUM NOUN ADV PUNCT ,DET NOUN AUX NUM NOUN ADJ PUNCT 
+542,"With the air conditioner on, it is going to be cool.","Con el acondicionador de aire encendido, va a estar fresco.",ADP DET NOUN NOUN ADP PUNCT PRON VERB VERB PART VERB ADJ PUNCT ,ADP DET NOUN ADP NOUN ADJ PUNCT AUX ADP VERB ADJ PUNCT 
+543,The class begins at 8 a.m.,La clase comienza a las ocho horas de la mañana.,DET NOUN VERB ADP NUM NOUN ,DET NOUN VERB ADP DET NUM NOUN ADP DET NOUN PUNCT 
+544,The concert started and the musician began to play.,El concierto comenzó y el músico empezor a tocar. ,DET NOUN VERB CCONJ DET NOUN VERB PART VERB PUNCT ,DET NOUN VERB CONJ DET NOUN ADJ ADP VERB PUNCT 
+545,I want to go to Dongdaemun Market.,Deseo ir al mercado de Dongdaemun.,PRON VERB PART VERB ADP PROPN PROPN PUNCT ,VERB VERB ADP NOUN ADP PROPN PUNCT 
+546,The CEO makes me work on holidays.,El CEO me hace el trabajo el días de fiesta.,DET NOUN VERB PRON VERB ADP NOUN PUNCT ,DET PROPN PRON VERB DET NOUN DET NOUN ADP NOUN PUNCT 
+547,I took a vocabulary test yesterday. It was easier than I thought it would be.,Ayer tuve la prueba de vocabularios. Fue más fácil de lo que me imaginé,PRON VERB DET NOUN NOUN NOUN PUNCT PRON VERB ADJ ADP PRON VERB PRON VERB VERB PUNCT ,ADV VERB DET NOUN ADP NOUN PUNCT AUX ADV ADJ ADP DET PRON PRON VERB 
+548,They serve really nice food in that restaurant.,En este restaurante sirven buena comida.,PRON VERB ADV ADJ NOUN ADP DET NOUN PUNCT ,ADP DET NOUN VERB ADJ NOUN PUNCT 
+549,Take this pill 30 minutes after meals.,Tomar a esta píldora 30 minutos después de las comidas.,VERB DET NOUN NUM NOUN ADP NOUN PUNCT ,VERB ADP DET NOUN NUM NOUN ADV ADP DET NOUN PUNCT 
+550,"After meals, please clear the dining table.","Luego de las comidas, limpie la mesa.",ADP NOUN PUNCT INTJ VERB DET NOUN NOUN PUNCT ,ADV ADP DET NOUN PUNCT VERB DET NOUN PUNCT 
+551,Put on slippers when you come into this room.,"Cuando entre a esta habitación, póngase las apargatas.",VERB PART NOUN ADV PRON VERB ADP DET NOUN PUNCT ,SCONJ VERB ADP DET NOUN PUNCT ADP DET NOUN PUNCT 
+552,Which newspaper do you read?,¿Qué periódico lees?,DET NOUN VERB PRON VERB PUNCT ,PUNCT DET NOUN VERB PUNCT 
+553,"Your shoes are wet, put on my shoes.","Tus zapatos están mojados, pónte los mios.",DET NOUN VERB ADJ PUNCT VERB ADP DET NOUN PUNCT ,DET NOUN AUX ADJ PUNCT ADV DET NOUN PUNCT 
+554,"Excuse me, but do you have the time?","¿Perdóneme, sabe qué hora es?",VERB PRON PUNCT CCONJ VERB PRON VERB DET NOUN PUNCT ,PUNCT INTJ PUNCT VERB DET NOUN AUX PUNCT 
+555,I really hate getting up early in the morning.,Realmente odio levantarme temprano por la mañana.,PRON ADV VERB VERB PART ADV ADP DET NOUN PUNCT ,ADV NOUN ADJ ADV ADP DET NOUN PUNCT 
+556,Why do you hate jazz?,¿Por qué odias el jazz?,ADV VERB PRON VERB NOUN PUNCT ,PUNCT ADP PRON NOUN DET NOUN PUNCT 
+557,"When the car hit me, I went into severe shock.","Cuando el coche me golpeó, tuve una herida severa.",ADV DET NOUN VERB PRON PUNCT PRON VERB ADP ADJ NOUN PUNCT ,SCONJ DET NOUN PRON VERB PUNCT VERB DET NOUN ADJ PUNCT 
+558,Buying online is cheaper than buying from shops.,Comprar via Internet es mas barato que comprarlo en las tiendas.,VERB ADV VERB ADJ ADP VERB ADP NOUN PUNCT ,VERB ADJ PROPN AUX ADV ADJ SCONJ VERB ADP DET NOUN PUNCT 
+559,Why are you quarreling?,¿Por qué estás peleando?,ADV VERB PRON VERB PUNCT ,PUNCT ADP PRON AUX VERB PUNCT 
+560,He can't tell rice from barley.,Él no puede distinguir entre el arroz de la cebada.,PRON AUX ADV VERB NOUN ADP NOUN PUNCT ,PRON ADV AUX VERB ADP DET NOUN ADP DET NOUN PUNCT 
+561,"Although he can't read or write, he is the president of a big company.","Aunque no pueda leer o escribir, él es el presidente de una compañía grande.",ADP PRON AUX ADV VERB CCONJ VERB PUNCT PRON VERB DET NOUN ADP DET ADJ NOUN PUNCT ,SCONJ ADV AUX VERB CONJ VERB PUNCT PRON AUX DET NOUN ADP DET NOUN ADJ PUNCT 
+562,Isn't it funny that the dog is wearing a hat?,¿No es divertido que el perro esté usando un sombrero?,VERB ADV PRON ADJ ADP DET NOUN VERB VERB DET NOUN PUNCT ,PUNCT ADV AUX ADJ SCONJ DET NOUN AUX VERB DET NOUN PUNCT 
+563,What brand of shampoo do you use?,¿Qué marca de champú utilizas?,DET NOUN ADP NOUN VERB PRON VERB PUNCT ,PUNCT PRON NOUN ADP NOUN NOUN PUNCT 
+564,Could you throw out the garbage?,¿Podrías sacar la basura?,VERB PRON VERB PART DET NOUN PUNCT ,PUNCT VERB VERB DET NOUN PUNCT 
+565,Can I speak to Ms. Hyean?,¿Puedo hablar con el señor Hyean?,VERB PRON VERB ADP PROPN PROPN PUNCT ,PUNCT AUX VERB ADP DET NOUN PROPN PUNCT 
+566,"As soon as I came home, I washed my hands.","Tan pronto como viniera a casa, me lavé las manos.",ADV ADV ADP PRON VERB ADV PUNCT PRON VERB DET NOUN PUNCT ,NOUN NOUN SCONJ VERB ADP NOUN PUNCT PRON VERB DET NOUN PUNCT 
+567,"Ah, no!","¡Ah, no!",INTJ PUNCT INTJ PUNCT ,PUNCT INTJ PUNCT ADV PUNCT 
+568,I'm expecting a baby this month.,Estoy contando con un bebé para este mes.,PRON VERB VERB DET NOUN DET NOUN PUNCT ,AUX VERB ADP DET NOUN ADP DET NOUN PUNCT 
+569,My wife is the one I've dreamed of all my life.,Mi esposa es la que he soñado toda mi vida.,DET NOUN VERB DET NOUN PRON VERB VERB ADP DET DET NOUN PUNCT ,DET NOUN AUX DET PRON AUX VERB DET DET NOUN PUNCT 
+570,"Do you want some more? - No, I'm full.","¿Deseas más? - No, gracias. Estoy lleno.",VERB PRON VERB DET ADJ PUNCT PUNCT INTJ PUNCT PRON VERB ADJ PUNCT ,PUNCT VERB ADV PUNCT PUNCT ADV PUNCT NOUN PUNCT AUX ADJ PUNCT 
+571,Billie Jean is not my lover.,Billie Jean no es mi amante.,PROPN PROPN VERB ADV DET NOUN PUNCT ,PROPN PROPN ADV AUX DET NOUN PUNCT 
+572,"No, the kid is not my son.","No, el niño no es mi hijo.",INTJ PUNCT DET NOUN VERB ADV DET NOUN PUNCT ,ADV PUNCT DET NOUN ADV AUX DET NOUN PUNCT 
+573,I have to go now. My son is home alone.,Me tengo que ir ahora. Mi hijo está en casa solo.,PRON VERB PART VERB ADV PUNCT DET NOUN VERB ADV ADV PUNCT ,PRON VERB SCONJ VERB ADV PUNCT DET NOUN AUX ADP NOUN ADJ PUNCT 
+574,Please sign your name below.,"Por favor, firme abajo.",INTJ VERB DET NOUN ADV PUNCT ,ADP NOUN PUNCT ADJ ADV PUNCT 
+575,You are so beautiful. ,Eres tan hermoso.,PRON VERB ADV ADJ PUNCT ,AUX ADV ADJ PUNCT 
+576,He is probably late. He was up until 4 a.m.,"Probablemente llegará tarde, estuvo madrugando hasta las cuatro.",PRON VERB ADV ADJ PUNCT PRON VERB ADV ADP NUM ADV ,ADV VERB ADV PUNCT AUX VERB ADP DET NUM PUNCT 
+577,The president didn’t say anything about the issue.,El presidente no mencionó nada sobre ese tema. ,DET NOUN VERB ADV VERB NOUN ADP DET NOUN PUNCT ,DET NOUN ADV VERB PRON ADP DET NOUN PUNCT 
+578,"No matter how much you eat, you never gain a pound.","Por más que tú comas, no engordas.",ADV ADV ADV ADJ PRON VERB PUNCT PRON ADV VERB DET NOUN PUNCT ,ADP ADV SCONJ PRON NOUN PUNCT ADV ADJ PUNCT 
+579,What does your father do for a living?,¿Qué profesión tiene tu padre?,PRON VERB DET NOUN VERB ADP DET NOUN PUNCT ,PUNCT DET NOUN VERB DET NOUN PUNCT 
+580,"Dad, please buy me this camera.","Papá, por favor, cómprame  esta cámara fotográfica.",PROPN PUNCT INTJ VERB PRON DET NOUN PUNCT ,INTJ PUNCT ADP NOUN PUNCT NOUN SPACE DET NOUN ADJ PUNCT 
+581,We only have one child.,Tenemos solamente un hijo.,PRON ADV VERB NUM NOUN PUNCT ,VERB ADV DET NOUN PUNCT 
+582,Vanilla is my favorite ice cream flavor.,Mi sabor preferido de helado es el vainilla.,NOUN VERB DET ADJ NOUN NOUN NOUN PUNCT ,DET NOUN ADJ ADP ADJ AUX DET NOUN PUNCT 
+583,"Even though he is seventeen, he looks like a middle-aged man. ",Tiene sólo diecisiete pero parece un caballero.,ADV ADP PRON VERB NUM PUNCT PRON VERB ADP DET NOUN PUNCT ADJ NOUN PUNCT ,VERB ADV NUM CONJ AUX DET NOUN PUNCT 
+584,It's very easy.,Es muy fácil.,PRON VERB ADV ADJ PUNCT ,AUX ADV ADJ PUNCT 
+585,"Madam, where am I?","Señora, ¿En dónde estoy yo?",INTJ PUNCT ADV VERB PRON PUNCT ,NOUN PUNCT PUNCT ADP PRON AUX PRON PUNCT 
+586,These still seem to be okay.,Éstos todavía parecen ser aceptables.,DET ADV VERB PART VERB ADJ PUNCT ,PRON ADV AUX AUX ADJ PUNCT 
+587,I usually sleep in without having breakfast on Sunday mornings.,Generalmente los domingos no desayuno.,PRON ADV VERB PART ADP VERB NOUN ADP PROPN NOUN PUNCT ,ADV DET NOUN ADV ADJ PUNCT 
+588,What apartment are you looking for?,¿Qué apartamento estás buscando?,DET NOUN VERB PRON VERB ADP PUNCT ,PUNCT PRON NOUN AUX VERB PUNCT 
+589,My knees are so painful that I can't walk.,Me duelen tanto las rodillas que no puedo caminar.,DET NOUN VERB ADV ADJ ADP PRON AUX ADV VERB PUNCT ,PRON VERB ADV DET NOUN PRON ADV AUX VERB PUNCT 
+590,I will be there within 15 minutes.,Estaré allí en menos de 15 minutos.,PRON VERB VERB ADV ADP NUM NOUN PUNCT ,VERB ADV ADP ADV ADP NUM NOUN PUNCT 
+591,Why didn't you go?,¿Por qué no fuiste?,ADV VERB ADV PRON VERB PUNCT ,PUNCT ADP PRON ADV VERB PUNCT 
+592,You mean the girl who wears glasses?,¿Sabes quién es esa muchacha con cristales?,PRON VERB DET NOUN PRON VERB NOUN PUNCT ,PUNCT VERB PRON AUX DET NOUN ADP NOUN PUNCT 
+593,Hello? ,¿Hola?,INTJ PUNCT ,PUNCT VERB PUNCT 
+594,Take care.,Adiós.,VERB NOUN PUNCT ,INTJ PUNCT 
+595,Give me a big hug.,Abrázame,VERB PRON DET ADJ NOUN PUNCT ,ADV 
+596,I'm so sorry for that.,Es una lástima.,PRON VERB ADV ADJ ADP DET PUNCT ,AUX DET NOUN PUNCT 
+597,They sat side by side in the car.,Se sentaron uno al lado del otro en el coche.,PRON VERB NOUN ADP NOUN ADP DET NOUN PUNCT ,PRON VERB PRON ADP NOUN ADP PRON ADP DET NOUN PUNCT 
+598,"Not good, but not bad.","No es malo, pero tampoco bueno.",ADV ADJ PUNCT CCONJ ADV ADJ PUNCT ,ADV AUX ADJ PUNCT CONJ ADV ADJ PUNCT 
+599,Do you know what I mean?,¿Sabes a lo que me refiero?,VERB PRON VERB PRON PRON VERB PUNCT ,PUNCT VERB ADP DET PRON PRON VERB PUNCT 
+600,The story became known to everyone through the internet.,Ésta historia es sabido por todos via internet. ,DET NOUN VERB VERB ADP NOUN ADP DET NOUN PUNCT ,DET NOUN AUX VERB ADP PRON NOUN NOUN PUNCT 
+601,Let me know when you finish it.,Avísame cuándo termines.,VERB PRON VERB ADV PRON VERB PRON PUNCT ,VERB PRON VERB PUNCT 
+602,Please come to the front when it's your turn.,Venga al frente cuando sea tu turno.,INTJ VERB ADP DET NOUN ADV PRON VERB DET NOUN PUNCT ,VERB ADP NOUN SCONJ AUX DET NOUN PUNCT 
+603,Chanho Park is my favorite baseball player.,Park Chanho es mi jugador preferido de béisbol.,PROPN PROPN VERB DET ADJ NOUN NOUN PUNCT ,PROPN PROPN AUX DET NOUN ADJ ADP NOUN PUNCT 
+604,Did you get hurt? Take this medicine.,¿Estás lastimado? Toma esta medicina.,VERB PRON VERB VERB PUNCT VERB DET NOUN PUNCT ,PUNCT AUX ADJ PUNCT VERB DET NOUN PUNCT 
+605,"It's a little chilly today, isn't it? ","Hoy hace un poco de frío, ¿no lo crees?",PRON VERB DET ADJ ADJ NOUN PUNCT VERB ADV PRON PUNCT ,ADV AUX DET PRON ADP NOUN PUNCT PUNCT ADV PRON VERB PUNCT 
+606,There is a pharmacy on the second floor.,Hay una farmacia en el segundo piso.,ADV VERB DET NOUN ADP DET ADJ NOUN PUNCT ,AUX DET NOUN ADP DET ADJ NOUN PUNCT 
+607,"If you break your promise this time, I'll never see you again.","Si rompes tu promesa este vez, nunca te veré otra vez.",ADP PRON VERB DET NOUN DET NOUN PUNCT PRON AUX ADV VERB PRON ADV PUNCT ,SCONJ VERB DET NOUN DET NOUN PUNCT ADV PRON VERB DET NOUN PUNCT 
+608,That's why your socks keep getting holes.,Es por eso que surgen agujeros en tus calzetines.,DET VERB ADV DET NOUN VERB VERB NOUN PUNCT ,AUX ADP PRON SCONJ VERB NOUN ADP DET NOUN PUNCT 
+609,I guess this tie will go with your suit.,Esta corbata ira muy bien con tu traje.,PRON VERB DET NOUN VERB VERB ADP DET NOUN PUNCT ,DET NOUN NOUN ADV ADV ADP DET NOUN PUNCT 
+610,Don't worry. Just lean against my shoulder.,"Perdóneme, he estado hablando solamente sobre mí.",VERB ADV VERB PUNCT ADV VERB ADP DET NOUN PUNCT ,INTJ PUNCT AUX AUX VERB ADV ADP PRON PUNCT 
+611,Which part hurts the most?,"No te preocupes, solo apoyate en mis hombros.",DET NOUN VERB DET ADV PUNCT ,ADV PRON VERB PUNCT ADV NOUN ADP DET NOUN PUNCT 
+612,Where do you live? ,¿Qué parte te duele más?,ADV VERB PRON VERB PUNCT ,PUNCT DET NOUN PRON VERB ADV PUNCT 
+613,How do you feel these days?,¿Dónde vives?,ADV VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON VERB PUNCT 
+614,What kind of person do you like? asked a certain guy.,¿Cómo te sientes actualmente?,DET NOUN ADP NOUN VERB PRON VERB PUNCT VERB DET ADJ NOUN PUNCT ,PUNCT PRON PRON VERB ADV PUNCT 
+615,This math test was more difficult than the last one.,“Qué clase de persona le gusta?” preguntó cierto individuo.,DET NOUN NOUN VERB ADV ADJ ADP DET ADJ NOUN PUNCT ,PUNCT DET NOUN ADP NOUN PRON VERB PUNCT PUNCT VERB DET NOUN PUNCT 
+616,"May I help you? - Two adults and one child, please.",Esta prueba de matemáticas fue más difícil que la pasada.,VERB PRON VERB PRON PUNCT PUNCT NUM NOUN CCONJ NUM NOUN PUNCT INTJ PUNCT ,DET NOUN ADP NOUN AUX ADV ADJ SCONJ DET ADJ PUNCT 
+617,I've heard many times that I look younger than my age.,"¿Puedo ayudarte? - Dos adultos y un niño, por favor.",PRON VERB VERB ADJ NOUN ADP PRON VERB ADJ ADP DET NOUN PUNCT ,PUNCT AUX VERB PUNCT PUNCT NUM NOUN CONJ DET NOUN PUNCT ADP NOUN PUNCT 
+618,Do children have to pay money?,He oído muchas veces que parezco más joven de lo que parezco.,VERB NOUN VERB PART VERB NOUN PUNCT ,AUX VERB DET NOUN PRON VERB ADV ADJ ADP DET PRON VERB PUNCT 
+619,My mother has been sick for three years.,¿Los niños tienen que pagar dinero?,DET NOUN VERB VERB ADJ ADP NUM NOUN PUNCT ,PUNCT DET NOUN VERB SCONJ VERB NOUN PUNCT 
+620,I told him to get the work done quickly.,Mi madre ha estado enferma por tres años.,PRON VERB PRON PART VERB DET NOUN VERB ADV PUNCT ,DET NOUN AUX VERB VERB ADP NUM NOUN PUNCT 
+621,The dress suits you well.,Le dije que termine rápidamente con el trabajo.,DET NOUN VERB PRON ADV PUNCT ,PRON VERB SCONJ VERB ADV ADP DET NOUN PUNCT 
+622,"I called you yesterday more than ten times, but you didn't answer.",Esa ropa te queda bien.,PRON VERB PRON NOUN ADJ ADP NUM NOUN PUNCT CCONJ PRON VERB ADV VERB PUNCT ,DET NOUN PRON VERB ADV PUNCT 
+623,I wish I had an older sister.,"Te llamé ayer más de diez veces, pero no contestaste.",PRON VERB PRON VERB DET ADJ NOUN PUNCT ,PRON VERB ADV ADV ADP NUM NOUN PUNCT CONJ ADV VERB PUNCT 
+624,When are you free?,Me hubiese gustado tener un hermana mayor.,ADV VERB PRON ADJ PUNCT ,PRON AUX VERB VERB DET NOUN ADJ PUNCT 
+625,It's always hard to live with someone.,¿Cuándo estás libre?,PRON VERB ADV ADJ PART VERB ADP NOUN PUNCT ,PUNCT PRON AUX ADJ PUNCT 
+626,You can't always get what you want.,Es siempre duro vivir con otra persona.,PRON AUX ADV ADV VERB PRON PRON VERB PUNCT ,AUX ADV ADJ VERB ADP DET NOUN PUNCT 
+627,Why is your face suddenly turning red?,No puedes conseguir siempre lo que deseas.,ADV VERB DET NOUN ADV VERB ADJ PUNCT ,ADV AUX VERB ADV DET PRON VERB PUNCT 
+628,Answer me right away.,¿Por qué se te pone la cara roja tan repentinamente ?,VERB PRON ADV ADV PUNCT ,PUNCT ADP PRON PRON PRON VERB DET NOUN ADJ ADV ADJ PUNCT 
+629,How much is this?,Contéstame enseguida.,ADV ADJ VERB DET PUNCT ,VERB ADV PUNCT 
+630,How long have you been in Korea?,¿Cuánto es ésto?,ADV ADV VERB PRON VERB ADP PROPN PUNCT ,PUNCT SCONJ AUX NOUN PUNCT 
+631,I'm going to meet my mom for lunch downtown.,¿Cuánto tiempo has estado en Corea?,PRON VERB VERB PART VERB DET NOUN ADP NOUN NOUN PUNCT ,PUNCT DET NOUN AUX VERB ADP PROPN PUNCT 
+632,Nowadays there is no one who does not have a cell phone.,Voy a comer afuera con mi madre.,ADV ADV VERB DET NOUN PRON VERB ADV VERB DET NOUN NOUN PUNCT ,AUX ADP VERB ADV ADP DET NOUN PUNCT 
+633,My bag is gone!,Estos días no hay persona que no tenga celular.                                                                                                                                ,DET NOUN VERB VERB PUNCT ,DET NOUN ADV AUX NOUN SCONJ ADV VERB ADJ PUNCT SPACE 
+634,"I can live without water, but I can't live without music.",¡Desapareció mi bolso!,PRON VERB VERB ADP NOUN PUNCT CCONJ PRON AUX ADV VERB ADP NOUN PUNCT ,PUNCT VERB DET NOUN PUNCT 
+635,Would you mind if I turned on the air conditioner?,"Puedo vivir sin agua, pero no puedo vivir sin música.",VERB PRON VERB ADP PRON VERB PART DET NOUN NOUN PUNCT ,AUX VERB ADP NOUN PUNCT CONJ ADV AUX VERB ADP NOUN PUNCT 
+636,Can I see your passport?,¿Puedo prender el acondicionador de aire?,VERB PRON VERB DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN ADP NOUN PUNCT 
+637,"I'm over here, in the bookstore.",¿Puedo ver tu pasaporte?,PRON VERB ADV ADV PUNCT ADP DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN PUNCT 
+638,How old is your younger sister?,"Estoy aquí, en la librería.",ADV ADJ VERB DET ADJ NOUN PUNCT ,VERB ADV PUNCT ADP DET NOUN PUNCT 
+639,I'd like to travel to many countries.,¿Cuántos años tiene tu hermana menor?,PRON AUX VERB PART VERB ADP ADJ NOUN PUNCT ,PUNCT DET NOUN VERB DET NOUN ADJ PUNCT 
+640,"Ok, everyone, let's get down to business.",Quisiera viajar a muchos países.,INTJ PUNCT NOUN PUNCT VERB PRON VERB PART ADP NOUN PUNCT ,VERB VERB ADP DET NOUN PUNCT 
+641,I love summer because I can go swimming.,"Bueno, señores, ¿vamos a comenzar?",PRON VERB NOUN ADP PRON VERB VERB VERB PUNCT ,INTJ PUNCT NOUN PUNCT PUNCT AUX ADP VERB PUNCT 
+642,Hello? Can I speak to Hyean?,Amo el verano porque puedo ir a nadar.,INTJ PUNCT VERB PRON VERB ADP PROPN PUNCT ,VERB DET NOUN SCONJ AUX AUX ADP VERB PUNCT 
+643,Can you see a woman over there?,¿Aló? ¿Puedo hablar a Hyean?,VERB PRON VERB DET NOUN ADV ADV PUNCT ,PUNCT VERB PUNCT PUNCT AUX VERB ADP PROPN PUNCT 
+644,My class has more female students than male students.,¿Puedes ver a una mujer allá?,DET NOUN VERB ADJ ADJ NOUN ADP ADJ NOUN PUNCT ,PUNCT AUX VERB ADP DET NOUN ADV PUNCT 
+645,I decided to travel to Busan this summer.,Mi clase tiene más estudiantes mujeres que estudiantes varones.,PRON VERB PART VERB ADP PROPN DET NOUN PUNCT ,DET NOUN VERB ADV NOUN NOUN PRON NOUN ADJ PUNCT 
+646,This stop is Jonggak. The exit doors are on your left.,En estas vacaciones decidimos viajar a Busan.,DET NOUN VERB PROPN PUNCT DET NOUN NOUN VERB ADP DET NOUN PUNCT ,ADP DET NOUN VERB VERB ADP PROPN PUNCT 
+647,I studied all day long for the history test .,Esta parada es Jonggak. Las puertas de la salida están a su izquierda.,PRON VERB DET NOUN ADV ADP DET NOUN NOUN PUNCT ,DET NOUN AUX PROPN PUNCT DET NOUN ADP DET NOUN AUX ADP DET NOUN PUNCT 
+648,I got kicked off the basketball team because I didn't go to the practice this week.,Estudié todo el dia para la prueba de la historia.,PRON VERB VERB PART DET NOUN NOUN ADP PRON VERB ADV VERB ADP DET NOUN DET NOUN PUNCT ,VERB DET DET NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+649,Hold on. I'll get some paper and a pencil.,Fui eliminado del equipo de baloncesto porque no asistí al ensayo.,VERB PART PUNCT PRON AUX VERB DET NOUN CCONJ DET NOUN PUNCT ,AUX VERB ADP NOUN ADP NOUN SCONJ ADV VERB ADP NOUN PUNCT 
+650,Open it up. It's a surprise gift.,Un momento. Conseguiré un papel y un lápiz.,VERB PRON PART PUNCT PRON VERB DET NOUN NOUN PUNCT ,DET NOUN PUNCT VERB DET NOUN CONJ DET NOUN PUNCT 
+651,The door opened by itself.,"Ábrelo, es una sorpresa.",DET NOUN VERB ADP PRON PUNCT ,PROPN PUNCT AUX DET NOUN PUNCT 
+652,I've lost my car keys.,La puerta se abrió por sí mismo.,PRON VERB VERB DET NOUN NOUN PUNCT ,DET NOUN PRON VERB ADP PRON ADJ PUNCT 
+653,I studied very hard for the test.,He perdido mis llaves del coche.,PRON VERB ADV ADV ADP DET NOUN PUNCT ,AUX VERB DET NOUN ADP NOUN PUNCT 
+654,I'll be living in England for a year.,Estudié muy duro para la prueba.,PRON AUX VERB VERB ADP PROPN ADP DET NOUN PUNCT ,VERB ADV ADJ ADP DET NOUN PUNCT 
+655,How did you study English?,Viviré en Inglaterra por un año.,ADV VERB PRON VERB PROPN PUNCT ,VERB ADP PROPN ADP DET NOUN PUNCT 
+656,"The movie was stupid, but the scenery was nice!",¿Cómo estudiaste inglés?,DET NOUN VERB ADJ PUNCT CCONJ DET NOUN VERB ADJ PUNCT ,PUNCT PRON DET NOUN PUNCT 
+657,The bank is next to the building.,"¡La película era estúpida, pero el paisaje era agradable!",DET NOUN VERB ADJ ADP DET NOUN PUNCT ,PUNCT DET NOUN AUX ADJ PUNCT CONJ DET NOUN AUX ADJ PUNCT 
+658,Give me an example.,El banco está al lado del edificio.,VERB PRON DET NOUN PUNCT ,DET NOUN AUX ADP NOUN ADP NOUN PUNCT 
+659,Today I saw a really pretty girl.,Dame un ejemplo.,NOUN PRON VERB DET ADV ADJ NOUN PUNCT ,VERB DET NOUN PUNCT 
+660,Are you going to arrive on schedule?,Hoy vi a muchacha realmente bonita.,VERB PRON VERB PART VERB ADP NOUN PUNCT ,ADV VERB ADP NOUN ADV ADJ PUNCT 
+661,That song reminds me of the old days.,¿Vas a llegar en horario?,DET NOUN VERB PRON ADP DET ADJ NOUN PUNCT ,PUNCT DET ADP VERB ADP NOUN PUNCT 
+662,Today is my day off.,Esa canción me recuerda los viejos días.,NOUN VERB DET NOUN ADV PUNCT ,DET NOUN PRON VERB DET ADJ NOUN PUNCT 
+663,When are you coming?,Hoy es mi día franco.,ADV VERB PRON VERB PUNCT ,ADV AUX DET NOUN ADJ PUNCT 
+664,I'm sorry to have kept you waiting for so long.,¿Cuándo vienes?,PRON VERB ADJ PART VERB VERB PRON VERB ADP ADV ADV PUNCT ,PUNCT PRON VERB PUNCT 
+665,Has it been a while since you've been back to your hometown?,Estoy apesadumbrado de haberte hecho esperar por tanto tiempo.,VERB PRON VERB DET NOUN ADP PRON VERB VERB ADV ADP DET NOUN PUNCT ,AUX ADJ ADP AUX AUX VERB ADP DET NOUN PUNCT 
+666,Are these oranges fresh?,¿Hace mucho tiempo que no visita su ciudad natal?,VERB DET NOUN ADJ PUNCT ,PUNCT AUX DET NOUN SCONJ ADV VERB DET NOUN ADJ PUNCT 
+667,The price of gasoline has gone up again.,¿Las naranjas están frescas?,DET NOUN ADP NOUN VERB VERB PART ADV PUNCT ,PUNCT DET NOUN AUX ADJ PUNCT 
+668,Turn right at the park.,El precio de la gasolina ha aumentado otra vez.,VERB ADV ADP DET NOUN PUNCT ,DET NOUN ADP DET NOUN AUX VERB DET NOUN PUNCT 
+669,Does your brother wear glasses?,Dar vuelta a la derecha en el parque.,VERB DET NOUN VERB NOUN PUNCT ,VERB NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+670,I work from 9 a.m. to 6 p.m.,¿Tu hermano usa anteojos?,PRON VERB ADP NUM NOUN ADP NUM ADV ,PUNCT DET NOUN VERB NOUN PUNCT 
+671,Come by this afternoon.,Trabajo a partir de las nueve de la mañana hasta las seis de la tarde.,VERB ADP DET NOUN PUNCT ,NOUN ADP NOUN ADP DET NOUN ADP DET NOUN ADP DET NUM ADP DET NOUN PUNCT 
+672,How many flights of stairs should I go up?,Venga luego a la tarde.,ADV ADJ NOUN ADP NOUN VERB PRON VERB PART PUNCT ,VERB ADV ADP DET NOUN PUNCT 
+673,I've decided to quit smoking this year.,¿Cuántos escalones tengo que subir?,PRON VERB VERB PART VERB NOUN DET NOUN PUNCT ,PUNCT DET NOUN VERB SCONJ VERB PUNCT 
+674,"I read the book, 'Who moved my cheese?' today.",He decidido parar de fumar este año.,PRON VERB DET NOUN PUNCT PUNCT PRON VERB DET NOUN PUNCT PUNCT NOUN PUNCT ,AUX VERB VERB ADP VERB DET NOUN PUNCT 
+675,Do you think these clothes will fit me?,"Hoy leí el libro, “¿Quién movió mi queso?”.",VERB PRON VERB DET NOUN VERB VERB PRON PUNCT ,ADV VERB DET NOUN PUNCT PROPN PUNCT PRON VERB DET NOUN PUNCT PUNCT PUNCT 
+676,You were completely drunk last night.,¿Piensas que estas ropas me quedarán bien?,PRON VERB ADV ADJ ADJ NOUN PUNCT ,PUNCT VERB SCONJ DET NOUN PRON VERB ADV PUNCT 
+677,Why did you do that?,Ayer por la noche estabas totalmente tomado.,ADV VERB PRON VERB DET PUNCT ,ADV ADP DET NOUN VERB ADV ADJ PUNCT 
+678,I wake up late in the morning because I have nothing to do.,¿Por qué hiciste eso?,PRON VERB PART ADV ADP DET NOUN ADP PRON VERB NOUN PART VERB PUNCT ,PUNCT ADP PRON VERB PRON PUNCT 
+679,I wish I had been born in a foreign country.,Me desperté tarde por la mañana porque no tenía nada para hacer.,PRON VERB PRON VERB VERB VERB ADP DET ADJ NOUN PUNCT ,PRON VERB ADV ADP DET NOUN SCONJ ADV VERB PRON ADP VERB PUNCT 
+680,Can you speak any foreign languages?,Me hubiese gustado ser nato en un país extranjero.,VERB PRON VERB DET ADJ NOUN PUNCT ,PRON AUX VERB AUX NOUN ADP DET NOUN ADJ PUNCT 
+681,There are many foreigners in Itaewon.,¿Sabes hablar idiomas extranjeros?,ADV VERB ADJ NOUN ADP PROPN PUNCT ,PUNCT AUX VERB NOUN ADJ PUNCT 
+682,Press the red button on your left.,Hay muchos extranjeros en Itaewon.,VERB DET ADJ NOUN ADP DET NOUN PUNCT ,AUX DET NOUN ADP PROPN PUNCT 
+683,Did you cook all these?,Presionar el botón rojo en su izquierda.,VERB PRON VERB DET DET PUNCT ,VERB DET NOUN ADJ ADP DET NOUN PUNCT 
+684,I'm gaining weight these days.,¿Cocinaste todo ésto tú solo?,PRON VERB VERB NOUN DET NOUN PUNCT ,PUNCT PROPN DET PRON PRON ADV PUNCT 
+685,Greed has no limits.,Estoy aumentando de peso actualmente.,NOUN VERB DET NOUN PUNCT ,AUX VERB ADP NOUN ADV PUNCT 
+686,Have we met before?,La avaricia no tiene límites.,VERB PRON VERB ADV PUNCT ,DET NOUN ADV VERB NOUN PUNCT 
+687,"In my country, we are regarded as being one year old as soon as we're born.",¿Nos hemos visto anteriormente?,ADP DET NOUN PUNCT PRON VERB VERB ADP VERB NUM NOUN ADJ ADV ADV ADP PRON VERB VERB PUNCT ,PUNCT PRON AUX VERB ADV PUNCT 
+688,Didn't you bring your umbrella?,"En nuestro país, cumplimos un año apenas nacemos.",VERB ADV PRON VERB DET NOUN PUNCT ,ADP DET NOUN PUNCT VERB DET NOUN ADV VERB PUNCT 
+689,I have to ask my brother(sister) first.,¿No trajiste tu paraguas?,PRON VERB PART VERB DET X PUNCT ADV PUNCT ,PUNCT ADV VERB DET NOUN PUNCT 
+690,This milk seems to have gone bad.,Tengo que preguntar a mi hermano (hermana) primero.,DET NOUN VERB PART VERB VERB ADJ PUNCT ,VERB SCONJ VERB ADP DET NOUN PUNCT NOUN PUNCT ADV PUNCT 
+691,I'm on the way to the post office.,Esta leche parece estar vencido.,PRON VERB ADP DET NOUN ADP DET NOUN NOUN PUNCT ,DET NOUN AUX AUX ADJ PUNCT 
+692,"For exercise, I jog a kilometer everyday.",Estoy llendo a la oficina de correo.,ADP NOUN PUNCT PRON VERB DET NOUN NOUN PUNCT ,AUX VERB ADP DET NOUN ADP NOUN PUNCT 
+693,Kids probably play at the playground.,"Para ejercitar, corro un kilómetro diario todos lo días.",NOUN ADV VERB ADP DET NOUN PUNCT ,ADP VERB PUNCT ADP DET NOUN ADJ DET PRON NOUN PUNCT 
+694,Jeans and sneakers are not allowed.,Los niños están jugando probablemente en el patio.,NOUN CCONJ NOUN VERB ADV VERB PUNCT ,DET NOUN AUX VERB ADV ADP DET NOUN PUNCT 
+695,Drive carefully.,Los pantalones vaqueros y las zapatillas de deporte no se permiten.,VERB ADV PUNCT ,DET NOUN ADJ CONJ DET NOUN ADP NOUN ADV PRON VERB PUNCT 
+696,"My baby kept crying, so I took her out.",Maneje cuidadosamente.,DET NOUN VERB VERB PUNCT ADV PRON VERB PRON PART PUNCT ,VERB ADV PUNCT 
+697,"I tried to move my arms, but strangely they didn’t move.",Mi bebé lloraba tanto que lo traje conmigo.,PRON VERB PART VERB DET NOUN PUNCT CCONJ ADV PRON VERB ADV VERB PUNCT ,DET NOUN VERB ADV SCONJ PRON NOUN PRON PUNCT 
+698,I like the way you smile.,"Intenté moverme los brazos, pero extrañamente no se movieron.",PRON VERB DET NOUN PRON VERB PUNCT ,VERB VERB DET NOUN PUNCT CONJ ADV ADV PRON VERB PUNCT 
+699,"As soon as he saw me, he burst out in laughter.",Me gusta cuando sonríes.,ADV ADV ADP PRON VERB PRON PUNCT PRON VERB PART ADP NOUN PUNCT ,PRON VERB SCONJ VERB PUNCT 
+700,I bought this pair of shoes for thiry thousand won.,"Apenas me vió, comenzó a reir a carcajadas.",PRON VERB DET NOUN ADP NOUN ADP NUM NUM NOUN PUNCT ,ADV PRON VERB PUNCT AUX ADP VERB ADP NOUN PUNCT 
+701,He originally had such a pleasant personality.,Compré este par de los zapatos a tres mil wons.,PRON ADV VERB DET DET ADJ NOUN PUNCT ,VERB DET NOUN ADP DET NOUN ADP NUM NUM NOUN PUNCT 
+702,I'll do it if you want.,"Originalmente, él tenía una personalidad muy agradable.",PRON AUX VERB PRON ADP PRON VERB PUNCT ,ADV PUNCT PRON VERB DET NOUN ADV ADJ PUNCT 
+703,"They were on top of the table, not in the drawer.",Lo haré si lo deseas.,PRON VERB ADP NOUN ADP DET NOUN PUNCT ADV ADP DET NOUN PUNCT ,PRON VERB SCONJ PRON VERB PUNCT 
+704,I think that store has a bad location.,"Estaban encima de la tabla, no en el cajón.",PRON VERB ADP NOUN VERB DET ADJ NOUN PUNCT ,AUX ADV ADP DET NOUN PUNCT ADV ADP DET NOUN PUNCT 
+705,Here's a little present for you.,Pienso que el almacén tiene una mala localización.,ADV VERB DET ADJ NOUN ADP PRON PUNCT ,VERB SCONJ DET NOUN VERB DET ADJ NOUN PUNCT 
+706,That sounds difficult and dangerous.,Esto es un pequeño regalo para tí. ,DET VERB ADJ CCONJ ADJ PUNCT ,PRON AUX DET ADJ NOUN ADP VERB PUNCT 
+707,Busan is famous for its seafood.,Eso suena difícil y peligroso.,PROPN VERB ADJ ADP DET NOUN PUNCT ,PRON VERB ADJ CONJ ADJ PUNCT 
+708,Do you have an account with our bank?,Busan es famoso por sus mariscos.,VERB PRON VERB DET NOUN ADP DET NOUN PUNCT ,PROPN AUX ADJ ADP DET NOUN PUNCT 
+709,You don't mind spicy food?,¿Tiene una cuenta en nuestro banco?,PRON VERB ADV VERB ADJ NOUN PUNCT ,PUNCT VERB DET NOUN ADP DET NOUN PUNCT 
+710,Do you listen to much music at home?,¿No importa si el alimento es picante?,VERB PRON VERB ADP ADJ NOUN ADP NOUN PUNCT ,PUNCT ADV VERB SCONJ DET NOUN AUX ADJ PUNCT 
+711,Why don't you tell him your opinion?,¿Escuchas mucha música en tu casa?,ADV VERB ADV PRON VERB PRON DET NOUN PUNCT ,PUNCT NOUN DET NOUN ADP DET NOUN PUNCT 
+712,Marriage without love doesn't mean anything.,¿Por qué no le dices tu opinión?,NOUN ADP NOUN VERB ADV VERB NOUN PUNCT ,PUNCT ADP PRON ADV PRON VERB DET NOUN PUNCT 
+713,Have you been to the doctor?,Un matrimonio sin amor no significa nada.,VERB PRON VERB ADP DET NOUN PUNCT ,DET NOUN ADP NOUN ADV VERB PRON PUNCT 
+714,There are only ten chairs.,¿Has tenido una revisación con el doctor?,ADV VERB ADV NUM NOUN PUNCT ,PUNCT AUX VERB DET NOUN ADP DET NOUN PUNCT 
+715,Maybe you have to have a tooth pulled out.,Hay solamente diez sillas.,ADV PRON VERB PART VERB DET NOUN VERB PART PUNCT ,AUX ADV NUM NOUN PUNCT 
+716,Is this book yours?,Seguramente me tienen que sacar el diente.,VERB DET NOUN PRON PUNCT ,ADV PRON VERB SCONJ VERB DET NOUN PUNCT 
+717,Could you give this to Hyean?,¿Éste libro es tuyo?,VERB PRON VERB DET ADP PROPN PUNCT ,PUNCT DET NOUN AUX VERB PUNCT 
+718,The dishes here are pretty expensive.,¿Podrías darle esto a Hyean?,DET NOUN ADV VERB ADV ADJ PUNCT ,PUNCT PUNCT VERB PRON ADP PROPN PUNCT 
+719,Who won the baseball game last night?,Las comidas de aquí son bastante costosos.,PRON VERB DET NOUN NOUN ADJ NOUN PUNCT ,DET NOUN ADP ADV AUX ADV ADJ PUNCT 
+720,"To this day, I have never had a girlfriend.",¿Quién ganó el juego del béisbol ayer por la noche?,ADP DET NOUN PUNCT PRON VERB ADV VERB DET NOUN PUNCT ,PUNCT PRON VERB DET NOUN ADP NOUN ADV ADP DET NOUN PUNCT 
+721,Have you ever done this kind of work?,"Hasta ahora, nunca he tenido una novia.",VERB PRON ADV VERB DET NOUN ADP NOUN PUNCT ,ADP ADV PUNCT ADV AUX VERB DET NOUN PUNCT 
+722,My opinion is this.,¿Alguna vez has hecho esta clase de trabajo?,DET NOUN VERB DET PUNCT ,PUNCT DET NOUN AUX VERB DET NOUN ADP NOUN PUNCT 
+723,Koreans write their surname first and then their given name.,Mi opinión es ésta.,PROPN VERB DET NOUN ADV CCONJ ADV DET VERB NOUN PUNCT ,DET NOUN AUX PRON PUNCT 
+724,I already went there last weekend.,Los coreanos primero escriben su apellido y luego su nombre.,PRON ADV VERB ADV ADJ NOUN PUNCT ,DET NOUN ADV VERB DET NOUN CONJ ADV DET NOUN PUNCT 
+725,I like girls who look pure.,Ya he estado allí el fin de semana pasado.,PRON VERB NOUN PRON VERB ADJ PUNCT ,ADV AUX AUX ADV DET NOUN ADP NOUN ADJ PUNCT 
+726,Not this time!,Me gustan las mujeres que tienen una imagen pura.,ADV DET NOUN PUNCT ,PRON VERB DET NOUN PRON VERB DET NOUN ADJ PUNCT 
+727,This is my English teacher.,¡No esta vez!,DET VERB DET ADJ NOUN PUNCT ,PUNCT ADV DET NOUN PUNCT 
+728,I have to score over 900 on the TOEIC exam.,Esta persona es mi profesor inglés.,PRON VERB PART VERB ADP NUM ADP DET PROPN NOUN PUNCT ,DET NOUN AUX DET NOUN ADJ PUNCT 
+729,I had a strange dream last night.,Tengo que anotar sobre 900 en el examen de TOEIC.,PRON VERB DET ADJ NOUN ADJ NOUN PUNCT ,VERB SCONJ VERB ADP NUM ADP DET NOUN ADP PROPN PUNCT 
+730,I don't want to talk about that anymore.,Ayer tuve un sueño extraño.,PRON VERB ADV VERB PART VERB ADP DET ADV PUNCT ,ADV VERB DET NOUN ADJ PUNCT 
+731,What sites are you using to watch movies on the internet?,No deseo hablar más sobre el tema.,DET NOUN VERB PRON VERB PART VERB NOUN ADP DET NOUN PUNCT ,ADV VERB VERB ADV ADP DET NOUN PUNCT 
+732,My husband went over to our neighbor's house after lunch.,¿Qué sitios de Internet estás utilizando para mirar películas?,DET NOUN VERB PART ADP DET NOUN PART NOUN ADP NOUN PUNCT ,PUNCT DET NOUN ADP PROPN AUX VERB ADP VERB NOUN PUNCT 
+733,I don't think you have a reason to get angry.,Mi marido pasó a la casa de nuestro vecino después del almuerzo.,PRON VERB ADV VERB PRON VERB DET NOUN PART VERB ADJ PUNCT ,DET NOUN VERB ADP DET NOUN ADP DET NOUN ADV ADP NOUN PUNCT 
+734,I have to leave now.,Pienso que no tienes motivos para estar enojado.,PRON VERB PART VERB ADV PUNCT ,VERB SCONJ ADV VERB NOUN ADP AUX ADJ PUNCT 
+735,Come this way.,Ahora tengo que irme.,VERB DET NOUN PUNCT ,ADV VERB SCONJ ADJ PUNCT 
+736,"I can't understand this memo, can you?",Venga por este lado.,PRON AUX ADV VERB DET NOUN PUNCT VERB PRON PUNCT ,VERB ADP DET NOUN PUNCT 
+737,The computer defeated the human in the chess.,"No puedo entender esta nota, ¿y tú?",DET NOUN VERB DET NOUN ADP DET NOUN PUNCT ,ADV AUX VERB DET NOUN PUNCT PUNCT CONJ PRON PUNCT 
+738,"After the scandal, the actor lost his popularity.",La computadora derrotó a un ser humano en el juego de ajedrez.,ADP DET NOUN PUNCT DET NOUN VERB DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN ADJ ADP DET NOUN ADP NOUN PUNCT 
+739,It's time for us to say goodbye.,"Después del escándalo, el agente perdió su popularidad.",PRON VERB NOUN ADP PRON PART VERB NOUN PUNCT ,ADV ADP NOUN PUNCT DET NOUN VERB DET NOUN PUNCT 
+740,It was the best day of my life.,Es hora de decir adiós.,PRON VERB DET ADJ NOUN ADP DET NOUN PUNCT ,AUX NOUN ADP VERB NOUN PUNCT 
+741,How can I access the internet?,Fue el mejor día de mi vida.,ADV VERB PRON VERB DET NOUN PUNCT ,AUX DET ADJ NOUN ADP DET NOUN PUNCT 
+742,Stop working sometimes and have fun.,¿Cómo puedo tener acceso a Internet?,VERB VERB ADV CCONJ VERB NOUN PUNCT ,PUNCT PRON AUX VERB NOUN ADP PROPN PUNCT 
+743,You need a tourist visa to go to Japan.,"No sólo trabajes, también disfruta.",PRON VERB DET NOUN NOUN PART VERB ADP PROPN PUNCT ,PART ADV VERB PUNCT ADV VERB PUNCT 
+744,How are you doing with learning Japanese?,Necesita una visa turística para ir a Japón.,ADV VERB PRON VERB ADP VERB ADJ PUNCT ,VERB DET NOUN ADJ ADP VERB ADP PROPN PUNCT 
+745,Did you get up late today?,¿Cómo le está llendo con el japonés ?,VERB PRON VERB PART ADV NOUN PUNCT ,PUNCT PRON PRON AUX VERB ADP DET NOUN PUNCT 
+746,I didn't mean to cause any trouble.,¿Se levantó tarde hoy?,PRON VERB ADV VERB PART VERB DET NOUN PUNCT ,PUNCT PRON VERB ADV ADV PUNCT 
+747,I go to bed late at night and wake up early in the morning.,No tenia pensado causar problemas.,PRON VERB ADP NOUN ADV ADP NOUN CCONJ VERB PART ADV ADP DET NOUN PUNCT ,ADV VERB ADJ VERB NOUN PUNCT 
+748,What was the last book you've read?,Yo duermo tarde y me despierto temprano.,PRON VERB DET ADJ NOUN PRON VERB VERB PUNCT ,PRON VERB ADV CONJ PRON VERB ADV PUNCT 
+749,You seem to be lost.,¿Cuál el el libro más reciente que ha leído?,PRON VERB PART VERB VERB PUNCT ,PUNCT PRON DET DET NOUN ADV ADJ PRON AUX VERB PUNCT 
+750,I lost my wallet in the store.,Me parece que se ha perdido.,PRON VERB DET NOUN ADP DET NOUN PUNCT ,PRON VERB SCONJ PRON AUX VERB PUNCT 
+751,Don't talk with your mouth full.,Perdí mi billetera en el almacén.,VERB ADV VERB ADP DET NOUN ADJ PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+752,When do you usually wear a hanbok?,No hablar con la boca llena.,ADV VERB PRON ADV VERB DET NOUN PUNCT ,ADV VERB ADP DET NOUN ADJ PUNCT 
+753,It is on the table next to the bed.,¿Cuándo se usa generalmente el hanbok?,PRON VERB ADP DET NOUN ADJ ADP DET NOUN PUNCT ,PUNCT PRON PRON VERB ADV DET NOUN PUNCT 
+754,Promise you won't forget me.,"Está al lado de la cama, arriba de la mesa.",VERB PRON AUX ADV VERB PRON PUNCT ,AUX ADP NOUN ADP DET NOUN PUNCT ADV ADP DET NOUN PUNCT 
+755,"Oh, I completely forgot.",Prométeme que no te olvidarás de mí.,INTJ PUNCT PRON ADV VERB PUNCT ,VERB SCONJ ADV PRON VERB ADP PRON PUNCT 
+756,She always talks only about herself.,"Oh, me olvidé totalmente.",PRON ADV VERB ADV ADP PRON PUNCT ,INTJ PUNCT PRON VERB ADV PUNCT 
+757,Don't ask me over and over again.,Ella habla solamente sobre ella misma.,VERB ADV VERB PRON PART CCONJ ADV ADV PUNCT ,PRON VERB ADV ADP PRON ADJ PUNCT 
+758,I always sleep on my side.,No preguntes lo mismo constantemente.,PRON ADV VERB ADP DET NOUN PUNCT ,ADV VERB DET PRON ADV PUNCT 
+759,Do you have problems with your car again?,Yo duermo siempre de costasdo.,VERB PRON VERB NOUN ADP DET NOUN ADV PUNCT ,PRON VERB ADV ADP NOUN PUNCT 
+760,I grew up in the countryside.,¿El coche tiene otra vez problemas?,PRON VERB PART ADP DET NOUN PUNCT ,PUNCT DET NOUN VERB DET NOUN NOUN PUNCT 
+761,Is this seat taken?,Yo  crecí en el campo.,VERB DET NOUN VERB PUNCT ,PRON SPACE ADJ ADP DET NOUN PUNCT 
+762,"Socrates said, 'Know yourself.'",¿Hay lugar aquí?,PROPN VERB PUNCT PUNCT VERB PRON PUNCT PUNCT ,PUNCT AUX NOUN ADV PUNCT 
+763,Don't be shy. Just act natural.,"Socrates dijo, “conócete a ti mismo. ”",VERB ADV VERB ADJ PUNCT ADV VERB ADJ PUNCT ,PROPN VERB PUNCT PROPN VERB ADP DET DET PUNCT PUNCT 
+764,Do you feel you lost your freedom after getting married?,No seas tímido. Actuá de forma natural.,VERB PRON VERB PRON VERB DET NOUN ADP VERB VERB PUNCT ,ADV VERB ADJ PUNCT PROPN ADP NOUN ADJ PUNCT 
+765,Jajangmyeon is a very popular Chinese dish.,¿Siente que ha perdido la livertad después de haberse casado?,PROPN VERB DET ADV ADJ ADJ NOUN PUNCT ,PUNCT VERB SCONJ AUX VERB DET NOUN ADV ADP AUX VERB PUNCT 
+766,Can I ride my bicycle outside?,Jajangmyeon es un plato chino muy popular.,VERB PRON VERB DET NOUN ADV PUNCT ,PROPN AUX DET NOUN ADJ ADV ADJ PUNCT 
+767,Do you often go to the movies?,¿Puedo andar en bicicleta afuera?,VERB PRON ADV VERB ADP DET NOUN PUNCT ,PUNCT AUX VERB ADP NOUN VERB PUNCT 
+768,"You graduated last year, didn't you?",¿Va a menudo a ver películas?,PRON VERB ADJ NOUN PUNCT VERB ADV PRON PUNCT ,PUNCT AUX ADP NOUN ADP VERB NOUN PUNCT 
+769,Two big suitcases and a small one.,"¿Te graduastes el año pasado, no?",NUM ADJ NOUN CCONJ DET ADJ NOUN PUNCT ,PUNCT VERB NOUN DET NOUN ADJ PUNCT ADV PUNCT 
+770,Would you like a cup of coffee?,Dos maletas grandes y uno pequeño.,VERB PRON VERB DET NOUN ADP NOUN PUNCT ,NUM NOUN ADJ CONJ PRON ADJ PUNCT 
+771,Can you hear me well?,¿Tendria el gusto de tomar una taza de café?,VERB PRON VERB PRON ADV PUNCT ,PUNCT VERB DET NOUN ADP VERB DET NOUN ADP NOUN PUNCT 
+772,He speaks English very well.,Él habla inglés muy bien.,PRON VERB PROPN ADV ADV PUNCT ,PRON VERB NOUN ADV ADV PUNCT 
+773,I feel so sleepy.,Siento tanto sueño.,PRON VERB ADV ADJ PUNCT ,VERB DET NOUN PUNCT 
+774,Stay here for a moment.,Permanece aquí por un momento.,VERB ADV ADP DET NOUN PUNCT ,VERB ADV ADP DET NOUN PUNCT 
+775,Let me think for a while.,Déjeme pensar por un instante.,VERB PRON VERB ADP DET NOUN PUNCT ,VERB VERB ADP DET NOUN PUNCT 
+776,Brush your teeth before sleeping.,Antes de dormir cepíllate los dientes.,VERB DET NOUN ADP VERB PUNCT ,ADV ADP VERB NOUN DET NOUN PUNCT 
+777,Hold my hand.,Sostenga de mi mano.,VERB DET NOUN PUNCT ,VERB ADP DET NOUN PUNCT 
+778,I came across it in a magazine.,Lo vi de casualidad en la revista.,PRON VERB ADP PRON ADP DET NOUN PUNCT ,PRON VERB ADP NOUN ADP DET NOUN PUNCT 
+779,I turned the page of the calendar.,Di vuelta la página del calendario.,PRON VERB DET NOUN ADP DET NOUN PUNCT ,VERB VERB DET NOUN ADP NOUN PUNCT 
+780,Don't be angry. It was just for fun.,No se enoje. Era solo una broma.,VERB ADV VERB ADJ PUNCT PRON VERB ADV ADP NOUN PUNCT ,ADV PRON VERB PUNCT AUX ADV DET NOUN PUNCT 
+781,I prefer red roses to yellow ones.,Prefiero rosas rojas en vez de amarillas.,PRON VERB ADJ NOUN ADP ADJ NOUN PUNCT ,VERB NOUN ADJ ADP NOUN ADP NOUN PUNCT 
+782,Have you decided on the time and the place?,¿Has decidido el tiempo y el lugar?,VERB PRON VERB ADP DET NOUN CCONJ DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN CONJ DET NOUN PUNCT 
+783,My restaurant uses only fresh ingredients.,Nuestro restaurante utiliza solo ingredientes frescos.,DET NOUN VERB ADJ ADJ NOUN PUNCT ,DET NOUN VERB ADV NOUN ADJ PUNCT 
+784,I'm finding this movie extremely boring.,Esta película es realmente aburrida.,PRON VERB VERB DET NOUN ADV ADJ PUNCT ,DET NOUN AUX ADV ADJ PUNCT 
+785,This is so fun!,¡Esto está realmente divertido!,DET VERB ADV ADJ PUNCT ,PUNCT PRON AUX ADV ADJ PUNCT 
+786,I inherited a huge property from my parents.,Heredé mucha herencia por parte de mis padres.,PRON VERB DET ADJ NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP NOUN ADP DET NOUN PUNCT 
+787,Do I know you?,¿Me conoce?,VERB PRON VERB PRON PUNCT ,PUNCT PRON VERB PUNCT 
+788,Look at that man over there.,Mire a esa persona.,VERB ADP DET NOUN ADV ADV PUNCT ,VERB ADP DET NOUN PUNCT 
+789,Look at that. A puppy with an injured leg!,Mira eso. ¡Un perrito se ha lastimado la pata!,VERB ADP DET PUNCT DET NOUN ADP DET VERB NOUN PUNCT ,VERB PRON PUNCT PUNCT DET NOUN PRON AUX VERB DET NOUN PUNCT 
+790,That place is always crowded with people.,Allí siempre se llena de gente.,DET NOUN VERB ADV VERB ADP NOUN PUNCT ,ADV ADV PRON VERB ADP NOUN PUNCT 
+791,There's a gas station over there.,Allí hay una gasolinera. ,ADV VERB DET NOUN NOUN ADV ADV PUNCT ,ADV AUX DET NOUN PUNCT 
+792,What are you going to do tomorrow evening?,¿Qué va a hacer mañana por la noche?,PRON VERB PRON VERB PART VERB NOUN NOUN PUNCT ,PUNCT PRON AUX ADP VERB ADV ADP DET NOUN PUNCT 
+793,Put it down in that corner over there.,"Póngalo allí, en la esquina.",VERB PRON PART ADP DET NOUN ADV ADV PUNCT ,PROPN ADV PUNCT ADP DET NOUN PUNCT 
+794,"Write down your name here, please.","Escriba su nombre aquí, por favor.",VERB PART DET NOUN ADV PUNCT INTJ PUNCT ,VERB DET NOUN ADV PUNCT ADP NOUN PUNCT 
+795,There are few men working at my company.,Hay pocas personas que trabajan en mi compañía.,ADV VERB ADJ NOUN VERB ADP DET NOUN PUNCT ,AUX DET NOUN PRON VERB ADP DET NOUN PUNCT 
+796,The store that was here before is now gone.,El almacén que estaba antes aquí desapereció.,DET NOUN DET VERB ADV ADV VERB ADV VERB PUNCT ,DET NOUN PRON AUX ADV ADV VERB PUNCT 
+797,Our university boasts a tradition that goes back 100 years.,Nuestra universidad se enorgullese de sus 100 años de tradición.,DET NOUN VERB DET NOUN DET VERB ADV NUM NOUN PUNCT ,DET NOUN PRON VERB ADP PRON NUM NOUN ADP NOUN PUNCT 
+798,Please tell him Hyean called.,Por favor dígale que  Hyean la ha llamado.,INTJ VERB PRON PROPN VERB PUNCT ,ADP NOUN VERB SCONJ SPACE PROPN PRON AUX VERB PUNCT 
+799,He seemed to be a completely different person.,Él parecía ser una persona totalmente diferente.,PRON VERB PART VERB DET ADV ADJ NOUN PUNCT ,PRON AUX AUX DET NOUN ADV ADJ PUNCT 
+800,Call 911!,¡Llamá al 911!,VERB NUM PUNCT ,PUNCT ADV ADP NUM PUNCT 
+801,Can I have your phone number?,¿Me enseñas tu número de teléfono?,VERB PRON VERB DET NOUN NOUN PUNCT ,PUNCT PRON NOUN DET NOUN ADP NOUN PUNCT 
+802,"When she was young, she was really beautiful.","Cuando ella era joven, era realmente hermosa.",ADV PRON VERB ADJ PUNCT PRON VERB ADV ADJ PUNCT ,SCONJ PRON AUX NOUN PUNCT AUX ADV ADJ PUNCT 
+803,I got five points taken off for being late.,Me bajaron 5 puntos por haber llegado tarde.,PRON VERB NUM NOUN VERB PART ADP VERB ADJ PUNCT ,PRON VERB NUM NOUN ADP AUX VERB ADV PUNCT 
+804,Lunch is on me.,El almuerzo lo pago yo.,NOUN VERB ADP PRON PUNCT ,DET NOUN PRON ADJ PRON PUNCT 
+805,We have an hour-long lunch break.,La hora del almuerzo es durante una hora.,PRON VERB DET NOUN PUNCT ADJ NOUN NOUN PUNCT ,DET NOUN ADP NOUN AUX ADP DET NOUN PUNCT 
+806,"More and more, young people nowadays go abroad to study.","Cada vez más, la gente joven va al extranjero por sus estudios.",ADJ CCONJ ADJ PUNCT ADJ NOUN ADV VERB ADV PART VERB PUNCT ,DET NOUN ADV PUNCT DET NOUN ADJ VERB ADP NOUN ADP DET NOUN PUNCT 
+807,Can you pick up the noodles using your chopsticks?,¿Puedes tomar los tallarines usando los palillos?,VERB PRON VERB PART DET NOUN VERB DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN VERB DET NOUN PUNCT 
+808,It'll take about two minutes.,Tomará cerca de dos minutos.,PRON AUX VERB ADV NUM NOUN PUNCT ,VERB ADV ADP NUM NOUN PUNCT 
+809,Is there a bus stop near here?,¿Hay una parada de autobús cerca de aquí?,VERB ADV DET NOUN NOUN ADV ADV PUNCT ,PUNCT AUX DET NOUN ADP NOUN ADV ADP ADV PUNCT 
+810,I'm really tired now.,Ahora estoy realmente cansado.,PRON VERB ADV ADJ ADV PUNCT ,ADV AUX ADV ADJ PUNCT 
+811,A sound mind in a sound body,Una mente sana en un cuerpo sano.,DET ADJ NOUN ADP DET ADJ NOUN ,DET NOUN ADJ ADP DET NOUN ADJ PUNCT 
+812,You set the time for us.,Usted decide el horario.,PRON VERB DET NOUN ADP PRON PUNCT ,PRON VERB DET NOUN PUNCT 
+813,What time is the exact departure time?,¿A qué hora parte exactamente?,DET NOUN VERB DET ADJ NOUN NOUN PUNCT ,PUNCT ADP DET NOUN NOUN ADV PUNCT 
+814,Let's get it right this time.,Esta vez hagámoslo bien.,VERB PRON VERB PRON ADJ DET NOUN PUNCT ,DET NOUN AUX ADV PUNCT 
+815,I like Beethoven the best.,A mi Beethoven es el que más me gusta.,PRON VERB PROPN DET ADJ PUNCT ,ADP DET PROPN AUX DET PRON ADV PRON VERB PUNCT 
+816,"Just a little more, please.","Deme un poco más, por favor.",ADV DET ADV ADJ PUNCT INTJ PUNCT ,PROPN DET ADV ADV PUNCT ADP NOUN PUNCT 
+817,The police are investigating the incident.,La policía está investigando el incidente.,DET NOUN VERB VERB DET NOUN PUNCT ,DET NOUN AUX VERB DET NOUN PUNCT 
+818,Be careful not to catch a cold.,Tenga cuidado con el resfrío.,VERB ADJ ADV PART VERB DET NOUN PUNCT ,VERB NOUN ADP DET NOUN PUNCT 
+819,"Yes, it's a quiet room with a fine view of the ocean.",Es un cuarto silencioso con vista al mar.,INTJ PUNCT PRON VERB DET ADJ NOUN ADP DET ADJ NOUN ADP DET NOUN PUNCT ,AUX DET NOUN ADJ ADP NOUN ADP NOUN PUNCT 
+820,What do you plan to do after you graduate from university?,¿Qué vas a  hacer después de graduarte de la universidad?,PRON VERB PRON VERB PART VERB ADP PRON VERB ADP NOUN PUNCT ,PUNCT PRON VERB ADP SPACE VERB ADV ADP NOUN ADP DET NOUN PUNCT 
+821,"Bring some wine, please.","Traiga un poco de vino, por favor.",VERB DET NOUN PUNCT INTJ PUNCT ,VERB DET PRON ADP NOUN PUNCT ADP NOUN PUNCT 
+822,We have freedom of religion.,Tenemos libertad de religión.,PRON VERB NOUN ADP NOUN PUNCT ,VERB NOUN ADP NOUN PUNCT 
+823,There are so many kinds of food that I can't decide what to eat first.,Hay tantas clases de comidas que no puedo decidir cuál comer primero.,ADV VERB ADV ADJ NOUN ADP NOUN DET PRON AUX ADV VERB PRON PART VERB ADV PUNCT ,AUX DET NOUN ADP NOUN PRON ADV AUX VERB PRON VERB ADV PUNCT 
+824,Fold the paper in half.,Doble el papel por la mitad.,VERB DET NOUN ADP NOUN PUNCT ,ADJ DET NOUN ADP DET NOUN PUNCT 
+825,"I hope the weather is nice tomorrow, too. ",Espero que mañana el tiempo sea agradable también.,PRON VERB DET NOUN VERB ADJ NOUN PUNCT ADV PUNCT ,VERB SCONJ ADV DET NOUN AUX ADJ ADV PUNCT 
+826,Do you like comic books?,¿Te gustan los libros cómicos?,VERB PRON ADP ADJ NOUN PUNCT ,PUNCT PRON VERB DET NOUN ADJ PUNCT 
+827,Sorry I'm late.,"Perdón, he llegado tarde.",INTJ PRON VERB ADJ PUNCT ,NOUN PUNCT AUX VERB ADV PUNCT 
+828,I gave her a watch for her birthday.,Le di a Hian un reloj para su cumpleaños.,PRON VERB PRON DET NOUN ADP DET NOUN PUNCT ,PRON VERB ADP PROPN DET NOUN ADP DET NOUN PUNCT 
+829,Do you know what pandas mostly eat?,¿Sabes qué comen generalmente los pandas?,VERB PRON VERB PRON NOUN ADV VERB PUNCT ,PUNCT VERB PRON VERB ADV DET NOUN PUNCT 
+830,Are you free this weekend?,¿Tienes tiempo este fin de semana?,VERB PRON ADJ DET NOUN PUNCT ,PUNCT VERB NOUN DET NOUN ADP NOUN PUNCT 
+831,I'll give you my e-mail address.,Le daré mi dirección de E-mail.,PRON AUX VERB PRON DET NOUN NOUN NOUN NOUN PUNCT ,PRON VERB DET NOUN ADP CONJ PUNCT NOUN PUNCT 
+832,"Sorry, we have no orange juice today.","Discúlpeme, pero hoy no tenemos jugo de naranja.",INTJ PUNCT PRON VERB DET ADJ NOUN NOUN PUNCT ,VERB PUNCT CONJ ADV ADV VERB NOUN ADP NOUN PUNCT 
+833,You shouldn't run around the pool like that.,"Ten cuidado, no debes correr al rededor de la piscina.",PRON AUX ADV VERB ADP DET NOUN ADP DET PUNCT ,PROPN ADJ PUNCT ADV AUX VERB ADP NOUN ADP DET NOUN PUNCT 
+834,Are you the owner of this car?,¿Es el dueño de este coche?,VERB PRON DET NOUN ADP DET NOUN PUNCT ,PUNCT AUX DET NOUN ADP DET NOUN PUNCT 
+835,How about going on to the next topic?,¿Qué le parece pasar al siguiente tema?,ADV ADP VERB PART ADP DET ADJ NOUN PUNCT ,PUNCT PRON PRON AUX VERB ADP ADJ NOUN PUNCT 
+836,Keep smoking and you'll probably die young.,Si sigues fumando te puedes morir joven.,VERB NOUN CCONJ PRON AUX ADV VERB ADJ PUNCT ,SCONJ NOUN VERB PRON AUX VERB ADJ PUNCT 
+837,"In Korea, red means death.","En Corea, el rojo significa muerte.",ADP PROPN PUNCT ADJ VERB NOUN PUNCT ,ADP PROPN PUNCT DET NOUN VERB NOUN PUNCT 
+838,Is there anything special that I should prepare?,¿Hay algo en especial para que yo prepare?,VERB ADV NOUN ADJ ADP PRON VERB VERB PUNCT ,PUNCT AUX PRON ADP ADJ ADP SCONJ PRON VERB PUNCT 
+839,"First of all, it is important to reduce your stress.","Primero de todo, es importante reducir la tensión.",ADV ADP DET PUNCT PRON VERB ADJ PART VERB DET NOUN PUNCT ,ADJ ADP PRON PUNCT AUX ADJ VERB DET NOUN PUNCT 
+840,Don't chat during class.,No charlar durante clase.,VERB ADV VERB ADP NOUN PUNCT ,ADV VERB ADP NOUN PUNCT 
+841,Things in China are so cheap.,Las cosas en China son tan baratas.,NOUN ADP PROPN VERB ADV ADJ PUNCT ,DET NOUN ADP PROPN AUX ADV ADJ PUNCT 
+842,A lot of people are studying Chinese in Korea these days.,Actualmente hay muchas personas están estudiando el leguaje chino en Corea.,DET NOUN ADP NOUN VERB VERB PROPN ADP PROPN DET NOUN PUNCT ,ADV AUX DET NOUN AUX VERB DET NOUN ADJ ADP PROPN PUNCT 
+843,My house is located in the center of Seoul.,Mi casa está situada en el centro de Seul.,DET NOUN VERB VERB ADP DET NOUN ADP PROPN PUNCT ,DET NOUN AUX ADJ ADP DET NOUN ADP PROPN PUNCT 
+844,Is Dokdo an important island?,¿Es Dokdo una isla importante?,VERB PROPN DET ADJ NOUN PUNCT ,PUNCT AUX PROPN DET NOUN ADJ PUNCT 
+845,My mom teaches art at a junior high school.,Mi mamá es profesora de arte en el colegio secundario.,DET NOUN VERB NOUN ADP DET ADJ ADJ NOUN PUNCT ,DET NOUN AUX NOUN ADP NOUN ADP DET NOUN ADJ PUNCT 
+846,Do many junior high school students smoke?,¿Muchos estudiantes secundarios fuman?,VERB ADJ ADJ ADJ NOUN NOUN VERB PUNCT ,PUNCT DET NOUN ADJ VERB PUNCT 
+847,Children's day is one of the happiest times in a year for children.,El Día de los Niños es uno de los días más felices del año para los niños.,NOUN PART NOUN VERB NUM ADP DET ADJ NOUN ADP DET NOUN ADP NOUN PUNCT ,DET PROPN ADP DET PROPN AUX PRON ADP DET NOUN ADV ADJ ADP NOUN ADP DET NOUN PUNCT 
+848,What kind of food do you enjoy?,¿Qué clase de alimentos disfruta comer?,DET NOUN ADP NOUN VERB PRON VERB PUNCT ,PUNCT DET NOUN ADP NOUN VERB VERB PUNCT 
+849,Do you carry your money in a wallet?,¿Lleva dinero en su billetera?,VERB PRON VERB DET NOUN ADP DET NOUN PUNCT ,PUNCT VERB NOUN ADP DET NOUN PUNCT 
+850,Where are you now?,¿Dónde estás ahora?,ADV VERB PRON ADV PUNCT ,PUNCT PRON VERB ADV PUNCT 
+851,Does this bus pass by the Plaza Hotel?,¿Este autobús pasa por el Hotel Plaza?,VERB DET NOUN VERB ADP DET PROPN PROPN PUNCT ,PUNCT DET NOUN VERB ADP DET PROPN PROPN PUNCT 
+852,All will be forgotten as time goes by.,Si el tiempo pasa todo será olvidado.,DET VERB VERB VERB ADP NOUN VERB ADV PUNCT ,SCONJ DET NOUN VERB PRON AUX VERB PUNCT 
+853,Your pranks have gone too far.,Sus bromas han ido demasiado lejos.,DET NOUN VERB VERB ADV ADV PUNCT ,DET NOUN AUX VERB ADV ADV PUNCT 
+854,This song was released last month.,Esta canción salió el mes pasado.,DET NOUN VERB VERB ADJ NOUN PUNCT ,DET NOUN VERB DET NOUN ADJ PUNCT 
+855,Didn't we talk just last week?,¿No hablamos la semana pasada?,VERB ADV PRON VERB ADV ADJ NOUN PUNCT ,PUNCT ADV VERB DET NOUN ADJ PUNCT 
+856,The company went bankrupt last year.,La compañía fracasó el año pasado.,DET NOUN VERB ADJ ADJ NOUN PUNCT ,DET NOUN VERB DET NOUN ADJ PUNCT 
+857,How did you spend your vacation?,¿Cómo pasastes tus vacaciones?,ADV VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON NOUN DET NOUN PUNCT 
+858,I'll show you on the map.,Le enseñaré viendo el mapa.,PRON AUX VERB PRON ADP DET NOUN PUNCT ,PRON VERB VERB DET NOUN PUNCT 
+859,Clear everything off your desk except for your pencils and erasers.,Despejar todo del escritorio a excepción del lápiz y el borrador.,ADJ NOUN ADP DET NOUN ADP ADP DET NOUN CCONJ NOUN PUNCT ,VERB PRON ADP NOUN ADP NOUN ADP NOUN CONJ DET NOUN PUNCT 
+860,Removing makeup is more important than putting it on.,Es más importante borrar el maquillaje en vez de maquillarte.,VERB NOUN VERB ADV ADJ ADP VERB PRON PART PUNCT ,AUX ADV ADJ VERB DET NOUN ADP NOUN ADP NOUN PUNCT 
+861,I've never seen you keep any promises.,Nunca te pude ver que cumplieras una promesa.,PRON VERB ADV VERB PRON VERB DET NOUN PUNCT ,ADV PRON AUX AUX SCONJ NOUN DET NOUN PUNCT 
+862,Shops are in the basement.,Las tiendas están en el sótano.,NOUN VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN PUNCT 
+863,I lost my wallet on the subway.,Perdí mi billetera en el subterráneo.,PRON VERB DET NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET ADJ PUNCT 
+864,Why don't you talk to him directly?,¿Por qué no hablas con él directamente?,ADV VERB ADV PRON VERB ADP PRON ADV PUNCT ,PUNCT ADP PRON ADV VERB ADP PRON ADV PUNCT 
+865,You know I hate that question.,Sabes que no me gusta esa pregunta.,PRON VERB PRON VERB DET NOUN PUNCT ,VERB SCONJ ADV PRON VERB DET NOUN PUNCT 
+866,I'll drive you home.,Te llevaré hasta tu casa.,PRON AUX VERB PRON ADV PUNCT ,PRON VERB ADP DET NOUN PUNCT 
+867,This fish tastes pretty salty.,Este pescado esta muy salado.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN DET ADV ADJ PUNCT 
+868,She has short hair and wears glasses.,Ella tiene pelo corto y usa anteojos.,PRON VERB ADJ NOUN CCONJ VERB NOUN PUNCT ,PRON VERB NOUN ADJ CONJ VERB NOUN PUNCT 
+869,Which way is south?,¿En qué dirección está el sur?,DET NOUN VERB ADJ PUNCT ,PUNCT ADP DET NOUN AUX DET NOUN PUNCT 
+870,Stew doesn't taste good when it is cold.,El guisado no es rico cuando se pone frío.,NOUN VERB ADV VERB ADJ ADV PRON VERB ADJ PUNCT ,DET NOUN ADV AUX ADJ SCONJ PRON VERB NOUN PUNCT 
+871,Stamp your seal here.,Estampar tu sello aquí.,VERB DET NOUN ADV PUNCT ,VERB DET NOUN ADV PUNCT 
+872,Coffee? Or tea?,¿Café? O ¿té?,NOUN PUNCT CCONJ NOUN PUNCT ,PUNCT NOUN PUNCT CONJ PUNCT NOUN PUNCT 
+873,Pull the car over right now!,¡Para ya el coche!,VERB DET NOUN ADV ADV ADV PUNCT ,PUNCT ADP ADV DET NOUN PUNCT 
+874,"If you keep in order, it will soon be your turn.","Si mantienes el orden, pronto será tu turno.",ADP PRON VERB ADP NOUN PUNCT PRON VERB ADV VERB DET NOUN PUNCT ,SCONJ VERB DET NOUN PUNCT ADV AUX DET NOUN PUNCT 
+875,That's really strange.,Eso es realmente extraño.,DET VERB ADV ADJ PUNCT ,PRON AUX ADV ADJ PUNCT 
+876,I am so nervous I barely stand it.,Estoy tan nervioso que no lo puedo aguantar.,PRON VERB ADV ADJ PRON ADV VERB PRON PUNCT ,AUX ADV ADJ SCONJ ADV PRON AUX VERB PUNCT 
+877,"Excuse me, but I think I have the window seat.","Disculpe, pero me parece que el asiento de la ventana me pertence.",VERB PRON PUNCT CCONJ PRON VERB PRON VERB DET NOUN NOUN PUNCT ,VERB PUNCT CONJ PRON VERB SCONJ DET NOUN ADP DET NOUN PRON VERB PUNCT 
+878,Stop searching. I found it!,Para de buscar. Yo lo encontré.,VERB VERB PUNCT PRON VERB PRON PUNCT ,ADP ADP VERB PUNCT PRON PRON VERB PUNCT 
+879,Search thoroughly.,Busca bien a fondo.,NOUN ADV PUNCT ,VERB ADV ADP NOUN PUNCT 
+880,Sprinkle salt on the vegetables.,Rocear la sal en los vegetales.,VERB NOUN ADP DET NOUN PUNCT ,VERB DET NOUN ADP DET NOUN PUNCT 
+881,Thank you for lending me the book.,Gracias por prestarme el libro.,VERB PRON ADP VERB PRON DET NOUN PUNCT ,NOUN ADP NOUN DET NOUN PUNCT 
+882,I put a frog in my teacher's desk.,Yo soy quien puso la rana en el escritorio de la profesora.,PRON VERB DET NOUN ADP DET NOUN PART NOUN PUNCT ,PRON AUX PRON VERB DET NOUN ADP DET NOUN ADP DET NOUN PUNCT 
+883,I'll take personal responsibility for it.,Yo personalmente asumiré la responsabilidad.,PRON AUX VERB ADJ NOUN ADP PRON PUNCT ,PRON ADV VERB DET NOUN PUNCT 
+884,Is it your first trip to China?,¿Es tu primer viaje a China?,VERB PRON DET ADJ NOUN ADP PROPN PUNCT ,PUNCT AUX DET ADJ NOUN ADP PROPN PUNCT 
+885,"Speak a little more slowly, please.","Podría hablar un poco más lento, por favor.",VERB DET ADJ ADV ADV PUNCT INTJ PUNCT ,AUX VERB DET ADV ADV ADJ PUNCT ADP NOUN PUNCT 
+886,Those jeans are all the rage these days.,Estos días los vaqueros no están de moda.,DET NOUN VERB DET DET NOUN DET NOUN PUNCT ,DET NOUN DET NOUN ADV AUX ADP NOUN PUNCT 
+887,Do you still clean your house by yourself?,¿Sigue limpiando solo la casa?,VERB PRON ADV VERB DET NOUN ADP PRON PUNCT ,PUNCT AUX VERB ADV DET NOUN PUNCT 
+888,How many seconds does it take you to run 100 meters?,¿En cuántos segundos corre 100 metros?,ADV ADJ NOUN VERB PRON VERB PRON PART VERB NUM NOUN PUNCT ,PUNCT ADP DET NOUN VERB NUM NOUN PUNCT 
+889,She didn't invite me to her birthday party.,Ella no me invitó a su fiesta de cumpleaños.,PRON VERB ADV VERB PRON ADP DET NOUN NOUN PUNCT ,PRON ADV PRON VERB ADP DET NOUN ADP NOUN PUNCT 
+890,"Elementary school was called national school"" before 1996 in Korea.""""lementary school was called ""national """"ementary """,En Corea la “escuela primaria” fue llamada “escuela nacional” antes de año 1996. ,ADJ NOUN VERB VERB ADJ NOUN PUNCT ADP NUM ADP ADJ NOUN VERB VERB PUNCT ADJ PUNCT PUNCT ADJ PUNCT ,ADP PROPN DET PROPN NOUN ADJ PROPN AUX VERB PUNCT NOUN ADJ PUNCT ADV ADP NOUN NUM PUNCT 
+891,Nobody gave me chocolate on Valentine's day.,Nadie me dio chocolates en el día de San Valentin.,NOUN VERB PRON NOUN ADP PROPN PART NOUN PUNCT ,PRON PRON VERB NOUN ADP DET NOUN ADP PROPN PROPN PUNCT 
+892,It was the best I've ever seen.,Era el mejor dentro de los que he visto.,PRON VERB DET ADJ PRON VERB ADV VERB PUNCT ,AUX DET ADJ ADV ADP DET PRON AUX VERB PUNCT 
+893,I'm watching my sister play soccer.,Estoy mirando a mi hermana jugar fútbol.,PRON VERB VERB DET NOUN VERB NOUN PUNCT ,AUX VERB ADP DET NOUN VERB NOUN PUNCT 
+894,Congratulations!,¡Felicitaciones!,NOUN PUNCT ,PUNCT NOUN PUNCT 
+895,Haven't you left yet?,¿No te has ido todavía?,VERB ADV PRON VERB ADV PUNCT ,PUNCT ADV PRON AUX VERB ADV PUNCT 
+896,I danced the entire night through.,Bailé toda la noche entera.,PRON VERB DET ADJ NOUN ADV PUNCT ,VERB DET DET NOUN ADJ PUNCT 
+897,"Oh, it's very cold today!",¡Hoy el dia esta muy frio!,INTJ PUNCT PRON VERB ADV ADJ NOUN PUNCT ,PUNCT ADV DET NOUN DET ADV ADJ PUNCT 
+898,Fishing is my only hobby.,La pesca es mi unica manía.,NOUN VERB DET ADJ NOUN PUNCT ,DET NOUN AUX DET ADJ NOUN PUNCT 
+899,I think I'm a little bit drunk.,Pienso que me he emborrachado un poco.,PRON VERB PRON VERB DET ADJ NOUN ADJ PUNCT ,VERB SCONJ PRON AUX VERB DET PRON PUNCT 
+900,Which floor do you want?,¿A qué piso va?,DET NOUN VERB PRON VERB PUNCT ,PUNCT ADP DET NOUN VERB PUNCT 
+901,My friend was so angry that he hit me in the face.,Mi amigo estaba tan enojado que él me golpeó en la cara.,DET NOUN VERB ADV ADJ ADP PRON VERB PRON ADP DET NOUN PUNCT ,DET NOUN AUX ADV ADJ SCONJ PRON PRON VERB ADP DET NOUN PUNCT 
+902,What do you think of my new skirt?,¿Qué piensas acerca de mi nueva falda?,PRON VERB PRON VERB ADP DET ADJ NOUN PUNCT ,PUNCT PRON VERB ADV ADP DET ADJ NOUN PUNCT 
+903,Don't squeeze the toothpaste in the middle.,No exprimir la crema dental desde el medio.,VERB ADV VERB DET NOUN ADP DET NOUN PUNCT ,ADV VERB DET NOUN ADJ ADP DET NOUN PUNCT 
+904,Are we just friends? Or lovers?,¿Seremos solo amigos o amantes?,VERB PRON ADV NOUN PUNCT CCONJ NOUN PUNCT ,PUNCT PART ADV NOUN CONJ NOUN PUNCT 
+905,She is ugly but very friendly.,Ella es fea pero es muy generosa.,PRON VERB ADJ CCONJ ADV ADJ PUNCT ,PRON AUX ADJ CONJ AUX ADV ADJ PUNCT 
+906,Who can write it on the board?,¿Quién quiere escribir en el tablero?,PRON VERB VERB PRON ADP DET NOUN PUNCT ,PUNCT PRON VERB VERB ADP DET NOUN PUNCT 
+907,Many Koreans still don't like to sleep in beds.,A muchos coreanos todavía no les gusta dormir en la cama.,ADJ PROPN ADV VERB ADV VERB PART VERB ADP NOUN PUNCT ,ADP DET NOUN ADV ADV PRON VERB VERB ADP DET NOUN PUNCT 
+908,I feel weird because I used your toothbrush.,Me siento extraño porque utilicé tu cepillo dental.,PRON VERB ADJ ADP PRON VERB DET NOUN PUNCT ,PRON VERB ADJ SCONJ VERB DET NOUN ADJ PUNCT 
+909,He deserves a compliment.,Él merece un elogio.,PRON VERB DET NOUN PUNCT ,PRON VERB DET NOUN PUNCT 
+910,Sometimes credit cards can also function as a travel pass card.,Las tarjetas de crédito también funcionan como tarjeta de transporte.,ADV NOUN NOUN VERB ADV VERB ADP DET NOUN NOUN NOUN PUNCT ,DET NOUN ADP NOUN ADV VERB SCONJ NOUN ADP NOUN PUNCT 
+911,You don't need film with a digital camera.,No necesitas rollo en una cámara fotográfica digital.,PRON VERB ADV VERB NOUN ADP DET ADJ NOUN PUNCT ,ADV VERB NOUN ADP DET NOUN ADJ ADJ PUNCT 
+912,Get me a knife to slice this watermelon.,Consígueme un cuchillo para rebanar esta sandía.,VERB PRON DET NOUN PART VERB DET NOUN PUNCT ,PROPN DET NOUN ADP VERB DET NOUN PUNCT 
+913,What's the capital of Canada?,¿Cuál es el capital de Canadá?,PRON VERB DET NOUN ADP PROPN PUNCT ,PUNCT PRON AUX DET NOUN ADP PROPN PUNCT 
+914,Hyean's eyes are really big.,Los ojos de Hyean son realmente grandes.,PROPN PART NOUN VERB ADV ADJ PUNCT ,DET NOUN ADP PROPN AUX ADV ADJ PUNCT 
+915,I can't sleep at night if I drink coffee.,No puedo dormir en la noche si bebo café.,PRON AUX ADV VERB ADP NOUN ADP PRON VERB NOUN PUNCT ,ADV AUX VERB ADP DET NOUN SCONJ VERB NOUN PUNCT 
+916,My computer is out of order again!,¡Mi computadora está fuera de servicio otra vez!,DET NOUN VERB ADP ADP NOUN ADV PUNCT ,PUNCT DET NOUN AUX ADV ADP NOUN DET NOUN PUNCT 
+917,There was a smudge of lipstick on the cup.,Había una mancha del lápiz labial en la taza.,ADV VERB DET NOUN ADP NOUN ADP DET NOUN PUNCT ,AUX DET NOUN ADP NOUN ADJ ADP DET NOUN PUNCT 
+918,Turn off the light and turn on the radio.,Apaga la luz y prende la radio.,VERB PART DET NOUN CCONJ VERB PART DET NOUN PUNCT ,VERB DET NOUN CONJ VERB DET NOUN PUNCT 
+919,I can't breath through my nose when I catch a cold.,No puedo respirar a través de mi nariz cuando cojo un frío.,PRON AUX ADV VERB ADP DET NOUN ADV PRON VERB DET NOUN PUNCT ,ADV AUX VERB ADP NOUN ADP DET NOUN SCONJ VERB DET NOUN PUNCT 
+920,"Two hamburgers and one cola to go, please.","Dos hamburguesas y una cola, por favor.",NUM NOUN CCONJ NUM NOUN PART VERB PUNCT INTJ PUNCT ,NUM NOUN CONJ DET NOUN PUNCT ADP NOUN PUNCT 
+921,You can change the font size.,Puedes cambiar el tamaño de la letra.,PRON VERB VERB DET ADJ NOUN PUNCT ,AUX VERB DET NOUN ADP DET NOUN PUNCT 
+922,"My child has grown up, so he is too big for these clothes.",Mi niño ha crecido demasiado. Él es muy grande para estas ropas.,DET NOUN VERB VERB PART PUNCT CCONJ PRON VERB ADV ADJ ADP DET NOUN PUNCT ,DET NOUN AUX VERB ADV PUNCT PRON AUX ADV ADJ ADP DET NOUN PUNCT 
+923,What would you like to have for Christmas?,¿Qué quieres tener para Navidad?,PRON VERB PRON VERB PART VERB ADP PROPN PUNCT ,PUNCT DET AUX VERB ADP PROPN PUNCT 
+924,He is tall and has a beard.,Él tiene barba y su estatura es alta.,PRON VERB ADJ CCONJ VERB DET NOUN PUNCT ,PRON VERB NOUN CONJ DET NOUN AUX ADJ PUNCT 
+925,I want to raise a cat.,Deseo criar un gato.,PRON VERB PART VERB DET NOUN PUNCT ,VERB VERB DET NOUN PUNCT 
+926,Why did you take a taxi today?,¿Por qué cogiste un taxi hoy?,ADV VERB PRON VERB DET NOUN NOUN PUNCT ,PUNCT ADP PRON VERB DET NOUN ADV PUNCT 
+927,I can't believe you learned Taekwondo.,No puedo creer que has aprendido Taekwondo.,PRON AUX ADV VERB PRON VERB PROPN PUNCT ,ADV AUX VERB SCONJ AUX VERB PROPN PUNCT 
+928,I had a bad attitude in class.,Tenía una mala actitud en clase.,PRON VERB DET ADJ NOUN ADP NOUN PUNCT ,VERB DET ADJ NOUN ADP NOUN PUNCT 
+929,I was born in the year of the sheep.,Nací en el año de las ovejas.,PRON VERB VERB ADP DET NOUN ADP DET NOUN PUNCT ,VERB ADP DET NOUN ADP DET NOUN PUNCT 
+930,Why did that taxi just take off like that?,¿Por qué ese taxi  se fue de esa forma?,ADV VERB DET NOUN ADV VERB PART ADP DET PUNCT ,PUNCT ADP PRON DET NOUN SPACE PRON VERB ADP DET NOUN PUNCT 
+931,You want to play tennis with me?,¿Deseas jugar al tenis conmigo?,PRON VERB PART VERB NOUN ADP PRON PUNCT ,PUNCT AUX VERB ADP NOUN PRON PUNCT 
+932,Can you move that table so I can sweep the floor?,"¿Puedes mover esa tabla, así puedo barrer el piso?",VERB PRON VERB DET NOUN ADP PRON VERB VERB DET NOUN PUNCT ,PUNCT AUX VERB DET NOUN PUNCT ADV AUX VERB DET NOUN PUNCT 
+933,What's on television tonight?,¿Qué está en la televisión esta noche?,PRON VERB ADP NOUN NOUN PUNCT ,PUNCT PRON VERB ADP DET NOUN DET NOUN PUNCT 
+934,His big nose is the central feature of his face.,Su nariz grande es la característica central de su cara.,DET ADJ NOUN VERB DET ADJ NOUN ADP DET NOUN PUNCT ,DET NOUN ADJ AUX DET NOUN ADJ ADP DET NOUN PUNCT 
+935,I especially loved the last song.,Especialmente me gustó la última canción.,PRON ADV VERB DET ADJ NOUN PUNCT ,ADV PRON VERB DET ADJ NOUN PUNCT 
+936,I scored 40 points and our team won the game.,Anoté 40 puntos y nuestro equipo ganó el juego.,PRON VERB NUM NOUN CCONJ DET NOUN VERB DET NOUN PUNCT ,VERB NUM NOUN CONJ DET NOUN VERB DET NOUN PUNCT 
+937,I dyed my hair blue and my mom kicked me out.,Teñí mi pelo azul y mi mamá me echó de casa.,PRON VERB DET NOUN ADJ CCONJ DET NOUN VERB PRON PART PUNCT ,VERB DET NOUN ADJ CONJ DET NOUN PRON VERB ADP NOUN PUNCT 
+938,Would you like to come along to the party?,¿Quieres venir a la fiesta?,VERB PRON VERB PART VERB PART ADP DET NOUN PUNCT ,PUNCT AUX VERB ADP DET NOUN PUNCT 
+939,I can't move my arm now.,Ahora no puedo mover el brazo.,PRON AUX ADV VERB DET NOUN ADV PUNCT ,ADV ADV AUX VERB DET NOUN PUNCT 
+940,Korean drugstores only sell medicine.,Las farmacias coreanas venden solamente medicina.,ADJ NOUN ADV VERB NOUN PUNCT ,DET NOUN ADJ VERB ADV NOUN PUNCT 
+941,I am 100 percent confident of winning.,Estoy cien porciento seguro que voy a ganar.,PRON VERB NUM NOUN ADJ ADP VERB PUNCT ,AUX NUM NOUN ADJ PRON AUX ADP VERB PUNCT 
+942,It's raining. Open the umbrella.,Está lloviendo. Abre el paraguas.,PRON VERB VERB PUNCT VERB DET NOUN PUNCT ,AUX VERB PUNCT VERB DET NOUN PUNCT 
+943,I have to put this letter in a mailbox.,Es que tengo que enviar esta carta por correo.,PRON VERB PART VERB DET NOUN ADP DET NOUN PUNCT ,AUX SCONJ VERB SCONJ VERB DET NOUN ADP NOUN PUNCT 
+944,The grapes are too sour.,Las uvas son demasiadas amargas.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN AUX ADJ NOUN PUNCT 
+945,"Two tickets for adults and one for a child, please.","Dos boletos para los adultos y uno para un niño, por favor.",NUM NOUN ADP NOUN CCONJ NUM ADP DET NOUN PUNCT INTJ PUNCT ,NUM NOUN ADP DET NOUN CONJ PRON ADP DET NOUN PUNCT ADP NOUN PUNCT 
+946,Her face lit up at the news.,Su gesto se encendió al oir las noticias.,DET NOUN VERB PART ADP DET NOUN PUNCT ,DET NOUN PRON VERB ADP VERB DET NOUN PUNCT 
+947,That's the way my dad expresses his love.,Ésa es la manera en que mi papá expresa su amor.,DET VERB DET NOUN DET NOUN VERB DET NOUN PUNCT ,PRON AUX DET NOUN ADP PRON DET NOUN VERB DET NOUN PUNCT 
+948,May I unfasten my seat belt?,¿Puedo desatar mi cinturón de seguridad?,VERB PRON VERB DET NOUN NOUN PUNCT ,PUNCT AUX VERB DET NOUN ADP NOUN PUNCT 
+949,Are you going back to France for good?,¿Te vas definitivamente para Francia?,VERB PRON VERB ADV ADP PROPN ADP ADJ PUNCT ,PUNCT PRON VERB ADV ADP PROPN PUNCT 
+950,How do I install this program?,¿Cómo instalo este programa?,ADV VERB PRON VERB DET NOUN PUNCT ,PUNCT PRON VERB DET NOUN PUNCT 
+951,You look really tired. What's up?,Pareces realmente cansado. ¿Pasa algo?,PRON VERB ADV ADJ PUNCT PRON VERB ADV PUNCT ,VERB ADV ADJ PUNCT PUNCT VERB PRON PUNCT 
+952,My skin is rather dry.,Mi piel está seca.,DET NOUN VERB ADV ADJ PUNCT ,DET NOUN AUX ADJ PUNCT 
+953,I heard you play the piano very well.,Te oí tocar el piano muy bien.,PRON VERB PRON VERB DET NOUN ADV ADV PUNCT ,PRON VERB VERB DET NOUN ADV ADV PUNCT 
+954,Why do so many people smoke?,¿Por qué muchas personas fuman?,ADV VERB ADV ADJ NOUN VERB PUNCT ,PUNCT ADP PRON DET NOUN VERB PUNCT 
+955,I had pizza for lunch and spaghetti for dinner.,Comía pizza para el almuerzo y espagueti para la cena.,PRON VERB NOUN ADP NOUN CCONJ NOUN ADP NOUN PUNCT ,DET NOUN ADP DET NOUN CONJ NOUN ADP DET NOUN PUNCT 
+956,Salt is necessary to cook kimchi stew.,La sal es necesaria para cocinar guisado de kimchi.,NOUN VERB ADJ PART VERB NOUN NOUN PUNCT ,DET NOUN AUX ADJ ADP VERB ADJ ADP NOUN PUNCT 
+957,How long has it been since we've seen a clear sky?,¿Cuanto tiempo hace desde que vimos el cielo claro?,ADV ADV VERB PRON VERB ADP PRON VERB VERB DET ADJ NOUN PUNCT ,PUNCT SCONJ NOUN VERB ADP SCONJ VERB DET NOUN ADJ PUNCT 
+958,"I was going to do it, but I couldn't.","Iba a hacerlo, pero no pude.",PRON VERB VERB PART VERB PRON PUNCT CCONJ PRON AUX ADV PUNCT ,AUX ADP NOUN PUNCT CONJ ADV VERB PUNCT 
+959,We charge ninety thousand per day.,Nosotros ganamos noventa mil por día. ,PRON VERB NUM NUM ADP NOUN PUNCT ,PRON VERB NUM NUM ADP NOUN PUNCT 
+960,"All right, but just this once.","Está bien, pero que sea sólo esta vez.",ADV ADV PUNCT CCONJ ADV DET ADV PUNCT ,AUX ADV PUNCT CONJ PRON AUX ADV DET NOUN PUNCT 
+961,How is our son doing in school?,¿Cómo se porta mi hijo en la escuela?,ADV VERB DET NOUN VERB ADP NOUN PUNCT ,PUNCT PRON PRON VERB DET NOUN ADP DET NOUN PUNCT 
+962,What year are you in? - I'm a freshman.,¿En qué año estás? - Estoy en primer año.,DET NOUN VERB PRON ADP PUNCT PUNCT PRON VERB DET NOUN PUNCT ,PUNCT ADP DET NOUN VERB PUNCT PUNCT VERB ADP ADJ NOUN PUNCT 
+963,Do you have discounts for students?,¿Tienes descuentos para los estudiantes?,VERB PRON VERB NOUN ADP NOUN PUNCT ,PUNCT VERB NOUN ADP DET NOUN PUNCT 
+964,I'll be back to Korea again next year.,Regresaré a Corea otra vez el año próximo.,PRON AUX VERB ADV ADP PROPN ADV ADJ NOUN PUNCT ,VERB ADP PROPN DET NOUN DET NOUN ADJ PUNCT 
+965,Can you speak Korean?,¿Sabes hablar coreano?,VERB PRON VERB PROPN PUNCT ,PUNCT AUX VERB ADJ PUNCT 
+966,Hangeul has fourteen consonants and ten vowels.,Hangeul tiene catorce consonantes y diez vocales.,PROPN VERB NUM NOUN CCONJ NUM NOUN PUNCT ,PROPN VERB NUM NOUN CONJ NUM NOUN PUNCT 
+967,Let me have a try.,Déjame intentar.,VERB PRON VERB DET NOUN PUNCT ,AUX VERB PUNCT 
+968,I don't like to wear hanbok very much because it's uncomfortable.,No me gusta usar hanbog porque es muy incómodo.,PRON VERB ADV VERB PART VERB PROPN ADV ADV ADP PRON VERB ADJ PUNCT ,ADV PRON VERB VERB NOUN SCONJ AUX ADV ADJ PUNCT 
+969,What do these Chinese characters mean?,Qué hacen medio de estos caracteres chinos?,PRON VERB DET ADJ NOUN VERB PUNCT ,PRON VERB NUM ADP DET NOUN ADJ PUNCT 
+970,My grandmother passed away last night.,Mi abuela murió ayer.,DET NOUN VERB PART ADJ NOUN PUNCT ,DET NOUN VERB ADV PUNCT 
+971,My grandfather is in the hospital.,Mi abuelo está en el hospital.,DET NOUN VERB ADP DET NOUN PUNCT ,DET NOUN VERB ADP DET NOUN PUNCT 
+972,I'm glad that we'll be working together.,Estoy alegre de que trabajaremos juntos.,PRON VERB ADJ ADP PRON AUX VERB VERB ADV PUNCT ,AUX ADJ ADP SCONJ VERB ADJ PUNCT 
+973,Why is her line always busy?,¿Por qué tu línea está siempre ocupada?,ADV VERB DET NOUN ADV ADJ PUNCT ,PUNCT ADP PRON DET NOUN AUX ADV ADJ PUNCT 
+974,The sun rises the same though a new year begins.,El año cambia pero el sol sala otra vez.,DET NOUN VERB DET ADJ ADP DET ADJ NOUN VERB PUNCT ,DET NOUN VERB CONJ DET NOUN NOUN DET NOUN PUNCT 
+975,You can do internet searches by cellphone.,Puedes hacer búsquedas de Internet por celular.,PRON VERB VERB NOUN NOUN ADP NOUN PUNCT ,AUX VERB NOUN ADP PROPN ADP VERB PUNCT 
+976,Now I'm sick of hamburgers., Estoy cansado de hamburguesas.,ADV PRON VERB ADJ ADP NOUN PUNCT ,SPACE AUX ADJ ADP NOUN PUNCT 
+977,"As long as she is fine, I'm happy.","Mientras ella esté bien, yo soy feliz.",ADV ADV ADP PRON VERB ADJ PUNCT PRON VERB ADJ PUNCT ,SCONJ PRON AUX ADV PUNCT PRON AUX ADJ PUNCT 
+978,I have a long torso and short legs.,Tengo un torso largo y unas piernas cortas.,PRON VERB DET ADJ NOUN CCONJ ADJ NOUN PUNCT ,VERB DET NOUN ADJ CONJ DET NOUN ADJ PUNCT 
+979,What do you do for a living now?,¿De qué trabajas ahora?,PRON VERB PRON VERB ADP DET NOUN ADV PUNCT ,PUNCT ADP PRON VERB ADV PUNCT 
+980,My older brother acts as if he were my father.,Mi hermano mayor actúa como si él fuera mi padre.,DET ADJ NOUN VERB ADP ADP PRON VERB DET NOUN PUNCT ,DET NOUN ADJ VERB SCONJ SCONJ PRON AUX DET NOUN PUNCT 
+981,The seasons in Australia are opposite to those in Korea.,Las estaciones en Australia son opuestas a las de Corea.,DET NOUN ADP PROPN VERB ADJ ADP DET ADP PROPN PUNCT ,DET NOUN ADP PROPN AUX VERB ADP DET ADP PROPN PUNCT 
+982,"Excuse me, can you tell me where the Hotel Hanguk is?","¿Perdóneme, puede decirme donde está el hotel Hanguk?",VERB PRON PUNCT VERB PRON VERB PRON ADV DET PROPN PROPN VERB PUNCT ,PUNCT INTJ PUNCT AUX VERB SCONJ VERB DET NOUN PROPN PUNCT 
+983,I'm traveling alone.,Estoy viajando solo.,PRON VERB VERB ADV PUNCT ,AUX VERB ADJ PUNCT 
+984,Are you still angry with me?,¿Todavía estás enojado conmigo?,VERB PRON ADV ADJ ADP PRON PUNCT ,PUNCT ADV AUX ADJ PRON PUNCT 
+985,There's someone in the bathroom.,Hay alguien en el baño.,ADV VERB NOUN ADP DET NOUN PUNCT ,AUX PRON ADP DET NOUN PUNCT 
+986,You should confirm the reservation.,Debes confirmar la reservación.,PRON VERB VERB DET NOUN PUNCT ,AUX VERB DET NOUN PUNCT 
+987,The doctor is with another patient right now.,El doctor está con otro paciente ahora.,DET NOUN VERB ADP DET NOUN ADV ADV PUNCT ,DET NOUN VERB ADP DET NOUN ADV PUNCT 
+988,You're quitting the company?,¿Vas a renunciar la compañía?,PRON VERB VERB DET NOUN PUNCT ,PUNCT AUX ADP VERB DET NOUN PUNCT 
+989,When do you expect the meeting to finish?,¿Cuándo piensas que vas a  finalizar la reunión?,ADV VERB PRON VERB DET NOUN PART VERB PUNCT ,PUNCT PRON VERB SCONJ VERB ADP SPACE VERB DET NOUN PUNCT 
+990,I'll call you back ten minutes later.,Te llamaré detrás diez minutos más tarde.,PRON AUX VERB PRON ADV NUM NOUN ADV PUNCT ,PRON VERB ADV NUM NOUN ADV ADV PUNCT 
+991,The musical performance was excellent.,El funcionamiento musical fue excelente.,DET ADJ NOUN VERB ADJ PUNCT ,DET NOUN ADJ AUX ADJ PUNCT 
+992,Your girlfriend looked much more beautiful than I had expected.,Tu novia lucía mucho más hermosa de lo que había esperado.,DET NOUN VERB ADV ADV ADJ ADP PRON VERB VERB PUNCT ,DET NOUN VERB ADV ADV ADJ ADP DET PRON AUX VERB PUNCT 
+993,How many holidays do you have on Chusok?,¿Cuántos días duran estas vacaciones de Chusok?,ADV ADJ NOUN VERB PRON VERB ADP PROPN PUNCT ,PUNCT DET NOUN VERB DET NOUN ADP PROPN PUNCT 
+994,Blow your nose with a piece of tissue.,Suénese la nariz con papel higiénico.,VERB DET NOUN ADP DET NOUN ADP NOUN PUNCT ,VERB DET NOUN ADP NOUN ADJ PUNCT 
+995,Put your wastepaper into the waste basket.,Tirar la basura en el cesto de basura.,VERB DET NOUN ADP DET NOUN NOUN PUNCT ,VERB DET NOUN ADP DET NOUN ADP NOUN PUNCT 
+996,A small river flows near my house.,Un río pequeño fluye cerca de mi casa.,DET ADJ NOUN VERB ADP DET NOUN PUNCT ,DET NOUN ADJ VERB ADV ADP DET NOUN PUNCT 
+997,White goes with your dark skin tones.,El blanco queda lindo con tus oscuros tonos de la piel.,PROPN VERB ADP DET ADJ NOUN NOUN PUNCT ,DET NOUN VERB ADJ ADP NOUN ADJ NOUN ADP DET NOUN PUNCT 
+998,I don't have the energy to play tennis today.,Hoy no tengo suficiente energía para jugar al tenis.,PRON VERB ADV VERB DET NOUN PART VERB NOUN NOUN PUNCT ,ADV ADV VERB ADJ NOUN ADP VERB ADP NOUN PUNCT 
+999,It's so hard to get a job these days.,Es difícil conseguir un trabajo actualmente.,PRON VERB ADV ADJ PART VERB DET NOUN DET NOUN PUNCT ,AUX ADJ VERB DET NOUN ADV PUNCT 
