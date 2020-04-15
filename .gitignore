@@ -1,2 +1,4 @@
 __pycache__/
 .DS_Store
+data/english_spanish.csv
+data/english_spanish.csv.zip
