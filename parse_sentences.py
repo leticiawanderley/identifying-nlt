@@ -35,7 +35,7 @@ def main():
   filename = 'data/english_spanish.csv'
   df = pre_process_data(filename, selected_columns, new_column_names)
 
-  languages_columns {'en': 'english', 'es': 'spanish'}
+  languages_columns = {'en': 'english', 'es': 'spanish'}
   df = pos_tag(df, languages_columns)
 
   results_filename = 'data/tagged_sentences_english_spanish.csv'
