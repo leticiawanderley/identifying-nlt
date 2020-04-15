@@ -2,7 +2,7 @@ import argparse
 import math
 import pandas as pd
 
-from utils import sublist_count
+from utils import create_vocab_dict, sublist_count, split_sentences
 
 def pre_process_data(filename):
   """Format training data
@@ -11,27 +11,29 @@ def pre_process_data(filename):
   """
   df = pd.read_csv(filename)
   datasets = {}
-  datasets['en'] = df.en_pos.str.cat(sep='| ')
-  datasets['es'] = df.es_pos.str.cat(sep='| ')
+  datasets['en'] = split_sentences(df.en_pos.tolist())
+  datasets['es'] = split_sentences(df.es_pos.tolist())
   return datasets
 
 def extract_vocabulary(dataset):
   """Extract pos tag alphabet.
 
   Removing less frequente tags (frequency < 0.5%.)"""
+  count_dict, dataset_size = create_vocab_dict(dataset)
   vocabulary = []
-  tag_set = set(dataset)
-  threshold = 0.005*len(dataset)
+  tag_set = count_dict.keys()
+  threshold = 0.005 * dataset_size
   for tag in tag_set:
-    if dataset.count(tag) > threshold:
+    if count_dict[tag] > threshold:
       vocabulary.append(tag)
   return vocabulary
 
 def replace_oov(dataset, vocabulary):
   """Replace out of vocabulary tags with a special symbol (#)."""
   for i in range(len(dataset)):
-    if dataset[i] not in vocabulary:
-      dataset[i] = '#'
+    for j in range(len(dataset[i]))
+      if dataset[i][j] not in vocabulary:
+        dataset[i][j] = '#'
   return dataset
 
 def unsmoothed(n, tags, dataset):
@@ -48,21 +50,23 @@ def laplace(n, tags, dataset, vocabulary_size):
 
 def deleted_interpolation(n, dataset):
   """Compute interpolation weights using deleted interpolation."""
+  grams = {}
   gamas = [0.0]*n
-  for i in range(0, len(dataset) - n):
-    best_count = 0
-    best_gama = 0
-    best_p = 0
-    for j in range(n):
-      candidate_count = sublist_count(dataset[i:i+(n-j)], dataset)
-      candidate_p = 0
-      if sublist_count(dataset[i:i+(n-j-1)], dataset) > 1:
-        candidate_p = (candidate_count - 1)/(sublist_count(dataset[i:i+(n-j-1)], dataset) - 1)
-      if candidate_p > best_p:
-        best_count = candidate_count
-        best_gama = j
-        best_p = candidate_p
-    gamas[best_gama] += best_count
+  for sentence in dataset:
+    for i in range(0, len(sentence) - n):
+      best_count = 0
+      best_gama = 0
+      best_p = 0
+      for j in range(n):
+        candidate_count = sublist_count(sentence[i:i+(n-j)], dataset)
+        candidate_p = 0
+        if sublist_count(sentence[i:i+(n-j-1)], dataset) > 1:
+          candidate_p = (candidate_count - 1)/(sublist_count(sentence[i:i+(n-j-1)], dataset) - 1)
+        if candidate_p > best_p:
+          best_count = candidate_count
+          best_gama = j
+          best_p = candidate_p
+      gamas[best_gama] += best_count
   gama_sum = sum(gamas)
   return [g/gama_sum for g in gamas]
 
