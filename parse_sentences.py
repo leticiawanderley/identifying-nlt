@@ -6,6 +6,7 @@ models = {
   'es': spacy.load("es_core_news_md")
 }
 
+
 def pre_process_data(filename, selected_columns, new_column_names):
     """Create pandas dataframe with selected columns."""
     df = pd.read_csv(filename)
@@ -17,7 +18,9 @@ def pre_process_data(filename, selected_columns, new_column_names):
 def pos_tag(df, languages_columns):
     """Add part-of-speech tags columns to dataframe."""
     for lang in languages_columns.keys():
-        df[lang + '_pos'] = df.apply(lambda x : tag_sentences(x[languages_columns[lang]], lang), axis=1)
+        df[lang + '_pos'] = df.apply(lambda x:
+                                     tag_sentences(x[languages_columns[lang]],
+                                                   lang), axis=1)
     return df
 
 

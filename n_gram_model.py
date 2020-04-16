@@ -93,7 +93,8 @@ def deleted_interpolation(n, vocabs):
         for i in range(n - 1, 0, -1):
             n_gram_list = n_gram.split()
             numerator = get_count(n_gram_list[:i + 1], vocabs) - 1
-            denominator = (len(vocabs[0]) if i == 0 else get_count(n_gram_list[:i], vocabs)) - 1
+            denominator = (len(vocabs[0]) if i == 0
+                           else get_count(n_gram_list[:i], vocabs)) - 1
             p = numerator/denominator if denominator > 0 else 0
             if p > best_p:
                 best_p = p
@@ -109,7 +110,8 @@ def interpolation(n, tags, vocabs, gamas):
     prob = 0
     for i in range(n):
         numerator = get_count(tags[:n-i], vocabs)
-        denominator = len(vocabs[0]) if i == (n - 1) else get_count(tags[:n-i-1], vocabs)
+        denominator = (len(vocabs[0]) if i == (n - 1)
+                       else get_count(tags[:n-i-1], vocabs))
         prob += (gamas[i] * (numerator/denominator)) if denominator > 0 else 0
     return math.log(prob)
 
@@ -135,7 +137,8 @@ def process_training_data(datasets_filenames, method, n, languages):
         dataset = datasets[lang]
         vocabulary, vocabs = pre_process_training_data(dataset, n)
         if method == INTERPOLATION:
-            langs[lang] = [vocabs, vocabulary, deleted_interpolation(n, vocabs)]
+            langs[lang] = [vocabs, vocabulary,
+                           deleted_interpolation(n, vocabs)]
         else:
             langs[lang] = vocabs, vocabulary
     return langs
@@ -164,8 +167,8 @@ def main(method, dataset_filenames, test_ngrams, languages):
             probability = 0
             if len(processed_ngram) > n:
                 for i in range(0, len(processed_ngram)):
-                    probability += test_ngram(method, n, processed_ngram[i:i+n],
-                                              langs[l])
+                    probability += test_ngram(method, n,
+                                              processed_ngram[i:i+n], langs[l])
             else:
                 probability += test_ngram(method, n, processed_ngram, langs[l])
             print(l, probability)
@@ -173,10 +176,18 @@ def main(method, dataset_filenames, test_ngrams, languages):
 
 def parse_arg_list():
     """Uses argparse to parse the required parameters"""
-    parser = argparse.ArgumentParser(description='', formatter_class=argparse.RawTextHelpFormatter)
+    parser = argparse.ArgumentParser(
+                description='',
+                formatter_class=argparse.RawTextHelpFormatter)
     required_args = parser.add_argument_group('required arguments')
-    required_args.add_argument('-m', '--method', help='Smoothing method. One of unsmoothed, laplace, or interpolation', required=True)
-    required_args.add_argument('-d', '--dataset_file', help='name of the file which contains the training data', required=True)
+    required_args.add_argument(
+        '-m', '--method',
+        help='Smoothing method. One of unsmoothed, laplace, or interpolation',
+        required=True)
+    required_args.add_argument(
+        '-d', '--dataset_file',
+        help='name of the file which contains the training data',
+        required=True)
 
     args = parser.parse_args()
     return args
@@ -184,6 +195,8 @@ def parse_arg_list():
 
 if __name__ == "__main__":
     args = parse_arg_list()
-    test_ngrams = [['DET', 'NOUN', 'VERB'], ['PUNCT', 'VERB', 'DET'], ['|', 'VERB', 'DET']]
+    test_ngrams = [['DET', 'NOUN', 'VERB'],
+                   ['PUNCT', 'VERB', 'DET'],
+                   ['|', 'VERB', 'DET']]
     languages = ['en', 'es']
     main(args.method, [args.dataset_file], test_ngram, languages)
