@@ -1,24 +1,35 @@
-def sublist_count(sublist, dataset):
-  """Count the amount of times a sublist appears inside a list."""
-  count = 0
-  for sentence in dataset:
-    count += sum(sentence[i:i + len(sublist)] == sublist for i in range(len(sentence)))
-  return count
-
 def split_sentences(dataset):
+  """Create list of tags from each of the datasets' rows
+  appending two end of sentence markers to the end of the lists."""
   for i in range(len(dataset)):
-    dataset[i] = dataset[i].split()
+    dataset[i] = dataset[i].split() + ['_', '_']
+  return dataset
 
-def create_vocab_dict(dataset):
+
+def extract_vocabs(dataset, n):
+  """For each gram from unigram to n-gram, create a dictionary in which
+  the keys are the n-grams that exist on the dataset
+  and the values are their occurence counts."""
+  vocabs = {}
+  for length in range(n):
+    vocabs[length] = {}
   dataset_size = 0
-  count_dict = {}
   for sent in dataset:
-    for tag in sent:
-      dataset_size += 1
-      if tag not in count_dict.keys():
-        count_dict[tag] = 0
-      count_dict[tag] += 1
-  return count_dict, dataset_size
+    dataset_size += len(sent)
+    for i in range(len(sent)):
+      for j in range(n):
+        right_index = i + j + 1
+        if right_index <= len(sent):
+          key = ' '.join(sent[i:right_index])
+          if key not in vocabs[j].keys():
+            vocabs[j][key] = 0
+          vocabs[j][key] += 1
+  return vocabs, dataset_size
 
-def iterate_rows():
-  return
+
+def get_count(tags, vocabs):
+  """Retrive number of occurences of tag sequence
+  from the pre-processed n-gram vocabularies."""
+  vocab = vocabs[len(tags) - 1]
+  tags_key = ' '.join(tags)
+  return vocab[tags_key] if tags_key in vocab.keys() else 0

@@ -2,6 +2,7 @@ import pandas as pd
 
 from n_gram_model import process_training_data, pre_process_test, test_ngram
 
+
 def pre_process_data(filename, language):
   df = pd.read_csv(filename)
   df = df[['student_id','language', 'error_type',
@@ -12,7 +13,8 @@ def pre_process_data(filename, language):
   es_errors_df = df[df['language'] == language]
   return es_errors_df
 
-def test(train_dataset, method, test_df):
+
+def test(train_dataset_filenames, method, test_df, languages):
   data_dict = {
     'student_id': [], 'error_type': [],
     'en': [], 'es': [],
@@ -22,9 +24,9 @@ def test(train_dataset, method, test_df):
   }
   methods = {'unsmoothed': [1, 'unsmoothed'], 'laplace': [3, 'add-one'], 'interpolation': [3, 'interpolation']}
   n = methods[method][0]
-  langs = process_training_data(train_dataset, method, n)
+  langs = process_training_data(train_dataset_filenames, method, n, languages)
   fields = ['student_id', 'error_type',
-            'correct_trigram_poss', 'incorrect_trigram_poss'
+            'correct_trigram_poss', 'incorrect_trigram_poss',
             'correct_trigram', 'incorrect_trigram',
             'correct_sentence', 'incorrect_sentence']
   for index, row in test_df.iterrows():
@@ -41,15 +43,18 @@ def test(train_dataset, method, test_df):
   df = pd.DataFrame.from_dict(data_dict)
   df.to_csv('data/results.csv')
 
+
 def populate_dict(dict, row, fields):
   for field in fields:
     dict[field].append(row[field])
 
 def main():
   language = 'Spanish'
-  training_df = pre_process_data('data/main_parser.csv')
+  test_df = pre_process_data('data/main_parser.csv', language)
   method = 'interpolation'
-  test('data/tagged_sentences_1000sents.csv', method, training_df)
+  languages = ['en', 'es']
+  test(['data/tagged_sentences_1000sents.csv', 'data/tagged_sentences_dataset_sentences.csv'],
+        method, test_df, languages)
 
 if __name__ == "__main__":
   main()

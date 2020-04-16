@@ -30,15 +30,15 @@ def tag_sentences(sentence, language):
   return tags
 
 def main():
-  selected_columns = ['English', 'Spanish']
+  selected_columns = ['english', 'spanish']
   new_column_names = ['english', 'spanish']
-  filename = 'data/english_spanish.csv'
+  filename = 'data/dataset_sentences.csv'
   df = pre_process_data(filename, selected_columns, new_column_names)
 
   languages_columns = {'en': 'english', 'es': 'spanish'}
   df = pos_tag(df, languages_columns)
 
-  results_filename = 'data/tagged_sentences_english_spanish.csv'
+  results_filename = 'data/tagged_sentences_dataset_sentences.csv'
   df.to_csv(results_filename, index=True)
 
 if __name__ == "__main__":
