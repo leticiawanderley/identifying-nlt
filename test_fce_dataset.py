@@ -5,7 +5,7 @@ from n_gram_model import pre_process_test, process_training_data, test_ngram
 
 def pre_process_data(filename, language):
     df = pd.read_csv(filename)
-    df = df[['student_id','language', 'error_type',
+    df = df[['student_id', 'language', 'error_type',
              'correct_trigram_tags', 'incorrect_trigram_tags',
              'correct_trigram_poss', 'incorrect_trigram_poss',
              'correct_trigram', 'incorrect_trigram',
