@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 
@@ -58,8 +59,14 @@ def main():
     test_df = pre_process_data('data/main_parser.csv', language)
     method = 'interpolation'
     languages = ['en', 'es']
-    test(['data/tagged_sentences_1000sents.csv',
-          'data/tagged_sentences_dataset_sentences.csv'],
+    folder = 'data/europarl'
+    files = os.listdir(folder)
+    training_datasets = ['data/tagged_sentences_1000sents.csv',
+                         'data/tagged_sentences_dataset_sentences.csv']
+    for file in files:
+        if 'tagged' in file:
+            training_datasets.append(folder + '/' + file)
+    test(training_datasets,
          method, test_df, languages)
 
 

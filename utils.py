@@ -1,9 +1,11 @@
 def split_sentences(dataset):
     """Create list of tags from each of the datasets' rows
     appending two end of sentence markers to the end of the lists."""
+    clean_dataset = []
     for i in range(len(dataset)):
-        dataset[i] = dataset[i].split() + ['_', '_']
-    return dataset
+        if type(dataset[i]) == str:
+            clean_dataset.append(dataset[i].split() + ['_', '_'])
+    return clean_dataset
 
 
 def extract_vocabs(dataset, n):
