@@ -1,5 +1,5 @@
-ADJ__AdpType=Prep, 
-ADJ__AdpType=Preppron|Gender=Masc|Number=Sing,
+ADJ__AdpType=Prep
+ADJ__AdpType=Preppron|Gender=Masc|Number=Sing
 ADJ__AdvType=Tim
 ADJ__Gender=Fem|Number=Plur
 ADJ__Gender=Fem|Number=Plur|NumType=Ord
