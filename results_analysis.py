@@ -16,7 +16,8 @@ def data_summary_count(df, columns):
     counter = columns[0]
     grouped = df.groupby(columns)[counter].count().reset_index(name='count')
     grouped = grouped.sort_values('count', ascending=False)
-    grouped.to_csv('data/summaries/top_' + '_'.join(columns) + '.csv')
+    grouped.to_csv('data/summaries/more_common_in_es_' + '_'.join(columns) +
+                   '.csv')
 
 
 def create_summaries(df, columns):
