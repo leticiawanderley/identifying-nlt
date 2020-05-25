@@ -18,26 +18,26 @@ ADJ__Number=Plur,JJ,grandes,big
 ADJ__Number=Sing,JJ,mayor,bigger
 ADJ___,JJ,especial,special
 ADP__AdpType=Prep,IN,en,in
-ADP__AdpType=Preppron|Gender=Fem|Number=Sing,IN,,
+ADP__AdpType=Preppron|Gender=Fem|Number=Sing,IN,da,of the
 ADP__AdpType=Preppron|Gender=Masc|Number=Plur,IN,,
-ADP__AdpType=Preppron|Gender=Masc|Number=Sing,IN,del,of then
-ADV__AdpType=Prep,
-ADV__AdpType=Preppron|Gender=Masc|Number=Sing
-ADV__AdvType=Tim
-ADV__Gender=Masc|Number=Sing
-ADV__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-ADV__Number=Plur
-ADV__Polarity=Neg
-ADV___
-AUX__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part
-AUX__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part
+ADP__AdpType=Preppron|Gender=Masc|Number=Sing,IN,del,of the
+ADV__AdpType=Prep,RB,encima,above
+ADV__AdpType=Preppron|Gender=Masc|Number=Sing,RB,,
+ADV__AdvType=Tim,RB,después,after
+ADV__Gender=Masc|Number=Sing,RB,,
+ADV__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,RB,,
+ADV__Number=Plur,RB,,
+ADV__Polarity=Neg,RB,no,no
+ADV___,RB,temporalmente,temporarily
+AUX__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBD,
+AUX__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,
 AUX__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part
-AUX__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin
-AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin
-AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin
-AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin
-AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin
+AUX__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBD,sido,was
+AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,
+AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,serían, would be
+AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,sería, would be
+AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,serías, would be
+AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,sería, would be
 AUX__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin
 AUX__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin
 AUX__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin
@@ -59,7 +59,7 @@ AUX__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin
 AUX__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
 AUX__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin
 AUX__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,
 AUX__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
 AUX__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin
 AUX__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin
@@ -71,7 +71,7 @@ AUX__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
 AUX__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
 AUX__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
 AUX__VerbForm=Ger
-AUX__VerbForm=Inf
+AUX__VerbForm=Inf,MD,haber,to have
 CCONJ___
 DET__Definite=Def|Gender=Fem|Number=Plur|PronType=Art
 DET__Definite=Def|Gender=Fem|Number=Sing|PronType=Art
