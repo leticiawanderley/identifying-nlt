@@ -29,18 +29,18 @@ ADV__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,RB,,
 ADV__Number=Plur,RB,,
 ADV__Polarity=Neg,RB,no,no
 ADV___,RB,temporalmente,temporarily
-AUX__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBD,
-AUX__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,
-AUX__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part
-AUX__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBD,sido,was
-AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,
-AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,serían, would be
-AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,sería, would be
-AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,serías, would be
-AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,sería, would be
-AUX__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin
-AUX__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin
-AUX__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin
+AUX__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBN,,
+AUX__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,VBN,,
+AUX__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part,VBN,,
+AUX__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBN,sido,been
+AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,MD,seríamos,(we) would be
+AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,MD,estarían,(they) would be
+AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD,sería,(I) would be
+AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD,serías,(you) would be
+AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD,sería,(he/she/it) would be
+AUX__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VB,sean,be
+AUX__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin,VB,sé,be
+AUX__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VB,vaya,go
 AUX__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin
 AUX__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin
 AUX__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin
