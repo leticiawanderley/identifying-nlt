@@ -33,36 +33,36 @@ AUX__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBN,,
 AUX__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,VBN,,
 AUX__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part,VBN,,
 AUX__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBN,sido,been
-AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,MD,seríamos,(we) would be
-AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,MD,estarían,(they) would be
-AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD,sería,(I) would be
-AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD,serías,(you) would be
-AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD,sería,(he/she/it) would be
+AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,MD VB,seríamos,(we) would be
+AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,MD VB,estarían,(they) would be
+AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD VB,sería,(I) would be
+AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD VB,serías,(you) would be
+AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD VB,sería,(he/she/it) would be
 AUX__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VB,sean,be
 AUX__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin,VB,sé,be
 AUX__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VB,vaya,go
-AUX__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin
-AUX__Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-AUX__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,
-AUX__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-AUX__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin
-AUX__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin,MD VB,podremos,(we) will be able
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,habíamos,had
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin,VBD,estuvimos,(we) were
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,hemos,(we) have
+AUX__Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin,VBP,habéis,(you) have
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin,MD VB,deberán,(they) must be
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,habían,(they) had
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin,VBD,fueron,(they) were
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,están,(they) are
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin,MD VB,estaré,(I) will be
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,era,(I) was
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin,VBD,fui,(I) was
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,soy,(I) am
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin,MD VB,,
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin,VBD,(you) were
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,(you) are
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin,MD VB,(he/she/it) will be
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,había,(he/she/it)had
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,VBD,fue,(he/she/it) was
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,es,is
+AUX__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VDB,hubiéramos,had
+AUX__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,estemos,(we) are
 AUX__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin
 AUX__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin
 AUX__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin
