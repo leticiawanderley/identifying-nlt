@@ -55,24 +55,24 @@ AUX__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,era,(I) was
 AUX__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin,VBD,fui,(I) was
 AUX__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,soy,(I) am
 AUX__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin,MD VB,,
-AUX__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin,VBD,(you) were
-AUX__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,(you) are
-AUX__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin,MD VB,(he/she/it) will be
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin,VBD,estabas,(you) were
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,eres,(you) are
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin,MD VB,será,(he/she/it) will be
 AUX__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,había,(he/she/it)had
 AUX__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,VBD,fue,(he/she/it) was
 AUX__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,es,is
-AUX__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VDB,hubiéramos,had
+AUX__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,hubiéramos,had
 AUX__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,estemos,(we) are
-AUX__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin
-AUX__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin
-AUX__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin
-AUX__Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-AUX__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
-AUX__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-AUX__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-AUX__VerbForm=Ger
+AUX__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,hubiesen,had
+AUX__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,sean,are
+AUX__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,fuese,was
+AUX__Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBZ,esté,is
+AUX__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,seas,are
+AUX__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,fueran,were
+AUX__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,haya,has
+AUX__VerbForm=Ger,VBG,siendo,being
 AUX__VerbForm=Inf,MD,haber,to have
-CCONJ___
+CCONJ___,CC,pero,but
 DET__Definite=Def|Gender=Fem|Number=Plur|PronType=Art
 DET__Definite=Def|Gender=Fem|Number=Sing|PronType=Art
 DET__Definite=Def|Gender=Masc|Number=Plur|PronType=Art
