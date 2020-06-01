@@ -148,7 +148,7 @@ NUM__NumForm=Digit|NumType=Frac,CD,1-0,1-0
 NUM__NumType=Card,CD,cuatro,four
 NUM__Number=Plur|NumType=Card,CD,tres,three
 NUM__Number=Sing|NumType=Card,JJ,doble,double
-PART___
+PART___,RB,no,not
 PRON__Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs
 PRON__Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs
 PRON__Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs
