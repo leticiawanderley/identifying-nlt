@@ -254,10 +254,10 @@ VERB__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD VB,,
 VERB__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD VB,,
 VERB__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD VB,presentaría,would present
 VERB__Mood=Imp|Number=Plur|Person=1|VerbForm=Fin,VB PRP VB,digamos,let us say
-VERB__Mood=Imp|Number=Plur|Person=2|VerbForm=Fin,VBG,incluidos,including
-VERB__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VBP,pasen,go
+VERB__Mood=Imp|Number=Plur|Person=2|VerbForm=Fin,VB,preparad,prepare
+VERB__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VB,evalúen,evaluate
 VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin,VB,imaginen,imagine
-VERB__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VBP,asuman,assume
+VERB__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VB,permita,allow
 VERB__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin,MD VB,intentaremos,will try
 VERB__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,veíamos,saw
 VERB__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin,VBD,quisimos,loved
