@@ -10,7 +10,7 @@ ADJ__Gender=Fem|Number=Sing|VerbForm=Part,JJ,abierta,open
 ADJ__Gender=Masc,JJ,único,singular
 ADJ__Gender=Masc|Number=Plur,JJ,nuevos,new
 ADJ__Gender=Masc|Number=Plur|NumType=Ord,JJ,primeros,first
-ADJ__Gender=Masc|Number=Plur|VerbForm=Part,abiertos,open
+ADJ__Gender=Masc|Number=Plur|VerbForm=Part,VBN,ganados,won
 ADJ__Gender=Masc|Number=Sing,JJ,nuevo,new
 ADJ__Gender=Masc|Number=Sing|NumType=Ord,JJ,primero,first
 ADJ__Gender=Masc|Number=Sing|VerbForm=Part,JJ,abierto,open
