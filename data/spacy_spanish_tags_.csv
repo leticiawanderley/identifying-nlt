@@ -1,0 +1,299 @@
+AnCora tag,Penn Treebank tag,Spanish example,English example
+ADJ__AdpType=Prep,JJ,debido,proper
+ADJ__AdpType=Preppron|Gender=Masc|Number=Sing,JJ,junto,together
+ADJ__AdvType=Tim,JJ,próximo,next
+ADJ__Gender=Fem|Number=Plur,JJ,nuevas,new
+ADJ__Gender=Fem|Number=Plur|NumType=Ord,JJ,últimas,last
+ADJ__Gender=Fem|Number=Plur|VerbForm=Part,JJ,abiertas,open
+ADJ__Gender=Fem|Number=Sing,JJ,nueva,new
+ADJ__Gender=Fem|Number=Sing|NumType=Ord,JJ,última,last
+ADJ__Gender=Fem|Number=Sing|VerbForm=Part,JJ,abierta,open
+ADJ__Gender=Masc,JJ,único,singular
+ADJ__Gender=Masc|Number=Plur,JJ,nuevos,new
+ADJ__Gender=Masc|Number=Plur|NumType=Ord,JJ,primeros,first
+ADJ__Gender=Masc|Number=Plur|VerbForm=Part,VBN,ganados,won
+ADJ__Gender=Masc|Number=Sing,JJ,nuevo,new
+ADJ__Gender=Masc|Number=Sing|NumType=Ord,JJ,primero,first
+ADJ__Gender=Masc|Number=Sing|VerbForm=Part,JJ,abierto,open
+ADJ__Number=Plur,JJ,grandes,big
+ADJ__Number=Sing,JJ,mayor,bigger
+ADJ___,JJ,especial,special
+ADP__AdpType=Prep,IN,en,in
+ADP__AdpType=Preppron|Gender=Fem|Number=Sing,IN,da,of the
+ADP__AdpType=Preppron|Gender=Masc|Number=Plur,IN,,
+ADP__AdpType=Preppron|Gender=Masc|Number=Sing,IN,del,of the
+ADV__AdpType=Prep,RB,encima,above
+ADV__AdpType=Preppron|Gender=Masc|Number=Sing,RB,,
+ADV__AdvType=Tim,RB,después,after
+ADV__Gender=Masc|Number=Sing,RB,,
+ADV__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,RB,,
+ADV__Number=Plur,RB,,
+ADV__Polarity=Neg,RB,no,no
+ADV___,RB,temporalmente,temporarily
+AUX__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBN,,
+AUX__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,VBN,,
+AUX__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part,VBN,,
+AUX__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBN,sido,been
+AUX__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,MD VB,seríamos,(we) would be
+AUX__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,MD VB,estarían,(they) would be
+AUX__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD VB,sería,(I) would be
+AUX__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD VB,serías,(you) would be
+AUX__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD VB,sería,(he/she/it) would be
+AUX__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VB,sean,be
+AUX__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin,VB,sé,be
+AUX__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VB,vaya,go
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin,MD VB,podremos,(we) will be able
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,habíamos,had
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin,VBD,estuvimos,(we) were
+AUX__Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,hemos,(we) have
+AUX__Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin,VBP,habéis,(you) have
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin,MD VB,deberán,(they) must be
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,habían,(they) had
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin,VBD,fueron,(they) were
+AUX__Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,están,(they) are
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin,MD VB,estaré,(I) will be
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,era,(I) was
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin,VBD,fui,(I) was
+AUX__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,soy,(I) am
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin,MD VB,,
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin,VBD,estabas,(you) were
+AUX__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,eres,(you) are
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin,MD VB,será,(he/she/it) will be
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,había,(he/she/it)had
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,VBD,fue,(he/she/it) was
+AUX__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,es,is
+AUX__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,hubiéramos,had
+AUX__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,estemos,(we) are
+AUX__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,hubiesen,had
+AUX__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,sean,are
+AUX__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,fuese,was
+AUX__Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBZ,esté,is
+AUX__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,seas,are
+AUX__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,fueran,were
+AUX__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,haya,has
+AUX__VerbForm=Ger,VBG,siendo,being
+AUX__VerbForm=Inf,TO VB,ser,to be
+CCONJ___,CC,pero,but
+DET__Definite=Def|Gender=Fem|Number=Plur|PronType=Art,DT,las,the
+DET__Definite=Def|Gender=Fem|Number=Sing|PronType=Art,DT,la,the
+DET__Definite=Def|Gender=Masc|Number=Plur|PronType=Art,DT,los,the
+DET__Definite=Def|Gender=Masc|Number=Sing|PronType=Art,DT,el,the
+DET__Definite=Def|Gender=Masc|PronType=Art,DT,,
+DET__Definite=Def|Number=Sing|PronType=Art,DT,,
+DET__Definite=Ind|Gender=Fem|Number=Plur|PronType=Art,DT,unas,a
+DET__Definite=Ind|Gender=Fem|Number=Sing|NumType=Card|PronType=Art,DT,,
+DET__Definite=Ind|Gender=Fem|Number=Sing|PronType=Art,DT,una,a
+DET__Definite=Ind|Gender=Masc|Number=Plur|PronType=Art,DT,unos,a
+DET__Definite=Ind|Gender=Masc|Number=Sing|NumType=Card|PronType=Art,DT,,
+DET__Definite=Ind|Gender=Masc|Number=Sing|PronType=Art,DT,un,a
+DET__Gender=Fem|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,nuestras,our
+DET__Gender=Fem|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs,PRP$,,
+DET__Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs,PRP$,suyas,his/hers
+DET__Gender=Fem|Number=Plur|PronType=Art,DT,,
+DET__Gender=Fem|Number=Plur|PronType=Dem,DT,estás,these
+DET__Gender=Fem|Number=Plur|PronType=Ind,DT,algunas,some
+DET__Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,nuestra,our
+DET__Gender=Fem|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs,PRP$,,
+DET__Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+DET__Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs,PRP$,suya,his/hers
+DET__Gender=Fem|Number=Sing|PronType=Art,DT,,
+DET__Gender=Fem|Number=Sing|PronType=Dem,DT,esa,that
+DET__Gender=Fem|Number=Sing|PronType=Ind,DT,alguna,any
+DET__Gender=Fem|Number=Sing|PronType=Int,WRB JJ,cuánta,how many
+DET__Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,nuestros,our
+DET__Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs,PRP$,suyos,his
+DET__Gender=Masc|Number=Plur|PronType=Art,DT,,
+DET__Gender=Masc|Number=Plur|PronType=Dem,DT,éstos,these
+DET__Gender=Masc|Number=Plur|PronType=Ind,DT,algunos,some
+DET__Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,nuestro,our
+DET__Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+DET__Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs,PRP$,suyo,his
+DET__Gender=Masc|Number=Sing|PronType=Art,DT,,
+DET__Gender=Masc|Number=Sing|PronType=Dem,DT,este,this
+DET__Gender=Masc|Number=Sing|PronType=Ind,DT,algún,some
+DET__Gender=Masc|Number=Sing|PronType=Int,WRB JJ,cuánto,how much
+DET__Gender=Masc|Number=Sing|PronType=Tot,DT,todo,all
+DET__Number=Plur|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs,PRP$,mis,my
+DET__Number=Plur|Number[psor]=Sing|Person=2|Poss=Yes|PronType=Prs,PRP$,tus,your
+DET__Number=Plur|Person=3|Poss=Yes|PronType=Prs,PRP$,sus,his
+DET__Number=Plur|PronType=Dem,DT,,
+DET__Number=Plur|PronType=Ind,DT,,
+DET__Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs,PRP$,mi,my
+DET__Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes|PronType=Prs,PRP$,tu,your
+DET__Number=Sing|Person=3|Poss=Yes|PronType=Prs,PRP$,su,his
+DET__Number=Sing|PronType=Dem,DT,,
+DET__Number=Sing|PronType=Ind,DT,,
+DET__PronType=Int,WDT,qué,which
+DET__PronType=Rel,WDT,,
+INTJ___,UH,bueno,okay
+NOUN__AdvType=Tim,NNP,Domingo,Sunday
+NOUN__AdvType=Tim|Gender=Masc|Number=Sing,NN,,
+NOUN__Gender=Fem,NN,,
+NOUN__Gender=Fem|Number=Plur,NNS,ratas,rats
+NOUN__Gender=Fem|Number=Sing,NN,falta,lack
+NOUN__Gender=Masc,NN,,
+NOUN__Gender=Masc|Number=Plur,NNS,países,countries
+NOUN__Gender=Masc|Number=Sing,NN,candidato,candidate
+NOUN__Gender=Masc|Number=Sing|VerbForm=Part,VBN,heredado,inherited
+NOUN__NumForm=Digit,NN,dólar,dollar
+NOUN__Number=Plur,NNS,criminales,criminals
+NOUN__Number=Sing,NN,portavoz,spokesperson
+NOUN___,NNP,noviembre,November
+NUM__Gender=Fem|Number=Plur|NumType=Card,DT,ambas,both
+NUM__Gender=Fem|Number=Sing|NumType=Card,PDT,media,half
+NUM__Gender=Masc|Number=Plur|NumType=Card,DT,ambos,both
+NUM__Gender=Masc|Number=Sing|NumType=Card,PDT,medio,half
+NUM__NumForm=Digit,CD,,
+NUM__NumForm=Digit|NumType=Card,CD,4.251.218,4.251.218
+NUM__NumForm=Digit|NumType=Frac,CD,1-0,1-0
+NUM__NumType=Card,CD,cuatro,four
+NUM__Number=Plur|NumType=Card,CD,tres,three
+NUM__Number=Sing|NumType=Card,JJ,doble,double
+PART___,RB,no,not
+PRON__Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs,PRP,ellas,them
+PRON__Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs,PRP,ella,she
+PRON__Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs,PRP,ellos,they
+PRON__Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs,PRP,él,he
+PRON__Case=Acc|Number=Plur|Person=3|PronType=Prs,PRP,,
+PRON__Case=Acc|Number=Sing|Person=3|PronType=Prs,PRP,,
+PRON__Case=Acc|Person=3|PronType=Prs,PRP,,
+PRON__Case=Dat|Number=Plur|Person=3|PronType=Prs,PRP,les,them
+PRON__Case=Dat|Number=Sing|Person=3|PronType=Prs,PRP,le,him
+PRON__Case=Nom|Number=Sing|Person=1|PronType=Prs,PRP,yo,I
+PRON__Case=Nom|Number=Sing|Person=2|PronType=Prs,PRP,tú,you
+PRON__Gender=Fem|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Fem|Number=Plur|Person=3|PronType=Prs,PRP,,
+PRON__Gender=Fem|Number=Plur|PronType=Dem,DT,esas,these
+PRON__Gender=Fem|Number=Plur|PronType=Ind,DT,algunas,some
+PRON__Gender=Fem|Number=Plur|PronType=Int,WP,,
+PRON__Gender=Fem|Number=Plur|PronType=Rel,WP,,
+PRON__Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Fem|Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Fem|Number=Sing|Person=1|PronType=Prs,PRP,,
+PRON__Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs,PRP$,suya,his/hers
+PRON__Gender=Fem|Number=Sing|Person=3|PronType=Prs,PRP,,
+PRON__Gender=Fem|Number=Sing|PronType=Dem,DT,esta,this
+PRON__Gender=Fem|Number=Sing|PronType=Ind,DT,alguna,some
+PRON__Gender=Fem|Number=Sing|PronType=Rel,WP,,
+PRON__Gender=Masc|Number=Plur|Person=1|PronType=Prs,PRP,,
+PRON__Gender=Masc|Number=Plur|Person=2|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Masc|Number=Plur|Person=3|PronType=Prs,PRP,,
+PRON__Gender=Masc|Number=Plur|PronType=Dem,DT,ésos,those
+PRON__Gender=Masc|Number=Plur|PronType=Ind,DT,algunos,some
+PRON__Gender=Masc|Number=Plur|PronType=Int,WP,,
+PRON__Gender=Masc|Number=Plur|PronType=Rel,WP,,
+PRON__Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Masc|Number=Sing|Number[psor]=Sing|Person=2|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs,PRP$,,
+PRON__Gender=Masc|Number=Sing|Person=3|PronType=Prs,PRP,,
+PRON__Gender=Masc|Number=Sing|PronType=Dem,DT,este,this
+PRON__Gender=Masc|Number=Sing|PronType=Ind,DT,un,a
+PRON__Gender=Masc|Number=Sing|PronType=Int,WP,,
+PRON__Gender=Masc|Number=Sing|PronType=Rel,WP,,
+PRON__Gender=Masc|Number=Sing|PronType=Tot,DT,todo,all
+PRON__Number=Plur|Person=1,PRP,,
+PRON__Number=Plur|Person=1|PronType=Prs,PRP,,
+PRON__Number=Plur|Person=2|Polite=Form|PronType=Prs,PRP,,
+PRON__Number=Plur|Person=2|PronType=Prs,PRP,,
+PRON__Number=Plur|Person=3|Poss=Yes|PronType=Prs,PRP$,sus,his
+PRON__Number=Plur|Person=3|PronType=Prs,PRP,,
+PRON__Number=Plur|PronType=Dem,JJ,tales,such
+PRON__Number=Plur|PronType=Ind,NN,demás,rest
+PRON__Number=Plur|PronType=Int,WP,cuales,whom
+PRON__Number=Plur|PronType=Rel,WP,quienes,who
+PRON__Number=Sing|Person=1,PRP,,
+PRON__Number=Sing|Person=1|PrepCase=Pre|PronType=Prs,PRP,,
+PRON__Number=Sing|Person=1|PronType=Prs,PRP,,
+PRON__Number=Sing|Person=2,PRP,,
+PRON__Number=Sing|Person=2|Polite=Form|PronType=Prs,PRP,,
+PRON__Number=Sing|Person=2|PrepCase=Pre|PronType=Prs,PRP,,
+PRON__Number=Sing|Person=2|PronType=Prs,PRP,,
+PRON__Number=Sing|Person=3|Poss=Yes|PronType=Prs,PRP$,su,its
+PRON__Number=Sing|Person=3|PronType=Prs,PRP,,
+PRON__Number=Sing|PronType=Dem,DT,eso,that
+PRON__Number=Sing|PronType=Ind,NN,algo,something
+PRON__Number=Sing|PronType=Int,WP,quién,who
+PRON__Number=Sing|PronType=Rel,WP,cuál,what
+PRON__Person=1|PronType=Prs,PRP,,
+PRON__Person=3,PRP,,
+PRON__Person=3|PrepCase=Pre|PronType=Prs,PRP,,
+PRON__Person=3|PronType=Prs,PRP,,
+PRON__PronType=Ind,WRB,donde,where
+PRON__PronType=Int,WDT,que,which
+PRON__PronType=Rel,DT,que,that
+PRON___,PRP,,
+PROPN___,NNP,Madrid,Madrid
+PUNCT__PunctSide=Fin|PunctType=Brck,-RBR-,),)
+PUNCT__PunctSide=Fin|PunctType=Excl,.,!,!
+PUNCT__PunctSide=Fin|PunctType=Qest,.,?,?
+PUNCT__PunctSide=Ini|PunctType=Brck,_LRB_,(,(
+PUNCT__PunctSide=Ini|PunctType=Excl,.,¡,!
+PUNCT__PunctSide=Ini|PunctType=Qest,.,¿,?
+PUNCT__PunctType=Colo,:,:,:
+PUNCT__PunctType=Comm,",",",",","
+PUNCT__PunctType=Dash,SYM,-,-
+PUNCT__PunctType=Peri,.,.,.
+PUNCT__PunctType=Quot,"''",,
+PUNCT__PunctType=Semi,:,;,;
+PUNCT___,.,,
+SCONJ___,IN,como,like
+SYM__NumForm=Digit,NN,%,%
+SYM__NumForm=Digit|NumType=Frac,CD NN,4%,4%
+SYM___,'',','
+VERB__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBN,compensadas,compensated
+VERB__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,VBN,devorada,devoured
+VERB__Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,,
+VERB__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part,VBN,eliminados,eliminated
+VERB__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBN,participado,participated
+VERB__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,MD VB,dejaríamos,would leave
+VERB__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,MD VB,concluirían,would conclude
+VERB__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD VB,,
+VERB__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD VB,,
+VERB__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD VB,presentaría,would present
+VERB__Mood=Imp|Number=Plur|Person=1|VerbForm=Fin,VB PRP VB,digamos,let us say
+VERB__Mood=Imp|Number=Plur|Person=2|VerbForm=Fin,VB,preparad,prepare
+VERB__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VB,evalúen,evaluate
+VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin,VB,imaginen,imagine
+VERB__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VB,permita,allow
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin,MD VB,intentaremos,will try
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,veíamos,saw
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin,VBD,quisimos,loved
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,aparcamos,park
+VERB__Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin,VBP,zurráis,spank
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin,MD VB,reclamarán,will claim
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,impugnaban,challenged
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin,VBD,mantuvieron,upheld
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,mandan,rule
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin,MD VB,daré,will give
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,lograba,managed
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin,VBD,creí,thought
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,comprendo,understand
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin,MD VB,,
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin,VBD,,
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin,VBD,saltaste,jumped
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,acabas,end
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin,MD VB,fabricará,will manufacture
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,cumplía,served
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,VBD,costó,cost
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,iguala,equals
+VERB__Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin,VBP,,
+VERB__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,ingresáramos,entered
+VERB__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,ignoremos,ignore
+VERB__Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin,VBP,,
+VERB__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,pusieran,put
+VERB__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,encuentren,find
+VERB__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,produjera,occurred
+VERB__Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,encuentre,find
+VERB__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,,
+VERB__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,llegara,arrived
+VERB__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,defina,defines
+VERB__VerbForm=Ger,VBG,insultando,insulting
+VERB__VerbForm=Inf,TO VB,impedir,to stop
+X___,XX,,
+_SP,_SP,,
+___Number=Sing|Person=2|PronType=Prs,PRP,,
+___PunctType=Quot,"''",,
+___VerbForm=Inf,TO VB,,
