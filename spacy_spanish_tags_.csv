@@ -235,7 +235,7 @@ PUNCT__PunctType=Colo,:,:,:
 PUNCT__PunctType=Comm,",",",",","
 PUNCT__PunctType=Dash,SYM,-,-
 PUNCT__PunctType=Peri,.,.,.
-PUNCT__PunctType=Quot,'',\",\"
+PUNCT__PunctType=Quot,"''",""","""
 PUNCT__PunctType=Semi,:,;,;
 PUNCT___,.,,
 SCONJ___,IN,como,like
