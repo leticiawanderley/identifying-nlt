@@ -239,9 +239,9 @@ PUNCT__PunctType=Quot,'',","
 PUNCT__PunctType=Semi,:,;,;
 PUNCT___,.,,
 SCONJ___,IN,como,like
-SYM__NumForm=Digit
-SYM__NumForm=Digit|NumType=Frac
-SYM___
+SYM__NumForm=Digit,NN,%,%
+SYM__NumForm=Digit|NumType=Frac,CD NN,4%,4%
+SYM___,'',','
 VERB__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part
 VERB__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part
 VERB__Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
