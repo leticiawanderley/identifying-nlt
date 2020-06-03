@@ -71,7 +71,7 @@ AUX__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,seas,are
 AUX__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,fueran,were
 AUX__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,haya,has
 AUX__VerbForm=Ger,VBG,siendo,being
-AUX__VerbForm=Inf,MD,haber,to have
+AUX__VerbForm=Inf,TO VB,ser,to be
 CCONJ___,CC,pero,but
 DET__Definite=Def|Gender=Fem|Number=Plur|PronType=Art,DT,las,the
 DET__Definite=Def|Gender=Fem|Number=Sing|PronType=Art,DT,la,the
@@ -242,57 +242,57 @@ SCONJ___,IN,como,like
 SYM__NumForm=Digit,NN,%,%
 SYM__NumForm=Digit|NumType=Frac,CD NN,4%,4%
 SYM___,'',','
-VERB__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part
-VERB__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part
-VERB__Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-VERB__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part
-VERB__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-VERB__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin
-VERB__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin
-VERB__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin
-VERB__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin
-VERB__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin
-VERB__Mood=Imp|Number=Plur|Person=1|VerbForm=Fin
-VERB__Mood=Imp|Number=Plur|Person=2|VerbForm=Fin
-VERB__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin
-VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin
-VERB__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin
-VERB__Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin
-VERB__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-VERB__Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin
-VERB__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin
-VERB__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin
-VERB__Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin
-VERB__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin
-VERB__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin
-VERB__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin
-VERB__Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-VERB__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
-VERB__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-VERB__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-VERB__VerbForm=Ger
-VERB__VerbForm=Inf
-X___
-_SP
-___Number=Sing|Person=2|PronType=Prs
-___PunctType=Quot
-___VerbForm=Inf
+VERB__Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part,VBN,compensadas,compensated
+VERB__Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part,VBN,devorada,devoured
+VERB__Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,,
+VERB__Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part,VBN,eliminados,eliminated
+VERB__Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part,VBN,participado,participated
+VERB__Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin,MD VB,dejaríamos,would leave
+VERB__Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin,MD VB,concluirían,would conclude
+VERB__Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin,MD VB,,
+VERB__Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin,MD VB,,
+VERB__Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin,MD VB,presentaría,would present
+VERB__Mood=Imp|Number=Plur|Person=1|VerbForm=Fin,VB PRP VB,digamos,let us say
+VERB__Mood=Imp|Number=Plur|Person=2|VerbForm=Fin,VBG,incluidos,including
+VERB__Mood=Imp|Number=Plur|Person=3|VerbForm=Fin,VBP,pasen,go
+VERB__Mood=Imp|Number=Sing|Person=2|VerbForm=Fin,VB,imaginen,imagine
+VERB__Mood=Imp|Number=Sing|Person=3|VerbForm=Fin,VBP,asuman,assume
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin,MD VB,intentaremos,will try
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,veíamos,saw
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin,VBD,quisimos,loved
+VERB__Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,aparcamos,park
+VERB__Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin,VBP,zurráis,spank
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin,MD VB,reclamarán,will claim
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,impugnaban,challenged
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin,VBD,mantuvieron,upheld
+VERB__Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,mandan,rule
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin,MD VB,daré,will give
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,lograba,managed
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin,VBD,creí,thought
+VERB__Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,comprendo,understand
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin,MD VB,,
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin,VBD,,
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin,VBD,saltaste,jumped
+VERB__Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,acabas,end
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin,MD VB,fabricará,will manufacture
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,cumplía,served
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin,VBD,costó,cost
+VERB__Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,iguala,equals
+VERB__Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin,VBP,,
+VERB__Mood=Sub|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin,VBD,ingresáramos,entered
+VERB__Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin,VBP,ignoremos,ignore
+VERB__Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin,VBP,,
+VERB__Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin,VBD,pusieran,put
+VERB__Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin,VBP,encuentren,find
+VERB__Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin,VBD,produjera,occurred
+VERB__Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin,VBP,encuentre,find
+VERB__Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin,VBP,,
+VERB__Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin,VBD,llegara,arrived
+VERB__Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin,VBZ,defina,defines
+VERB__VerbForm=Ger,VBG,insultando,insulting
+VERB__VerbForm=Inf,TO VB,impedir,to stop
+X___,XX,,
+_SP,_SP,,
+___Number=Sing|Person=2|PronType=Prs,PRP,,
+___PunctType=Quot,'',","
+___VerbForm=Inf,TO VB,,
