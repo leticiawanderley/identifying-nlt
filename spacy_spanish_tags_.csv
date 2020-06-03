@@ -238,7 +238,7 @@ PUNCT__PunctType=Peri,.,.,.
 PUNCT__PunctType=Quot,'',","
 PUNCT__PunctType=Semi,:,;,;
 PUNCT___,.,,
-SCONJ___
+SCONJ___,IN,como,like
 SYM__NumForm=Digit
 SYM__NumForm=Digit|NumType=Frac
 SYM___
