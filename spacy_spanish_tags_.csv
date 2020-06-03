@@ -294,5 +294,5 @@ VERB__VerbForm=Inf,TO VB,impedir,to stop
 X___,XX,,
 _SP,_SP,,
 ___Number=Sing|Person=2|PronType=Prs,PRP,,
-___PunctType=Quot,'',","
+___PunctType=Quot,"''",,
 ___VerbForm=Inf,TO VB,,
