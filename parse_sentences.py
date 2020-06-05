@@ -52,7 +52,7 @@ def tag_sentences(models, sentence, language, mapping):
 
 def main(models, input_filename, output_filename):
     new_column_names = ['english', 'spanish']
-    selected_columns = ['EXAMPLE (EN)', 'EXAMPLE (ES)']
+    selected_columns = ['english', 'spanish']
     df = pre_process_data(input_filename, new_column_names, selected_columns)
     languages_columns = {'en': 'english', 'es': 'spanish'}
     df = pos_tag(models, df, languages_columns, 'data/spacy_spanish_tags_.csv')
@@ -60,8 +60,8 @@ def main(models, input_filename, output_filename):
 
 
 if __name__ == "__main__":
-    input_filename = 'data/1000sents.csv'
-    output_filename = 'data/tagged_sentences_1000sents_.csv'
+    input_filename = 'data/dataset_sentences.csv'
+    output_filename = 'data/tagged_sentences_dataset_sentences.csv'
     models = {
         'en': spacy.load("en_core_web_md"),
         'es': spacy.load("es_core_news_md")
