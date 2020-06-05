@@ -1,6 +1,9 @@
 import pandas as pd
 import spacy
 
+from utils import tags_mapping, unpack_poss_and_tags
+
+
 CONJ = 'CONJ'
 CCONJ = 'CCONJ'
 SPANISH = 'es'
@@ -15,18 +18,22 @@ def pre_process_data(filename, new_column_names, selected_columns=None):
     return df
 
 
-def pos_tag(models, df, languages_columns):
+def pos_tag(models, df, languages_columns, mapping_filename):
     """Add part-of-speech tags columns to dataframe."""
+    mapping = tags_mapping(mapping_filename)
     for lang in languages_columns.keys():
-        df[lang + '_pos'] = df.apply(lambda x:
-                                     tag_sentences(models,
-                                                   x[languages_columns[lang]],
-                                                   lang), axis=1)
+        series = df.apply(lambda x: tag_sentences(models,
+                                                  x[languages_columns[lang]],
+                                                  lang, mapping), axis=1)
+        poss, tags = unpack_poss_and_tags(series)
+        df[lang + '_poss'] = poss
+        df[lang + '_tags'] = tags
     return df
 
 
-def tag_sentences(models, sentence, language):
+def tag_sentences(models, sentence, language, mapping):
     """Part-of-speeh tag dataframe sentence."""
+    poss = ''
     tags = ''
     if type(sentence) == str:
         nlp = models[language]
@@ -35,21 +42,26 @@ def tag_sentences(models, sentence, language):
             pos = token.pos_
             if token.pos_ == CONJ:
                 pos = CCONJ if language == SPANISH else pos
-            tags += pos + ' '
-    return tags
+            poss += pos + ' '
+            tag = token.tag_
+            if language == SPANISH:
+                tag = mapping[tag]
+            tags += tag + ' '
+    return (poss, tags)
 
 
 def main(models, input_filename, output_filename):
     new_column_names = ['english', 'spanish']
-    df = pre_process_data(input_filename, new_column_names)
+    selected_columns = ['EXAMPLE (EN)', 'EXAMPLE (ES)']
+    df = pre_process_data(input_filename, new_column_names, selected_columns)
     languages_columns = {'en': 'english', 'es': 'spanish'}
-    df = pos_tag(models, df, languages_columns)
+    df = pos_tag(models, df, languages_columns, 'data/spacy_spanish_tags_.csv')
     df.to_csv(output_filename, index=True)
 
 
 if __name__ == "__main__":
     input_filename = 'data/1000sents.csv'
-    output_filename = 'data/tagged_sentences_1000sents.csv'
+    output_filename = 'data/tagged_sentences_1000sents_.csv'
     models = {
         'en': spacy.load("en_core_web_md"),
         'es': spacy.load("es_core_news_md")

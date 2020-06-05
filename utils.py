@@ -1,3 +1,6 @@
+import csv
+
+
 def split_sentences(dataset):
     """Create list of tags from each of the datasets' rows
     appending two end of sentence markers to the end of the lists."""
@@ -35,3 +38,23 @@ def get_count(tags, vocabs):
     vocab = vocabs[len(tags) - 1]
     tags_key = ' '.join(tags)
     return vocab[tags_key] if tags_key in vocab.keys() else 0
+
+
+def tags_mapping(filename):
+    """Read csv tags mapping and convert it to a dictionary."""
+    mapping_dict = {}
+    with open(filename, newline='') as csvfile:
+        mapping = csv.reader(csvfile, delimiter=',')
+        for row in mapping:
+            mapping_dict[row[0]] = row[1]
+    return mapping_dict
+
+
+def unpack_poss_and_tags(series):
+    """Unpack series of parsed pos and tags into two lists."""
+    poss = []
+    tags = []
+    for row in series.to_list():
+        poss.append(row[0])
+        tags.append(row[1])
+    return poss, tags
