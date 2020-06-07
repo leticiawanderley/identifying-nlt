@@ -28,13 +28,13 @@ def create_summaries(df, columns):
 
 def main():
     columns = ['es', 'en']
-    results_file = 'data/results.csv'
+    results_file = 'data/results_.csv'
     create_summaries(pre_process_data(results_file, columns),
                      [['error_type'],
-                      ['incorrect_trigram_poss'],
-                      ['incorrect_trigram_poss', 'correct_trigram_poss'],
-                      ['incorrect_trigram_poss', 'error_type'],
-                      ['correct_trigram_poss', 'error_type']])
+                      ['incorrect_trigram_tags'],
+                      ['incorrect_trigram_tags', 'correct_trigram_tags'],
+                      ['incorrect_trigram_tags', 'error_type'],
+                      ['correct_trigram_tags', 'error_type']])
 
 
 if __name__ == "__main__":

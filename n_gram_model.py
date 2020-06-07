@@ -21,7 +21,7 @@ def pre_process_data(filenames, languages):
         for language in languages:
             if language not in datasets.keys():
                 datasets[language] = []
-            datasets[language] += split_sentences(df[language + '_pos'].
+            datasets[language] += split_sentences(df[language + '_tags'].
                                                   tolist())
     return datasets
 

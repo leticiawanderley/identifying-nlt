@@ -4,22 +4,26 @@ import os
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 
 
+def populate_dict(dict, row, fields):
+    for field in fields:
+        dict[field].append(row[field])
+
+
 def pre_process_data(filename, language):
     df = pd.read_csv(filename)
     df = df[['student_id', 'language', 'error_type',
              'correct_trigram_tags', 'incorrect_trigram_tags',
-             'correct_trigram_poss', 'incorrect_trigram_poss',
              'correct_trigram', 'incorrect_trigram',
              'correct_sentence', 'incorrect_sentence']]
-    es_errors_df = df[df['language'] == language]
-    return es_errors_df
+    errors_df = df[df['language'] == language]
+    return errors_df
 
 
 def test(train_dataset_filenames, method, test_df, languages):
     data_dict = {
       'student_id': [], 'error_type': [],
       'en': [], 'es': [],
-      'correct_trigram_poss': [], 'incorrect_trigram_poss': [],
+      'correct_trigram_tags': [], 'incorrect_trigram_tags': [],
       'correct_trigram': [], 'incorrect_trigram': [],
       'correct_sentence': [], 'incorrect_sentence': []
     }
@@ -29,13 +33,14 @@ def test(train_dataset_filenames, method, test_df, languages):
     langs = process_training_data(train_dataset_filenames, method, n,
                                   languages)
     fields = ['student_id', 'error_type',
-              'correct_trigram_poss', 'incorrect_trigram_poss',
+              'correct_trigram_tags', 'incorrect_trigram_tags',
               'correct_trigram', 'incorrect_trigram',
               'correct_sentence', 'incorrect_sentence']
     for index, row in test_df.iterrows():
         populate_dict(data_dict, row, fields)
         for l in langs.keys():
-            processed_ngram = pre_process_test(row['incorrect_trigram_poss'].
+            print(row['incorrect_trigram_tags'])
+            processed_ngram = pre_process_test(row['incorrect_trigram_tags'].
                                                split(), langs[l][1])
             probability = 0
             if len(processed_ngram) > n:
@@ -46,12 +51,7 @@ def test(train_dataset_filenames, method, test_df, languages):
                 probability += test_ngram(method, n, processed_ngram, langs[l])
             data_dict[l].append(probability)
     df = pd.DataFrame.from_dict(data_dict)
-    df.to_csv('data/results.csv')
-
-
-def populate_dict(dict, row, fields):
-    for field in fields:
-        dict[field].append(row[field])
+    df.to_csv('data/results_.csv')
 
 
 def main():
