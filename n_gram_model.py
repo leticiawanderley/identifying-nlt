@@ -29,10 +29,10 @@ def pre_process_data(filenames, languages):
 def extract_vocabulary(tag_counts, dataset_size):
     """Extract pos tag alphabet.
 
-    Removing less frequente tags (frequency < 0.5%.)"""
+    Removing less frequente tags (frequency < 0.005%.)"""
     vocabulary = []
     tag_set = tag_counts.keys()
-    threshold = 0.005 * dataset_size
+    threshold = 0.00005 * dataset_size
     for tag in tag_set:
         if tag_counts[tag] > threshold:
             vocabulary.append(tag)
