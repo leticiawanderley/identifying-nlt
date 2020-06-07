@@ -83,17 +83,17 @@ def laplace(n, tags, vocabs, vocabulary_size):
     return math.log(gram_count/previous_count)
 
 
-def deleted_interpolation(n, vocabs):
+def deleted_interpolation(n, vocabs, dataset_size):
     """Compute interpolation weights using deleted interpolation."""
     gamas = [0.0]*n
     for n_gram in vocabs[n-1].keys():
         best_count = 0
         best_gama = 0
         best_p = 0
-        for i in range(n - 1, 0, -1):
+        for i in range(n - 1, -1, -1):
             n_gram_list = n_gram.split()
             numerator = get_count(n_gram_list[:i + 1], vocabs) - 1
-            denominator = (len(vocabs[0]) if i == 0
+            denominator = (dataset_size if i == 0
                            else get_count(n_gram_list[:i], vocabs)) - 1
             p = numerator/denominator if denominator > 0 else 0
             if p > best_p:
@@ -105,12 +105,12 @@ def deleted_interpolation(n, vocabs):
     return [g/gama_sum for g in gamas]
 
 
-def interpolation(n, tags, vocabs, gamas):
+def interpolation(n, tags, vocabs, gamas, dataset_size):
     """Compute n-gram probability with interpolation smoothing."""
     prob = 0
     for i in range(n):
         numerator = get_count(tags[:n-i], vocabs)
-        denominator = (len(vocabs[0]) if i == (n - 1)
+        denominator = (dataset_size if i == (n - 1)
                        else get_count(tags[:n-i-1], vocabs))
         prob += (gamas[i] * (numerator/denominator)) if denominator > 0 else 0
     return math.log(prob)
@@ -121,7 +121,7 @@ def pre_process_training_data(dataset, n):
     vocabs, dataset_size = extract_vocabs(dataset, n)
     vocabulary = extract_vocabulary(vocabs[0], dataset_size)
     vocabs = replace_oov_train(vocabs, vocabulary)
-    return vocabulary, vocabs
+    return vocabulary, vocabs, dataset_size
 
 
 def pre_process_test(ngram, vocabulary):
@@ -135,10 +135,13 @@ def process_training_data(datasets_filenames, method, n, languages):
     langs = {}
     for lang in datasets.keys():
         dataset = datasets[lang]
-        vocabulary, vocabs = pre_process_training_data(dataset, n)
+        vocabulary, vocabs, dataset_size = pre_process_training_data(dataset,
+                                                                     n)
         if method == INTERPOLATION:
+            di = deleted_interpolation(n, vocabs, dataset_size)
             langs[lang] = [vocabs, vocabulary,
-                           deleted_interpolation(n, vocabs)]
+                           di, dataset_size]
+            print(lang, vocabulary, di)
         else:
             langs[lang] = vocabs, vocabulary
     return langs
@@ -151,7 +154,8 @@ def test_ngram(method, n, ngram, language_model):
     elif method == LAPLACE:
         prob = laplace(n, ngram, language_model[0], len(language_model[1]))
     else:
-        prob = interpolation(n, ngram, language_model[0], language_model[2])
+        prob = interpolation(n, ngram, language_model[0],
+                             language_model[2], language_model[3])
     return prob
 
 
