@@ -2,12 +2,9 @@ import argparse
 import math
 import pandas as pd
 
+from constant import INTERPOLATION, LAPLACE, UNSMOOTHED, OOV_TAG,\
+                     NGRAM_METHODS
 from utils import extract_vocabs, get_count, split_sentences
-
-INTERPOLATION = 'interpolation'
-LAPLACE = 'laplace'
-UNSMOOTHED = 'unsmoothed'
-OOV_TAG = '#'
 
 
 def pre_process_data(filenames, languages):
@@ -160,10 +157,7 @@ def test_ngram(method, n, ngram, language_model):
 
 
 def main(method, dataset_filenames, test_ngrams, languages):
-    methods = {UNSMOOTHED: [1, UNSMOOTHED],
-               LAPLACE: [3, LAPLACE],
-               INTERPOLATION: [3, INTERPOLATION]}
-    n = methods[method][0]
+    n = NGRAM_METHODS[method][0]
     langs = process_training_data(dataset_filenames, method, n, languages)
     for ngram in test_ngrams:
         for l in langs.keys():
