@@ -23,4 +23,5 @@ def tag_sentences(nlp, sentence):
     return tags
 
 
-parse_sentences('data/learner_english_sentences.csv', 'data/parsed_learner_english_sentences.csv')
+parse_sentences('data/learner_english_sentences.csv',
+                'data/parsed_learner_english_sentences.csv')
