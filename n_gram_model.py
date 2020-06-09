@@ -135,10 +135,9 @@ def process_training_data(datasets_filenames, method, n, languages):
         vocabulary, vocabs, dataset_size = pre_process_training_data(dataset,
                                                                      n)
         if method == INTERPOLATION:
-            di = deleted_interpolation(n, vocabs, dataset_size)
             langs[lang] = [vocabs, vocabulary,
-                           di, dataset_size]
-            print(lang, vocabulary, di)
+                           deleted_interpolation(n, vocabs, dataset_size),
+                           dataset_size]
         else:
             langs[lang] = vocabs, vocabulary
     return langs
