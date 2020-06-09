@@ -1,0 +1,135 @@
+,Unnamed: 0,Unnamed: 0.1,sentence,correct,tags,en,es,model_result
+0,0,0,The firemen arrived ten minutes later.,True,DT NNS VBD CD NNS RB . ,-12.392351930422613,-12.589787370328498,True
+1,1,1,Arrived the firemen ten minutes later.,False,VBD DT NNS CD NNS RB . ,-13.358546624018624,-11.623597620826194,True
+2,2,2,Yesterday played very well the children.,False,NN VBD RB RB DT NNS . ,-9.800070085924112,-9.300766651979307,True
+3,3,3,Played very well the children yesterday.,False,VBN RB RB DT NNS NN . ,-11.706890243658572,-11.513618328224313,True
+4,4,4,Yesterday the children played very well.,True,NN DT NNS VBD RB RB . ,-10.580729664570477,-12.03384911677992,True
+5,5,5,The children played very well yesterday.,True,DT NNS VBD RB RB NN . ,-12.459146891379032,-13.831526797174922,True
+6,6,6,Often she has helped.,False,RB PRP VBZ VBN . ,-4.452527559411523,-2.414519295096329,True
+7,7,7,She often has helped.,False,PRP RB VBZ VBN . ,-6.402567021899048,-4.15111451112665,True
+8,8,8,They live in the house white.,False,PRP VBP IN DT NN JJ . ,-7.638082119355893,-4.50472424169508,True
+9,9,9,Can you lend me a ball of tennis?,False,MD PRP VB PRP DT NN IN NN . ,-9.386459770826646,-20.89446322221933,False
+10,10,10,The Club of Bridge of the University of Cambridge.,False,DT NNP IN NNP IN DT NNP IN NNP . ,-11.809861197039172,-9.36850373259632,True
+11,11,11,They gave to Sam the book.,False,PRP VBD IN NNP DT NN . ,-9.250858323428105,-7.42887753369425,True
+12,12,12,They gave the book to Sam.,True,PRP VBD DT NN IN NNP . ,-5.798914011610751,-5.2047034255687805,False
+13,13,13,They took to the hospital her mother.,False,PRP VBD IN DT NN PRP$ NN . ,-8.43363883102131,-7.606834385206555,True
+14,14,14,Mrs Smith speaks very well English.,False,NNP NNP VBZ RB RB NNP . ,-11.162157483062146,-12.456612998399287,False
+15,15,15,Keep tidy Britain.,False,VB JJ NNP . ,-5.083416177836073,-5.255933835010255,False
+16,16,16,John has bought the books?,True,NNP VBZ VBN DT NNS . ,-6.296029478336099,-4.804615627657,False
+17,17,17,Has bought the books John? Mary came?,False,VBZ VBN DT NNS NNP . NNP VBD . ,-25.172528170245,-19.38188654548997,True
+18,18,18,When Mary came?,False,WRB NNP VBD . ,-2.1806325762346352,-4.358122792158542,False
+19,19,19,Came Mary?,False,VBD NNP . ,-3.2156632468948634,-2.5035668509793894,True
+20,20,20,"Mary, when came?",False,"NNP , WRB VBD . ",-9.634268913916095,-9.892038929042355,False
+21,21,21,Who did kill Oswald?,False,WP VBD VB NNP . ,-9.224787829639084,-18.11235869373298,False
+22,22,22,Who Oswald killed?,False,WP NNP VBD . ,-3.0455317152225976,-3.318597826099219,False
+23,23,23,Who killed to Kennedy?,False,WP VBD IN NNP . ,-4.047340217879418,-3.3743954652387598,True
+24,24,24,Who Kennedy killed?,False,WP NNP VBD . ,-3.0455317152225976,-3.318597826099219,False
+25,25,25,Did they went?,False,VBD PRP VBD . ,-2.818950000495484,-2.8907579851594085,False
+26,26,26,Do they went?,False,VBP PRP VBD . ,-4.242488593956196,-4.40707678719752,False
+27,27,27,Do she goes?,False,VBP PRP VBZ . ,-2.2419341188701627,-2.1328269187054283,True
+28,28,28,Does she goes?,False,VBZ PRP VBZ . ,-3.3810599645457167,-2.8407738702576886,True
+29,29,29,"They're coming tomorrow, no?",False,"PRP VBP VBG NN , UH . ",-13.234065808068134,-15.346713469513748,False
+30,30,30,"You have a car, no?",False,"PRP VBP DT NN , UH . ",-10.80280586060064,-11.022222606927192,False
+31,31,31,Peter not found the key.,False,NNP RB VBD DT NN . ,-4.065274538279058,-5.154870878145617,False
+32,32,32,Peter not has found the key.,False,NNP RB VBZ VBN DT NN . ,-8.087587526937245,-5.045548871091109,True
+33,33,33,I no understand.,False,PRP RB VBP . ,-0.7695041906104718,-1.1469267701142318,False
+34,34,34,Those no.,False,DT UH . ,-3.0328426265715422,-0.3924829894767338,True
+35,35,35,Green no.,False,NNP NN . ,-1.8050164970116649,-2.2071011207615667,False
+36,36,36,Here no.,False,RB UH . ,-4.133953920945614,-0.03938977483684592,True
+37,37,37,I not saw nobody.,False,PRP RB VBD NN . ,-5.8153238962922975,-5.456207733618766,True
+38,38,38,I didn't see nobody.,False,PRP VBD RB VB NN . ,-6.91355254572165,-12.510751815803433,False
+39,39,39,Tom not helps her never.,False,NNP RB VBZ PRP RB . ,-7.006879068854232,-8.846236806179476,False
+40,40,40,Tom doesn't help her never.,False,NNP VBZ RB VB PRP RB . ,-9.234485192684783,-12.802991846064705,False
+41,41,41,I waited but anybody came.,False,PRP VBD CC NN VBD . ,-14.269949204227547,-13.831881304089992,True
+42,42,42,Maria cans cook.,False,NNP NNS VBP . ,-2.3871934573026308,-3.955437999177165,False
+43,43,43,Do you can swim?,False,VBP PRP MD VB . ,-2.569750327883496,-3.470459560100382,False
+44,44,44,May you come tomorrow?,False,MD PRP VB NN . ,-3.7532916191697865,-17.285496342176735,False
+45,45,45,She could find the key.,False,PRP MD VB DT NN . ,-2.8443258616216305,-2.1674608150125207,True
+46,46,46,She had to win the match.,False,PRP VBD TO VB DT NN . ,-4.8372030740777765,-4.547910349159896,True
+47,47,47,They will can do it next week.,False,PRP MD MD VB PRP JJ NN . ,-13.676895786354642,-28.072273825881723,False
+48,48,48,She went up the stairs.,True,PRP VBD RP DT NNS . ,-7.4691188792566034,-19.92276250444998,True
+49,49,49,She went up the book.,False,PRP VBD RP DT NN . ,-6.038306543636184,-18.44061387678121,False
+50,50,50,They were waiting.,True,PRP VBD VBG . ,-3.5943189103786164,-4.394556890066814,True
+51,51,51,They were waiting the bus.,False,PRP VBD VBG DT NN . ,-6.29120904736136,-6.375499032384268,False
+52,52,52,Mary laughed. What did she laugh?,False,NNP VBD . WP VBD PRP VB . ,-19.710428632467178,-29.485182454996963,False
+53,53,53,Football likes me.,False,NN VBZ PRP . ,-4.4286855181005516,-6.227604460897945,False
+54,54,54,"Do they want some money? Yes, they want.",False,"VBP PRP VB DT NN . UH , PRP VBP . ",-15.711784344228844,-24.435076799539786,False
+55,55,55,"Do you want to go? No, I don't want.",False,"VBP PRP VB TO VB . UH , PRP VBP RB VB . ",-21.943401034349414,-37.45052184682513,False
+56,56,56,I like to get up early; I'm used.,False,PRP VBP TO VB RP RB : PRP VBP VBN . ,-17.886336956849327,-25.462823757442152,False
+57,57,57,"Are they coming? No, I don't think.",False,"VBP PRP VBG . UH , PRP VBP RB VB . ",-20.820886706366675,-30.382533941682937,False
+58,58,58,Look! It rains!,False,VB . PRP VBZ . ,-6.37620816015193,-7.118408782115657,False
+59,59,59,Do I come tomorrow?,False,VBP PRP VB NN . ,-5.998464804573323,-13.086799908234413,False
+60,60,60,I wait for you at home.,False,PRP VBP IN PRP IN NN . ,-9.273740889589275,-9.854077433210877,False
+61,61,61,I see her this evening.,False,PRP VBP PRP DT NN . ,-7.555214630907368,-7.473152932606532,True
+62,62,62,How long are you working in your present job?,False,WRB RB VBP PRP VBG IN PRP$ JJ NN . ,-16.59757076575722,-21.383350754298228,False
+63,63,63,It's a long time that I live here.,False,PRP VBZ DT JJ NN WDT PRP VBP RB . ,-11.185215255781882,-15.214872873934507,False
+64,64,64,When has she received the letter?,False,WRB VBZ PRP VBD DT NN . ,-9.221331128394935,-11.225901239486673,False
+65,65,65,Today I've finished work early because I've started at seven o'clock this morning.,False,NN PRP VB VBN NN RB IN PRP VB VBN IN CD NN DT NN . ,-43.049667488837386,-54.37956848491413,False
+66,66,66,"When we were young, we were playing a lot of tennis.",False,"WRB PRP VBD JJ , PRP VBD VBG DT NN IN NN . ",-21.496464753800687,-21.89109913389948,False
+67,67,67,"When I was a teenager, I was having a motorbike.",False,"WRB PRP VBD DT NN , PRP VBD VBG DT NN . ",-17.872225745322034,-18.09765835135361,False
+68,68,68,She wasn't knowing that he had died.,False,PRP VBD RB VBG IN PRP VBD VBN . ,-15.161413777915742,-17.409137094609097,False
+69,69,69,Come you tomorrow!,False,VB PRP NN . ,-4.495712987137678,-4.3514750408351,True
+70,70,70,"When Mary will get here, tell her to come in.",False,"WRB NNP MD VB RB , VB PRP TO VB RP . ",-18.569213856896575,-27.648162356944017,False
+71,71,71,I use to do a lot of exercise.,False,PRP VBP TO VB DT NN IN NN . ,-6.8772379447398535,-6.529931887134321,True
+72,72,72,The house built itself before the war.,False,DT NN VBD PRP IN DT NN . ,-10.827132702868381,-13.252614787312806,False
+73,73,73,They were given bikes for Christmas.,True,PRP VBD VBN NNS IN NNP . ,-10.770852323055587,-9.612773337626503,False
+74,74,74,Polly was owed a lot of money.,True,NNP VBD VBN DT NN IN NN . ,-8.756283817573824,-7.533049186697331,False
+75,75,75,The lecture was very bored.,False,DT NN VBD RB JJ . ,-7.449793278324509,-8.129959441480725,False
+76,76,76,I'm very interesting in Polish films.,False,PRP VBP RB JJ IN JJ NNS . ,-8.309868956439491,-10.536345960637425,False
+77,77,77,To smoke is bad for you.,False,TO VB VBZ JJ IN PRP . ,-9.835143158399722,-10.545825207300991,False
+78,78,78,It's difficult learn English.,False,PRP VBZ JJ VBP NNP . ,-12.694249752600749,-14.432103443048652,False
+79,79,79,Let us to see.,False,VB PRP TO VB . ,-2.280563693418444,-3.6410461431302874,False
+80,80,80,The food is more important than the art.,False,DT NN VBZ RBR JJ IN DT NN . ,-11.687328022232778,-15.61431618499026,False
+81,81,81,Do you like the big dogs?,False,VBP PRP VB DT JJ NNS . ,-7.386096869127842,-14.239140078898325,False
+82,82,82,"That is the yours, and this is the mine.",False,"DT VBZ DT NNS , CC DT VBZ DT NN . ",-15.434054908011332,-15.0308103747417,True
+83,83,83,We used to live in one  flat; now we live in one house.,False,PRP VBD TO VB IN CD _SP JJ : RB PRP VBP IN CD NN . ,-38.72672542964222,-39.261583315029675,False
+84,84,84,Do you have car?,False,VBP PRP VB NN . ,-5.998464804573323,-13.086799908234413,False
+85,85,85,Her sister is dentist.,False,PRP$ NN VBZ NN . ,-6.216240390507591,-6.2096182343812885,True
+86,86,86,I have ones nice American friends.The table is dirty.,False,PRP VBP NNS JJ JJ NNS . DT NN VBZ JJ . ,-27.118380183734413,-25.280315952922848,True
+87,87,87,"Clean her, please.",False,"VB PRP , UH . ",-8.905150199457307,-9.642363329194406,False
+88,88,88,"They showed me two models, and I bought the small.",False,"PRP VBD PRP CD NNS , CC PRP VBD DT JJ . ",-20.88740104722438,-25.160480883341993,False
+89,89,89,I am more old than my sister.,False,PRP VBP RBR JJ IN PRP$ NN . ,-10.216580105205486,-20.988469858341173,False
+90,90,90,Barcelona is the more large city of Catalonia.,False,NNP VBZ DT RBR JJ NN IN NNP . ,-11.846365953904163,-16.507677398982995,False
+91,91,91,Rosa isn't French. Is Spanish.,False,NNP VBZ RB NNP . VBZ JJ . ,-18.799271061736007,-18.742386101980415,True
+92,92,92,Have gone home because wanted to go to bed.,False,VBP VBN RB IN VBD TO VB IN NN . ,-17.744834312176312,-13.872979823658268,True
+93,93,93,Was raining.,False,VBD VBG . ,-3.368406185867393,-2.875571802729899,True
+94,94,94,That's the man who he lives next door to us.,False,DT VBZ DT NN WP PRP VBZ JJ NN IN PRP . ,-20.16458312474521,-21.777246601259886,False
+95,95,95,I saw she.,False,PRP VBD PRP . ,-3.318156679703915,-5.147973678540478,False
+96,96,96,They know we.,False,PRP VBP PRP . ,-2.8330501585410937,-4.477666264638299,False
+97,97,97,How many cakes is it in the cupboard?,False,WRB JJ NNS VBZ PRP IN DT NN . ,-13.111530045448658,-17.40590952210415,False
+98,98,98,Who is it? Am I.,False,WP VBZ PRP . VBP NN ,-13.286067158590214,-14.499003037858467,False
+99,99,99,They enjoyed very much.,False,PRP VBD RB RB . ,-4.051099049754564,-5.028800395074756,False
+100,100,100,She complained herself.,False,PRP VBD PRP . ,-3.318156679703915,-5.147973678540478,False
+101,101,101,I showered me and went out.,False,PRP VBD PRP CC VBD RP . ,-14.545965598386084,-21.619242033575592,False
+102,102,102,Mary washed the hair.,False,NNP VBD DT NN . ,-2.2513146296070228,-1.7967747685685178,True
+103,103,103,Bill cut himself the finger.,False,NNP VBD PRP DT NN . ,-7.323674341174724,-9.590516772391123,False
+104,104,104,Sara and Joe had both got his shoes wet.,False,NNP CC NNP VBD DT VBN PRP$ NNS JJ . ,-23.914041394552463,-21.696390794694885,True
+105,105,105,The my cousin is in Portugal.,False,DT PRP$ NN VBZ IN NNP . ,-9.043113951680258,-7.895941001122519,True
+106,106,106,The girls we saw looked quite happy.,True,DT NNS PRP VBD VBD RB JJ . ,-14.333217468307508,-15.700816331715279,True
+107,107,107,Did you like the woman we spoke to?,True,VBD PRP VB DT NN PRP VBD IN . ,-12.50250408716228,-18.644290704847766,True
+108,108,108,They have gone for buy a film.,False,PRP VBP VBN IN VB DT NN . ,-10.507592623125033,-8.237972774779736,True
+109,109,109,We are going to have the house painted.,True,PRP VBP VBG TO VB DT NN VBN . ,-10.351229845771398,-12.620225825346232,True
+110,110,110,We are going to make paint the house.,False,PRP VBP VBG TO VB NN DT NN . ,-13.135985189570356,-14.200842035234293,False
+111,111,111,They refused helping their neighbours.,False,PRP VBD VBG PRP$ NNS . ,-8.666904107230373,-9.345943688321233,False
+112,112,112,I'll never forget to see that accident.,False,PRP MD RB VB TO VB DT NN . ,-5.860300865525391,-22.210500164214114,False
+113,113,113,She explained me the problem.,False,PRP VBD PRP DT NN . ,-7.214817936762105,-8.278554051586505,False
+114,114,114,They suggested Jim to take the job.,False,PRP VBD NNP TO VB DT NN . ,-9.668149685135146,-11.751605635288648,False
+115,115,115,I am asking that they go.,False,PRP VBP VBG IN PRP VBP . ,-7.8527871339506365,-9.185821236299148,False
+116,116,116,They ordered her that she should go.,False,PRP VBD PRP IN PRP MD VB . ,-9.407892007880225,-13.774764819841373,False
+117,117,117,They ordered her that she went.,False,PRP VBD PRP IN PRP VBD . ,-9.687763803444607,-12.837664660078213,False
+118,118,118,I want that you don't go.,False,PRP VBP IN PRP VBP RB VB . ,-8.39261495991627,-14.186516002965734,False
+119,119,119,I want that you not go.,False,PRP VBP IN PRP RB VBP . ,-7.641396182955072,-8.901095548369328,False
+120,120,120,The captain ordered the soldiers that they didn't retreat.,False,DT NN VBD DT NNS IN PRP VBD RB VB . ,-19.708744087169308,-23.891223591026268,False
+121,121,121,I don't know where does Mary live.,False,PRP VBP RB VB WRB VBZ NNP VB . ,-22.378925084816885,-40.89456026799391,False
+122,122,122,They asked me how much did I earn.,False,PRP VBD PRP WRB JJ VBD PRP VB . ,-21.360396961309334,-48.651325857620286,False
+123,123,123,They took to their mother to the hospital.,False,PRP VBD IN PRP$ NN IN DT NN . ,-8.328554237589886,-7.463703351794143,True
+124,124,124,For what have you come?,False,IN WP VBP PRP VB . ,-8.666571678766191,-13.741200921706287,False
+125,125,125,I don't know who they're working for.,True,PRP VBP RB VB WP PRP VBP VBG IN . ,-13.691789991140645,-27.092351231193913,True
+126,126,126,Who does Fred sit next to?,True,WP VBZ NNP VB RB IN . ,-13.23178355594498,-17.507474425857286,True
+127,127,127,"After to see the film, we went for a meal.",False,"IN TO VB DT NN , PRP VBD IN DT NN . ",-12.66287285049012,-12.420549506200723,True
+128,128,128,They are into the room.,False,PRP VBP IN DT NN . ,-3.5301721686923924,-3.0099284704810234,True
+129,129,129,We stopped in the crossroads.,False,PRP VBD IN DT NNS . ,-4.598808713152486,-3.3703630833351785,True
+130,130,130,She works like a waitress.,False,PRP VBZ IN DT NN . ,-3.987164473136746,-2.8413077352127614,True
+131,131,131,They seem as their mother.,False,PRP VBP IN PRP$ NN . ,-5.816110551227426,-5.066458194163082,True
+132,132,132,This park was designed for the Catalan architect Gaudi.,False,DT NN VBD VBN IN DT JJ NN NNP . ,-12.854475602696304,-15.725479416116213,False
+133,133,133,They stayed there during three months.,False,PRP VBD RB IN CD NNS . ,-9.922633977330692,-7.7504661069954945,True
