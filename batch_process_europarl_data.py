@@ -17,7 +17,7 @@ def split_csv(filename):
 
 
 if __name__ == "__main__":
-    folder = 'data/europarl'
+    folder = 'data/training data/europarl'
     files = os.listdir(folder)
     models = {
         'en': spacy.load("en_core_web_md"),

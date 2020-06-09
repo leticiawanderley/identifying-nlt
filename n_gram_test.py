@@ -26,9 +26,10 @@ def pre_process_data(filename, fields, language=None):
 
 
 def list_training_datasets():
-    training_datasets = ['data/tagged_sentences_1000sents.csv',
-                         'data/tagged_sentences_dataset_sentences.csv']
-    folder = 'data/europarl'
+    training_datasets = ['data/training data/tagged_sentences_1000sents.csv',
+                         'data/training data/'
+                         'tagged_sentences_dataset_sentences.csv']
+    folder = 'data/training data/europarl'
     files = os.listdir(folder)
     for file in files:
         if 'tagged' in file:
@@ -66,13 +67,13 @@ def main():
               'correct_trigram_tags', 'incorrect_trigram_tags',
               'correct_trigram', 'incorrect_trigram',
               'correct_sentence', 'incorrect_sentence']
-    fields = ['sentence', 'correct', 'tags']
-    test_df = pre_process_data('data/parsed_learner_english_sentences.csv',
-                               fields)
+    # fields = ['sentence', 'correct', 'tags']
+    test_df = pre_process_data('data/testing data/main_parser.csv',
+                               fields, language)
     languages = ['en', 'es']
     method = INTERPOLATION
-    test_column = 'tags'
-    output_file = 'data/results_learner_english_interpol_.csv'
+    test_column = 'incorrect_trigram_tags'
+    output_file = 'data/main_parser_results_interpolation.csv'
     test(training_datasets, method, test_df, languages,
          fields, test_column, output_file)
 

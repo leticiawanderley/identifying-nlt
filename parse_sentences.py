@@ -55,13 +55,15 @@ def main(models, input_filename, output_filename):
     selected_columns = ['english', 'spanish']
     df = pre_process_data(input_filename, new_column_names, selected_columns)
     languages_columns = {'en': 'english', 'es': 'spanish'}
-    df = pos_tag(models, df, languages_columns, 'data/spacy_spanish_tags_.csv')
+    df = pos_tag(models, df, languages_columns,
+                 'data/spaCy tags/spacy_spanish_tags_.csv')
     df.to_csv(output_filename, index=True)
 
 
 if __name__ == "__main__":
-    input_filename = 'data/dataset_sentences.csv'
-    output_filename = 'data/tagged_sentences_dataset_sentences.csv'
+    input_filename = 'data/training data/dataset_sentences.csv'
+    output_filename = ('data/training data/'
+                       'tagged_sentences_dataset_sentences.csv')
     models = {
         'en': spacy.load("en_core_web_md"),
         'es': spacy.load("es_core_news_md")
