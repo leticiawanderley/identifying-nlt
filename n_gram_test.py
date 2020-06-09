@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-from constant import NGRAM_METHODS, INTERPOLATION
+from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 
 
@@ -73,7 +73,7 @@ def main():
     languages = ['en', 'es']
     method = INTERPOLATION
     test_column = 'incorrect_trigram_tags'
-    output_file = 'data/main_parser_results_interpolation.csv'
+    output_file = 'data/results_main_parser_interpolation.csv'
     test(training_datasets, method, test_df, languages,
          fields, test_column, output_file)
 

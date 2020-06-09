@@ -28,7 +28,7 @@ def create_summaries(df, columns):
 
 def main():
     columns = ['es', 'en']
-    results_file = 'data/results_.csv'
+    results_file = 'data/results_main_parser_interpolation.csv'
     create_summaries(pre_process_data(results_file, columns),
                      [['error_type'],
                       ['incorrect_trigram_tags'],
