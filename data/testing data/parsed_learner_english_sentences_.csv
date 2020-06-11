@@ -1,0 +1,137 @@
+sentence,correct,tags,trigram
+The firemen arrived ten minutes later.,True,"DT NNS VBD CD NNS RB . ",DT NNS VBD
+Arrived the firemen ten minutes later.,False,"VBD DT NNS CD NNS RB . ",VBD DT NNS
+Yesterday played very well the children.,False,"NN VBD RB RB DT NNS . ",DT NNS .
+Played very well the children yesterday.,False,"VBN RB RB DT NNS NN . ",VBN RB RB
+Yesterday the children played very well.,True,"NN DT NNS VBD RB RB . ",DT NNS VBD
+The children played very well yesterday.,True,"DT NNS VBD RB RB NN . ",DT NNS VBD
+Often she has helped.,False,"RB PRP VBZ VBN . ",RB PRP VBZ
+She often has helped.,False,"PRP RB VBZ VBN . ",RB VBZ VBN
+They live in the house white.,False,"PRP VBP IN DT NN JJ . ",DT NN JJ
+Can you lend me a ball of tennis?,False,"MD PRP VB PRP DT NN IN NN . ",NN IN NN
+The Club of Bridge of the University of Cambridge.,False,"DT NNP IN NNP IN DT NNP IN NNP . ",NNP IN NNP
+They gave to Sam the book.,False,"PRP VBD IN NNP DT NN . ",IN NNP DT
+They gave the book to Sam.,True,"PRP VBD DT NN IN NNP . ",IN NNP .
+They took to the hospital her mother.,False,"PRP VBD IN DT NN PRP$ NN . ",NN PRP$ NN
+Mrs Smith speaks very well English.,False,"NNP NNP VBZ RB RB NNP . ",RB RB NNP
+Keep tidy Britain.,False,"VB JJ NNP . ",VB JJ NNP
+John has bought the books?,True,"NNP VBZ VBN DT NNS . ",NNP VBZ VBN
+Has bought the books John?,False,VBZ VBN DT NNS NNP .,VBZ VBN DT
+Mary came?,True,"NNP VBD . ",NNP VBD .
+When Mary came?,False,"WRB NNP VBD . ",WRB NNP VBD
+Came Mary?,False,"VBD NNP . ",VBD NNP .
+"Mary, when came?",False,"NNP , WRB VBD . ",WRB VBD .
+Who did kill Oswald?,False,"WP VBD VB NNP . ",VBD VB NNP
+Who Oswald killed?,False,"WP NNP VBD . ",WP NNP VB
+Who killed to Kennedy?,False,"WP VBD IN NNP . ",IN NNP .
+Who Kennedy killed?,False,"WP NNP VBD . ",WP NNP VBD
+Did they went?,False,"VBD PRP VBD . ",VBD PRP VBD
+Do they went?,False,"VBP PRP VBD . ",VBP PRP VBD
+Do she goes?,False,"VBP PRP VBZ . ",VBP PRP VBZ
+Does she goes?,False,"VBZ PRP VBZ . ",VBZ . _
+"They're coming tomorrow, no?",False,"PRP VBP VBG NN , UH . ",UH . _
+"You have a car, no?",False,"PRP VBP DT NN , UH . ",", UH ."
+Peter not found the key.,False,"NNP RB VBD DT NN . ",RB VBD DT
+Peter not has found the key.,False,"NNP RB VBZ VBN DT NN . ",RB VBZ VBN
+I no understand.,False,"PRP RB VBP . ",RB VBP .
+Those no.,False,"DT UH . ",DT UH .
+Green no.,False,"NNP NN . ",NNP NN .
+Here no.,False,"RB UH . ",RB UH .
+I not saw nobody.,False,"PRP RB VBD NN . ",RB VBD NN
+I didn't see nobody.,False,"PRP VBD RB VB NN . ",VBD RB VB
+Tom not helps her never.,False,"NNP RB VBZ PRP RB . ",RB VBZ PRP
+Tom doesn't help her never.,False,"NNP VBZ RB VB PRP RB . ",VBZ RB VB
+I waited but anybody came.,False,"PRP VBD CC NN VBD . ",NN VBD .
+Maria cans cook.,False,"NNP NNS VBP . ",NNS VBP .
+Do you can swim?,False,"VBP PRP MD VB . ",VBP PRP MD
+May you come tomorrow?,False,"MD PRP VB NN . ",MD PRP VB
+She could find the key.,False,"PRP MD VB DT NN . ",MD VB DT
+She had to win the match.,False,"PRP VBD TO VB DT NN . ",VBD TO VB
+They will can do it next week.,False,"PRP MD MD VB PRP JJ NN . ",MD MD VB
+She went up the stairs.,True,"PRP VBD RP DT NNS . ",VBD RP DT
+She went up the book.,False,"PRP VBD RP DT NN . ",VBD RP DT
+They were waiting.,True,"PRP VBD VBG . ",PRP VBD VBG
+They were waiting the bus.,False,"PRP VBD VBG DT NN . ",VBG DT NN
+Mary laughed. What did she laugh?,False,"NNP VBD . WP VBD PRP VB . ",VB . _
+Football likes me.,False,"NN VBZ PRP . ",NN VBZ PRP
+"Do they want some money? Yes, they want.",False,"VBP PRP VB DT NN . UH , PRP VBP . ",VBP . _
+"Do you want to go? No, I don't want.",False,"VBP PRP VB TO VB . UH , PRP VBP RB VB . ",VB . _
+I like to get up early; I'm used.,False,"PRP VBP TO VB RP RB : PRP VBP VBN . ",VBN . _
+"Are they coming? No, I don't think.",False,"VBP PRP VBG . UH , PRP VBP RB VB . ",VB . _
+Look! It rains!,False,"VB . PRP VBZ . ",PRP VBZ .
+Do I come tomorrow?,False,"VBP PRP VB NN . ",VBP PRP VB
+I wait for you at home.,False,"PRP VBP IN PRP IN NN . ",VBP IN PRP
+I see her this evening.,False,"PRP VBP PRP DT NN . ",VBP PRP DT
+How long are you working in your present job?,False,"WRB RB VBP PRP VBG IN PRP$ JJ NN . ",VBP PRP VBG
+It's a long time that I live here.,False,"PRP VBZ DT JJ NN WDT PRP VBP RB . ",VBP RB .
+When has she received the letter?,False,"WRB VBZ PRP VBD DT NN . ",VBZ PRP VBD
+Today I've finished work early because I've started at seven o'clock this morning.,False,"NN PRP VB VBN NN RB IN PRP VB VBN IN CD NN DT NN . ",VB VBN NN
+"When we were young, we were playing a lot of tennis.",False,"WRB PRP VBD JJ , PRP VBD VBG DT NN IN NN . ",VBD VBG DT
+"When I was a teenager, I was having a motorbike.",False,"WRB PRP VBD DT NN , PRP VBD VBG DT NN . ",VBD VBG DT
+She wasn't knowing that he had died.,False,"PRP VBD RB VBG IN PRP VBD VBN . ",VBD RB VBG
+Come you tomorrow!,False,"VB PRP NN . ",PRP NN .
+"When Mary will get here, tell her to come in.",False,"WRB NNP MD VB RB , VB PRP TO VB RP . ",MD VB RB
+I use to do a lot of exercise.,False,"PRP VBP TO VB DT NN IN NN . ",VBP TO VB
+The house built itself before the war.,False,"DT NN VBD PRP IN DT NN . ",VBD PRP IN
+They were given bikes for Christmas.,True,"PRP VBD VBN NNS IN NNP . ",PRP VBD VBN
+Polly was owed a lot of money.,True,"NNP VBD VBN DT NN IN NN . ",VBD VBN DT
+The lecture was very bored.,False,"DT NN VBD RB JJ . ",JJ . _
+I'm very interesting in Polish films.,False,"PRP VBP RB JJ IN JJ NNS . ",JJ IN JJ
+To smoke is bad for you.,False,"TO VB VBZ JJ IN PRP . ",TO VB VBZ
+It's difficult learn English.,False,"PRP VBZ JJ VBP NNP . ",VBP NNP .
+Let us to see.,False,"VB PRP TO VB . ",TO VB .
+The food is more important than the art.,False,"DT NN VBZ RBR JJ IN DT NN . ",DT NN .
+Do you like the big dogs?,False,"VBP PRP VB DT JJ NNS . ",DT JJ NNS
+"That is the yours, and this is the mine.",False,"DT VBZ DT NNS , CC DT VBZ DT NN . ",DT NN .
+We used to live in one flat; now we live in one house.,False,"PRP VBD TO VB IN CD JJ : RB PRP VBP IN CD NN . ",CD NN .
+Do you have car?,False,"VBP PRP VB NN . ",NN . _
+Her sister is dentist.,False,"PRP$ NN VBZ NN . ",NN . _
+I have ones nice American friends.,False,PRP VBP NNS JJ JJ NNS .,NNS JJ JJ
+The table is dirty.,True," DT NN VBZ JJ . ",NN VBZ JJ
+"Clean her, please.",False,"VB PRP , UH . ","VB PRP ,"
+"They showed me two models, and I bought the small.",False,"PRP VBD PRP CD NNS , CC PRP VBD DT JJ . ",JJ . _
+I am more old than my sister.,False,"PRP VBP RBR JJ IN PRP$ NN . ",RBR JJ IN
+Barcelona is the more large city of Catalonia.,False,"NNP VBZ DT RBR JJ NN IN NNP . ",RBR JJ NN
+Rosa isn't French. Is Spanish.,False,"NNP VBZ RB NNP . VBZ JJ . ",VBZ JJ .
+Have gone home because wanted to go to bed.,False,"VBP VBN RB IN VBD TO VB IN NN . ",VBP VBN RB
+Was raining.,False,"VBD VBG . ",VBD VBG .
+That's the man who he lives next door to us.,False,"DT VBZ DT NN WP PRP VBZ JJ NN IN PRP . ",IN PRP .
+I saw she.,False,"PRP VBD PRP . ",PRP . _
+They know we.,False,"PRP VBP PRP . ",PRP . _
+How many cakes is it in the cupboard?,False,"WRB JJ NNS VBZ PRP IN DT NN . ",PRP IN DT
+Who is it? Am I.,False,WP VBZ PRP . VBP NN .,VBP NN .
+They enjoyed very much.,False,"PRP VBD RB RB . ",RB RB .
+She complained herself.,False,"PRP VBD PRP . ",PRP . _
+I showered me and went out.,False,"PRP VBD PRP CC VBD RP . ",PRP CC VBD
+Mary washed the hair.,False,"NNP VBD DT NN . ",DT NN .
+Bill cut himself the finger.,False,"NNP VBD PRP DT NN . ",PRP DT NN
+Sara and Joe had both got his shoes wet.,False,"NNP CC NNP VBD DT VBN PRP$ NNS JJ . ",PRP$ NNS JJ
+The my cousin is in Portugal.,False,"DT PRP$ NN VBZ IN NNP . ",DT PRP$ NN
+The girls we saw looked quite happy.,True,"DT NNS PRP VBD VBD RB JJ . ",NNS PRP VBD
+Did you like the woman we spoke to?,True,"VBD PRP VB DT NN PRP VBD IN . ",VBD IN .
+They have gone for buy a film.,False,"PRP VBP VBN IN VB DT NN . ",IN VB DT
+We are going to have the house painted.,True,"PRP VBP VBG TO VB DT NN VBN . ",TO VB DT
+We are going to make paint the house.,False,"PRP VBP VBG TO VB NN DT NN . ",TO VB NN
+They refused helping their neighbours.,False,"PRP VBD VBG PRP$ NNS . ",VBG PRP$ NNS
+I'll never forget to see that accident.,False,"PRP MD RB VB TO VB DT NN . ",TO VB DT NN
+She explained me the problem.,False,"PRP VBD PRP DT NN . ",PRP DT NN
+They suggested Jim to take the job.,False,"PRP VBD NNP TO VB DT NN . ",NNP TO VB
+I am asking that they go.,False,"PRP VBP VBG IN PRP VBP . ",IN PRP VBP
+They ordered her that she should go.,False,"PRP VBD PRP IN PRP MD VB . ",PRP IN PRP
+They ordered her that she went.,False,"PRP VBD PRP IN PRP VBD . ",PRP IN PRP
+I want that you don't go.,False,"PRP VBP IN PRP VBP RB VB . ",IN PRP VBP
+I want that you not go.,False,"PRP VBP IN PRP RB VBP . ",IN PRP RB
+The captain ordered the soldiers that they didn't retreat.,False,"DT NN VBD DT NNS IN PRP VBD RB VB . ",IN PRP VBD
+I don't know where does Mary live.,False,"PRP VBP RB VB WRB VBZ NNP VB . ",VBZ NNP VB
+They asked me how much did I earn.,False,"PRP VBD PRP WRB JJ VBD PRP VB . ",VBD PRP VB
+They took to their mother to the hospital.,False,"PRP VBD IN PRP$ NN IN DT NN . ",IN PRP$ NN
+For what have you come?,False,"IN WP VBP PRP VB . ",IN WP VBP
+I don't know who they're working for.,True,"PRP VBP RB VB WP PRP VBP VBG IN . ",VBG IN .
+Who does Fred sit next to?,True,"WP VBZ NNP VB RB IN . ",RB IN .
+"After to see the film, we went for a meal.",False,"IN TO VB DT NN , PRP VBD IN DT NN . ",TO VB DT
+They are into the room.,False,"PRP VBP IN DT NN . ",IN DT NN
+We stopped in the crossroads.,False,"PRP VBD IN DT NNS . ",IN DT NNS
+She works like a waitress.,False,"PRP VBZ IN DT NN . ",IN DT NN
+They seem as their mother.,False,"PRP VBP IN PRP$ NN . ",IN PRP$ NN
+This park was designed for the Catalan architect Gaudi.,False,"DT NN VBD VBN IN DT JJ NN NNP . ",IN DT JJ
+They stayed there during three months.,False,"PRP VBD RB IN CD NNS . ",IN CD NNS
