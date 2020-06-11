@@ -67,13 +67,14 @@ def main():
               'correct_trigram_tags', 'incorrect_trigram_tags',
               'correct_trigram', 'incorrect_trigram',
               'correct_sentence', 'incorrect_sentence']
-    # fields = ['sentence', 'correct', 'tags']
-    test_df = pre_process_data('data/testing data/main_parser.csv',
-                               fields, language)
+    fields = ['sentence', 'correct', 'tags', 'trigram']
+    test_df = pre_process_data('data/testing data/'
+                               'parsed_learner_english_sentences_.csv',
+                               fields)
     languages = ['en', 'es']
     method = INTERPOLATION
-    test_column = 'incorrect_trigram_tags'
-    output_file = 'data/results_main_parser_interpolation.csv'
+    test_column = 'tags'
+    output_file = 'data/results_learner_english_interpolation.csv'
     test(training_datasets, method, test_df, languages,
          fields, test_column, output_file)
 
