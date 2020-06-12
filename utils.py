@@ -1,4 +1,5 @@
 import csv
+import pandas as pd
 
 
 def split_sentences(dataset):
@@ -18,9 +19,7 @@ def extract_vocabs(dataset, n):
     vocabs = {}
     for length in range(n):
         vocabs[length] = {}
-    dataset_size = 0
     for sent in dataset:
-        dataset_size += len(sent)
         for i in range(len(sent)):
             for j in range(n):
                 right_index = i + j + 1
@@ -29,7 +28,7 @@ def extract_vocabs(dataset, n):
                     if key not in vocabs[j].keys():
                         vocabs[j][key] = 0
                     vocabs[j][key] += 1
-    return vocabs, dataset_size
+    return vocabs
 
 
 def get_count(tags, vocabs):
@@ -71,3 +70,10 @@ def process_tags(input_filename, output_filename):
             tags = line.split(',')
             for tag in tags:
                 csvwriter.writerow([tag.strip()])
+
+
+def save_vocabs_to_csv(vocabs, lang, affix):
+    """Save ngram counts to a csv file."""
+    for n in vocabs.keys():
+        df = pd.DataFrame(vocabs[n].items(), columns=['ngram', 'count'])
+        df.to_csv(lang + '_' + affix + '_' + str(n) + '_vocab.csv')

@@ -4,23 +4,22 @@ import pandas as pd
 
 from constant import INTERPOLATION, LAPLACE, UNSMOOTHED, OOV_TAG,\
                      NGRAM_METHODS
-from utils import extract_vocabs, get_count, split_sentences
+from utils import get_count
 
 
-def pre_process_data(filenames, languages):
-    """Format training data
+def read_vocab_files(files_dict):
+    vocabs = {}
+    for n in files_dict:
+        df = pd.read_csv(files_dict[n], index_col=0)
+        vocabs[n] = dict(zip(df['ngram'], df['count']))
+    return vocabs
 
-    Concatenate values with a pipe separators between sentences.
-    """
-    datasets = {}
-    for filename in filenames:
-        df = pd.read_csv(filename)
-        for language in languages:
-            if language not in datasets.keys():
-                datasets[language] = []
-            datasets[language] += split_sentences(df[language + '_tags'].
-                                                  tolist())
-    return datasets
+
+def compute_dataset_size(vocab):
+    size = 0
+    for tag in vocab.keys():
+        size += vocab[tag]
+    return size
 
 
 def extract_vocabulary(tag_counts, dataset_size):
@@ -113,9 +112,10 @@ def interpolation(n, tags, vocabs, gamas, dataset_size):
     return math.log(prob)
 
 
-def pre_process_training_data(dataset, n):
+def pre_process_training_data(files_dict, n, lang):
     """Pre-process training dataset."""
-    vocabs, dataset_size = extract_vocabs(dataset, n)
+    vocabs = read_vocab_files(files_dict)
+    dataset_size = compute_dataset_size(vocabs[0])
     vocabulary = extract_vocabulary(vocabs[0], dataset_size)
     vocabs = replace_oov_train(vocabs, vocabulary)
     return vocabulary, vocabs, dataset_size
@@ -126,14 +126,13 @@ def pre_process_test(ngram, vocabulary):
     return replace_oov_test(ngram, vocabulary)
 
 
-def process_training_data(datasets_filenames, method, n, languages):
+def process_training_data(vocab_files, method, n, languages):
     """Process training data depending on which smoothing method was chosen."""
-    datasets = pre_process_data(datasets_filenames, languages)
     langs = {}
-    for lang in datasets.keys():
-        dataset = datasets[lang]
-        vocabulary, vocabs, dataset_size = pre_process_training_data(dataset,
-                                                                     n)
+    for lang in vocab_files.keys():
+        files_dict = vocab_files[lang]
+        vocabulary, vocabs, dataset_size = pre_process_training_data(
+                                files_dict, n, lang)
         if method == INTERPOLATION:
             langs[lang] = [vocabs, vocabulary,
                            deleted_interpolation(n, vocabs, dataset_size),
@@ -155,9 +154,9 @@ def test_ngram(method, n, ngram, language_model):
     return prob
 
 
-def main(method, dataset_filenames, test_ngrams, languages):
+def main(method, vocab_files, test_ngrams, languages):
     n = NGRAM_METHODS[method][0]
-    langs = process_training_data(dataset_filenames, method, n, languages)
+    langs = process_training_data(vocab_files, method, n, languages)
     for ngram in test_ngrams:
         for l in langs.keys():
             processed_ngram = pre_process_test(ngram, langs[l][1])
@@ -181,10 +180,6 @@ def parse_arg_list():
         '-m', '--method',
         help='Smoothing method. One of unsmoothed, laplace, or interpolation',
         required=True)
-    required_args.add_argument(
-        '-d', '--dataset_file',
-        help='name of the file which contains the training data',
-        required=True)
 
     args = parser.parse_args()
     return args
@@ -193,7 +188,14 @@ def parse_arg_list():
 if __name__ == "__main__":
     args = parse_arg_list()
     test_ngrams = [['DET', 'NOUN', 'VERB'],
-                   ['PUNCT', 'VERB', 'DET'],
-                   ['|', 'VERB', 'DET']]
+                   ['PUNCT', 'VERB', 'DET']]
     languages = ['en', 'es']
-    main(args.method, [args.dataset_file], test_ngram, languages)
+    vocab_files = {
+        'en': {0: 'data/training data/en_poss_0_vocab.csv',
+               1: 'data/training data/en_poss_1_vocab.csv',
+               2: 'data/training data/en_poss_2_vocab.csv'},
+        'es': {0: 'data/training data/es_poss_0_vocab.csv',
+               1: 'data/training data/es_poss_1_vocab.csv',
+               2: 'data/training data/es_poss_2_vocab.csv'}
+    }
+    main(args.method, vocab_files, test_ngrams, languages)

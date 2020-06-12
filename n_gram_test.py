@@ -25,18 +25,6 @@ def pre_process_data(filename, fields, language=None):
     return df
 
 
-def list_training_datasets():
-    training_datasets = ['data/training data/tagged_sentences_1000sents.csv',
-                         'data/training data/'
-                         'tagged_sentences_dataset_sentences.csv']
-    folder = 'data/training data/europarl'
-    files = os.listdir(folder)
-    for file in files:
-        if 'tagged' in file:
-            training_datasets.append(folder + '/' + file)
-    return training_datasets
-
-
 def test(train_dataset_filenames, method, test_df, languages, test_df_fields,
          test_column, output_file):
     data_dict = create_dict(test_df_fields + languages)
@@ -61,7 +49,14 @@ def test(train_dataset_filenames, method, test_df, languages, test_df_fields,
 
 
 def main():
-    training_datasets = list_training_datasets()
+    vocab_files = {
+        'en': {0: 'data/training data/en_tags_0_vocab.csv',
+               1: 'data/training data/en_tags_1_vocab.csv',
+               2: 'data/training data/en_tags_2_vocab.csv'},
+        'es': {0: 'data/training data/es_tags_0_vocab.csv',
+               1: 'data/training data/es_tags_1_vocab.csv',
+               2: 'data/training data/es_tags_2_vocab.csv'}
+    }
     language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
               'correct_trigram_tags', 'incorrect_trigram_tags',
@@ -75,7 +70,7 @@ def main():
     method = INTERPOLATION
     test_column = 'tags'
     output_file = 'data/results_learner_english_interpolation.csv'
-    test(training_datasets, method, test_df, languages,
+    test(vocab_files, method, test_df, languages,
          fields, test_column, output_file)
 
 
