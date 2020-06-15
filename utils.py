@@ -1,6 +1,8 @@
 import csv
 import pandas as pd
 
+from constant import CCONJ, CONJ, SPANISH
+
 
 def split_sentences(dataset):
     """Create list of tags from each of the datasets' rows
@@ -77,3 +79,21 @@ def save_vocabs_to_csv(vocabs, lang, affix):
     for n in vocabs.keys():
         df = pd.DataFrame(vocabs[n].items(), columns=['ngram', 'count'])
         df.to_csv(lang + '_' + affix + '_' + str(n) + '_vocab.csv')
+
+
+def tag_sentences(model, sentence, language=None, mapping=None):
+    """Part-of-speeh tag dataframe sentence."""
+    poss = ''
+    tags = ''
+    if type(sentence) == str:
+        doc = model(sentence)
+        for token in doc:
+            pos = token.pos_
+            if token.pos_ == CONJ:
+                pos = CCONJ if language and language == SPANISH else pos
+            poss += pos + ' '
+            tag = token.tag_
+            if language == SPANISH and mapping:
+                tag = mapping[tag]
+            tags += tag + ' '
+    return (poss, tags)

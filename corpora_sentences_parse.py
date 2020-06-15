@@ -1,12 +1,7 @@
 import pandas as pd
 import spacy
 
-from utils import tags_mapping, unpack_poss_and_tags
-
-
-CONJ = 'CONJ'
-CCONJ = 'CCONJ'
-SPANISH = 'es'
+from utils import tags_mapping, tag_sentences, unpack_poss_and_tags
 
 
 def pre_process_data(filename, new_column_names, selected_columns=None):
@@ -22,32 +17,13 @@ def pos_tag(models, df, languages_columns, mapping_filename):
     """Add part-of-speech tags columns to dataframe."""
     mapping = tags_mapping(mapping_filename)
     for lang in languages_columns.keys():
-        series = df.apply(lambda x: tag_sentences(models,
+        series = df.apply(lambda x: tag_sentences(models[lang],
                                                   x[languages_columns[lang]],
                                                   lang, mapping), axis=1)
         poss, tags = unpack_poss_and_tags(series)
         df[lang + '_poss'] = poss
         df[lang + '_tags'] = tags
     return df
-
-
-def tag_sentences(models, sentence, language, mapping):
-    """Part-of-speeh tag dataframe sentence."""
-    poss = ''
-    tags = ''
-    if type(sentence) == str:
-        nlp = models[language]
-        doc = nlp(sentence)
-        for token in doc:
-            pos = token.pos_
-            if token.pos_ == CONJ:
-                pos = CCONJ if language == SPANISH else pos
-            poss += pos + ' '
-            tag = token.tag_
-            if language == SPANISH:
-                tag = mapping[tag]
-            tags += tag + ' '
-    return (poss, tags)
 
 
 def main(models, input_filename, output_filename):
