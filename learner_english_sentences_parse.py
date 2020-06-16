@@ -13,8 +13,8 @@ def parse_sentences(input_file, output_file):
             parsed.writerow(['sentence', 'correct', 'tags', 'poss'])
             for row in sentences:
                 parsed_sentence = tag_sentences(nlp, row[0])
-                parsed.writerow([row[0], row[1],
-                                 parsed_sentence[1], parsed_sentence[0]])
+                parsed.writerow([row[0], row[1], parsed_sentence[1],
+                                 parsed_sentence[0]])
 
 
 parse_sentences('data/testing data/learner_english_sentences.csv',
