@@ -133,3 +133,4 @@ She works like a waitress.,False,PRP VBZ IN DT NN . ,PRON VERB ADP DET NOUN PUNC
 They seem as their mother.,False,PRP VBP IN PRP$ NN . ,PRON VERB ADP DET NOUN PUNCT 
 This park was designed for the Catalan architect Gaudi.,False,DT NN VBD VBN IN DT JJ NN NNP . ,DET NOUN VERB VERB ADP DET ADJ NOUN PROPN PUNCT 
 They stayed there during three months.,False,PRP VBD RB IN CD NNS . ,PRON VERB ADV ADP NUM NOUN PUNCT 
+I've got two news for you.,False,PRP VB VBN CD NN IN PRP . ,PRON VERB VERB NUM NOUN ADP PRON PUNCT 
