@@ -1,8 +1,7 @@
 import pandas as pd
-import os
 
 from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
-                     TAGS_NGRAMS_FILES
+                     TAGS_NGRAMS_FILES, POSS_NGRAMS_FILES
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 
 
@@ -56,14 +55,15 @@ def main():
               'correct_trigram_tags', 'incorrect_trigram_tags',
               'correct_trigram', 'incorrect_trigram',
               'correct_sentence', 'incorrect_sentence']
-    fields = ['sentence', 'correct', 'tags', 'trigram']
+    fields = ['sentence', 'correct', 'tags', 'tags_trigram', 'poss',
+              'poss_trigram']
     test_df = pre_process_data('data/testing data/'
                                'parsed_learner_english_sentences_.csv',
                                fields)
     languages = ['en', 'es']
     method = INTERPOLATION
-    test_column = 'tags'
-    output_file = 'data/results_learner_english_interpolation.csv'
+    test_column = 'tags_trigram'
+    output_file = 'data/results_learner_english_trigrams_interpolation.csv'
     test(vocab_files, method, test_df, languages,
          fields, test_column, output_file)
 
