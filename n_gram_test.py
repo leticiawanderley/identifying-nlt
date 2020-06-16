@@ -1,7 +1,8 @@
 import pandas as pd
 import os
 
-from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED
+from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
+                     TAGS_NGRAMS_FILES
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 
 
@@ -49,14 +50,7 @@ def test(train_dataset_filenames, method, test_df, languages, test_df_fields,
 
 
 def main():
-    vocab_files = {
-        'en': {0: 'data/training data/en_tags_0_vocab.csv',
-               1: 'data/training data/en_tags_1_vocab.csv',
-               2: 'data/training data/en_tags_2_vocab.csv'},
-        'es': {0: 'data/training data/es_tags_0_vocab.csv',
-               1: 'data/training data/es_tags_1_vocab.csv',
-               2: 'data/training data/es_tags_2_vocab.csv'}
-    }
+    vocab_files = TAGS_NGRAMS_FILES
     language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
               'correct_trigram_tags', 'incorrect_trigram_tags',
