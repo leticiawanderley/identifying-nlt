@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 
+from constant import LEARNER_ENGLISH_FIELDS
+
 
 def evaluate_models(filename, fields):
     df = pd.read_csv(filename)
@@ -11,34 +13,33 @@ def evaluate_models(filename, fields):
                                   True, False)
     df = df[fields + ['en', 'es', 'model_result']]
     df.to_csv(filename)
+    print(filename)
     print(df.groupby('model_result').count())
 
 
-fields = ['sentence', 'correct', 'tags', 'tags_trigram', 'poss',
-          'poss_trigram']
 evaluate_models('data/results_learner_english_tags_unsmoothed.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_trigrams_unsmoothed.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_poss_unsmoothed.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_poss_trigrams_unsmoothed.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 
 evaluate_models('data/results_learner_english_tags_laplace.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_trigrams_laplace.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_poss_laplace.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_poss_trigrams_laplace.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 
 evaluate_models('data/results_learner_english_tags_interpolation.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_trigrams_interpolation.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_poss_interpolation.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_poss_trigrams_interpolation.csv',
-                fields)
+                LEARNER_ENGLISH_FIELDS)
