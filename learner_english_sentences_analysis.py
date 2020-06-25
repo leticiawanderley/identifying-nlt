@@ -14,7 +14,7 @@ def evaluate_models(filename, fields):
     df = df[fields + ['en', 'es', 'model_result']]
     df.to_csv(filename)
     print(filename)
-    print(df.groupby('model_result').count())
+    print(df.groupby(['model_result']).size().reset_index(name='count'))
 
 
 evaluate_models('data/results_learner_english_tags_unsmoothed.csv',
