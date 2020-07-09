@@ -4,6 +4,7 @@ from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
                      TAGS_NGRAMS_FILES, POSS_NGRAMS_FILES,\
                      LEARNER_ENGLISH_FIELDS
 from n_gram_model import pre_process_test, process_training_data, test_ngram
+from utils import get_structural_errors
 
 
 def create_dict(fields):
@@ -32,25 +33,29 @@ def test(train_dataset_filenames, method, test_df, languages, test_df_fields,
     n = NGRAM_METHODS[method][0]
     langs = process_training_data(train_dataset_filenames, method, n,
                                   languages)
+    structural_errors = get_structural_errors()
     for index, row in test_df.iterrows():
-        populate_dict(data_dict, row, test_df_fields)
-        for l in langs.keys():
-            processed_ngram = pre_process_test(row[test_column].
-                                               split(), langs[l][1])
-            probability = 0
-            if len(processed_ngram) > n:
-                for i in range(0, len(processed_ngram) - n):
-                    probability += test_ngram(method, n,
-                                              processed_ngram[i:i+n], langs[l])
-            else:
-                probability += test_ngram(method, n, processed_ngram, langs[l])
-            data_dict[l].append(probability)
+        if row['error_type'] == '_' or row['error_type'] in structural_errors:
+            populate_dict(data_dict, row, test_df_fields)
+            for l in langs.keys():
+                processed_ngram = pre_process_test(row[test_column].
+                                                   split(), langs[l][1])
+                probability = 0
+                if len(processed_ngram) > n:
+                    for i in range(0, len(processed_ngram) - n):
+                        probability += test_ngram(method, n,
+                                                  processed_ngram[i:i+n],
+                                                  langs[l])
+                else:
+                    probability += test_ngram(method, n, processed_ngram,
+                                              langs[l])
+                data_dict[l].append(probability)
     df = pd.DataFrame.from_dict(data_dict)
     df.to_csv(output_file)
 
 
 def main():
-    vocab_files = TAGS_NGRAMS_FILES
+    vocab_files = POSS_NGRAMS_FILES
     language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
               'correct_trigram_tags', 'incorrect_trigram_tags',
@@ -61,9 +66,10 @@ def main():
                                'parsed_learner_english_sentences_.csv',
                                fields)
     languages = ['en', 'es']
-    method = INTERPOLATION
-    test_column = 'tags_trigram'
-    output_file = 'data/results_learner_english_trigrams_interpolation.csv'
+    method = UNSMOOTHED
+    test_column = 'poss_trigram'
+    output_file = 'data/results_learner_english_' + test_column + '_' +\
+                  method + '.csv'
     test(vocab_files, method, test_df, languages,
          fields, test_column, output_file)
 
