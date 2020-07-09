@@ -17,29 +17,17 @@ def evaluate_models(filename, fields):
     print(df.groupby(['model_result']).size().reset_index(name='count'))
 
 
-evaluate_models('data/results_learner_english_tags_unsmoothed.csv',
+evaluate_models('data/results_learner_english_tags_trigram_unsmoothed.csv',
                 LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_trigrams_unsmoothed.csv',
-                LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_unsmoothed.csv',
-                LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_trigrams_unsmoothed.csv',
+evaluate_models('data/results_learner_english_poss_trigram_unsmoothed.csv',
                 LEARNER_ENGLISH_FIELDS)
 
-evaluate_models('data/results_learner_english_tags_laplace.csv',
+evaluate_models('data/results_learner_english_tags_trigram_laplace.csv',
                 LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_trigrams_laplace.csv',
-                LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_laplace.csv',
-                LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_trigrams_laplace.csv',
+evaluate_models('data/results_learner_english_poss_trigram_laplace.csv',
                 LEARNER_ENGLISH_FIELDS)
 
-evaluate_models('data/results_learner_english_tags_interpolation.csv',
+evaluate_models('data/results_learner_english_tags_trigram_interpolation.csv',
                 LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_trigrams_interpolation.csv',
-                LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_interpolation.csv',
-                LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_trigrams_interpolation.csv',
+evaluate_models('data/results_learner_english_poss_trigram_interpolation.csv',
                 LEARNER_ENGLISH_FIELDS)
