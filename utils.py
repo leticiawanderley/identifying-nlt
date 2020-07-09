@@ -97,3 +97,8 @@ def tag_sentences(model, sentence, language=None, mapping=None):
                 tag = mapping[tag]
             tags += tag + ' '
     return (poss, tags)
+
+
+def get_structural_errors():
+    error_types = pd.read_csv('./data/error_type_meaning.csv')
+    return error_types[error_types.structural==True]['error_type'].tolist()
