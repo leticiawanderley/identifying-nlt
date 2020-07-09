@@ -24,5 +24,5 @@ POSS_NGRAMS_FILES = {
            1: 'data/training data/es_poss_1_vocab.csv',
            2: 'data/training data/es_poss_2_vocab.csv'}
 }
-LEARNER_ENGLISH_FIELDS = ['sentence', 'correct', 'tags',
+LEARNER_ENGLISH_FIELDS = ['sentence', 'correct', 'error_type', 'tags',
                           'tags_trigram', 'poss', 'poss_trigram']
