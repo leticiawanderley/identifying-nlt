@@ -3,7 +3,7 @@ import math
 import pandas as pd
 
 from constant import INTERPOLATION, LAPLACE, UNSMOOTHED, OOV_TAG,\
-                     NGRAM_METHODS
+                     NGRAM_METHODS, POSS_NGRAMS_FILES
 from utils import get_count
 
 
@@ -190,12 +190,5 @@ if __name__ == "__main__":
     test_ngrams = [['DET', 'NOUN', 'VERB'],
                    ['PUNCT', 'VERB', 'DET']]
     languages = ['en', 'es']
-    vocab_files = {
-        'en': {0: 'data/training data/en_poss_0_vocab.csv',
-               1: 'data/training data/en_poss_1_vocab.csv',
-               2: 'data/training data/en_poss_2_vocab.csv'},
-        'es': {0: 'data/training data/es_poss_0_vocab.csv',
-               1: 'data/training data/es_poss_1_vocab.csv',
-               2: 'data/training data/es_poss_2_vocab.csv'}
-    }
+    vocab_files = POSS_NGRAMS_FILES
     main(args.method, vocab_files, test_ngrams, languages)
