@@ -19,15 +19,15 @@ def evaluate_models(filename, fields):
 
 evaluate_models('data/results_learner_english_tags_trigram_unsmoothed.csv',
                 LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_trigram_unsmoothed.csv',
+evaluate_models('data/results_learner_english_ud_trigram_unsmoothed.csv',
                 LEARNER_ENGLISH_FIELDS)
 
 evaluate_models('data/results_learner_english_tags_trigram_laplace.csv',
                 LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_trigram_laplace.csv',
+evaluate_models('data/results_learner_english_ud_trigram_laplace.csv',
                 LEARNER_ENGLISH_FIELDS)
 
 evaluate_models('data/results_learner_english_tags_trigram_interpolation.csv',
                 LEARNER_ENGLISH_FIELDS)
-evaluate_models('data/results_learner_english_poss_trigram_interpolation.csv',
+evaluate_models('data/results_learner_english_ud_trigram_interpolation.csv',
                 LEARNER_ENGLISH_FIELDS)

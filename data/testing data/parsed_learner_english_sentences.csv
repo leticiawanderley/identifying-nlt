@@ -1,4 +1,4 @@
-sentence,correct,tags,poss
+sentence,correct,tags,ud
 The firemen arrived ten minutes later.,True,DT NNS VBD CD NNS RB . ,DET NOUN VERB NUM NOUN ADV PUNCT 
 Arrived the firemen ten minutes later.,False,VBD DT NNS CD NNS RB . ,VERB DET NOUN NUM NOUN ADV PUNCT 
 Yesterday played very well the children.,False,NN VBD RB RB DT NNS . ,NOUN VERB ADV ADV DET NOUN PUNCT 

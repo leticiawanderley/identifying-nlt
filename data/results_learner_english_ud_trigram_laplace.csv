@@ -1,4 +1,4 @@
-,sentence,correct,error_type,tags,tags_trigram,poss,poss_trigram,en,es,model_result,has_detected_error,has_detected_correct
+,sentence,correct,error_type,tags,tags_trigram,ud,ud_trigram,en,es,model_result,has_detected_error,has_detected_correct
 0,The firemen arrived ten minutes later.,True,_,DT NNS VBD CD NNS RB . ,DT NNS VBD,DET NOUN VERB NUM NOUN ADV PUNCT ,DET NOUN VERB,-1.9880769015272368,-3.6662746900187884,True,False,False
 1,Arrived the firemen ten minutes later.,False,W,VBD DT NNS CD NNS RB . ,VBD DT NNS,VERB DET NOUN NUM NOUN ADV PUNCT ,VERB DET NOUN,-0.6001847972744979,-0.19979414604667006,True,False,False
 2,Yesterday played very well the children.,False,W,NN VBD RB RB DT NNS . ,VBD RB RB,NOUN VERB ADV ADV DET NOUN PUNCT ,VERB ADV ADV,-2.0482961596762363,-2.459530432294626,False,False,False

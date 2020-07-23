@@ -51,14 +51,14 @@ def tags_mapping(filename):
     return mapping_dict
 
 
-def unpack_poss_and_tags(series):
+def unpack_ud_and_tags(series):
     """Unpack series of parsed pos and tags into two lists."""
-    poss = []
+    ud = []
     tags = []
     for row in series.to_list():
-        poss.append(row[0])
+        ud.append(row[0])
         tags.append(row[1])
-    return poss, tags
+    return ud, tags
 
 
 def process_tags(input_filename, output_filename):
@@ -83,7 +83,7 @@ def save_vocabs_to_csv(vocabs, lang, affix):
 
 def tag_sentences(model, sentence, language=None, mapping=None):
     """Part-of-speeh tag dataframe sentence."""
-    poss = ''
+    ud = ''
     tags = ''
     if type(sentence) == str:
         doc = model(sentence)
@@ -91,12 +91,12 @@ def tag_sentences(model, sentence, language=None, mapping=None):
             pos = token.pos_
             if token.pos_ == CONJ:
                 pos = CCONJ if language and language == SPANISH else pos
-            poss += pos + ' '
+            ud += pos + ' '
             tag = token.tag_
             if language == SPANISH and mapping:
                 tag = mapping[tag]
             tags += tag + ' '
-    return (poss, tags)
+    return (ud, tags)
 
 
 def get_structural_errors():

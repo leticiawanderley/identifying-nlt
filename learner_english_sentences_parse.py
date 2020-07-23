@@ -10,7 +10,7 @@ def parse_sentences(input_file, output_file):
         sentences = csv.reader(csvfile, delimiter=',')
         with open(output_file, 'w', newline='') as csvfile2:
             parsed = csv.writer(csvfile2, delimiter=',')
-            parsed.writerow(['sentence', 'correct', 'tags', 'poss'])
+            parsed.writerow(['sentence', 'correct', 'tags', 'ud'])
             for row in sentences:
                 parsed_sentence = tag_sentences(nlp, row[0])
                 parsed.writerow([row[0], row[1], parsed_sentence[1],
