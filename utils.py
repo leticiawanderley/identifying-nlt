@@ -51,14 +51,14 @@ def tags_mapping(filename):
     return mapping_dict
 
 
-def unpack_ud_and_tags(series):
-    """Unpack series of parsed pos and tags into two lists."""
+def unpack_ud_and_penn_tags(series):
+    """Unpack series of parsed ud and penn treebank tags into two lists."""
     ud = []
-    tags = []
+    penn = []
     for row in series.to_list():
         ud.append(row[0])
-        tags.append(row[1])
-    return ud, tags
+        penn.append(row[1])
+    return ud, penn
 
 
 def process_tags(input_filename, output_filename):
@@ -84,7 +84,7 @@ def save_vocabs_to_csv(vocabs, lang, affix):
 def tag_sentences(model, sentence, language=None, mapping=None):
     """Part-of-speeh tag dataframe sentence."""
     ud = ''
-    tags = ''
+    penn = ''
     if type(sentence) == str:
         doc = model(sentence)
         for token in doc:
@@ -95,10 +95,11 @@ def tag_sentences(model, sentence, language=None, mapping=None):
             tag = token.tag_
             if language == SPANISH and mapping:
                 tag = mapping[tag]
-            tags += tag + ' '
-    return (ud, tags)
+            penn += tag + ' '
+    return (ud, penn)
 
 
 def get_structural_errors():
     error_types = pd.read_csv('./data/error_type_meaning.csv')
-    return error_types[error_types.structural==True]['error_type'].tolist()
+    return error_types[error_types.structural is True]['error_type'].\
+        tolist()

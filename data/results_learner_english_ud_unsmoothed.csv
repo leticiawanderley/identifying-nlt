@@ -1,4 +1,4 @@
-,sentence,correct,error_type,tags,tags_trigram,ud,ud_trigram,en,es
+,sentence,correct,error_type,penn,penn_trigram,ud,ud_trigram,en,es
 0,The firemen arrived ten minutes later.,True,_,DT NNS VBD CD NNS RB . ,DT NNS VBD,DET NOUN VERB NUM NOUN ADV PUNCT ,DET NOUN VERB,74.70046186342564,73.95751141292868
 1,Arrived the firemen ten minutes later.,False,W,VBD DT NNS CD NNS RB . ,VBD DT NNS,VERB DET NOUN NUM NOUN ADV PUNCT ,VERB DET NOUN,74.70046186342564,73.95751141292868
 2,Yesterday played very well the children.,False,W,NN VBD RB RB DT NNS . ,VBD RB RB,NOUN VERB ADV ADV DET NOUN PUNCT ,VERB ADV ADV,76.40161144085873,75.60523337344465

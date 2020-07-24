@@ -1,7 +1,7 @@
 import pandas as pd
 import spacy
 
-from utils import tags_mapping, tag_sentences, unpack_ud_and_tags
+from utils import tags_mapping, tag_sentences, unpack_ud_and_penn_tags
 
 
 def pre_process_data(filename, new_column_names, selected_columns=None):
@@ -20,9 +20,9 @@ def pos_tag(models, df, languages_columns, mapping_filename):
         series = df.apply(lambda x: tag_sentences(models[lang],
                                                   x[languages_columns[lang]],
                                                   lang, mapping), axis=1)
-        ud, tags = unpack_ud_and_tags(series)
+        ud, penn = unpack_ud_and_penn_tags(series)
         df[lang + '_ud'] = ud
-        df[lang + '_tags'] = tags
+        df[lang + '_penn'] = penn
     return df
 
 

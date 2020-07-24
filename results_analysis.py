@@ -31,10 +31,10 @@ def main():
     results_file = 'data/results_main_parser_interpolation.csv'
     create_summaries(pre_process_data(results_file, columns),
                      [['error_type'],
-                      ['incorrect_trigram_tags'],
-                      ['incorrect_trigram_tags', 'correct_trigram_tags'],
-                      ['incorrect_trigram_tags', 'error_type'],
-                      ['correct_trigram_tags', 'error_type']])
+                      ['incorrect_trigram_penn'],
+                      ['incorrect_trigram_penn', 'correct_trigram_penn'],
+                      ['incorrect_trigram_penn', 'error_type'],
+                      ['correct_trigram_penn', 'error_type']])
 
 
 if __name__ == "__main__":

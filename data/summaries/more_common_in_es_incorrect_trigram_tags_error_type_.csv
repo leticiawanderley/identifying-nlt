@@ -1,4 +1,4 @@
-,incorrect_trigram_tags,error_type,count
+,incorrect_trigram_penn,error_type,count
 200,IN DT NN,RT,168
 305,IN PRP$ NN,RT,54
 1303,VB DT NN,RV,37

@@ -17,17 +17,17 @@ def evaluate_models(filename, fields):
     print(df.groupby(['model_result']).size().reset_index(name='count'))
 
 
-evaluate_models('data/results_learner_english_tags_trigram_unsmoothed.csv',
+evaluate_models('data/results_learner_english_penn_trigram_unsmoothed.csv',
                 LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_ud_trigram_unsmoothed.csv',
                 LEARNER_ENGLISH_FIELDS)
 
-evaluate_models('data/results_learner_english_tags_trigram_laplace.csv',
+evaluate_models('data/results_learner_english_penn_trigram_laplace.csv',
                 LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_ud_trigram_laplace.csv',
                 LEARNER_ENGLISH_FIELDS)
 
-evaluate_models('data/results_learner_english_tags_trigram_interpolation.csv',
+evaluate_models('data/results_learner_english_penn_trigram_interpolation.csv',
                 LEARNER_ENGLISH_FIELDS)
 evaluate_models('data/results_learner_english_ud_trigram_interpolation.csv',
                 LEARNER_ENGLISH_FIELDS)

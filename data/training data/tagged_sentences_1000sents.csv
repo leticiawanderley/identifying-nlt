@@ -1,4 +1,4 @@
-,english,spanish,en_poss,en_tags,es_poss,es_tags
+,english,spanish,en_ud,en_penn,es_ud,es_penn
 0,The store opens at 10 A.M.,El almacén abre a las 10 de la mañana.,DET NOUN VERB ADP NUM PROPN ,DT NN VBZ IN CD NNP ,DET NOUN VERB ADP DET NOUN ADP DET NOUN PUNCT ,DT NN VBZ IN DT NNP IN DT NN . 
 1,Do you like it? What's the price?,¿Te gusta? ¿Cuál es el precio?,VERB PRON VERB PRON PUNCT PRON VERB DET NOUN PUNCT ,VBP PRP VB PRP . WP VBZ DT NN . ,PUNCT PRON VERB PUNCT PUNCT PRON AUX DET NOUN PUNCT ,. PRP VBZ . . WP VBZ DT NN . 
 2,My house is near my school.,Mi casa está cerca de mi escuela.,DET NOUN VERB ADP DET NOUN PUNCT ,PRP$ NN VBZ IN PRP$ NN . ,DET NOUN AUX ADV ADP DET NOUN PUNCT ,PRP$ NN VBZ RB IN PRP$ NN . 

@@ -36,7 +36,7 @@ def pre_process_data(filenames, languages, column):
 def create_vocabs_files(n, languages):
     """Split training dataset into grams (from uni to ngrams)
     and count their occurences. Save resulting counts in csv files."""
-    column = 'tags'
+    column = 'penn'
     training_files = list_training_datasets()
     datasets = pre_process_data(training_files, languages, column)
     for lang in languages:

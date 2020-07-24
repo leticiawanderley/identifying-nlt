@@ -1,7 +1,7 @@
 import pandas as pd
 
 from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
-                     TAGS_NGRAMS_FILES, UD_NGRAMS_FILES,\
+                     PENN_NGRAMS_FILES, UD_NGRAMS_FILES,\
                      LEARNER_ENGLISH_FIELDS
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 from utils import get_structural_errors
@@ -58,7 +58,7 @@ def main():
     vocab_files = UD_NGRAMS_FILES
     language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
-              'correct_trigram_tags', 'incorrect_trigram_tags',
+              'correct_trigram_penn', 'incorrect_trigram_penn',
               'correct_trigram', 'incorrect_trigram',
               'correct_sentence', 'incorrect_sentence']
     fields = LEARNER_ENGLISH_FIELDS
