@@ -5,7 +5,9 @@ The sentences in the English and Spanish corpora were part-of-speech tagged usin
 For English sentences there were extracted Universal Dependencies POS tags as well as the Penn Treebank POS tags.
 They are refered to as "ud" and "penn", respectively.
 
-The Spanish sentences were parsed using Universal Dependencies POS tags as well as AnCora POS tags. The later ones were then mapped to Penn Treebank POS tags using the mapping in [data/tags/spacy_spanish_tags_.csv](data/tags/spacy_spanish_tags_.csv). This mapping aims to enable the use of a more detailed shared tagset.
+The Spanish sentences were parsed using Universal Dependencies POS tags as well as AnCora POS tags. The later ones were then mapped to Penn Treebank POS tags using the mapping in [data/tags/spacy_spanish_tags_.csv](data/tags/spacy_spanish_tags_.csv). This mapping aims to enable the use of a more detailed shared tagset. As in the English corpora, Universal Dependencies POS tags are refered to as "ud" and the mapped Penn Treebank POS tags are called "penn".
+
+[SpaCy](https://spacy.io/usage/linguistic-features#pos-tagging) distinguishes between simple Universal Dependecies POS tags and more detailed language specific tags by refering to them as "POS" and "Tag", respectively. These two denomination can be mapped to our "ud" and "penn" categories.
 
 ## Pre-processing training data
 To speed up the training process, the POS tagged sentences were broken down into POS sequences of one, two, and three tags (unigrams, bigrams, and trigams). These POS sequences were then gruped and counted so they could be stored in Python dictionaries along with their respective counts.
