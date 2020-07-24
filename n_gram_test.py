@@ -55,7 +55,7 @@ def test(train_dataset_filenames, method, test_df, languages, test_df_fields,
 
 
 def main():
-    vocab_files = UD_NGRAMS_FILES
+    vocab_files = PENN_NGRAMS_FILES
     language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
               'correct_trigram_penn', 'incorrect_trigram_penn',
@@ -66,8 +66,8 @@ def main():
                                'parsed_learner_english_sentences_.csv',
                                fields)
     languages = ['en', 'es']
-    method = UNSMOOTHED
-    test_column = 'ud_trigram'
+    method = INTERPOLATION
+    test_column = 'penn'
     output_file = 'data/results_learner_english_' + test_column + '_' +\
                   method + '.csv'
     test(vocab_files, method, test_df, languages,
