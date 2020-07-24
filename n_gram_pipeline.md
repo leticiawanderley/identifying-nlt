@@ -24,4 +24,11 @@ A tag vocabulary is created to filter out with low frequency and unknown tags th
 There were implemented two smoothing techniques, add-one (or Laplace) and [deleted interpolation](https://web.stanford.edu/~jurafsky/slp3/8.pdf), apart from the unsmoothed option.
 
 ## Testing
-There are two datasets that can be used to test the models. The first one was extracted from the book "Learner English - A teacher's guide to interference and other problems", which is a collection of common errors made by non-native English speakers grouped by the learner's first languages. The second one is the FCE dataset, a collection of error annotated essays written by learners who were sitting the FCE exam.
+
+### Test datasets
+There are two datasets that can be used to test the models. The first one was extracted from the book [Learner English - A teacher's guide to interference and other problems](https://books.google.ca/books/about/Learner_English.html?id=6UIuWj9fQfQC), which is a collection of common errors made by non-native English speakers grouped by the learner's first languages. The second one is the [FCE dataset](https://www.aclweb.org/anthology/P11-1019/), a collection of error annotated essays written by learners who were sitting the FCE exam.
+
+### Procedure
+Datapoints in both datasets were annotated with error types, and the specific error sequences were highlighted in a separate column. These three-tag sequences are the input to the language models. Only errors with structural errors types are feed as input to the language models. The structural errors types can be found in [data/error_type_meaning.csv](data/error_type_meaning.csv). Each language model computes the likehood that these sequences belong to the language it represents and write this likehood into the error row.
+
+### Analysis
