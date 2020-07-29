@@ -25,7 +25,7 @@ def compute_dataset_size(vocab):
 def extract_vocabulary(tag_counts, dataset_size):
     """Extract pos tag alphabet.
 
-    Removing less frequente tags (frequency < 0.005%.)"""
+    Removing less frequent tags (frequency < 0.005%.)"""
     vocabulary = []
     tag_set = tag_counts.keys()
     threshold = 0.00005 * dataset_size
