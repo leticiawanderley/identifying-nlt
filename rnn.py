@@ -1,20 +1,11 @@
 import math
-import random
 import time
 import torch
 import torch.nn as nn
 
-from rnn_data_preprocessing import get_all_tags, read_data, sentence_to_tensor
-
-
-data, all_categories = read_data(
-                        ['data/training data/tagged_sentences_1000sents.csv'],
-                        ['en_ud', 'es_ud'])
-
-all_tags = get_all_tags(['data/training data/es_ud_0_vocab.csv',
-                         'data/training data/en_ud_0_vocab.csv'])
-
-n_tags = len(all_tags)
+from rnn_data_preprocessing import get_all_tags, read_data
+from rnn_helper_functions import category_from_output, random_training_example
+from rnn_visualization_functions import confusion_matrix, losses
 
 
 class RNN(nn.Module):
@@ -38,39 +29,7 @@ class RNN(nn.Module):
         return torch.zeros(1, self.hidden_size)
 
 
-n_categories = 2
-n_hidden = 128
-rnn = RNN(n_tags, n_hidden, n_categories)
-
-
-def category_from_output(output, all_categories):
-    top_n, top_i = output.topk(1)
-    category_i = top_i[0].item()
-    return all_categories[category_i], category_i
-
-
-input = sentence_to_tensor('DET NOUN VERB ADP NUM PROPN ', n_tags, all_tags)
-hidden = torch.zeros(1, n_hidden)
-
-output, next_hidden = rnn(input[0], hidden)
-print(output)
-
-print(category_from_output(output, all_categories))
-
-
-def random_choice(l):
-    return l[random.randint(0, len(l) - 1)]
-
-def random_training_example(all_categories, data, n_tags, all_tags):
-    category = random_choice(all_categories)
-    sentence = random_choice(data[category])
-    category_tensor = torch.tensor([all_categories.index(category)], dtype=torch.long)
-    sentence_tensor = sentence_to_tensor(sentence, n_tags, all_tags)
-    return category, sentence, category_tensor, sentence_tensor
-
-criterion = nn.NLLLoss()
-
-def train(category_tensor, sentence_tensor, learning_rate):
+def train(category_tensor, sentence_tensor, learning_rate, criterion):
     hidden = rnn.init_hidden()
 
     rnn.zero_grad()
@@ -88,15 +47,35 @@ def train(category_tensor, sentence_tensor, learning_rate):
     return output, loss.item()
 
 
+def evaluate(sentence_tensor):
+    hidden = rnn.init_hidden()
+
+    for i in range(sentence_tensor.size()[0]):
+        output, hidden = rnn(sentence_tensor[i], hidden)
+
+    return output
+
+
+data, all_categories = read_data(
+                        ['data/training data/tagged_sentences_1000sents.csv'],
+                        ['en_ud', 'es_ud'])
+
+all_tags = get_all_tags(['data/training data/es_ud_0_vocab.csv',
+                         'data/training data/en_ud_0_vocab.csv'])
+
+n_tags = len(all_tags)
+n_categories = 2
+n_hidden = 128
+rnn = RNN(n_tags, n_hidden, n_categories)
+criterion = nn.NLLLoss()
 n_iters = 100000
 print_every = 5000
 plot_every = 1000
-# Keep track of losses for plotting
 current_loss = 0
 all_losses = []
 
 
-def timeSince(since):
+def time_since(since):
     now = time.time()
     s = now - since
     m = math.floor(s / 60)
@@ -110,7 +89,7 @@ for iter in range(1, n_iters + 1):
     category, sentence, category_tensor, sentence_tensor = \
         random_training_example(all_categories, data, n_tags, all_tags)
     output, loss = train(category_tensor, sentence_tensor,
-                         learning_rate)
+                         learning_rate, criterion)
     current_loss += loss
 
     # Print iter number, loss, name and guess
@@ -118,7 +97,7 @@ for iter in range(1, n_iters + 1):
         guess, guess_i = category_from_output(output, all_categories)
         correct = '✓' if guess == category else '✗ (%s)' % category
         print('%d %d%% (%s) %.4f %s / %s %s' % (iter, iter / n_iters * 100,
-                                                timeSince(start), loss,
+                                                time_since(start), loss,
                                                 sentence, guess, correct))
 
     # Add current loss avg to list of losses
@@ -126,27 +105,9 @@ for iter in range(1, n_iters + 1):
         all_losses.append(current_loss / plot_every)
         current_loss = 0
 
-
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-
-plt.figure()
-plt.plot(all_losses)
-plt.savefig('testeeeee3.png')
-
-
 # Keep track of correct guesses in a confusion matrix
 confusion = torch.zeros(n_categories, n_categories)
 n_confusion = 10000
-
-# Just return an output given a line
-def evaluate(sentence_tensor):
-    hidden = rnn.init_hidden()
-
-    for i in range(sentence_tensor.size()[0]):
-        output, hidden = rnn(sentence_tensor[i], hidden)
-
-    return output
 
 # Go through a bunch of examples and record which are correctly guessed
 for i in range(n_confusion):
@@ -161,18 +122,5 @@ for i in range(n_confusion):
 for i in range(n_categories):
     confusion[i] = confusion[i] / confusion[i].sum()
 
-# Set up plot
-fig = plt.figure()
-ax = fig.add_subplot(111)
-cax = ax.matshow(confusion.numpy())
-fig.colorbar(cax)
-
-# Set up axes
-ax.set_xticklabels([''] + all_categories, rotation=90)
-ax.set_yticklabels([''] + all_categories)
-
-# Force label at every tick
-ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
-
-fig.savefig('confmat.png')
+losses(all_losses, 'testesssss.png')
+confusion_matrix(confusion, all_categories, 'confmat.png')
