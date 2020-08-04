@@ -1,6 +1,8 @@
 import pandas as pd
 import torch
 
+from utils import split_sentences
+
 
 def read_data(filenames, columns):
     data = {}
@@ -9,8 +11,8 @@ def read_data(filenames, columns):
     for filename in filenames:
         df = pd.read_csv(filename)
         for c in columns:
-            data[c] += df[c].to_list()
-    return data, list(data.keys())
+            data[c] += split_sentences(df[c].to_list())
+    return data
 
 
 def get_all_tags(languages_tag_files):
@@ -34,7 +36,6 @@ def tag_to_tensor(tag, n_tags, all_tags):
 
 
 def sentence_to_tensor(sentence, n_tags, all_tags):
-    sentence = sentence.split()
     tensor = torch.zeros(len(sentence), 1, n_tags)
     for li, tag in enumerate(sentence):
         tensor[li][0][tag_to_index(tag, all_tags)] = 1

@@ -6,13 +6,16 @@ import time
 from constant import CCONJ, CONJ, SPANISH
 
 
-def split_sentences(dataset):
+def split_sentences(dataset, end_of_sentence=False):
     """Create list of tags from each of the datasets' rows
     appending two end of sentence markers to the end of the lists."""
     clean_dataset = []
     for i in range(len(dataset)):
         if type(dataset[i]) == str:
-            clean_dataset.append(dataset[i].split() + ['_', '_'])
+            row = dataset[i].split()
+            if end_of_sentence:
+                row += ['_', '_']
+            clean_dataset.append(row)
     return clean_dataset
 
 
