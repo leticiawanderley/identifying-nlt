@@ -13,10 +13,24 @@ def random_choice(l):
     return l[random.randint(0, len(l) - 1)]
 
 
-def random_training_example(all_categories, data, n_tags, all_tags):
-    category = random_choice(all_categories)
-    sentence = random_choice(data[category])
-    category_tensor = torch.tensor([all_categories.index(category)],
-                                   dtype=torch.long)
-    sentence_tensor = sentence_to_tensor(sentence, n_tags, all_tags)
-    return category, sentence, category_tensor, sentence_tensor
+class Data:
+    def __init__(self, data, tags):
+        self.tags = tags
+        self.n_tags = len(self.tags)
+        self.data = copy.deepcopy(data)
+        self.categories = list(data.keys())
+        size = 0
+        for category in self.categories:
+            random.shuffle(self.data[category])
+            size += len(self.data[category])
+        self.size = size
+
+    def random_training_datapoint(self):
+        category = random_choice(self.categories)
+        while not self.data[category]:
+            category = random_choice(self.categories)
+        sentence = self.data[category].pop()
+        category_tensor = torch.tensor([self.categories.index(category)],
+                                       dtype=torch.long)
+        sentence_tensor = sentence_to_tensor(sentence, self.n_tags, self.tags)
+        return category, sentence, category_tensor, sentence_tensor
