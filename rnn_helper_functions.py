@@ -1,3 +1,4 @@
+import copy
 import random
 import torch
 from rnn_data_preprocessing import sentence_to_tensor

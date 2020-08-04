@@ -59,17 +59,16 @@ def run_training(rnn, data, all_categories, n_iters,
     return all_losses
 
 
-def build_confusion_data(rnn, all_categories, all_tags, data):
+def build_confusion_data(rnn, all_categories, data):
     n_categories = len(all_categories)
-    n_tags = len(all_tags)
     # Keep track of correct guesses in a confusion matrix
     confusion = torch.zeros(n_categories, n_categories)
-    n_confusion = 10000
+    n_confusion = data.size
 
     # Go through a bunch of examples and record which are correctly guessed
     for i in range(n_confusion):
         category, sentence, category_tensor, sentence_tensor = \
-            random_training_example(all_categories, data, n_tags, all_tags)
+            data.random_training_datapoint()
         output = rnn.evaluate(sentence_tensor)
         guess, guess_i = category_from_output(output, all_categories)
         category_i = all_categories.index(category)
