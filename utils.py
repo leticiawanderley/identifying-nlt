@@ -1,5 +1,7 @@
 import csv
+import math
 import pandas as pd
+import time
 
 from constant import CCONJ, CONJ, SPANISH
 
@@ -100,6 +102,15 @@ def tag_sentences(model, sentence, language=None, mapping=None):
 
 
 def get_structural_errors():
+    """"""
     error_types = pd.read_csv('./data/error_type_meaning.csv')
     return error_types[error_types.structural == True]['error_type'].\
         tolist()
+
+
+def time_since(since):
+    now = time.time()
+    s = now - since
+    m = math.floor(s / 60)
+    s -= m * 60
+    return '%dm %ds' % (m, s)
