@@ -102,13 +102,15 @@ def tag_sentences(model, sentence, language=None, mapping=None):
 
 
 def get_structural_errors():
-    """"""
+    """Read CLC error types file and return only
+    the structural error types."""
     error_types = pd.read_csv('./data/error_type_meaning.csv')
     return error_types[error_types.structural == True]['error_type'].\
         tolist()
 
 
 def time_since(since):
+    """Compute passed time since the time parameter."""
     now = time.time()
     s = now - since
     m = math.floor(s / 60)
