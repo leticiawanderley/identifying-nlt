@@ -13,7 +13,7 @@ def main():
     raw_data, all_categories = read_data(
                             ['data/training data/tagged_sentences_1000sents.csv'],
                             ['en_ud', 'es_ud'])
-    
+
     all_tags = get_all_tags(['data/training data/es_ud_0_vocab.csv',
                              'data/training data/en_ud_0_vocab.csv'])
     data = Data(raw_data, all_tags)
