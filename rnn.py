@@ -22,8 +22,8 @@ class RNN(nn.Module):
     def init_hidden(self):
         return torch.zeros(1, self.hidden_size)
 
-    def train(self, category_tensor, sequence_tensor, learning_rate,
-              criterion):
+    def train_iteration(self, category_tensor, sequence_tensor,
+                        learning_rate, criterion):
         hidden = self.init_hidden()
 
         self.zero_grad()
