@@ -51,15 +51,15 @@ def run_training(rnn, data, categories, n_iters,
     criterion = nn.NLLLoss()
     current_loss = 0
     all_losses = []
-    for iter in range(1, n_iters + 1):
+    for iteration in range(1, n_iters + 1):
         category, sequence, category_tensor, sequence_tensor = \
             data.random_training_datapoint()
-        output, loss = rnn.train(category_tensor, sequence_tensor,
-                                 learning_rate, criterion)
+        output, loss = rnn.train_iteration(category_tensor, sequence_tensor,
+                                           learning_rate, criterion)
         current_loss += loss
 
-        # Print iter number, loss, name and guess
-        if iter % print_every == 0:
+        # Print iteration number, loss, name and guess
+        if iteration % print_every == 0:
             guess, guess_i = category_from_output(output, categories)
             correct = '✓' if guess == category else '✗ (%s)' % category
             print('%d %d%% (%s) %.4f %s / %s %s' % (iter, iter / n_iters * 100,

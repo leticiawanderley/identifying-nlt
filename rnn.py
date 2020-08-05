@@ -12,8 +12,8 @@ class RNN(nn.Module):
         self.i2o = nn.Linear(input_size + hidden_size, output_size)
         self.softmax = nn.LogSoftmax(dim=1)
 
-    def forward(self, input, hidden):
-        combined = torch.cat((input, hidden), 1)
+    def forward(self, input_tensor, hidden):
+        combined = torch.cat((input_tensor, hidden), 1)
         hidden = self.i2h(combined)
         output = self.i2o(combined)
         output = self.softmax(output)
