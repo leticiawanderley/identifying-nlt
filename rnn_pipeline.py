@@ -66,12 +66,13 @@ def run_training(rnn, data, categories, n_iters,
         if iteration % print_every == 0:
             guess, guess_i = category_from_output(output, categories)
             correct = '✓' if guess == category else '✗ (%s)' % category
-            print('%d %d%% (%s) %.4f %s / %s %s' % (iter, iter / n_iters * 100,
+            print('%d %d%% (%s) %.4f %s / %s %s' % (iteration,
+                                                    iteration / n_iters * 100,
                                                     time_since(start), loss,
                                                     sequence, guess, correct))
 
         # Add current loss avg to list of losses
-        if iter % plot_every == 0:
+        if iteration % plot_every == 0:
             all_losses.append(current_loss / plot_every)
             current_loss = 0
     torch.save(rnn.state_dict(), './saved_model.pth')
