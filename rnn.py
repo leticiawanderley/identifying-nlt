@@ -22,14 +22,14 @@ class RNN(nn.Module):
     def init_hidden(self):
         return torch.zeros(1, self.hidden_size)
 
-    def train(self, category_tensor, sentence_tensor, learning_rate,
+    def train(self, category_tensor, sequence_tensor, learning_rate,
               criterion):
         hidden = self.init_hidden()
 
         self.zero_grad()
 
-        for i in range(sentence_tensor.size()[0]):
-            output, hidden = self(sentence_tensor[i], hidden)
+        for i in range(sequence_tensor.size()[0]):
+            output, hidden = self(sequence_tensor[i], hidden)
 
         loss = criterion(output, category_tensor)
         loss.backward()
@@ -41,10 +41,10 @@ class RNN(nn.Module):
 
         return output, loss.item()
 
-    def evaluate(self, sentence_tensor):
+    def evaluate(self, sequence_tensor):
         hidden = self.init_hidden()
 
-        for i in range(sentence_tensor.size()[0]):
-            output, hidden = self(sentence_tensor[i], hidden)
+        for i in range(sequence_tensor.size()[0]):
+            output, hidden = self(sequence_tensor[i], hidden)
 
         return output

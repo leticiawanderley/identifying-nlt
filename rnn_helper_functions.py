@@ -1,7 +1,7 @@
 import copy
 import random
 import torch
-from rnn_data_preprocessing import sentence_to_tensor
+from rnn_data_preprocessing import sequence_to_tensor
 
 
 def category_from_output(output, all_categories):
@@ -30,8 +30,8 @@ class Data:
         category = random_choice(self.categories)
         while not self.data[category]:
             category = random_choice(self.categories)
-        sentence = self.data[category].pop()
+        sequence = self.data[category].pop()
         category_tensor = torch.tensor([self.categories.index(category)],
                                        dtype=torch.long)
-        sentence_tensor = sentence_to_tensor(sentence, self.n_tags, self.tags)
-        return category, sentence, category_tensor, sentence_tensor
+        sequence_tensor = sequence_to_tensor(sequence, self.n_tags, self.tags)
+        return category, sequence, category_tensor, sequence_tensor

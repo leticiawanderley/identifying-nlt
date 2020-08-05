@@ -35,8 +35,8 @@ def tag_to_tensor(tag, n_tags, all_tags):
     return tensor
 
 
-def sentence_to_tensor(sentence, n_tags, all_tags):
-    tensor = torch.zeros(len(sentence), 1, n_tags)
-    for li, tag in enumerate(sentence):
+def sequence_to_tensor(sequence, n_tags, all_tags):
+    tensor = torch.zeros(len(sequence), 1, n_tags)
+    for li, tag in enumerate(sequence):
         tensor[li][0][tag_to_index(tag, all_tags)] = 1
     return tensor

@@ -52,9 +52,9 @@ def run_training(rnn, data, categories, n_iters,
     current_loss = 0
     all_losses = []
     for iter in range(1, n_iters + 1):
-        category, sentence, category_tensor, sentence_tensor = \
+        category, sequence, category_tensor, sequence_tensor = \
             data.random_training_datapoint()
-        output, loss = rnn.train(category_tensor, sentence_tensor,
+        output, loss = rnn.train(category_tensor, sequence_tensor,
                                  learning_rate, criterion)
         current_loss += loss
 
@@ -64,7 +64,7 @@ def run_training(rnn, data, categories, n_iters,
             correct = '✓' if guess == category else '✗ (%s)' % category
             print('%d %d%% (%s) %.4f %s / %s %s' % (iter, iter / n_iters * 100,
                                                     time_since(start), loss,
-                                                    sentence, guess, correct))
+                                                    sequence, guess, correct))
 
         # Add current loss avg to list of losses
         if iter % plot_every == 0:
@@ -81,9 +81,9 @@ def build_confusion_data(rnn, categories, data):
 
     # Go through a bunch of examples and record which are correctly guessed
     for i in range(n_confusion):
-        category, sentence, category_tensor, sentence_tensor = \
+        category, sequence, category_tensor, sequence_tensor = \
             data.random_training_datapoint()
-        output = rnn.evaluate(sentence_tensor)
+        output = rnn.evaluate(sequence_tensor)
         guess, guess_i = category_from_output(output, categories)
         category_i = categories.index(category)
         confusion[category_i][guess_i] += 1
