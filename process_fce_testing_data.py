@@ -16,6 +16,7 @@ def merge_datasets(folder, columns, output_filename):
 
 merge_datasets('data/testing data/annotated_FCE',
                ['error_type', 'Negative transfer?',
+                'Likely reason for mistake',
                 'correct_sentence', 'correct_trigram_poss',
                 'incorrect_sentence', 'incorrect_trigram_poss'],
                'chinese_annotated_errors.csv')
