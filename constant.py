@@ -35,3 +35,6 @@ UD_NGRAMS_FILES_GV = {
 }
 LEARNER_ENGLISH_FIELDS = ['sentence', 'correct', 'error_type', 'penn',
                           'penn_trigram', 'ud', 'ud_trigram']
+ANNOTATED_FCE_FIELDS = ['error_type', 'Negative transfer?',
+                        'correct_sentence', 'correct_trigram_ud',
+                        'incorrect_sentence', 'incorrect_trigram_ud']
