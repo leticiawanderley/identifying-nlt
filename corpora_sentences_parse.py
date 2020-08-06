@@ -1,6 +1,7 @@
 import pandas as pd
 import spacy
 
+from constant import CHINESE, SPANISH
 from utils import tags_mapping, tag_sentences, unpack_ud_and_penn_tags
 
 
@@ -27,23 +28,38 @@ def pos_tag(models, df, languages_columns, mapping_filename):
 
 
 def main(models, input_filename, output_filename, languages_columns,
-         new_column_names, selected_columns):
+         new_column_names, selected_columns, mapping=None):
     df = pre_process_data(input_filename, new_column_names, selected_columns)
-    df = pos_tag(models, df, languages_columns,
-                 'data/spaCy tags/spacy_spanish_tags_.csv')
+    df = pos_tag(models, df, languages_columns)
     df.to_csv(output_filename, index=True)
 
 
 if __name__ == "__main__":
-    input_filename = 'data/training data/dataset_sentences.csv'
-    output_filename = ('data/training data/'
-                       'tagged_sentences_dataset_sentences.csv')
-    models = {
-        'en': spacy.load("en_core_web_md"),
-        'es': spacy.load("es_core_news_md")
-    }
-    new_column_names = ['english', 'spanish']
-    selected_columns = ['english', 'spanish']
-    languages_columns = {'en': 'english', 'es': 'spanish'}
-    main(models, input_filename, output_filename, languages_columns,
-         new_column_names, selected_columns)
+    l1 = CHINESE
+    if l1 == SPANISH:
+        input_filename = 'data/training data/dataset_sentences.csv'
+        output_filename = ('data/training data/'
+                        'tagged_sentences_dataset_sentences.csv')
+        models = {
+            'en': spacy.load("en_core_web_md"),
+            'es': spacy.load("es_core_news_md")
+        }
+        new_column_names = ['english', 'spanish']
+        selected_columns = ['english', 'spanish']
+        languages_columns = {'en': 'english', 'es': 'spanish'}
+        mapping = 'data/tags/spacy_spanish_tags_.csv'
+        main(models, input_filename, output_filename, languages_columns,
+             new_column_names, selected_columns, mapping)
+    elif l1 == CHINESE:
+        input_filename = 'data/training data/globalvoices_sentences.csv'
+        output_filename = ('data/training data/'
+                        'tagged_globalvoices_sentences.csv')
+        models = {
+            'en': spacy.load("en_core_web_lg"),
+            'zhs': spacy.load("zh_core_web_lg")
+        }
+        new_column_names = ['english', 'chinese']
+        selected_columns = ['en', 'zhs']
+        languages_columns = {'en': 'english', 'zhs': 'chinese'}
+        main(models, input_filename, output_filename, languages_columns,
+             new_column_names, selected_columns)

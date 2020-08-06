@@ -8,6 +8,7 @@ NGRAM_METHODS = {UNSMOOTHED: [1, UNSMOOTHED],
 CONJ = 'CONJ'
 CCONJ = 'CCONJ'
 SPANISH = 'es'
+CHINESE = 'zhs'
 PENN_NGRAMS_FILES = {
     'en': {0: 'data/training data/en_penn_0_vocab.csv',
            1: 'data/training data/en_penn_1_vocab.csv',
