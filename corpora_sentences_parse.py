@@ -14,9 +14,11 @@ def pre_process_data(filename, new_column_names, selected_columns=None):
     return df
 
 
-def pos_tag(models, df, languages_columns, mapping_filename):
+def pos_tag(models, df, languages_columns, mapping_filename=None):
     """Add part-of-speech tags columns to dataframe."""
-    mapping = tags_mapping(mapping_filename)
+    mapping = None
+    if mapping_filename:
+        mapping = tags_mapping(mapping_filename)
     for lang in languages_columns.keys():
         series = df.apply(lambda x: tag_sentences(models[lang],
                                                   x[languages_columns[lang]],
