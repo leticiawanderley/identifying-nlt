@@ -4,11 +4,11 @@ import torch.nn as nn
 import pandas as pd
 
 from rnn import RNN
-from rnn_data_preprocessing import get_all_tags, read_data
+from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
 from rnn_helper_functions import category_from_output, Data
 from rnn_visualization_functions import confusion_matrix, losses
-from utils import time_since
-
+from utils import get_structural_errors, time_since
+from constant import ANNOTATED_FCE_FIELDS
 
 def main(train_new_model=True):
     all_tags = get_all_tags(['data/training data/globalvoices_vocabs/' +
@@ -41,6 +41,7 @@ def main(train_new_model=True):
     saved_rnn.eval()
     confusion = build_confusion_data(saved_rnn, categories, data)
     confusion_matrix(confusion, categories, 'confusion_matrix_zhs_en_1.png')
+    test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
 
 
 def run_training(rnn, data, categories, n_iters,
@@ -75,7 +76,6 @@ def run_training(rnn, data, categories, n_iters,
 
 
 def build_confusion_data(rnn, categories, data):
-    results_dict = {'sequence': [], 'guess':[]}
     n_categories = len(categories)
     # Keep track of correct guesses in a confusion matrix
     confusion = torch.zeros(n_categories, n_categories)
@@ -89,16 +89,29 @@ def build_confusion_data(rnn, categories, data):
         guess, guess_i = category_from_output(output, categories)
         category_i = categories.index(category)
         confusion[category_i][guess_i] += 1
-        results_dict['sequence'].append(sequence)
-        results_dict['guess'].append(guess)
 
-    df = pd.DataFrame.from_dict(results_dict)
-    df.to_csv('rnn_results.csv')
     # Normalize by dividing every row by its sum
     for i in range(n_categories):
         confusion[i] = confusion[i] / confusion[i].sum()
     print(confusion)
     return confusion
+
+
+def test_annotated_fce(rnn, categories, n_tags, all_tags):
+    test_df = pd.read_csv('data/testing data/annotated_FCE/chinese_annotated_errors.csv')
+    nlt = []
+    structural_errors = get_structural_errors()
+    for index, row in test_df.iterrows():
+        if row['error_type'] == '_' or row['error_type'] in structural_errors:
+            sequence_tensor = sequence_to_tensor(row['incorrect_trigram_ud'].split(),
+                                                 n_tags, all_tags)
+            output = rnn.evaluate(sequence_tensor)
+            guess, guess_i = category_from_output(output, categories)
+            nlt.append(guess == 'zhs_ud')
+        else:
+            nlt.append('')
+    test_df['nlt'] = nlt
+    test_df.to_csv('data/results_chinese_annotated_errors_rnn.csv')
 
 
 main(False)
