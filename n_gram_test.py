@@ -1,7 +1,7 @@
 import pandas as pd
 
 from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
-                     PENN_NGRAMS_FILES, UD_NGRAMS_FILES,\
+                     PENN_NGRAMS_FILES, UD_NGRAMS_FILES, UD_NGRAMS_FILES_GV,\
                      LEARNER_ENGLISH_FIELDS
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 from utils import get_structural_errors
@@ -74,5 +74,21 @@ def main():
          fields, test_column, output_file)
 
 
+def test_fce_annotated_data():
+    vocab_files = UD_NGRAMS_FILES_GV
+    fields = ['error_type', 'Negative transfer?',
+              'correct_sentence', 'correct_trigram_ud',
+              'incorrect_sentence', 'incorrect_trigram_ud']
+    test_df = pre_process_data('data/testing data/annotated_FCE/'
+                               'chinese_annotated_errors.csv',
+                               fields)
+    languages = ['en', 'zhs']
+    method = INTERPOLATION
+    test_column = 'incorrect_trigram_ud'
+    output_file = 'data/results_chinese_fce_' + test_column + '_' +\
+                  method + '.csv'
+    test(vocab_files, method, test_df, languages,
+         fields, test_column, output_file)
+
 if __name__ == "__main__":
-    main()
+    test_fce_annotated_data()
