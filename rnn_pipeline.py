@@ -31,11 +31,19 @@ def main(train_new_model=True):
                                   n_iters, print_every, plot_every,
                                   saved_model_path)
         losses(all_losses, 'all_losses_zhs_es_1.png')
-    test_data = read_data(
-        ['data/testing data/annotated_FCE/chinese_annotated_errors.csv'],
-        ['incorrect_trigram_ud'])
-    test_data['zhs_ud'] = test_data.pop('incorrect_trigram_ud')
-    data = Data(test_data, all_tags)
+    test_data_dict = {}
+    test_data = pd.read_csv('data/testing data/annotated_FCE/' +
+                            'chinese_annotated_errors.csv')
+    test_data_dict['zhs_ud'] = \
+        test_data[test_data['Negative transfer?'] == True]\
+        ['incorrect_trigram_ud'].to_list()
+    test_data_dict['en_ud'] = \
+        test_data[test_data['Negative transfer?'] == False]\
+        ['incorrect_trigram_ud'].to_list()
+    for cat in categories:
+        for i in range(len(test_data_dict[cat])):
+            test_data_dict[cat][i] = test_data_dict[cat][i].split()
+    data = Data(test_data_dict, all_tags)
     saved_rnn = RNN(len(all_tags), n_hidden, len(categories))
     saved_rnn.load_state_dict(torch.load(saved_model_path))
     saved_rnn.eval()
@@ -98,19 +106,27 @@ def build_confusion_data(rnn, categories, data):
 
 
 def test_annotated_fce(rnn, categories, n_tags, all_tags):
-    test_df = pd.read_csv('data/testing data/annotated_FCE/chinese_annotated_errors.csv')
+    test_df = pd.read_csv('data/testing data/annotated_FCE/' +
+                          'chinese_annotated_errors.csv')
     nlt = []
+    results = []
     structural_errors = get_structural_errors()
     for index, row in test_df.iterrows():
         if row['error_type'] == '_' or row['error_type'] in structural_errors:
-            sequence_tensor = sequence_to_tensor(row['incorrect_trigram_ud'].split(),
-                                                 n_tags, all_tags)
+            sequence_tensor = sequence_to_tensor(
+                                row['incorrect_trigram_ud'].split(),
+                                n_tags, all_tags)
             output = rnn.evaluate(sequence_tensor)
             guess, guess_i = category_from_output(output, categories)
-            nlt.append(guess == 'zhs_ud')
+            is_nlt = guess == 'zhs_ud'
+            is_guess_correct = is_nlt == row['Negative transfer?']
+            nlt.append(is_nlt)
+            results.append(is_guess_correct)
         else:
             nlt.append('')
+            results.append('')
     test_df['nlt'] = nlt
+    test_df['result'] = results
     test_df.to_csv('data/results_chinese_annotated_errors_rnn.csv')
 
 
