@@ -10,7 +10,7 @@ def merge_datasets(folder, columns, output_filename):
             filename = folder + '/' + file
             dataframes.append(pd.read_csv(filename)[columns])
     df = pd.concat(dataframes)
-    df = df[df['Negative transfer?'] == 'Y']
+    df['Negative transfer?'] = df['Negative transfer?'] == 'Y'
     df.to_csv(output_filename)
 
 
