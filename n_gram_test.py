@@ -88,5 +88,6 @@ def test_fce_annotated_data():
     test(vocab_files, method, test_df, languages,
          fields, test_column, output_file)
 
+
 if __name__ == "__main__":
     test_fce_annotated_data()
