@@ -9,8 +9,11 @@ def evaluate_models(filename, fields, l1, l2):
     # If the probability in the L1 is greater than the probability in the L2
     # the sequence is tagged as negative language transfer
     df['nlt'] = np.where(df[l1] > df[l2], True, False)
-    df['result'] = np.where(df['nlt'], df['nlt'] == df['Negative transfer?'],
-                            df['nlt'])
+    results = []
+    for index, row in df.iterrows():
+        is_guess_correct = row['nlt'] == row['Negative transfer?']
+        results.append(is_guess_correct)
+    df['result'] = results
     df = df[fields + [l1, l2, 'nlt', 'result']]
     df.to_csv(filename)
     print(filename)
