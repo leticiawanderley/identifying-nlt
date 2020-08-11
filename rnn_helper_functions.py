@@ -1,6 +1,8 @@
 import copy
 import random
+import pandas as pd
 import torch
+
 from rnn_data_preprocessing import sequence_to_tensor
 
 
@@ -35,3 +37,18 @@ class Data:
                                        dtype=torch.long)
         sequence_tensor = sequence_to_tensor(sequence, self.n_tags, self.tags)
         return category, sequence, category_tensor, sequence_tensor
+
+
+def setup_testing_data(dataset_file, categories):
+    data_dict = {}
+    test_data = pd.read_csv(dataset_file)
+    data_dict['zhs_ud'] = \
+        test_data[test_data['Negative transfer?'] == True]\
+        ['incorrect_trigram_ud'].to_list()
+    data_dict['en_ud'] = \
+        test_data[test_data['Negative transfer?'] == False]\
+        ['incorrect_trigram_ud'].to_list()
+    for cat in categories:
+        for i in range(len(data_dict[cat])):
+            data_dict[cat][i] = data_dict[cat][i].split()
+    return data_dict
