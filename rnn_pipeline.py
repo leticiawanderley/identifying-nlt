@@ -87,7 +87,7 @@ def main(train_new_model=True):
         all_losses = run_training(rnn, data, categories,
                                   n_iters, print_every, plot_every,
                                   saved_model_path)
-        losses(all_losses, 'all_losses_zhs_en_1.png')
+        losses(all_losses, 'figures/all_losses_zhs_en_1.png')
     test_data_dict = setup_testing_data(
         'data/testing data/annotated_FCE/chinese_annotated_errors.csv',
         categories)
@@ -98,7 +98,7 @@ def main(train_new_model=True):
     test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
     confusion_matrix('data/results_chinese_annotated_errors_rnn.csv',
                      'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
-                     'confusion_matrix_zhs_en_rnn.png')
+                     'figures/confusion_matrix_zhs_en_rnn.png')
 
 
 main(False)

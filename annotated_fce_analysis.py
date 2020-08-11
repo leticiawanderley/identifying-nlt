@@ -37,14 +37,14 @@ evaluate_models(
 confusion_matrix(
     'data/results_chinese_fce_incorrect_trigram_ud_unsmoothed.csv',
     'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
-    'confusion_matrix_zhs_en_unsmoothed.png')
+    'figures/confusion_matrix_zhs_en_unsmoothed.png')
 
 confusion_matrix(
     'data/results_chinese_fce_incorrect_trigram_ud_laplace.csv',
     'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
-    'confusion_matrix_zhs_en_laplace.png')
+    'figures/confusion_matrix_zhs_en_laplace.png')
 
 confusion_matrix(
     'data/results_chinese_fce_incorrect_trigram_ud_interpolation.csv',
     'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
-    'confusion_matrix_zhs_en_interpolation.png')
+    'figures/confusion_matrix_zhs_en_interpolation.png')
