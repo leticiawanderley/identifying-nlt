@@ -127,6 +127,7 @@ def test_annotated_fce(rnn, categories, n_tags, all_tags):
             results.append('')
     test_df['nlt'] = nlt
     test_df['result'] = results
+    print(test_df.groupby(['result']).size().reset_index(name='count'))
     test_df.to_csv('data/results_chinese_annotated_errors_rnn.csv')
 
 
