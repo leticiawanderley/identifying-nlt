@@ -6,7 +6,7 @@ import pandas as pd
 from rnn import RNN
 from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
 from rnn_helper_functions import category_from_output, Data, setup_testing_data
-from utils import create_confusion_data, get_structural_errors, time_since
+from utils import get_structural_errors, time_since
 from visualization_functions import confusion_matrix, losses
 
 
@@ -96,10 +96,8 @@ def main(train_new_model=True):
     saved_rnn.load_state_dict(torch.load(saved_model_path))
     saved_rnn.eval()
     test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
-    confusion = create_confusion_data(
-                    'data/results_chinese_annotated_errors_rnn.csv',
-                    'Negative transfer?', 'nlt')
-    confusion_matrix(confusion, ['Not NLT', 'NLT'],
+    confusion_matrix('data/results_chinese_annotated_errors_rnn.csv',
+                     'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
                      'confusion_matrix_zhs_en_rnn.png')
 
 

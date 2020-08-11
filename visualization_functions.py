@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import numpy as np
 
+from utils import create_confusion_data
+
 
 def losses(all_losses, output_filename):
     plt.figure()
@@ -9,7 +11,9 @@ def losses(all_losses, output_filename):
     plt.savefig(output_filename)
 
 
-def confusion_matrix(confusion, all_categories, output_filename):
+def confusion_matrix(dataset_file, gold_label, guess_column,
+                     all_categories, output_filename):
+    confusion = create_confusion_data(dataset_file, gold_label, guess_column)
     fig = plt.figure()
     ax = fig.add_subplot(111)
     cax = ax.matshow(confusion)
