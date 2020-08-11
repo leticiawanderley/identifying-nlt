@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+import numpy as np
 
 
 def losses(all_losses, output_filename):
@@ -13,6 +14,9 @@ def confusion_matrix(confusion, all_categories, output_filename):
     ax = fig.add_subplot(111)
     cax = ax.matshow(confusion.numpy())
     fig.colorbar(cax)
+
+    for (i, j), z in np.ndenumerate(confusion):
+        ax.text(j, i, '{:0.4f}'.format(z), ha='center', va='center')
 
     ax.set_xticklabels([''] + all_categories, rotation=90)
     ax.set_yticklabels([''] + all_categories)

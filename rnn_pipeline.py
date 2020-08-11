@@ -59,7 +59,6 @@ def create_confusion_data(rnn, categories, data):
     # Normalize by dividing every row by its sum
     for i in range(n_categories):
         confusion[i] = confusion[i] / confusion[i].sum()
-    print(confusion)
     return confusion
 
 
