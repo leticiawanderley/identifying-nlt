@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 
 from constant import ANNOTATED_FCE_FIELDS
+from visualization_functions import confusion_matrix
 
 
 def evaluate_models(filename, fields, l1, l2):
@@ -31,3 +32,19 @@ evaluate_models(
 evaluate_models(
     'data/results_chinese_fce_incorrect_trigram_ud_interpolation.csv',
     ANNOTATED_FCE_FIELDS, 'zhs', 'en')
+
+
+confusion_matrix(
+    'data/results_chinese_fce_incorrect_trigram_ud_unsmoothed.csv',
+    'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
+    'confusion_matrix_zhs_en_unsmoothed.png')
+
+confusion_matrix(
+    'data/results_chinese_fce_incorrect_trigram_ud_laplace.csv',
+    'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
+    'confusion_matrix_zhs_en_laplace.png')
+
+confusion_matrix(
+    'data/results_chinese_fce_incorrect_trigram_ud_interpolation.csv',
+    'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
+    'confusion_matrix_zhs_en_interpolation.png')
