@@ -81,7 +81,7 @@ def test_fce_annotated_data():
                                'chinese_annotated_errors.csv',
                                fields)
     languages = ['en', 'zhs']
-    method = INTERPOLATION
+    method = UNSMOOTHED
     test_column = 'incorrect_trigram_ud'
     output_file = 'data/results_chinese_fce_' + test_column + '_' +\
                   method + '.csv'
