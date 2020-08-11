@@ -6,7 +6,7 @@ import pandas as pd
 from rnn import RNN
 from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
 from rnn_helper_functions import category_from_output, Data, setup_testing_data
-from utils import get_structural_errors, time_since
+from utils import create_confusion_data, get_structural_errors, time_since
 from visualization_functions import confusion_matrix, losses
 
 
@@ -39,27 +39,6 @@ def run_training(rnn, data, categories, n_iters,
             current_loss = 0
     torch.save(rnn.state_dict(), output_model)
     return all_losses
-
-
-def create_confusion_data(rnn, categories, data):
-    n_categories = len(categories)
-    # Keep track of correct guesses in a confusion matrix
-    confusion = torch.zeros(n_categories, n_categories)
-    n_confusion = data.size
-
-    # Go through a bunch of examples and record which are correctly guessed
-    for i in range(n_confusion):
-        category, sequence, category_tensor, sequence_tensor = \
-            data.random_training_datapoint()
-        output = rnn.evaluate(sequence_tensor)
-        guess, guess_i = category_from_output(output, categories)
-        category_i = categories.index(category)
-        confusion[category_i][guess_i] += 1
-
-    # Normalize by dividing every row by its sum
-    for i in range(n_categories):
-        confusion[i] = confusion[i] / confusion[i].sum()
-    return confusion
 
 
 def test_annotated_fce(rnn, categories, n_tags, all_tags):
@@ -116,9 +95,12 @@ def main(train_new_model=True):
     saved_rnn = RNN(len(all_tags), n_hidden, len(categories))
     saved_rnn.load_state_dict(torch.load(saved_model_path))
     saved_rnn.eval()
-    confusion = create_confusion_data(saved_rnn, categories, data)
-    confusion_matrix(confusion, categories, 'confusion_matrix_zhs_en_1.png')
     test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
+    confusion = create_confusion_data(
+                    'data/results_chinese_annotated_errors_rnn.csv',
+                    'Negative transfer?', 'nlt')
+    confusion_matrix(confusion, ['Not NLT', 'NLT'],
+                     'confusion_matrix_zhs_en_rnn.png')
 
 
 main(False)

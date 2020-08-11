@@ -119,3 +119,18 @@ def time_since(since):
     m = math.floor(s / 60)
     s -= m * 60
     return '%dm %ds' % (m, s)
+
+
+def create_confusion_data(dataset_file, gold_column, guess_column):
+    df = pd.read_csv(dataset_file)
+    n_columns = 2
+    confusion = [[0, 0], [0, 0]]
+    for index, row in df.iterrows():
+        if type(row[gold_column]) == bool and type(row[guess_column]) == bool:
+            confusion[int(row[gold_column])][int(row[guess_column])] += 1
+    print(confusion)
+    for i in range(n_columns):
+        total = sum(confusion[i])
+        for j in range(n_columns):
+            confusion[i][j] = confusion[i][j] / total
+    return confusion
