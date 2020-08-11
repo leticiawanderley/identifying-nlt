@@ -5,51 +5,9 @@ import pandas as pd
 
 from rnn import RNN
 from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
-from rnn_helper_functions import category_from_output, Data
+from rnn_helper_functions import category_from_output, Data, setup_testing_data
 from utils import get_structural_errors, time_since
 from visualization_functions import confusion_matrix, losses
-
-
-def main(train_new_model=True):
-    all_tags = get_all_tags(['data/training data/globalvoices_vocabs/' +
-                             'zhs_ud_0_vocab.csv',
-                             'data/training data/globalvoices_vocabs/' +
-                             'en_ud_0_vocab.csv'])
-    categories = ['en_ud', 'zhs_ud']
-    n_hidden = 256
-    saved_model_path = './saved_model_zhs_en_1.pth'
-    if train_new_model:
-        training_data = read_data(
-            ['data/training data/tagged_globalvoices_sentences.csv'],
-            categories)
-        data = Data(training_data, all_tags)
-        rnn = RNN(len(all_tags), n_hidden, len(categories))
-        n_iters = data.size
-        print_every = 5000
-        plot_every = 1000
-        all_losses = run_training(rnn, data, categories,
-                                  n_iters, print_every, plot_every,
-                                  saved_model_path)
-        losses(all_losses, 'all_losses_zhs_es_1.png')
-    test_data_dict = {}
-    test_data = pd.read_csv('data/testing data/annotated_FCE/' +
-                            'chinese_annotated_errors.csv')
-    test_data_dict['zhs_ud'] = \
-        test_data[test_data['Negative transfer?'] == True]\
-        ['incorrect_trigram_ud'].to_list()
-    test_data_dict['en_ud'] = \
-        test_data[test_data['Negative transfer?'] == False]\
-        ['incorrect_trigram_ud'].to_list()
-    for cat in categories:
-        for i in range(len(test_data_dict[cat])):
-            test_data_dict[cat][i] = test_data_dict[cat][i].split()
-    data = Data(test_data_dict, all_tags)
-    saved_rnn = RNN(len(all_tags), n_hidden, len(categories))
-    saved_rnn.load_state_dict(torch.load(saved_model_path))
-    saved_rnn.eval()
-    confusion = create_confusion_data(saved_rnn, categories, data)
-    confusion_matrix(confusion, categories, 'confusion_matrix_zhs_en_1.png')
-    test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
 
 
 def run_training(rnn, data, categories, n_iters,
@@ -129,6 +87,39 @@ def test_annotated_fce(rnn, categories, n_tags, all_tags):
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
     test_df.to_csv('data/results_chinese_annotated_errors_rnn.csv')
+
+
+def main(train_new_model=True):
+    all_tags = get_all_tags(['data/training data/globalvoices_vocabs/' +
+                             'zhs_ud_0_vocab.csv',
+                             'data/training data/globalvoices_vocabs/' +
+                             'en_ud_0_vocab.csv'])
+    categories = ['en_ud', 'zhs_ud']
+    n_hidden = 256
+    saved_model_path = './saved_model_zhs_en_1.pth'
+    if train_new_model:
+        training_data = read_data(
+            ['data/training data/tagged_globalvoices_sentences.csv'],
+            categories)
+        data = Data(training_data, all_tags)
+        rnn = RNN(len(all_tags), n_hidden, len(categories))
+        n_iters = data.size
+        print_every = 5000
+        plot_every = 1000
+        all_losses = run_training(rnn, data, categories,
+                                  n_iters, print_every, plot_every,
+                                  saved_model_path)
+        losses(all_losses, 'all_losses_zhs_en_1.png')
+    test_data_dict = setup_testing_data(
+        'data/testing data/annotated_FCE/chinese_annotated_errors.csv',
+        categories)
+    data = Data(test_data_dict, all_tags)
+    saved_rnn = RNN(len(all_tags), n_hidden, len(categories))
+    saved_rnn.load_state_dict(torch.load(saved_model_path))
+    saved_rnn.eval()
+    confusion = create_confusion_data(saved_rnn, categories, data)
+    confusion_matrix(confusion, categories, 'confusion_matrix_zhs_en_1.png')
+    test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
 
 
 main(False)
