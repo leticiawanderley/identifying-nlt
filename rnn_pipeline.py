@@ -6,9 +6,9 @@ import pandas as pd
 from rnn import RNN
 from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
 from rnn_helper_functions import category_from_output, Data
-from rnn_visualization_functions import confusion_matrix, losses
 from utils import get_structural_errors, time_since
-from constant import ANNOTATED_FCE_FIELDS
+from visualization_functions import confusion_matrix, losses
+
 
 def main(train_new_model=True):
     all_tags = get_all_tags(['data/training data/globalvoices_vocabs/' +
@@ -47,7 +47,7 @@ def main(train_new_model=True):
     saved_rnn = RNN(len(all_tags), n_hidden, len(categories))
     saved_rnn.load_state_dict(torch.load(saved_model_path))
     saved_rnn.eval()
-    confusion = build_confusion_data(saved_rnn, categories, data)
+    confusion = create_confusion_data(saved_rnn, categories, data)
     confusion_matrix(confusion, categories, 'confusion_matrix_zhs_en_1.png')
     test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
 
@@ -83,7 +83,7 @@ def run_training(rnn, data, categories, n_iters,
     return all_losses
 
 
-def build_confusion_data(rnn, categories, data):
+def create_confusion_data(rnn, categories, data):
     n_categories = len(categories)
     # Keep track of correct guesses in a confusion matrix
     confusion = torch.zeros(n_categories, n_categories)
