@@ -39,16 +39,12 @@ class Data:
         return category, sequence, category_tensor, sequence_tensor
 
 
-def setup_testing_data(dataset_file, categories):
+def setup_data(dataset, columns, feature, gold_label):
+    categories = columns.keys()
     data_dict = {}
-    test_data = pd.read_csv(dataset_file)
-    data_dict['zhs_ud'] = \
-        test_data[test_data['Negative transfer?'] == True]\
-        ['incorrect_trigram_ud'].to_list()
-    data_dict['en_ud'] = \
-        test_data[test_data['Negative transfer?'] == False]\
-        ['incorrect_trigram_ud'].to_list()
-    for cat in categories:
-        for i in range(len(data_dict[cat])):
-            data_dict[cat][i] = data_dict[cat][i].split()
+    for col in categories:
+        data_dict[columns[col]] = \
+            dataset[dataset[gold_label] == col][feature].to_list()
+        for i in range(len(data_dict[columns[col]])):
+            data_dict[columns[col]][i] = data_dict[columns[col]][i].split()
     return data_dict
