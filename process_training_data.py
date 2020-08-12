@@ -44,8 +44,9 @@ def create_vocabs_files(n, languages, datasets, column):
 
 
 def main():
-    datasets = ['data/training data/tagged_globalvoices_sentences.csv']
-    languages = ['en', 'zhs']
-    create_vocabs_files(3, languages, datasets, 'ud')
+    datasets = ['data/testing data/annotated_FCE/chinese_annotated_errors.csv']
+    languages = ['incorrect_trigram']
+    create_vocabs_files(1, languages, datasets, 'ud')
+
 
 main()
