@@ -9,7 +9,7 @@ from utils import create_confusion_data
 def losses(all_losses, output_filename):
     plt.figure()
     plt.plot(all_losses)
-    plt.savefig(output_filename)
+    plt.savefig('figures/' + output_filename)
 
 
 def confusion_matrix(dataset_file, gold_label, guess_column, output_filename):
@@ -31,4 +31,4 @@ def confusion_matrix(dataset_file, gold_label, guess_column, output_filename):
     plt.xlabel('Predicted')
     plt.ylabel('True')
 
-    fig.savefig(output_filename)
+    fig.savefig('figures/' + output_filename)

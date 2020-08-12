@@ -38,14 +38,14 @@ evaluate_models(
 confusion_matrix(
     'data/results_chinese_fce_incorrect_trigram_ud_unsmoothed.csv',
     GOLD_LABEL, MODEL_LABEL,
-    'figures/confusion_matrix_zhs_en_unsmoothed.png')
+    'confusion_matrix_zhs_en_unsmoothed.png')
 
 confusion_matrix(
     'data/results_chinese_fce_incorrect_trigram_ud_laplace.csv',
     GOLD_LABEL, MODEL_LABEL,
-    'figures/confusion_matrix_zhs_en_laplace.png')
+    'confusion_matrix_zhs_en_laplace.png')
 
 confusion_matrix(
     'data/results_chinese_fce_incorrect_trigram_ud_interpolation.csv',
     GOLD_LABEL, MODEL_LABEL,
-    'figures/confusion_matrix_zhs_en_interpolation.png')
+    'confusion_matrix_zhs_en_interpolation.png')
