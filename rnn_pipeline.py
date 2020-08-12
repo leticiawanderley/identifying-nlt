@@ -65,21 +65,16 @@ def test_annotated_fce(rnn, categories, n_tags, all_tags):
     test_df[MODEL_LABEL] = nlt
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
-    test_df.to_csv('data/results_chinese_annotated_errors_rnn.csv')
+    output_filename = 'data/results_chinese_annotated_errors_rnn.csv'
+    test_df.to_csv(output_filename)
+    return output_filename
 
 
-def main(train_new_model=True):
-    all_tags = get_all_tags(['data/training data/globalvoices_vocabs/' +
-                             'zhs_ud_0_vocab.csv',
-                             'data/training data/globalvoices_vocabs/' +
-                             'en_ud_0_vocab.csv'])
-    categories = ['en_ud', 'zhs_ud']
-    n_hidden = 256
-    saved_model_path = './saved_model_zhs_en_1.pth'
+def main(vocab_datasets, training_datasets, testing_dateset, categories,
+         n_hidden, saved_model_path, train_new_model=True):
+    all_tags = get_all_tags(vocab_datasets)
     if train_new_model:
-        training_data = read_data(
-            ['data/training data/tagged_globalvoices_sentences.csv'],
-            categories)
+        training_data = read_data(training_datasets, categories)
         data = Data(training_data, all_tags)
         rnn = RNN(len(all_tags), n_hidden, len(categories))
         n_iters = data.size
@@ -88,18 +83,28 @@ def main(train_new_model=True):
         all_losses = run_training(rnn, data, categories,
                                   n_iters, print_every, plot_every,
                                   saved_model_path)
-        losses(all_losses, 'figures/all_losses_zhs_en_1.png')
-    test_data_dict = setup_testing_data(
-        'data/testing data/annotated_FCE/chinese_annotated_errors.csv',
-        categories)
+        losses(all_losses, 'all_losses_zhs_en_1.png')
+    test_data_dict = setup_testing_data(testing_dataset, categories)
     data = Data(test_data_dict, all_tags)
     saved_rnn = RNN(len(all_tags), n_hidden, len(categories))
     saved_rnn.load_state_dict(torch.load(saved_model_path))
     saved_rnn.eval()
-    test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
-    confusion_matrix('data/results_chinese_annotated_errors_rnn.csv',
-                     GOLD_LABEL, MODEL_LABEL,
-                     'figures/confusion_matrix_zhs_en_rnn.png')
+    results_file = test_annotated_fce(saved_rnn, categories,
+                                      len(all_tags), all_tags)
+    confusion_matrix(results_file, GOLD_LABEL, MODEL_LABEL,
+                     'confusion_matrix_zhs_en_rnn.png')
 
 
-main(False)
+if __name__ == "__main__":
+    vocab_datasets = [
+        'data/training data/globalvoices_vocabs/zhs_ud_0_vocab.csv',
+        'data/training data/globalvoices_vocabs/en_ud_0_vocab.csv']
+    training_datasets = [
+        'data/training data/tagged_globalvoices_sentences.csv']
+    testing_dataset = 'data/testing data/annotated_FCE/' + \
+                      'chinese_annotated_errors.csv'
+    categories = ['en_ud', 'zhs_ud']
+    n_hidden = 256
+    saved_model_path = './saved_model_zhs_en_1.pth'
+    main(vocab_datasets, training_datasets, testing_dataset, categories,
+         n_hidden, saved_model_path, False)
