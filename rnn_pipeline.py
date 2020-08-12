@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import pandas as pd
 
+from constant import GOLD_LABEL, MODEL_LABEL
 from rnn import RNN
 from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
 from rnn_helper_functions import category_from_output, Data, setup_testing_data
@@ -55,13 +56,13 @@ def test_annotated_fce(rnn, categories, n_tags, all_tags):
             output = rnn.evaluate(sequence_tensor)
             guess, guess_i = category_from_output(output, categories)
             is_nlt = guess == 'zhs_ud'
-            is_guess_correct = is_nlt == row['Negative transfer?']
+            is_guess_correct = is_nlt == row[GOLD_LABEL]
             nlt.append(is_nlt)
             results.append(is_guess_correct)
         else:
             nlt.append('')
             results.append('')
-    test_df['nlt'] = nlt
+    test_df[MODEL_LABEL] = nlt
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
     test_df.to_csv('data/results_chinese_annotated_errors_rnn.csv')
@@ -97,7 +98,7 @@ def main(train_new_model=True):
     saved_rnn.eval()
     test_annotated_fce(saved_rnn, categories, len(all_tags), all_tags)
     confusion_matrix('data/results_chinese_annotated_errors_rnn.csv',
-                     'Negative transfer?', 'nlt', ['Not NLT', 'NLT'],
+                     GOLD_LABEL, MODEL_LABEL,
                      'figures/confusion_matrix_zhs_en_rnn.png')
 
 

@@ -7,8 +7,9 @@ NGRAM_METHODS = {UNSMOOTHED: [1, UNSMOOTHED],
                  INTERPOLATION: [3, INTERPOLATION]}
 CONJ = 'CONJ'
 CCONJ = 'CCONJ'
-SPANISH = 'es'
 CHINESE = 'zhs'
+ENGLISH = 'en'
+SPANISH = 'es'
 PENN_NGRAMS_FILES = {
     'en': {0: 'data/training data/europarl_vocabs/en_penn_0_vocab.csv',
            1: 'data/training data/europarl_vocabs/en_penn_1_vocab.csv',
@@ -39,3 +40,6 @@ ANNOTATED_FCE_FIELDS = ['error_type', 'Negative transfer?',
                         'Likely reason for mistake',
                         'correct_sentence', 'correct_trigram_ud',
                         'incorrect_sentence', 'incorrect_trigram_ud']
+GOLD_LABEL = 'Negative transfer?'
+MODEL_LABEL = 'nlt'
+CONFUSION_MATRIX_AXES = ['Not NLT', 'NLT']
