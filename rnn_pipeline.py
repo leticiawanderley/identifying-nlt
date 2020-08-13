@@ -42,18 +42,33 @@ def run_training(rnn, data, categories, learning_rate, output_model):
     return all_losses
 
 
-def test_annotated_fce(testing_dataset, rnn, categories, n_tags, all_tags):
-    test_df = pd.read_csv(testing_dataset)
+def train_rnn_model(training_data, categories, all_tags,
+                    learning_rate, output_model, output_figure):
+    data = Data(training_data, all_tags)
+    rnn = RNN(len(all_tags), n_hidden, len(categories))
+    all_losses = run_training(rnn, data, categories, learning_rate,
+                              output_model)
+    losses(all_losses, output_figure)
+    return rnn
+
+
+def test_datapoint(rnn, datapoint, categories, all_tags):
+    sequence_tensor = sequence_to_tensor(datapoint,
+                                         len(all_tags), all_tags)
+    output = rnn.evaluate(sequence_tensor)
+    guess, guess_i = category_from_output(output, categories)
+    return guess
+
+
+def test_nli_rnn(test_dataset, rnn, categories, n_tags, all_tags):
+    test_df = pd.read_csv(test_dataset)
     nlt = []
     results = []
     structural_errors = get_structural_errors()
     for index, row in test_df.iterrows():
         if row['error_type'] == '_' or row['error_type'] in structural_errors:
-            sequence_tensor = sequence_to_tensor(
-                                row['incorrect_trigram_ud'].split(),
-                                n_tags, all_tags)
-            output = rnn.evaluate(sequence_tensor)
-            guess, guess_i = category_from_output(output, categories)
+            guess = test_datapoint(rnn, row['incorrect_trigram_ud'].split(),
+                                   categories, all_tags)
             is_nlt = guess == 'zhs_ud'
             is_guess_correct = is_nlt == row[GOLD_LABEL]
             nlt.append(is_nlt)

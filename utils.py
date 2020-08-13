@@ -4,6 +4,7 @@ import pandas as pd
 import time
 
 from constant import CCONJ, CONJ, SPANISH
+from sklearn.model_selection import train_test_split
 
 
 def split_sentences(dataset, end_of_sentence=False):
@@ -133,3 +134,15 @@ def create_confusion_data(dataset_file, gold_column, guess_column):
         for j in range(n_columns):
             confusion[i][j] = confusion[i][j] / total
     return confusion
+
+
+def power_of_ten_value(number):
+    return int('1' + '0' * (len(str(int(number))) - 1))
+
+
+def setup_train_test_data(dataset, percentage, gold_column):
+    df = pd.read_csv(dataset)
+    y = df[gold_column]
+    x_train, x_test, y_train, y_test = train_test_split(
+                                        df, y, test_size=percentage)
+    return x_train.copy(), x_test.copy()
