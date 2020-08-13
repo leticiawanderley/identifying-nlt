@@ -122,7 +122,7 @@ def test_nlt_rnn(test_data, rnn, categories, n_tags, all_tags):
 def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
     training_data, test_data = setup_train_test_data(
                                 'data/testing data/annotated_FCE/' +
-                                'chinese_annotated_errors.csv', 0.2,
+                                'chinese_annotated_errors.csv', 0.1,
                                 GOLD_LABEL)
     all_tags = get_all_tags(
                     ['data/training data/incorrect_trigram_ud_0_vocab.csv'])
@@ -131,7 +131,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
     if train_new_model:
         data_dict = setup_data(training_data, columns, 'incorrect_trigram_ud',
                                GOLD_LABEL)
-        learning_rate = 0.025
+        learning_rate = 0.05
         rnn = train_rnn_model(data_dict, categories, all_tags, learning_rate,
                               saved_model_path, 'all_losses_predict_nlt.png')
     else:
@@ -145,8 +145,8 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
 
 
 if __name__ == "__main__":
-    test = True
-    if test:
+    train_nli = False
+    if train_nli:
         vocab_datasets = [
             'data/training data/globalvoices_vocabs/zhs_ud_0_vocab.csv',
             'data/training data/globalvoices_vocabs/en_ud_0_vocab.csv']
