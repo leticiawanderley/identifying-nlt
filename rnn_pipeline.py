@@ -1,28 +1,28 @@
 import time
 import torch
-import torch.nn as nn
 import pandas as pd
 
-from sklearn.model_selection import train_test_split
 from constant import GOLD_LABEL, MODEL_LABEL
 from rnn import RNN
 from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
 from rnn_helper_functions import category_from_output, Data, setup_data
-from utils import get_structural_errors, time_since
+from utils import get_structural_errors, time_since, power_of_ten_value, \
+                  setup_train_test_data
 from visualization_functions import confusion_matrix, losses
 
 
-def run_training(rnn, data, categories, learning_rate, n_iters,
-                 print_every, plot_every, output_model):
+def run_training(rnn, data, categories, learning_rate, output_model):
+    n_iters = data.size
+    print_every = power_of_ten_value(n_iters * 0.05)
+    plot_every = power_of_ten_value(n_iters * 0.01)
     start = time.time()
-    criterion = nn.NLLLoss()
     current_loss = 0
     all_losses = []
     for iteration in range(1, n_iters + 1):
         category, sequence, category_tensor, sequence_tensor = \
             data.random_training_datapoint()
         output, loss = rnn.train_iteration(category_tensor, sequence_tensor,
-                                           learning_rate, criterion)
+                                           learning_rate)
         current_loss += loss
 
         # Print iteration number, loss, name and guess

@@ -3,7 +3,8 @@ import torch.nn as nn
 
 
 class RNN(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_size, output_size,
+                 criterion=nn.NLLLoss()):
         super(RNN, self).__init__()
 
         self.hidden_size = hidden_size
@@ -11,6 +12,7 @@ class RNN(nn.Module):
         self.i2h = nn.Linear(input_size + hidden_size, hidden_size)
         self.i2o = nn.Linear(input_size + hidden_size, output_size)
         self.softmax = nn.LogSoftmax(dim=1)
+        self.criterion = criterion
 
     def forward(self, input_tensor, hidden):
         combined = torch.cat((input_tensor, hidden), 1)
@@ -23,7 +25,7 @@ class RNN(nn.Module):
         return torch.zeros(1, self.hidden_size)
 
     def train_iteration(self, category_tensor, sequence_tensor,
-                        learning_rate, criterion):
+                        learning_rate):
         hidden = self.init_hidden()
 
         self.zero_grad()
@@ -31,7 +33,7 @@ class RNN(nn.Module):
         for i in range(sequence_tensor.size()[0]):
             output, hidden = self(sequence_tensor[i], hidden)
 
-        loss = criterion(output, category_tensor)
+        loss = self.criterion(output, category_tensor)
         loss.backward()
 
         # Add parameters' gradients to their values,
