@@ -1,6 +1,5 @@
 import copy
 import random
-import pandas as pd
 import torch
 
 from rnn_data_preprocessing import sequence_to_tensor
