@@ -158,7 +158,7 @@ if __name__ == "__main__":
         n_hidden = 256
         saved_model_path = './saved_model_zhs_en_1.pth'
         nli(vocab_datasets, training_datasets, test_dataset,
-            categories, n_hidden, saved_model_path)
+            categories, n_hidden, saved_model_path, False)
     else:
         n_hidden = 128
         saved_model_path = 'saved_prediction_model.pth'
