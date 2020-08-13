@@ -12,6 +12,7 @@ def merge_datasets(folder, columns, output_filename):
             filename = folder + '/' + file
             dataframes.append(pd.read_csv(filename)[columns])
     df = pd.concat(dataframes)
+    df = df[df['Likely reason for mistake'] != 'Omitted']
     df['Negative transfer?'] = df['Negative transfer?'] == 'Y'
     df.columns = ANNOTATED_FCE_FIELDS
     df.to_csv(output_filename)
