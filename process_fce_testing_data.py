@@ -15,6 +15,8 @@ def merge_datasets(folder, columns, output_filename):
     df = df[df['Likely reason for mistake'] != 'Omitted']
     df['Negative transfer?'] = df['Negative transfer?'] == 'Y'
     df.columns = ANNOTATED_FCE_FIELDS
+    df['type_and_trigram_ud'] = df['error_type'] + ' ' + \
+        df['incorrect_trigram_ud']
     df.to_csv(output_filename)
 
 
