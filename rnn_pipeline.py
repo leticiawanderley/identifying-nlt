@@ -107,7 +107,7 @@ def test_nlt_rnn(test_data, rnn, categories, n_tags, all_tags):
     nlt = []
     results = []
     for index, row in test_data.iterrows():
-        guess = test_datapoint(rnn, row['incorrect_trigram_ud'].split(),
+        guess = test_datapoint(rnn, row['type_and_trigram_ud'].split(),
                                categories, all_tags)
         nlt.append(guess)
         results.append(guess == row[GOLD_LABEL])
@@ -125,13 +125,13 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
                                 'chinese_annotated_errors.csv', 0.1,
                                 GOLD_LABEL)
     all_tags = get_all_tags(
-                    ['data/training data/incorrect_trigram_ud_0_vocab.csv'])
+                    ['data/training data/type_and_trigram_ud_0_vocab.csv'])
     columns = {True: True, False: False}
     categories = list(columns.keys())
     if train_new_model:
-        data_dict = setup_data(training_data, columns, 'incorrect_trigram_ud',
+        data_dict = setup_data(training_data, columns, 'type_and_trigram_ud',
                                GOLD_LABEL)
-        learning_rate = 0.05
+        learning_rate = 0.25
         rnn = train_rnn_model(data_dict, categories, all_tags, learning_rate,
                               saved_model_path, 'all_losses_predict_nlt.png')
     else:
