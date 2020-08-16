@@ -124,6 +124,7 @@ def time_since(since):
 
 
 def create_confusion_data(dataset_file, gold_column, guess_column):
+    """Prepare confusion matrix data."""
     df = pd.read_csv(dataset_file)
     n_columns = 2
     confusion = [[0, 0], [0, 0]]
