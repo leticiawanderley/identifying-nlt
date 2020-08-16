@@ -1,5 +1,6 @@
 import csv
 import math
+import numpy as np
 import pandas as pd
 import time
 
@@ -137,12 +138,31 @@ def create_confusion_data(dataset_file, gold_column, guess_column):
 
 
 def power_of_ten_value(number):
+    """Compute power of ten value equivalent to the parameter's size.
+    E.g., power_of_ten_value(38) == 10, power_of_ten_value(422) == 100"""
     return int('1' + '0' * (len(str(int(number))) - 1))
 
 
 def setup_train_test_data(dataset, percentage, gold_column):
+    """Split dataset into train and test subsets."""
     df = pd.read_csv(dataset)
     y = df[gold_column]
     x_train, x_test, y_train, y_test = train_test_split(
                                         df, y, test_size=percentage)
     return x_train.copy(), x_test.copy()
+
+
+def evaluate_models(filename, fields, l1, l2, model_label, gold_column):
+    """Compare language models' probability results in the L1 and L2
+    classifying the datapoints as language transfer or not, then compare
+    this classification with the datapoints' gold labels."""
+    df = pd.read_csv(filename)
+    # If the probability in the L1 is greater than the probability in the L2
+    # the sequence is tagged as negative language transfer
+    df[model_label] = np.where(df[l1] > df[l2], True, False)
+    df['result'] = np.where(df[model_label] == df[gold_column],
+                            True, False)
+    df = df[fields + [l1, l2, model_label, 'result']]
+    df.to_csv(filename)
+    print(filename)
+    print(df.groupby(['result']).size().reset_index(name='count'))

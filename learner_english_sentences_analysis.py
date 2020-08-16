@@ -1,33 +1,25 @@
-import numpy as np
-import pandas as pd
-
-from constant import LEARNER_ENGLISH_FIELDS
-
-
-def evaluate_models(filename, fields):
-    df = pd.read_csv(filename)
-    # If the probability in English is greater than the probability in Spanish
-    # the sentence is deemed correct (True)
-    df['model_result'] = np.where(df['en'] > df['es'], True, False)
-    df['model_result'] = np.where(df['model_result'] == df['correct'],
-                                  True, False)
-    df = df[fields + ['en', 'es', 'model_result']]
-    df.to_csv(filename)
-    print(filename)
-    print(df.groupby(['model_result']).size().reset_index(name='count'))
+from constant import LEARNER_ENGLISH_FIELDS, ENGLISH, SPANISH,\
+                     GOLD_LABEL, MODEL_LABEL
+from utils import evaluate_models
 
 
 evaluate_models('data/results_learner_english_penn_trigram_unsmoothed.csv',
-                LEARNER_ENGLISH_FIELDS)
+                LEARNER_ENGLISH_FIELDS, SPANISH, ENGLISH,
+                MODEL_LABEL, GOLD_LABEL)
 evaluate_models('data/results_learner_english_ud_trigram_unsmoothed.csv',
-                LEARNER_ENGLISH_FIELDS)
+                LEARNER_ENGLISH_FIELDS, SPANISH, ENGLISH,
+                MODEL_LABEL, GOLD_LABEL)
 
 evaluate_models('data/results_learner_english_penn_trigram_laplace.csv',
-                LEARNER_ENGLISH_FIELDS)
+                LEARNER_ENGLISH_FIELDS, SPANISH, ENGLISH,
+                MODEL_LABEL, GOLD_LABEL)
 evaluate_models('data/results_learner_english_ud_trigram_laplace.csv',
-                LEARNER_ENGLISH_FIELDS)
+                LEARNER_ENGLISH_FIELDS, SPANISH, ENGLISH,
+                MODEL_LABEL, GOLD_LABEL)
 
 evaluate_models('data/results_learner_english_penn_trigram_interpolation.csv',
-                LEARNER_ENGLISH_FIELDS)
+                LEARNER_ENGLISH_FIELDS, SPANISH, ENGLISH,
+                MODEL_LABEL, GOLD_LABEL)
 evaluate_models('data/results_learner_english_ud_trigram_interpolation.csv',
-                LEARNER_ENGLISH_FIELDS)
+                LEARNER_ENGLISH_FIELDS, SPANISH, ENGLISH,
+                MODEL_LABEL, GOLD_LABEL)
