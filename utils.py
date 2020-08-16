@@ -149,21 +149,22 @@ def setup_train_test_data(dataset, percentage, gold_column):
     df = pd.read_csv(dataset)
     y = df[gold_column]
     x_train, x_test, y_train, y_test = train_test_split(
-                                        df, y, test_size=percentage)
+        df, y, test_size=percentage)
     return x_train.copy(), x_test.copy()
 
 
-def evaluate_models(filename, fields, l1, l2, model_label, gold_column):
+def evaluate_n_gram_model(results_file, fields, l1, l2, model_label,
+                          gold_column):
     """Compare language models' probability results in the L1 and L2
     classifying the datapoints as language transfer or not, then compare
     this classification with the datapoints' gold labels."""
-    df = pd.read_csv(filename)
+    df = pd.read_csv(results_file)
     # If the probability in the L1 is greater than the probability in the L2
     # the sequence is tagged as negative language transfer
     df[model_label] = np.where(df[l1] > df[l2], True, False)
     df['result'] = np.where(df[model_label] == df[gold_column],
                             True, False)
     df = df[fields + [l1, l2, model_label, 'result']]
-    df.to_csv(filename)
+    df.to_csv(results_file)
     print(filename)
     print(df.groupby(['result']).size().reset_index(name='count'))
