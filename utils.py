@@ -13,7 +13,7 @@ def split_sentences(dataset, end_of_sentence=False):
     appending two end of sentence markers to the end of the lists."""
     clean_dataset = []
     for i in range(len(dataset)):
-        if type(dataset[i]) == str:
+        if isinstance(dataset[i], str):
             row = dataset[i].split()
             if end_of_sentence:
                 row += ['_', '_']
@@ -92,7 +92,7 @@ def tag_sentences(model, sentence, language=None, mapping=None):
     """Part-of-speeh tag dataframe sentence."""
     ud = ''
     penn = ''
-    if type(sentence) == str:
+    if isinstance(sentence, str):
         doc = model(sentence)
         for token in doc:
             pos = token.pos_
@@ -129,7 +129,8 @@ def create_confusion_data(dataset_file, gold_column, guess_column):
     n_columns = 2
     confusion = [[0, 0], [0, 0]]
     for index, row in df.iterrows():
-        if type(row[gold_column]) == bool and type(row[guess_column]) == bool:
+        if isinstance(row[gold_column], bool) and \
+           isinstance(row[guess_column], bool):
             confusion[int(row[gold_column])][int(row[guess_column])] += 1
     for i in range(n_columns):
         total = sum(confusion[i])
@@ -166,5 +167,5 @@ def evaluate_n_gram_model(results_file, fields, l1, l2, model_label,
                             True, False)
     df = df[fields + [l1, l2, model_label, 'result']]
     df.to_csv(results_file)
-    print(filename)
+    print(results_file)
     print(df.groupby(['result']).size().reset_index(name='count'))
