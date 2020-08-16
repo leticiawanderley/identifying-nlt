@@ -2,7 +2,8 @@ import pandas as pd
 
 from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
                      PENN_NGRAMS_FILES, UD_NGRAMS_FILES, UD_NGRAMS_FILES_GV,\
-                     LEARNER_ENGLISH_FIELDS, ANNOTATED_FCE_FIELDS
+                     LEARNER_ENGLISH_FIELDS, ANNOTATED_FCE_FIELDS,\
+                     CHINESE, ENGLISH, SPANISH
 from n_gram_model import pre_process_test, process_training_data, test_ngram
 from utils import get_structural_errors
 
@@ -55,7 +56,7 @@ def test(train_dataset_filenames, method, test_df, languages, test_df_fields,
 
 
 def main():
-    vocab_files = PENN_NGRAMS_FILES
+    vocab_files = UD_NGRAMS_FILES
     language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
               'correct_trigram_penn', 'incorrect_trigram_penn',
@@ -65,9 +66,9 @@ def main():
     test_df = pre_process_data('data/testing data/'
                                'parsed_learner_english_sentences_.csv',
                                fields)
-    languages = ['en', 'es']
+    languages = [ENGLISH, SPANISH]
     method = INTERPOLATION
-    test_column = 'penn'
+    test_column = 'ud'
     output_file = 'data/results_learner_english_' + test_column + '_' +\
                   method + '.csv'
     test(vocab_files, method, test_df, languages,
@@ -80,8 +81,8 @@ def test_fce_annotated_data():
     test_df = pre_process_data('data/testing data/annotated_FCE/'
                                'chinese_annotated_errors.csv',
                                fields)
-    languages = ['en', 'zhs']
-    method = UNSMOOTHED
+    languages = [ENGLISH, CHINESE]
+    method = INTERPOLATION
     test_column = 'incorrect_trigram_ud'
     output_file = 'data/results_chinese_fce_' + test_column + '_' +\
                   method + '.csv'
@@ -90,4 +91,4 @@ def test_fce_annotated_data():
 
 
 if __name__ == "__main__":
-    test_fce_annotated_data()
+    main()
