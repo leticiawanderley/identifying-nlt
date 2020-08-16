@@ -1,7 +1,7 @@
 import pandas as pd
 import spacy
 
-from constant import CHINESE, SPANISH
+from constant import CHINESE, ENGLISH, SPANISH
 from utils import tags_mapping, tag_sentences, unpack_ud_and_penn_tags
 
 
@@ -41,27 +41,27 @@ if __name__ == "__main__":
     if l1 == SPANISH:
         input_filename = 'data/training data/dataset_sentences.csv'
         output_filename = ('data/training data/'
-                        'tagged_sentences_dataset_sentences.csv')
+                           'tagged_sentences_dataset_sentences.csv')
         models = {
-            'en': spacy.load("en_core_web_md"),
-            'es': spacy.load("es_core_news_md")
+            ENGLISH: spacy.load("en_core_web_md"),
+            SPANISH: spacy.load("es_core_news_md")
         }
         new_column_names = ['english', 'spanish']
         selected_columns = ['english', 'spanish']
-        languages_columns = {'en': 'english', 'es': 'spanish'}
+        languages_columns = {ENGLISH: 'english', SPANISH: 'spanish'}
         mapping = 'data/tags/spacy_spanish_tags_.csv'
         main(models, input_filename, output_filename, languages_columns,
              new_column_names, selected_columns, mapping)
     elif l1 == CHINESE:
         input_filename = 'data/training data/globalvoices_sentences.csv'
         output_filename = ('data/training data/'
-                        'tagged_globalvoices_sentences.csv')
+                           'tagged_globalvoices_sentences.csv')
         models = {
-            'en': spacy.load("en_core_web_lg"),
-            'zhs': spacy.load("zh_core_web_lg")
+            ENGLISH: spacy.load("en_core_web_lg"),
+            CHINESE: spacy.load("zh_core_web_lg")
         }
         new_column_names = ['english', 'chinese']
-        selected_columns = ['en', 'zhs']
-        languages_columns = {'en': 'english', 'zhs': 'chinese'}
+        selected_columns = [ENGLISH, CHINESE]
+        languages_columns = {ENGLISH: 'english', CHINESE: 'chinese'}
         main(models, input_filename, output_filename, languages_columns,
              new_column_names, selected_columns)

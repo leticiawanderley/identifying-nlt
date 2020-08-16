@@ -1,19 +1,21 @@
 import re
 import pandas as pd
 
+from constant import CHINESE, ENGLISH
+
 
 def extract_sentences(filename):
     source_re = r'(?<=<source>)(.*?)(?=<\/source>)'
     target_re = r'(?<=<target>)(.*?)(?=<\/target>)'
-    data_dict = {'zhs': [], 'en': []}
+    data_dict = {CHINESE: [], ENGLISH: []}
     file = open(filename).readlines()
     for line in file:
         if '<source>' in line:
             source_match = re.search(source_re, line, re.MULTILINE)
-            data_dict['zhs'].append(source_match.groups()[0])
+            data_dict[CHINESE].append(source_match.groups()[0])
         elif '<target>' in line:
             target_match = re.search(target_re, line, re.MULTILINE)
-            data_dict['en'].append(target_match.groups()[0])
+            data_dict[ENGLISH].append(target_match.groups()[0])
     return data_dict
 
 
