@@ -35,7 +35,8 @@ UD_NGRAMS_FILES_GV = {
             2: 'data/training data/globalvoices_vocabs/zhs_ud_2_vocab.csv'}
 }
 LEARNER_ENGLISH_FIELDS = ['sentence', 'correct', 'error_type', 'penn',
-                          'penn_trigram', 'ud', 'ud_trigram']
+                          'penn_trigram', 'ud', 'ud_trigram',
+                          'Negative transfer?']
 ANNOTATED_FCE_FIELDS = ['error_type', 'Negative transfer?',
                         'Likely reason for mistake',
                         'correct_sentence', 'correct_trigram_ud',

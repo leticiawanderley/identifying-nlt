@@ -5,9 +5,9 @@ Yesterday played very well the children.,False,NN VBD RB RB DT NNS . ,NOUN VERB 
 Played very well the children yesterday.,False,VBN RB RB DT NNS NN . ,VERB ADV ADV DET NOUN NOUN PUNCT 
 Yesterday the children played very well.,True,NN DT NNS VBD RB RB . ,NOUN DET NOUN VERB ADV ADV PUNCT 
 The children played very well yesterday.,True,DT NNS VBD RB RB NN . ,DET NOUN VERB ADV ADV NOUN PUNCT 
-Often she has helped.,False,RB PRP VBZ VBN . ,ADV PRON VERB VERB PUNCT 
-She often has helped.,False,PRP RB VBZ VBN . ,PRON ADV VERB VERB PUNCT 
-They live in the house white.,False,PRP VBP IN DT NN JJ . ,PRON VERB ADP DET NOUN ADJ PUNCT 
+Often she has helped.,False,RB PRP VBZ VBN . ,ADV PRON AUX VERB PUNCT 
+She often has helped.,False,PRP RB VBZ VBN . ,PRON ADV AUX VERB PUNCT 
+They live in the house white.,False,PRP VBP IN DT NN NN . ,PRON VERB ADP DET NOUN NOUN PUNCT 
 Can you lend me a ball of tennis?,False,MD PRP VB PRP DT NN IN NN . ,VERB PRON VERB PRON DET NOUN ADP NOUN PUNCT 
 The Club of Bridge of the University of Cambridge.,False,DT NNP IN NNP IN DT NNP IN NNP . ,DET PROPN ADP PROPN ADP DET PROPN ADP PROPN PUNCT 
 They gave to Sam the book.,False,PRP VBD IN NNP DT NN . ,PRON VERB ADP PROPN DET NOUN PUNCT 
@@ -15,122 +15,122 @@ They gave the book to Sam.,True,PRP VBD DT NN IN NNP . ,PRON VERB DET NOUN ADP P
 They took to the hospital her mother.,False,PRP VBD IN DT NN PRP$ NN . ,PRON VERB ADP DET NOUN DET NOUN PUNCT 
 Mrs Smith speaks very well English.,False,NNP NNP VBZ RB RB NNP . ,PROPN PROPN VERB ADV ADV PROPN PUNCT 
 Keep tidy Britain.,False,VB JJ NNP . ,VERB ADJ PROPN PUNCT 
-John has bought the books?,True,NNP VBZ VBN DT NNS . ,PROPN VERB VERB DET NOUN PUNCT 
-Has bought the books John? Mary came?,False,VBZ VBN DT NNS NNP . NNP VBD . ,VERB VERB DET NOUN PROPN PUNCT PROPN VERB PUNCT 
+John has bought the books?,True,NNP VBZ VBN DT NNS . ,PROPN AUX VERB DET NOUN PUNCT 
+Has bought the books John? Mary came?,False,VBZ VBN DT NNS NNP . NNP VBD . ,AUX VERB DET NOUN PROPN PUNCT PROPN VERB PUNCT 
 When Mary came?,False,WRB NNP VBD . ,ADV PROPN VERB PUNCT 
 Came Mary?,False,VBD NNP . ,VERB PROPN PUNCT 
 "Mary, when came?",False,"NNP , WRB VBD . ",PROPN PUNCT ADV VERB PUNCT 
-Who did kill Oswald?,False,WP VBD VB NNP . ,PRON VERB VERB PROPN PUNCT 
+Who did kill Oswald?,False,WP VBD VB NNP . ,PRON AUX VERB PROPN PUNCT 
 Who Oswald killed?,False,WP NNP VBD . ,PRON PROPN VERB PUNCT 
 Who killed to Kennedy?,False,WP VBD IN NNP . ,PRON VERB ADP PROPN PUNCT 
 Who Kennedy killed?,False,WP NNP VBD . ,PRON PROPN VERB PUNCT 
-Did they went?,False,VBD PRP VBD . ,VERB PRON VERB PUNCT 
-Do they went?,False,VBP PRP VBD . ,VERB PRON VERB PUNCT 
-Do she goes?,False,VBP PRP VBZ . ,VERB PRON VERB PUNCT 
-Does she goes?,False,VBZ PRP VBZ . ,VERB PRON VERB PUNCT 
-"They're coming tomorrow, no?",False,"PRP VBP VBG NN , UH . ",PRON VERB VERB NOUN PUNCT INTJ PUNCT 
-"You have a car, no?",False,"PRP VBP DT NN , UH . ",PRON VERB DET NOUN PUNCT INTJ PUNCT 
-Peter not found the key.,False,NNP RB VBD DT NN . ,PROPN ADV VERB DET NOUN PUNCT 
-Peter not has found the key.,False,NNP RB VBZ VBN DT NN . ,PROPN ADV VERB VERB DET NOUN PUNCT 
+Did they went?,False,VBD PRP VBD . ,AUX PRON VERB PUNCT 
+Do they went?,False,VBP PRP VBD . ,AUX PRON VERB PUNCT 
+Do she goes?,False,VBP PRP VBZ . ,AUX PRON VERB PUNCT 
+Does she goes?,False,VBZ PRP VBZ . ,AUX PRON VERB PUNCT 
+"They're coming tomorrow, no?",False,"PRP VBP VBG NN , UH . ",PRON AUX VERB NOUN PUNCT INTJ PUNCT 
+"You have a car, no?",False,"PRP VBP DT NN , UH . ",PRON AUX DET NOUN PUNCT INTJ PUNCT 
+Peter not found the key.,False,NNP RB VBD DT NN . ,PROPN PART VERB DET NOUN PUNCT 
+Peter not has found the key.,False,NNP RB VBZ VBN DT NN . ,PROPN PART AUX VERB DET NOUN PUNCT 
 I no understand.,False,PRP RB VBP . ,PRON ADV VERB PUNCT 
-Those no.,False,DT UH . ,DET INTJ PUNCT 
-Green no.,False,NNP NN . ,PROPN NOUN PUNCT 
+Those no.,False,DT NN . ,DET NOUN PUNCT 
+Green no.,False,JJ NN . ,ADJ NOUN PUNCT 
 Here no.,False,RB UH . ,ADV INTJ PUNCT 
-I not saw nobody.,False,PRP RB VBD NN . ,PRON ADV VERB NOUN PUNCT 
-I didn't see nobody.,False,PRP VBD RB VB NN . ,PRON VERB ADV VERB NOUN PUNCT 
-Tom not helps her never.,False,NNP RB VBZ PRP RB . ,PROPN ADV VERB PRON ADV PUNCT 
-Tom doesn't help her never.,False,NNP VBZ RB VB PRP RB . ,PROPN VERB ADV VERB PRON ADV PUNCT 
-I waited but anybody came.,False,PRP VBD CC NN VBD . ,PRON VERB CCONJ NOUN VERB PUNCT 
+I not saw nobody.,False,PRP RB VBD NN . ,PRON PART VERB PRON PUNCT 
+I didn't see nobody.,False,PRP VBD RB VB NN . ,PRON AUX PART VERB PRON PUNCT 
+Tom not helps her never.,False,NNP RB VBZ PRP RB . ,PROPN PART VERB PRON ADV PUNCT 
+Tom doesn't help her never.,False,NNP VBZ RB VB PRP RB . ,PROPN AUX PART VERB PRON ADV PUNCT 
+I waited but anybody came.,False,PRP VBD CC NN VBD . ,PRON VERB CCONJ PRON VERB PUNCT 
 Maria cans cook.,False,NNP NNS VBP . ,PROPN NOUN VERB PUNCT 
-Do you can swim?,False,VBP PRP MD VB . ,VERB PRON VERB VERB PUNCT 
+Do you can swim?,False,VBP PRP MD VB . ,AUX PRON VERB VERB PUNCT 
 May you come tomorrow?,False,MD PRP VB NN . ,VERB PRON VERB NOUN PUNCT 
 She could find the key.,False,PRP MD VB DT NN . ,PRON VERB VERB DET NOUN PUNCT 
-She had to win the match.,False,PRP VBD TO VB DT NN . ,PRON VERB PART VERB DET NOUN PUNCT 
-They will can do it next week.,False,PRP MD MD VB PRP JJ NN . ,PRON VERB VERB VERB PRON ADJ NOUN PUNCT 
-She went up the stairs.,True,PRP VBD RP DT NNS . ,PRON VERB PART DET NOUN PUNCT 
-She went up the book.,False,PRP VBD RP DT NN . ,PRON VERB PART DET NOUN PUNCT 
-They were waiting.,True,PRP VBD VBG . ,PRON VERB VERB PUNCT 
-They were waiting the bus.,False,PRP VBD VBG DT NN . ,PRON VERB VERB DET NOUN PUNCT 
-Mary laughed. What did she laugh?,False,NNP VBD . WP VBD PRP VB . ,PROPN VERB PUNCT PRON VERB PRON VERB PUNCT 
+She had to win the match.,False,PRP VBD TO VB DT NN . ,PRON AUX PART VERB DET NOUN PUNCT 
+They will can do it next week.,False,PRP MD MD VB PRP JJ NN . ,PRON VERB VERB AUX PRON ADJ NOUN PUNCT 
+She went up the stairs.,True,PRP VBD RP DT NNS . ,PRON VERB ADP DET NOUN PUNCT 
+She went up the book.,False,PRP VBD RP DT NN . ,PRON VERB ADP DET NOUN PUNCT 
+They were waiting.,True,PRP VBD VBG . ,PRON AUX VERB PUNCT 
+They were waiting the bus.,False,PRP VBD VBG DT NN . ,PRON AUX VERB DET NOUN PUNCT 
+Mary laughed. What did she laugh?,False,NNP VBD . WP VBD PRP VB . ,PROPN VERB PUNCT PRON AUX PRON VERB PUNCT 
 Football likes me.,False,NN VBZ PRP . ,NOUN VERB PRON PUNCT 
-"Do they want some money? Yes, they want.",False,"VBP PRP VB DT NN . UH , PRP VBP . ",VERB PRON VERB DET NOUN PUNCT INTJ PUNCT PRON VERB PUNCT 
-"Do you want to go? No, I don't want.",False,"VBP PRP VB TO VB . UH , PRP VBP RB VB . ",VERB PRON VERB PART VERB PUNCT INTJ PUNCT PRON VERB ADV VERB PUNCT 
-I like to get up early; I'm used.,False,PRP VBP TO VB RP RB : PRP VBP VBN . ,PRON VERB PART VERB PART ADV PUNCT PRON VERB VERB PUNCT 
-"Are they coming? No, I don't think.",False,"VBP PRP VBG . UH , PRP VBP RB VB . ",VERB PRON VERB PUNCT INTJ PUNCT PRON VERB ADV VERB PUNCT 
+"Do they want some money? Yes, they want.",False,"VBP PRP VB DT NN . UH , PRP VBP . ",AUX PRON VERB DET NOUN PUNCT INTJ PUNCT PRON VERB PUNCT 
+"Do you want to go? No, I don't want.",False,"VBP PRP VB TO VB . UH , PRP VBP RB VB . ",AUX PRON VERB PART VERB PUNCT INTJ PUNCT PRON AUX PART VERB PUNCT 
+I like to get up early; I'm used.,False,PRP VBP TO VB RP RB : PRP VBP VBN . ,PRON VERB PART AUX ADP ADV PUNCT PRON AUX VERB PUNCT 
+"Are they coming? No, I don't think.",False,"VBP PRP VBG . UH , PRP VBP RB VB . ",AUX PRON VERB PUNCT INTJ PUNCT PRON AUX PART VERB PUNCT 
 Look! It rains!,False,VB . PRP VBZ . ,VERB PUNCT PRON VERB PUNCT 
-Do I come tomorrow?,False,VBP PRP VB NN . ,VERB PRON VERB NOUN PUNCT 
+Do I come tomorrow?,False,VBP PRP VB NN . ,AUX PRON VERB NOUN PUNCT 
 I wait for you at home.,False,PRP VBP IN PRP IN NN . ,PRON VERB ADP PRON ADP NOUN PUNCT 
 I see her this evening.,False,PRP VBP PRP DT NN . ,PRON VERB PRON DET NOUN PUNCT 
-How long are you working in your present job?,False,WRB RB VBP PRP VBG IN PRP$ JJ NN . ,ADV ADV VERB PRON VERB ADP DET ADJ NOUN PUNCT 
-It's a long time that I live here.,False,PRP VBZ DT JJ NN WDT PRP VBP RB . ,PRON VERB DET ADJ NOUN DET PRON VERB ADV PUNCT 
-When has she received the letter?,False,WRB VBZ PRP VBD DT NN . ,ADV VERB PRON VERB DET NOUN PUNCT 
-Today I've finished work early because I've started at seven o'clock this morning.,False,NN PRP VB VBN NN RB IN PRP VB VBN IN CD NN DT NN . ,NOUN PRON VERB VERB NOUN ADV ADP PRON VERB VERB ADP NUM NOUN DET NOUN PUNCT 
-"When we were young, we were playing a lot of tennis.",False,"WRB PRP VBD JJ , PRP VBD VBG DT NN IN NN . ",ADV PRON VERB ADJ PUNCT PRON VERB VERB DET NOUN ADP NOUN PUNCT 
-"When I was a teenager, I was having a motorbike.",False,"WRB PRP VBD DT NN , PRP VBD VBG DT NN . ",ADV PRON VERB DET NOUN PUNCT PRON VERB VERB DET NOUN PUNCT 
-She wasn't knowing that he had died.,False,PRP VBD RB VBG IN PRP VBD VBN . ,PRON VERB ADV VERB ADP PRON VERB VERB PUNCT 
+How long are you working in your present job?,False,WRB RB VBP PRP VBG IN PRP$ JJ NN . ,ADV ADV AUX PRON VERB ADP DET ADJ NOUN PUNCT 
+It's a long time that I live here.,False,PRP VBZ DT JJ NN WDT PRP VBP RB . ,PRON AUX DET ADJ NOUN DET PRON VERB ADV PUNCT 
+When has she received the letter?,False,WRB VBZ PRP VBD DT NN . ,ADV AUX PRON VERB DET NOUN PUNCT 
+Today I've finished work early because I've started at seven o'clock this morning.,False,NN PRP VB VBN NN RB IN PRP VB VBN IN CD NN DT NN . ,NOUN PRON AUX VERB NOUN ADV SCONJ PRON AUX VERB ADP NUM NOUN DET NOUN PUNCT 
+"When we were young, we were playing a lot of tennis.",False,"WRB PRP VBD JJ , PRP VBD VBG DT NN IN NN . ",ADV PRON AUX ADJ PUNCT PRON AUX VERB DET NOUN ADP NOUN PUNCT 
+"When I was a teenager, I was having a motorbike.",False,"WRB PRP VBD DT NN , PRP VBD VBG DT NN . ",ADV PRON AUX DET NOUN PUNCT PRON AUX VERB DET NOUN PUNCT 
+She wasn't knowing that he had died.,False,PRP VBD RB VBG IN PRP VBD VBN . ,PRON AUX PART VERB SCONJ PRON AUX VERB PUNCT 
 Come you tomorrow!,False,VB PRP NN . ,VERB PRON NOUN PUNCT 
-"When Mary will get here, tell her to come in.",False,"WRB NNP MD VB RB , VB PRP TO VB RP . ",ADV PROPN VERB VERB ADV PUNCT VERB PRON PART VERB PART PUNCT 
-I use to do a lot of exercise.,False,PRP VBP TO VB DT NN IN NN . ,PRON VERB PART VERB DET NOUN ADP NOUN PUNCT 
+"When Mary will get here, tell her to come in.",False,"WRB NNP MD VB RB , VB PRP TO VB RP . ",ADV PROPN VERB AUX ADV PUNCT VERB PRON PART VERB ADP PUNCT 
+I use to do a lot of exercise.,False,PRP VBP TO VB DT NN IN NN . ,PRON VERB PART AUX DET NOUN ADP NOUN PUNCT 
 The house built itself before the war.,False,DT NN VBD PRP IN DT NN . ,DET NOUN VERB PRON ADP DET NOUN PUNCT 
-They were given bikes for Christmas.,True,PRP VBD VBN NNS IN NNP . ,PRON VERB VERB NOUN ADP PROPN PUNCT 
-Polly was owed a lot of money.,True,NNP VBD VBN DT NN IN NN . ,PROPN VERB VERB DET NOUN ADP NOUN PUNCT 
-The lecture was very bored.,False,DT NN VBD RB JJ . ,DET NOUN VERB ADV ADJ PUNCT 
-I'm very interesting in Polish films.,False,PRP VBP RB JJ IN JJ NNS . ,PRON VERB ADV ADJ ADP ADJ NOUN PUNCT 
-To smoke is bad for you.,False,TO VB VBZ JJ IN PRP . ,PART VERB VERB ADJ ADP PRON PUNCT 
-It's difficult learn English.,False,PRP VBZ JJ VBP NNP . ,PRON VERB ADJ VERB PROPN PUNCT 
+They were given bikes for Christmas.,True,PRP VBD VBN NNS IN NNP . ,PRON AUX VERB NOUN ADP PROPN PUNCT 
+Polly was owed a lot of money.,True,NNP VBD VBN DT NN IN NN . ,PROPN AUX VERB DET NOUN ADP NOUN PUNCT 
+The lecture was very bored.,False,DT NN VBD RB JJ . ,DET NOUN AUX ADV ADJ PUNCT 
+I'm very interesting in Polish films.,False,PRP VBP RB JJ IN JJ NNS . ,PRON AUX ADV ADJ ADP ADJ NOUN PUNCT 
+To smoke is bad for you.,False,TO VB VBZ JJ IN PRP . ,PART VERB AUX ADJ ADP PRON PUNCT 
+It's difficult learn English.,False,PRP VBZ JJ VB NNP . ,PRON AUX ADJ VERB PROPN PUNCT 
 Let us to see.,False,VB PRP TO VB . ,VERB PRON PART VERB PUNCT 
-The food is more important than the art.,False,DT NN VBZ RBR JJ IN DT NN . ,DET NOUN VERB ADV ADJ ADP DET NOUN PUNCT 
-Do you like the big dogs?,False,VBP PRP VB DT JJ NNS . ,VERB PRON VERB DET ADJ NOUN PUNCT 
-"That is the yours, and this is the mine.",False,"DT VBZ DT NNS , CC DT VBZ DT NN . ",DET VERB DET NOUN PUNCT CCONJ DET VERB DET NOUN PUNCT 
-We used to live in one  flat; now we live in one house.,False,PRP VBD TO VB IN CD _SP JJ : RB PRP VBP IN CD NN . ,PRON VERB PART VERB ADP NUM SPACE ADJ PUNCT ADV PRON VERB ADP NUM NOUN PUNCT 
-Do you have car?,False,VBP PRP VB NN . ,VERB PRON VERB NOUN PUNCT 
-Her sister is dentist.,False,PRP$ NN VBZ NN . ,DET NOUN VERB NOUN PUNCT 
-I have ones nice American friends.The table is dirty.,False,PRP VBP NNS JJ JJ NNS . DT NN VBZ JJ . ,PRON VERB NOUN ADJ ADJ NOUN PUNCT DET NOUN VERB ADJ PUNCT 
+The food is more important than the art.,False,DT NN VBZ RBR JJ IN DT NN . ,DET NOUN AUX ADV ADJ SCONJ DET NOUN PUNCT 
+Do you like the big dogs?,False,VBP PRP VB DT JJ NNS . ,AUX PRON VERB DET ADJ NOUN PUNCT 
+"That is the yours, and this is the mine.",False,"DT VBZ DT NNS , CC DT VBZ DT NN . ",DET AUX DET NOUN PUNCT CCONJ DET AUX DET NOUN PUNCT 
+We used to live in one  flat; now we live in one house.,False,PRP VBD TO VB IN CD _SP NN : RB PRP VBP IN CD NN . ,PRON VERB PART VERB ADP NUM SPACE NOUN PUNCT ADV PRON VERB ADP NUM NOUN PUNCT 
+Do you have car?,False,VBP PRP VB NN . ,AUX PRON AUX NOUN PUNCT 
+Her sister is dentist.,False,PRP$ NN VBZ NN . ,DET NOUN AUX NOUN PUNCT 
+I have ones nice American friends.The table is dirty.,False,PRP VBP NNS JJ JJ NNS . DT NN VBZ JJ . ,PRON AUX NOUN ADJ ADJ NOUN PUNCT DET NOUN AUX ADJ PUNCT 
 "Clean her, please.",False,"VB PRP , UH . ",VERB PRON PUNCT INTJ PUNCT 
 "They showed me two models, and I bought the small.",False,"PRP VBD PRP CD NNS , CC PRP VBD DT JJ . ",PRON VERB PRON NUM NOUN PUNCT CCONJ PRON VERB DET ADJ PUNCT 
-I am more old than my sister.,False,PRP VBP RBR JJ IN PRP$ NN . ,PRON VERB ADV ADJ ADP DET NOUN PUNCT 
-Barcelona is the more large city of Catalonia.,False,NNP VBZ DT RBR JJ NN IN NNP . ,PROPN VERB DET ADV ADJ NOUN ADP PROPN PUNCT 
-Rosa isn't French. Is Spanish.,False,NNP VBZ RB NNP . VBZ JJ . ,PROPN VERB ADV PROPN PUNCT VERB ADJ PUNCT 
-Have gone home because wanted to go to bed.,False,VBP VBN RB IN VBD TO VB IN NN . ,VERB VERB ADV ADP VERB PART VERB ADP NOUN PUNCT 
-Was raining.,False,VBD VBG . ,VERB VERB PUNCT 
-That's the man who he lives next door to us.,False,DT VBZ DT NN WP PRP VBZ JJ NN IN PRP . ,DET VERB DET NOUN PRON PRON VERB ADJ NOUN ADP PRON PUNCT 
+I am more old than my sister.,False,PRP VBP RBR JJ IN PRP$ NN . ,PRON AUX ADV ADJ SCONJ DET NOUN PUNCT 
+Barcelona is the more large city of Catalonia.,False,NNP VBZ DT RBR JJ NN IN NNP . ,PROPN AUX DET ADV ADJ NOUN ADP PROPN PUNCT 
+Rosa isn't French. Is Spanish.,False,NNP VBZ RB NNP . VBZ JJ . ,PROPN AUX PART PROPN PUNCT AUX ADJ PUNCT 
+Have gone home because wanted to go to bed.,False,VBP VBN RB IN VBD TO VB IN NN . ,AUX VERB ADV SCONJ VERB PART VERB ADP NOUN PUNCT 
+Was raining.,False,VBD VBG . ,AUX VERB PUNCT 
+That's the man who he lives next door to us.,False,DT VBZ DT NN WP PRP VBZ JJ NN IN PRP . ,DET AUX DET NOUN PRON PRON VERB ADJ NOUN ADP PRON PUNCT 
 I saw she.,False,PRP VBD PRP . ,PRON VERB PRON PUNCT 
 They know we.,False,PRP VBP PRP . ,PRON VERB PRON PUNCT 
-How many cakes is it in the cupboard?,False,WRB JJ NNS VBZ PRP IN DT NN . ,ADV ADJ NOUN VERB PRON ADP DET NOUN PUNCT 
-Who is it? Am I.,False,WP VBZ PRP . VBP NN ,PRON VERB PRON PUNCT VERB NOUN 
+How many cakes is it in the cupboard?,False,WRB JJ NNS VBZ PRP IN DT NN . ,ADV ADJ NOUN AUX PRON ADP DET NOUN PUNCT 
+Who is it? Am I.,False,WP VBZ PRP . VBP NN ,PRON AUX PRON PUNCT AUX NOUN 
 They enjoyed very much.,False,PRP VBD RB RB . ,PRON VERB ADV ADV PUNCT 
 She complained herself.,False,PRP VBD PRP . ,PRON VERB PRON PUNCT 
-I showered me and went out.,False,PRP VBD PRP CC VBD RP . ,PRON VERB PRON CCONJ VERB PART PUNCT 
+I showered me and went out.,False,PRP VBD PRP CC VBD RP . ,PRON VERB PRON CCONJ VERB ADP PUNCT 
 Mary washed the hair.,False,NNP VBD DT NN . ,PROPN VERB DET NOUN PUNCT 
 Bill cut himself the finger.,False,NNP VBD PRP DT NN . ,PROPN VERB PRON DET NOUN PUNCT 
-Sara and Joe had both got his shoes wet.,False,NNP CC NNP VBD DT VBN PRP$ NNS JJ . ,PROPN CCONJ PROPN VERB DET VERB DET NOUN ADJ PUNCT 
-The my cousin is in Portugal.,False,DT PRP$ NN VBZ IN NNP . ,DET DET NOUN VERB ADP PROPN PUNCT 
+Sara and Joe had both got his shoes wet.,False,NNP CC NNP VBD DT VBN PRP$ NNS JJ . ,PROPN CCONJ PROPN AUX DET VERB DET NOUN ADJ PUNCT 
+The my cousin is in Portugal.,False,DT PRP$ NN VBZ IN NNP . ,DET DET NOUN AUX ADP PROPN PUNCT 
 The girls we saw looked quite happy.,True,DT NNS PRP VBD VBD RB JJ . ,DET NOUN PRON VERB VERB ADV ADJ PUNCT 
-Did you like the woman we spoke to?,True,VBD PRP VB DT NN PRP VBD IN . ,VERB PRON VERB DET NOUN PRON VERB ADP PUNCT 
-They have gone for buy a film.,False,PRP VBP VBN IN VB DT NN . ,PRON VERB VERB ADP VERB DET NOUN PUNCT 
-We are going to have the house painted.,True,PRP VBP VBG TO VB DT NN VBN . ,PRON VERB VERB PART VERB DET NOUN VERB PUNCT 
-We are going to make paint the house.,False,PRP VBP VBG TO VB NN DT NN . ,PRON VERB VERB PART VERB NOUN DET NOUN PUNCT 
+Did you like the woman we spoke to?,True,VBD PRP VB DT NN PRP VBD IN . ,AUX PRON VERB DET NOUN PRON VERB ADP PUNCT 
+They have gone for buy a film.,False,PRP VBP VBN IN VB DT NN . ,PRON AUX VERB ADP VERB DET NOUN PUNCT 
+We are going to have the house painted.,True,PRP VBP VBG TO VB DT NN VBN . ,PRON AUX VERB PART AUX DET NOUN VERB PUNCT 
+We are going to make paint the house.,False,PRP VBP VBG TO VB NN DT NN . ,PRON AUX VERB PART VERB NOUN DET NOUN PUNCT 
 They refused helping their neighbours.,False,PRP VBD VBG PRP$ NNS . ,PRON VERB VERB DET NOUN PUNCT 
-I'll never forget to see that accident.,False,PRP MD RB VB TO VB DT NN . ,PRON AUX ADV VERB PART VERB DET NOUN PUNCT 
+I'll never forget to see that accident.,False,PRP MD RB VB TO VB DT NN . ,PRON VERB ADV VERB PART VERB DET NOUN PUNCT 
 She explained me the problem.,False,PRP VBD PRP DT NN . ,PRON VERB PRON DET NOUN PUNCT 
 They suggested Jim to take the job.,False,PRP VBD NNP TO VB DT NN . ,PRON VERB PROPN PART VERB DET NOUN PUNCT 
-I am asking that they go.,False,PRP VBP VBG IN PRP VBP . ,PRON VERB VERB ADP PRON VERB PUNCT 
-They ordered her that she should go.,False,PRP VBD PRP IN PRP MD VB . ,PRON VERB PRON ADP PRON VERB VERB PUNCT 
-They ordered her that she went.,False,PRP VBD PRP IN PRP VBD . ,PRON VERB PRON ADP PRON VERB PUNCT 
-I want that you don't go.,False,PRP VBP IN PRP VBP RB VB . ,PRON VERB ADP PRON VERB ADV VERB PUNCT 
-I want that you not go.,False,PRP VBP IN PRP RB VBP . ,PRON VERB ADP PRON ADV VERB PUNCT 
-The captain ordered the soldiers that they didn't retreat.,False,DT NN VBD DT NNS IN PRP VBD RB VB . ,DET NOUN VERB DET NOUN ADP PRON VERB ADV VERB PUNCT 
-I don't know where does Mary live.,False,PRP VBP RB VB WRB VBZ NNP VB . ,PRON VERB ADV VERB ADV VERB PROPN VERB PUNCT 
-They asked me how much did I earn.,False,PRP VBD PRP WRB JJ VBD PRP VB . ,PRON VERB PRON ADV ADJ VERB PRON VERB PUNCT 
+I am asking that they go.,False,PRP VBP VBG IN PRP VBP . ,PRON AUX VERB SCONJ PRON VERB PUNCT 
+They ordered her that she should go.,False,PRP VBD PRP IN PRP MD VB . ,PRON VERB PRON SCONJ PRON VERB VERB PUNCT 
+They ordered her that she went.,False,PRP VBD PRP IN PRP VBD . ,PRON VERB PRON SCONJ PRON VERB PUNCT 
+I want that you don't go.,False,PRP VBP IN PRP VBP RB VB . ,PRON VERB SCONJ PRON AUX PART VERB PUNCT 
+I want that you not go.,False,PRP VBP IN PRP RB VBP . ,PRON VERB SCONJ PRON PART VERB PUNCT 
+The captain ordered the soldiers that they didn't retreat.,False,DT NN VBD DT NNS WDT PRP VBD RB VB . ,DET NOUN VERB DET NOUN DET PRON AUX PART VERB PUNCT 
+I don't know where does Mary live.,False,PRP VBP RB VB WRB VBZ NNP VB . ,PRON AUX PART VERB ADV AUX PROPN VERB PUNCT 
+They asked me how much did I earn.,False,PRP VBD PRP WRB JJ VBD PRP VB . ,PRON VERB PRON ADV ADJ AUX PRON VERB PUNCT 
 They took to their mother to the hospital.,False,PRP VBD IN PRP$ NN IN DT NN . ,PRON VERB ADP DET NOUN ADP DET NOUN PUNCT 
-For what have you come?,False,IN WP VBP PRP VB . ,ADP PRON VERB PRON VERB PUNCT 
-I don't know who they're working for.,True,PRP VBP RB VB WP PRP VBP VBG IN . ,PRON VERB ADV VERB PRON PRON VERB VERB ADP PUNCT 
-Who does Fred sit next to?,True,WP VBZ NNP VB RB IN . ,PRON VERB PROPN VERB ADV ADP PUNCT 
+For what have you come?,False,IN WP VBP PRP VB . ,ADP PRON AUX PRON VERB PUNCT 
+I don't know who they're working for.,True,PRP VBP RB VB WP PRP VBP VBG IN . ,PRON AUX PART VERB PRON PRON AUX VERB ADP PUNCT 
+Who does Fred sit next to?,True,WP VBZ NNP VB RB IN . ,PRON AUX PROPN VERB ADV ADP PUNCT 
 "After to see the film, we went for a meal.",False,"IN TO VB DT NN , PRP VBD IN DT NN . ",ADP PART VERB DET NOUN PUNCT PRON VERB ADP DET NOUN PUNCT 
-They are into the room.,False,PRP VBP IN DT NN . ,PRON VERB ADP DET NOUN PUNCT 
+They are into the room.,False,PRP VBP IN DT NN . ,PRON AUX ADP DET NOUN PUNCT 
 We stopped in the crossroads.,False,PRP VBD IN DT NNS . ,PRON VERB ADP DET NOUN PUNCT 
-She works like a waitress.,False,PRP VBZ IN DT NN . ,PRON VERB ADP DET NOUN PUNCT 
-They seem as their mother.,False,PRP VBP IN PRP$ NN . ,PRON VERB ADP DET NOUN PUNCT 
-This park was designed for the Catalan architect Gaudi.,False,DT NN VBD VBN IN DT JJ NN NNP . ,DET NOUN VERB VERB ADP DET ADJ NOUN PROPN PUNCT 
+She works like a waitress.,False,PRP VBZ IN DT NN . ,PRON VERB SCONJ DET NOUN PUNCT 
+They seem as their mother.,False,PRP VBP IN PRP$ NN . ,PRON VERB SCONJ DET NOUN PUNCT 
+This park was designed for the Catalan architect Gaudi.,False,DT NN VBD VBN IN DT NNP NN NNP . ,DET NOUN AUX VERB ADP DET PROPN NOUN PROPN PUNCT 
 They stayed there during three months.,False,PRP VBD RB IN CD NNS . ,PRON VERB ADV ADP NUM NOUN PUNCT 
-I've got two news for you.,False,PRP VB VBN CD NN IN PRP . ,PRON VERB VERB NUM NOUN ADP PRON PUNCT 
+I've got two news for you.,False,PRP VB VBD CD NN IN PRP . ,PRON AUX VERB NUM NOUN ADP PRON PUNCT 
