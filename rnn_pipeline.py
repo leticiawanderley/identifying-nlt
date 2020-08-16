@@ -5,8 +5,8 @@ import pandas as pd
 
 from constant import GOLD_LABEL, MODEL_LABEL
 from rnn import RNN
-from rnn_data_preprocessing import get_all_tags, read_data, sequence_to_tensor
-from rnn_helper_functions import category_from_output, Data, setup_data
+from rnn_data_processing import category_from_output, Data, get_all_tags, \
+                                read_data, sequence_to_tensor, setup_data
 from utils import get_structural_errors, time_since, power_of_ten_value, \
                   setup_train_test_data
 from visualization_functions import confusion_matrix, losses

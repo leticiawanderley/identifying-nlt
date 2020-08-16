@@ -1,18 +1,51 @@
 import copy
 import random
+import pandas as pd
 import torch
 
-from rnn_data_preprocessing import sequence_to_tensor
-
-
-def category_from_output(output, all_categories):
-    top_n, top_i = output.topk(1)
-    category_i = top_i[0].item()
-    return all_categories[category_i], category_i
+from utils import split_sentences
 
 
 def random_choice(l):
     return l[random.randint(0, len(l) - 1)]
+
+
+def read_data(filenames, columns):
+    data = {}
+    for column in columns:
+        data[column] = []
+    for filename in filenames:
+        df = pd.read_csv(filename)
+        for c in columns:
+            data[c] += split_sentences(df[c].to_list())
+    return data
+
+
+def get_all_tags(languages_tag_files):
+    all_tags = {}
+    for tag_file in languages_tag_files:
+        df = pd.read_csv(tag_file, index_col=0)
+        for tag in df['ngram'].to_list():
+            if tag not in all_tags:
+                all_tags[tag] = True
+    return sorted(all_tags.keys())
+
+
+def tag_to_index(tag, all_tags):
+    return all_tags.index(tag)
+
+
+def tag_to_tensor(tag, n_tags, all_tags):
+    tensor = torch.zeros(1, n_tags)
+    tensor[0][tag_to_index(tag, all_tags)] = 1
+    return tensor
+
+
+def sequence_to_tensor(sequence, n_tags, all_tags):
+    tensor = torch.zeros(len(sequence), 1, n_tags)
+    for li, tag in enumerate(sequence):
+        tensor[li][0][tag_to_index(tag, all_tags)] = 1
+    return tensor
 
 
 class Data:
@@ -47,3 +80,9 @@ def setup_data(dataset, columns, feature, gold_label):
         for i in range(len(data_dict[columns[col]])):
             data_dict[columns[col]][i] = data_dict[columns[col]][i].split()
     return data_dict
+
+
+def category_from_output(output, all_categories):
+    top_n, top_i = output.topk(1)
+    category_i = top_i[0].item()
+    return all_categories[category_i], category_i
