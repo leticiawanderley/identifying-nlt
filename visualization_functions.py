@@ -7,12 +7,14 @@ from utils import create_confusion_data
 
 
 def losses(all_losses, output_filename):
+    """Plot model losses and save figure in a file."""
     plt.figure()
     plt.plot(all_losses)
     plt.savefig('figures/' + output_filename)
 
 
 def confusion_matrix(dataset_file, gold_label, guess_column, output_filename):
+    """Plot confusion matrix and save figure in a file."""
     confusion = create_confusion_data(dataset_file, gold_label, guess_column)
     fig = plt.figure()
     ax = fig.add_subplot(111)
