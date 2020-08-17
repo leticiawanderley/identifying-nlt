@@ -1,7 +1,7 @@
 # N-gram pipeline
 
 ## Part-of-speech tagging
-The sentences in the English and Spanish corpora were part-of-speech tagged using spaCy's POS tagging pipeline.
+The sentences in the English, Spanish, and Chinese corpora were part-of-speech tagged using spaCy's POS tagging pipeline.
 For English sentences there were extracted Universal Dependencies POS tags as well as the Penn Treebank POS tags.
 They are refered to as "ud" and "penn", respectively.
 

@@ -6,7 +6,6 @@
 - [European Parliament Proceedings Parallel Corpus 1996-2011](https://www.kaggle.com/djonafegnem/europarl-parallel-corpus-19962011)
 - [Global Voices Parallel Corpus 2018Q4 (zhs-en)](http://casmacat.eu/corpus/global-voices.html)
 
-
 ### Datasets used to test language models
 - [CLC FCE dataset](https://ilexir.co.uk/datasets/index.html)
 
