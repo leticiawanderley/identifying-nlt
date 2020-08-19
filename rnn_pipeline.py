@@ -120,7 +120,7 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     test_df[MODEL_LABEL] = nlt
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
-    output_filename = 'data/results_chinese_annotated_errors_rnn.csv'
+    output_filename = 'data/results_chinese_annotated_errors_rnn_bce.csv'
     test_df.to_csv(output_filename)
     return output_filename
 
@@ -139,21 +139,22 @@ def nli(vocab_datasets: List[str], training_datasets: List[str],
     :param saved_model_path: path containing the model
     :param train_new_model: whether to train a new model or use the one saved
     """
+    rnn_setup = 'BCEwithLL'
     all_tags = get_all_tags(vocab_datasets)
     if train_new_model:
         training_data = read_data(training_datasets, categories)
-        learning_rate = 0.0001
+        learning_rate = 0.0002
         rnn = train_rnn_model(training_data, categories, all_tags,
-                              learning_rate, saved_model_path,
-                              'all_losses_zhs_en_1.png')
+                              rnn_setup, learning_rate,
+                              saved_model_path, 'all_losses_zhs_en_bce.png')
     else:
-        rnn = RNN(len(all_tags), n_hidden, len(categories))
+        rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)
         rnn.load_state_dict(torch.load(saved_model_path))
         rnn.eval()
     results_file = test_nli_rnn(test_dataset_file, rnn,
                                 categories, all_tags)
     confusion_matrix(results_file, GOLD_LABEL, MODEL_LABEL,
-                     'confusion_matrix_zhs_en_rnn.png')
+                     'confusion_matrix_zhs_en_rnn_bce.png')
 
 
 def test_nlt_rnn(test_data: pd.DataFrame, rnn: RNN, categories: List[bool],
@@ -196,14 +197,16 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
                     ['data/training data/type_and_trigram_ud_0_vocab.csv'])
     columns = {True: True, False: False}
     categories = list(columns.keys())
+    rnn_setup = 'BCEwithLL'
     if train_new_model:
         data_dict = setup_data(training_data, columns, 'type_and_trigram_ud',
                                GOLD_LABEL)
         learning_rate = 0.25
-        rnn = train_rnn_model(data_dict, categories, all_tags, learning_rate,
+        rnn = train_rnn_model(data_dict, categories, all_tags,
+                              rnn_setup, learning_rate,
                               saved_model_path, 'all_losses_predict_nlt.png')
     else:
-        rnn = RNN(len(all_tags), n_hidden, len(categories))
+        rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)
         rnn.load_state_dict(torch.load(saved_model_path))
         rnn.eval()
     results_file = test_nlt_rnn(test_data, rnn, categories, all_tags)
@@ -223,7 +226,7 @@ if __name__ == "__main__":
                        'chinese_annotated_errors.csv'
         categories = ['en_ud', 'zhs_ud']
         n_hidden = 256
-        saved_model_path = './saved_model_zhs_en_1.pth'
+        saved_model_path = './saved_model_zhs_en_bce.pth'
         nli(vocab_datasets, training_datasets, test_dataset,
             categories, n_hidden, saved_model_path, False)
     else:
