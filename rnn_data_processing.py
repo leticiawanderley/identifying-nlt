@@ -49,11 +49,12 @@ def sequence_to_tensor(sequence, n_tags, all_tags):
 
 
 class Data:
-    def __init__(self, data, tags):
+    def __init__(self, data, tags, setup):
         self.tags = tags
         self.n_tags = len(self.tags)
         self.data = copy.deepcopy(data)
         self.categories = list(data.keys())
+        self.setup = setup
         size = 0
         for category in self.categories:
             random.shuffle(self.data[category])
@@ -65,10 +66,18 @@ class Data:
         while not self.data[category]:
             category = random_choice(self.categories)
         sequence = self.data[category].pop()
-        category_tensor = torch.zeros(1, len(self.categories))
-        category_tensor[0][self.categories.index(category)] = 1
+        category_tensor = self.compute_category_tensor(category)
         sequence_tensor = sequence_to_tensor(sequence, self.n_tags, self.tags)
         return category, sequence, category_tensor, sequence_tensor
+
+    def compute_category_tensor(self, category):
+        if self.setup == 'NLLoss':
+            category_tensor = torch.tensor([self.categories.index(category)],
+                                           dtype=torch.long)
+        else:
+            category_tensor = torch.zeros(1, len(self.categories))
+            category_tensor[0][self.categories.index(category)] = 1
+        return category_tensor
 
 
 def setup_data(dataset, columns, feature, gold_label):

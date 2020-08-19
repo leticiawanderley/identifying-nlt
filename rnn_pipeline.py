@@ -67,7 +67,7 @@ def train_rnn_model(data: Dict[str, List[List[str]]],
     :param output_figure: path to create losses figure in
     :return: trained RNN model
     """
-    data = Data(data, all_tags)
+    data = Data(data, all_tags, setup)
     rnn = RNN(len(all_tags), n_hidden, len(categories), setup)
     all_losses = run_training(rnn, data, categories, learning_rate,
                               output_model)
@@ -197,7 +197,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
                     ['data/training data/type_and_trigram_ud_0_vocab.csv'])
     columns = {True: True, False: False}
     categories = list(columns.keys())
-    rnn_setup = 'BCEwithLL'
+    rnn_setup = 'NLLoss'
     if train_new_model:
         data_dict = setup_data(training_data, columns, 'type_and_trigram_ud',
                                GOLD_LABEL)
