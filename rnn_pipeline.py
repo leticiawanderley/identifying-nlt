@@ -55,11 +55,12 @@ def run_training(rnn: RNN, data: Data, categories: List,
 
 def train_rnn_model(data: Dict[str, List[List[str]]],
                     categories: List, all_tags: List[str],
-                    learning_rate: float, output_model: str,
-                    output_figure: str) -> RNN:
+                    setup: str, learning_rate: float,
+                    output_model: str, output_figure: str) -> RNN:
     """Train RNN model and create a losses visualization.
     :param data: training data
     :param categories: output labels
+    :param setup: RNN parameters setup
     :param all_tags: all sequence tags possible
     :param learning_rate: RNN learning rate
     :param output_model: path to save model in
@@ -67,7 +68,7 @@ def train_rnn_model(data: Dict[str, List[List[str]]],
     :return: trained RNN model
     """
     data = Data(data, all_tags)
-    rnn = RNN(len(all_tags), n_hidden, len(categories))
+    rnn = RNN(len(all_tags), n_hidden, len(categories), setup)
     all_losses = run_training(rnn, data, categories, learning_rate,
                               output_model)
     losses(all_losses, output_figure)

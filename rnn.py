@@ -4,21 +4,26 @@ import torch.nn as nn
 
 class RNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size,
-                 criterion=nn.NLLLoss()):
+                 setup='BCEwithLL'):
         super(RNN, self).__init__()
 
         self.hidden_size = hidden_size
 
         self.i2h = nn.Linear(input_size + hidden_size, hidden_size)
         self.i2o = nn.Linear(input_size + hidden_size, output_size)
-        self.softmax = nn.LogSoftmax(dim=1)
-        self.criterion = criterion
+        if setup == 'BCEwithLL':
+            self.activation = None
+            self.criterion = nn.BCEWithLogitsLoss()
+        elif setup == 'NLLoss':
+            self.activation = nn.LogSoftmax(dim=1)
+            self.criterion = nn.NLLLoss()
 
     def forward(self, input_tensor, hidden):
         combined = torch.cat((input_tensor, hidden), 1)
         hidden = self.i2h(combined)
         output = self.i2o(combined)
-        output = self.softmax(output)
+        if self.activation:
+            output = self.activation(output)
         return output, hidden
 
     def init_hidden(self):

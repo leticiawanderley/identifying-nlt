@@ -65,8 +65,8 @@ class Data:
         while not self.data[category]:
             category = random_choice(self.categories)
         sequence = self.data[category].pop()
-        category_tensor = torch.tensor([self.categories.index(category)],
-                                       dtype=torch.long)
+        category_tensor = torch.zeros(1, len(self.categories))
+        category_tensor[0][self.categories.index(category)] = 1
         sequence_tensor = sequence_to_tensor(sequence, self.n_tags, self.tags)
         return category, sequence, category_tensor, sequence_tensor
 
