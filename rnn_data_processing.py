@@ -80,12 +80,12 @@ class Data:
         return category_tensor
 
 
-def setup_data(dataset, columns, feature, gold_label):
+def setup_data(dataset, columns, feature, ground_truth):
     categories = columns.keys()
     data_dict = {}
     for col in categories:
         data_dict[columns[col]] = \
-            dataset[dataset[gold_label] == col][feature].to_list()
+            dataset[dataset[ground_truth] == col][feature].to_list()
         for i in range(len(data_dict[columns[col]])):
             data_dict[columns[col]][i] = data_dict[columns[col]][i].split()
     return data_dict

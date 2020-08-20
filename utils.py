@@ -123,15 +123,16 @@ def time_since(since):
     return '%dm %ds' % (m, s)
 
 
-def create_confusion_data(dataset_file, gold_column, guess_column):
+def create_confusion_data(dataset_file, ground_truth_column, guess_column):
     """Prepare confusion matrix data."""
     df = pd.read_csv(dataset_file)
     n_columns = 2
     confusion = [[0, 0], [0, 0]]
     for index, row in df.iterrows():
-        if isinstance(row[gold_column], bool) and \
+        if isinstance(row[ground_truth_column], bool) and \
            isinstance(row[guess_column], bool):
-            confusion[int(row[gold_column])][int(row[guess_column])] += 1
+            confusion[int(row[ground_truth_column])]\
+                     [int(row[guess_column])] += 1
     for i in range(n_columns):
         total = sum(confusion[i])
         for j in range(n_columns):
@@ -145,17 +146,17 @@ def power_of_ten_value(number):
     return int('1' + '0' * (len(str(int(number))) - 1))
 
 
-def setup_train_test_data(dataset, percentage, gold_column):
+def setup_train_test_data(dataset, percentage, ground_truth_column):
     """Split dataset into train and test subsets."""
     df = pd.read_csv(dataset)
-    y = df[gold_column]
+    y = df[ground_truth_column]
     x_train, x_test, y_train, y_test = train_test_split(
         df, y, test_size=percentage)
     return x_train.copy(), x_test.copy()
 
 
 def evaluate_n_gram_model(results_file, fields, l1, l2, model_label,
-                          gold_column):
+                          ground_truth_column):
     """Compare language models' probability results in the L1 and L2
     classifying the datapoints as language transfer or not, then compare
     this classification with the datapoints' gold labels."""
@@ -163,7 +164,7 @@ def evaluate_n_gram_model(results_file, fields, l1, l2, model_label,
     # If the probability in the L1 is greater than the probability in the L2
     # the sequence is tagged as negative language transfer
     df[model_label] = np.where(df[l1] > df[l2], True, False)
-    df['result'] = np.where(df[model_label] == df[gold_column],
+    df['result'] = np.where(df[model_label] == df[ground_truth_column],
                             True, False)
     df = df[fields + [l1, l2, model_label, 'result']]
     df.to_csv(results_file)

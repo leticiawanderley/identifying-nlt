@@ -13,9 +13,12 @@ def losses(all_losses, output_filename):
     plt.savefig('figures/' + output_filename)
 
 
-def confusion_matrix(dataset_file, gold_label, guess_column, output_filename):
-    """Plot confusion matrix and save figure in a file."""
-    confusion = create_confusion_data(dataset_file, gold_label, guess_column)
+def confusion_matrix(dataset_file, ground_truth_column,
+                     guess_column, output_filename):
+    """Plot confusion matrix and save figure in a file.
+    """
+    confusion = create_confusion_data(dataset_file, ground_truth_column,
+                                      guess_column)
     fig = plt.figure()
     ax = fig.add_subplot(111)
     cax = ax.matshow(confusion)

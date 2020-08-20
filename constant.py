@@ -41,6 +41,6 @@ ANNOTATED_FCE_FIELDS = ['error_type', 'Negative transfer?',
                         'Likely reason for mistake',
                         'correct_sentence', 'correct_trigram_ud',
                         'incorrect_sentence', 'incorrect_trigram_ud']
-GOLD_LABEL = 'Negative transfer?'
+GROUND_TRUTH = 'Negative transfer?'
 MODEL_LABEL = 'nlt'
 CONFUSION_MATRIX_AXES = ['Not NLT', 'NLT']

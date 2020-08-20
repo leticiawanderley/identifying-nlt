@@ -3,7 +3,7 @@ from typing import Dict, List
 import torch
 import pandas as pd
 
-from constant import GOLD_LABEL, MODEL_LABEL
+from constant import GROUND_TRUTH, MODEL_LABEL
 from rnn import RNN
 from rnn_data_processing import category_from_output, Data, get_all_tags, \
                                 read_data, sequence_to_tensor, setup_data
@@ -111,7 +111,7 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
             guess = test_datapoint(rnn, row['incorrect_trigram_ud'].split(),
                                    categories, all_tags)
             is_nlt = guess == 'zhs_ud'
-            is_guess_correct = is_nlt == row[GOLD_LABEL]
+            is_guess_correct = is_nlt == row[GROUND_TRUTH]
             nlt.append(is_nlt)
             results.append(is_guess_correct)
         else:
@@ -153,7 +153,7 @@ def nli(vocab_datasets: List[str], training_datasets: List[str],
         rnn.eval()
     results_file = test_nli_rnn(test_dataset_file, rnn,
                                 categories, all_tags)
-    confusion_matrix(results_file, GOLD_LABEL, MODEL_LABEL,
+    confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL,
                      'confusion_matrix_zhs_en_rnn_bce.png')
 
 
@@ -173,7 +173,7 @@ def test_nlt_rnn(test_data: pd.DataFrame, rnn: RNN, categories: List[bool],
         guess = test_datapoint(rnn, row['type_and_trigram_ud'].split(),
                                categories, all_tags)
         nlt.append(guess)
-        results.append(guess == row[GOLD_LABEL])
+        results.append(guess == row[GROUND_TRUTH])
     test_data[MODEL_LABEL] = nlt
     test_data['result'] = results
     output_filename = 'data/results_predict_nlt_annotated_FCE.csv'
@@ -192,7 +192,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
     training_data, test_data = setup_train_test_data(
                                 'data/testing data/annotated_FCE/' +
                                 'chinese_annotated_errors.csv', 0.1,
-                                GOLD_LABEL)
+                                GROUND_TRUTH)
     all_tags = get_all_tags(
                     ['data/training data/type_and_trigram_ud_0_vocab.csv'])
     columns = {True: True, False: False}
@@ -200,7 +200,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
     rnn_setup = 'NLLoss'
     if train_new_model:
         data_dict = setup_data(training_data, columns, 'type_and_trigram_ud',
-                               GOLD_LABEL)
+                               GROUND_TRUTH)
         learning_rate = 0.25
         rnn = train_rnn_model(data_dict, categories, all_tags,
                               rnn_setup, learning_rate,
@@ -210,7 +210,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
         rnn.load_state_dict(torch.load(saved_model_path))
         rnn.eval()
     results_file = test_nlt_rnn(test_data, rnn, categories, all_tags)
-    confusion_matrix(results_file, GOLD_LABEL, MODEL_LABEL,
+    confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL,
                      'confusion_matrix_predict_nlt.png')
 
 
