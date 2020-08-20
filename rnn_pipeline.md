@@ -29,3 +29,4 @@ If the model's output matches the learner's native language, the error is classi
 From this comparison it is possible to analyse the model's performance, as we can compare the model's results with the gold annotations in the dataset. These test results are also aggregated into a confunsion matrix.
 
 ## Addendum
+Yet another RNN model can be trained using the FCE annotated dataset as both train and test data. This model takes the error tag sequence and error type as input and outputs whether that error is related to language transfer or not. It tries to predict the negative language transfer annotation from the writing error itself.
