@@ -12,14 +12,20 @@ The RNN model is trained with 256 hidden layers and it can use differents sets o
 
 The network sees each training datapoint once. Its inputs are tag sequences, derived from the POS tagged sentences written in the languages analysed, and a flag that represents the language these sentences were written on. The RNN learns to predict these language flags from the tag sequences.
 
-The trained RNN works as a native language identification (nli) model. It is trained to recognize the language a sentence was written on from the sentence's part-of-speech tag sequence. We hope the model learns both languages structures and is able to differentiate between the languages from this knowledge.
+The trained RNN works as a native language identification (nli) model. It is trained to recognize the language a sentence was written on from the sentence's part-of-speech tag sequence. We expect the model to learn both languages structures and to able to differentiate between the languages from this knowledge.
 
 ## Testing
 ### Test datasets
-The test dataset for this model is [FCE dataset](https://www.aclweb.org/anthology/P11-1019/), a collection of error annotated essays written by learners who were sitting the FCE exam.
+The test dataset for this model is [FCE dataset](https://www.aclweb.org/anthology/P11-1019/), a collection of error annotated essays written by learners who were sitting the FCE exam. The errors in this dataset are annotated with information about whether they could be related to negative language transfer.
 
 ### Procedure
+The main goal of this approach is to create a model that detects when a writing error could be caused by negative language transfer, the misguided influence of a learner's native language grammar rules in their writing in a foreign language.
+
+The trained RNN model takes in the sequence of tags surrounding and containing the incorrect utterance. It outputs a language flag indicating to which of the languages the tag sequence is more similar to.
 
 ### Analysis
+If the model's output matches the learner's native language, the error is classified as being negative language transfer related. If the model outputs 'English', the error is classified as **not** transfer related. These classification results are compared to the annotated negative language transfer information.
+
+From this comparison it is possible to analyse the model's performance, as we can compare the model's results with the gold annotations in the dataset. These test results are also aggregated into a confunsion matrix.
 
 ## Addendum
