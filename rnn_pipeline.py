@@ -107,8 +107,10 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     results = []
     structural_errors = get_structural_errors()
     for index, row in test_df.iterrows():
-        if row['error_type'] == '_' or row['error_type'] in structural_errors:
-            guess = test_datapoint(rnn, row['incorrect_trigram_ud'].split(),
+        if row['error_type'] == '_' or \
+            row['error_type'] in structural_errors and \
+                isinstance(row['ud_quadgram'], str):
+            guess = test_datapoint(rnn, row['ud_quadgram'].split(),
                                    categories, all_tags)
             is_nlt = guess == 'zhs_ud'
             is_guess_correct = is_nlt == row[GROUND_TRUTH]
@@ -120,7 +122,7 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     test_df[MODEL_LABEL] = nlt
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
-    output_filename = 'data/results_chinese_annotated_errors_rnn_bce.csv'
+    output_filename = 'data/results_chinese_annotated_errors_rnn_bce_4.csv'
     test_df.to_csv(output_filename)
     return output_filename
 
@@ -154,7 +156,7 @@ def nli(vocab_datasets: List[str], training_datasets: List[str],
     results_file = test_nli_rnn(test_dataset_file, rnn,
                                 categories, all_tags)
     confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL,
-                     'confusion_matrix_zhs_en_rnn_bce.png')
+                     'confusion_matrix_zhs_en_rnn_bce_4.png')
 
 
 def test_nlt_rnn(test_data: pd.DataFrame, rnn: RNN, categories: List[bool],
@@ -215,7 +217,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
 
 
 if __name__ == "__main__":
-    train_nli = False
+    train_nli = True
     if train_nli:
         vocab_datasets = [
             'data/training data/globalvoices_vocabs/zhs_ud_0_vocab.csv',
