@@ -27,11 +27,12 @@ def confusion_matrix(dataset_file, ground_truth_column,
     for (i, j), z in np.ndenumerate(confusion):
         ax.text(j, i, '{:0.4f}'.format(z), ha='center', va='center')
 
-    ax.set_xticklabels([''] + CONFUSION_MATRIX_AXES)
-    ax.set_yticklabels([''] + CONFUSION_MATRIX_AXES)
+    
+    ax.set_xticks(np.arange(2))
+    ax.set_yticks(np.arange(2))
 
-    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-    ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax.set_xticklabels(CONFUSION_MATRIX_AXES)
+    ax.set_yticklabels(CONFUSION_MATRIX_AXES)
 
     plt.xlabel('Predicted')
     plt.ylabel('True')
