@@ -4,3 +4,5 @@ __pycache__/
 data/english_spanish.csv
 data/english_spanish.csv.zip
 env/
+*.out
+*.err
