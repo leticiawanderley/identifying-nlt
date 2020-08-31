@@ -172,7 +172,7 @@ def test_nlt_rnn(test_data: pd.DataFrame, rnn: RNN, categories: List[bool],
     nlt = []
     results = []
     for index, row in test_data.iterrows():
-        guess = test_datapoint(rnn, row['type_and_trigram_ud'].split(),
+        guess = test_datapoint(rnn, row['penn_quadgram'].split(),
                                categories, all_tags)
         nlt.append(guess)
         results.append(guess == row[GROUND_TRUTH])
@@ -196,14 +196,14 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
                                 'chinese_annotated_errors.csv', 0.1,
                                 GROUND_TRUTH)
     all_tags = get_all_tags(
-                    ['data/training data/type_and_trigram_ud_0_vocab.csv'])
+                    ['data/training data/penn_quadgram_0_vocab.csv'])
     columns = {True: True, False: False}
     categories = list(columns.keys())
     rnn_setup = 'NLLoss'
     if train_new_model:
-        data_dict = setup_data(train_data, columns, 'type_and_trigram_ud',
+        data_dict = setup_data(train_data, columns, 'penn_quadgram',
                                GROUND_TRUTH)
-        learning_rate = 0.25
+        learning_rate = 0.15
         rnn = train_rnn_model(data_dict, categories, all_tags,
                               rnn_setup, learning_rate,
                               saved_model_path, 'all_losses_predict_nlt.png')
@@ -217,7 +217,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
 
 
 if __name__ == "__main__":
-    train_nli = True
+    train_nli = False
     if train_nli:
         vocab_datasets = [
             'data/training data/globalvoices_vocabs/zhs_ud_0_vocab.csv',
