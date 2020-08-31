@@ -127,14 +127,14 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     return output_filename
 
 
-def nli(vocab_datasets: List[str], training_datasets: List[str],
+def nli(vocab_datasets: List[str], train_datasets: List[str],
         test_dataset_file: str, categories: List[str], n_hidden: int,
         saved_model_path: str, train_new_model=True):
     """Train and test RNN model that classifies error tag sequences as
     negative language transfer through Native Language Identification,
     guessing the author's native language based on the error tag sequence.
     :param vocab_datasets: list of files containing each language existing tags
-    :param training_datasets: list of training data files
+    :param train_datasets: list of training data files
     :param test_dataset_file: test dataset file path
     :param categories: output labels
     :param n_hidden: number of hidden layers
@@ -144,9 +144,9 @@ def nli(vocab_datasets: List[str], training_datasets: List[str],
     rnn_setup = 'BCEwithLL'
     all_tags = get_all_tags(vocab_datasets)
     if train_new_model:
-        training_data = read_data(training_datasets, categories)
+        train_data = read_data(train_datasets, categories)
         learning_rate = 0.0001
-        rnn = train_rnn_model(training_data, categories, all_tags,
+        rnn = train_rnn_model(train_data, categories, all_tags,
                               rnn_setup, learning_rate,
                               saved_model_path, 'all_losses_zhs_en_bce_cedar.png')
     else:
@@ -191,7 +191,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
     :param saved_model_path: path containing the model
     :param train_new_model: whether to train a new model or use the one saved
     """
-    training_data, test_data = setup_train_test_data(
+    train_data, test_data = setup_train_test_data(
                                 'data/testing data/annotated_FCE/' +
                                 'chinese_annotated_errors.csv', 0.1,
                                 GROUND_TRUTH)
@@ -201,7 +201,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
     categories = list(columns.keys())
     rnn_setup = 'NLLoss'
     if train_new_model:
-        data_dict = setup_data(training_data, columns, 'type_and_trigram_ud',
+        data_dict = setup_data(train_data, columns, 'type_and_trigram_ud',
                                GROUND_TRUTH)
         learning_rate = 0.25
         rnn = train_rnn_model(data_dict, categories, all_tags,
@@ -222,14 +222,14 @@ if __name__ == "__main__":
         vocab_datasets = [
             'data/training data/globalvoices_vocabs/zhs_ud_0_vocab.csv',
             'data/training data/globalvoices_vocabs/en_ud_0_vocab.csv']
-        training_datasets = [
+        train_datasets = [
             'data/training data/tagged_globalvoices_sentences.csv']
         test_dataset = 'data/testing data/annotated_FCE/' + \
                        'chinese_annotated_errors.csv'
         categories = ['en_ud', 'zhs_ud']
         n_hidden = 256
         saved_model_path = './saved_model_zhs_en_bce_cedar.pth'
-        nli(vocab_datasets, training_datasets, test_dataset,
+        nli(vocab_datasets, train_datasets, test_dataset,
             categories, n_hidden, saved_model_path, True)
     else:
         n_hidden = 128
