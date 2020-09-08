@@ -5,6 +5,8 @@
 - [Language Identification dataset](https://www.kaggle.com/zarajamshaid/language-identification-datasst)
 - [European Parliament Proceedings Parallel Corpus 1996-2011](https://www.kaggle.com/djonafegnem/europarl-parallel-corpus-19962011)
 - [Global Voices Parallel Corpus 2018Q4 (zhs-en)](http://casmacat.eu/corpus/global-voices.html)
+- [WMT-News 2019 version](http://opus.nlpl.eu/WMT-News-v2019.php)
+- [United Nations](http://opus.nlpl.eu/UN-v20090831.php)
 
 ### Datasets used to test language models
 - [CLC FCE dataset](https://ilexir.co.uk/datasets/index.html)
