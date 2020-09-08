@@ -53,9 +53,9 @@ if __name__ == "__main__":
         main(models, input_filename, output_filename, languages_columns,
              new_column_names, selected_columns, mapping)
     elif l1 == CHINESE:
-        input_filename = 'data/training data/globalvoices_sentences.csv'
+        input_filename = 'data/training data/wmt-news_en-zh.csv'
         output_filename = ('data/training data/'
-                           'tagged_globalvoices_sentences.csv')
+                           'tagged_wmt-news_en-zh.csv')
         models = {
             ENGLISH: spacy.load("en_core_web_lg"),
             CHINESE: spacy.load("zh_core_web_lg")
