@@ -27,12 +27,12 @@ UD_NGRAMS_FILES = {
            2: 'data/training data/europarl_vocabs/es_ud_2_vocab.csv'}
 }
 UD_NGRAMS_FILES_GV = {
-    'en': {0: 'data/training data/globalvoices_vocabs/en_ud_0_vocab.csv',
-           1: 'data/training data/globalvoices_vocabs/en_ud_1_vocab.csv',
-           2: 'data/training data/globalvoices_vocabs/en_ud_2_vocab.csv'},
-    'zhs': {0: 'data/training data/globalvoices_vocabs/zhs_ud_0_vocab.csv',
-            1: 'data/training data/globalvoices_vocabs/zhs_ud_1_vocab.csv',
-            2: 'data/training data/globalvoices_vocabs/zhs_ud_2_vocab.csv'}
+    'en': {0: 'data/training data/chinese-english_vocabs/en_ud_0_vocab.csv',
+           1: 'data/training data/chinese-english_vocabs/en_ud_1_vocab.csv',
+           2: 'data/training data/chinese-english_vocabs/en_ud_2_vocab.csv'},
+    'zhs': {0: 'data/training data/chinese-english_vocabs/zhs_ud_0_vocab.csv',
+            1: 'data/training data/chinese-english_vocabs/zhs_ud_1_vocab.csv',
+            2: 'data/training data/chinese-english_vocabs/zhs_ud_2_vocab.csv'}
 }
 LEARNER_ENGLISH_FIELDS = ['sentence', 'correct', 'error_type', 'penn',
                           'penn_trigram', 'ud', 'ud_trigram',
