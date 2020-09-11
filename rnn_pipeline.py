@@ -145,7 +145,7 @@ def nli(vocab_datasets: List[str], train_datasets: List[str],
     all_tags = get_all_tags(vocab_datasets)
     if train_new_model:
         train_data = read_data(train_datasets, categories)
-        learning_rate = 0.0000225
+        learning_rate = 0.000025
         rnn = train_rnn_model(train_data, categories, all_tags,
                               rnn_setup, learning_rate,
                               saved_model_path, 'all_losses_zhs_en_bce_cedar_more_data2.png')
