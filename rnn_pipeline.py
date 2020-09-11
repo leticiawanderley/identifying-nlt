@@ -122,7 +122,7 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     test_df[MODEL_LABEL] = nlt
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
-    output_filename = 'data/results_chinese_annotated_errors_rnn_bce_3_cedar_more_data2.csv'
+    output_filename = 'data/results_chinese_annotated_errors_rnn_bce_cedar.csv'
     test_df.to_csv(output_filename)
     return output_filename
 
@@ -148,7 +148,7 @@ def nli(vocab_datasets: List[str], train_datasets: List[str],
         learning_rate = 0.000025
         rnn = train_rnn_model(train_data, categories, all_tags,
                               rnn_setup, learning_rate,
-                              saved_model_path, 'all_losses_zhs_en_bce_cedar_more_data2.png')
+                              saved_model_path, 'all_losses_zhs_en_bce_cedar.png')
     else:
         rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)
         rnn.load_state_dict(torch.load(saved_model_path))
@@ -156,7 +156,7 @@ def nli(vocab_datasets: List[str], train_datasets: List[str],
     results_file = test_nli_rnn(test_dataset_file, rnn,
                                 categories, all_tags)
     confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL,
-                     'confusion_matrix_zhs_en_rnn_bce_3_cedar_more_data2.png')
+                     'confusion_matrix_zhs_en_rnn_bce_cedar.png')
 
 
 def test_nlt_rnn(test_data: pd.DataFrame, rnn: RNN, categories: List[bool],
@@ -230,9 +230,9 @@ if __name__ == "__main__":
                        'chinese_annotated_errors.csv'
         categories = ['en_ud', 'zhs_ud']
         n_hidden = 256
-        saved_model_path = './saved_model_zhs_en_bce_cedar_more_data2.pth'
+        saved_model_path = './saved_model_zhs_en_bce_cedar.pth'
         nli(vocab_datasets, train_datasets, test_dataset,
-            categories, n_hidden, saved_model_path, True)
+            categories, n_hidden, saved_model_path, False)
     else:
         n_hidden = 128
         saved_model_path = 'saved_prediction_model.pth'
