@@ -56,7 +56,7 @@ def run_training(rnn: RNN, data: Data, categories: List,
 def train_rnn_model(data: Dict[str, List[List[str]]],
                     categories: List, all_tags: List[str],
                     setup: str, learning_rate: float,
-                    output_model: str, output_figure: str) -> RNN:
+                    output_model: str, info: str) -> RNN:
     """Train RNN model and create a losses visualization.
     :param data: training data
     :param categories: output labels
@@ -64,14 +64,14 @@ def train_rnn_model(data: Dict[str, List[List[str]]],
     :param all_tags: all sequence tags possible
     :param learning_rate: RNN learning rate
     :param output_model: path to save model in
-    :param output_figure: path to create losses figure in
+    :param info: hyperparameter information
     :return: trained RNN model
     """
     data = Data(data, all_tags, setup)
     rnn = RNN(len(all_tags), n_hidden, len(categories), setup)
     all_losses = run_training(rnn, data, categories, learning_rate,
                               output_model)
-    losses(all_losses, output_figure)
+    losses(all_losses, info)
     return rnn
 
 
@@ -92,7 +92,7 @@ def test_datapoint(rnn: RNN, datapoint: List[str], categories: List,
 
 
 def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
-                 all_tags: List[str]) -> str:
+                 all_tags: List[str], info: str) -> str:
     """Test RNN model that classifies error tag sequences as negative language
     transfer through Native Language Identification, guessing the author's L1
     based on the error tag sequence.
@@ -100,6 +100,7 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     :param rnn: RNN model
     :param categories: output labels
     :param all_tags: all sequence tags possible
+    :param info: hyperparameter information
     :return: test results file name
     """
     test_df = pd.read_csv(test_dataset_file)
@@ -122,41 +123,42 @@ def test_nli_rnn(test_dataset_file: str, rnn: RNN, categories: List[str],
     test_df[MODEL_LABEL] = nlt
     test_df['result'] = results
     print(test_df.groupby(['result']).size().reset_index(name='count'))
-    output_filename = 'data/results_chinese_annotated_errors_rnn_bce_cedar_2.csv'
+    output_filename = 'data/results_' + info + '.csv'
     test_df.to_csv(output_filename)
     return output_filename
 
 
 def nli(vocab_datasets: List[str], train_datasets: List[str],
-        test_dataset_file: str, categories: List[str], n_hidden: int,
-        saved_model_path: str, train_new_model=True):
+        test_dataset_file: str, learning_rate: float,
+        rnn_setup: str, categories: List[str], n_hidden: int,
+        info: str, train_new_model=True):
     """Train and test RNN model that classifies error tag sequences as
     negative language transfer through Native Language Identification,
     guessing the author's native language based on the error tag sequence.
     :param vocab_datasets: list of files containing each language existing tags
     :param train_datasets: list of training data files
     :param test_dataset_file: test dataset file path
+    :param learning_rate: initial learning rate
+    :param rnn_setup: RNN's activation and loss function
     :param categories: output labels
     :param n_hidden: number of hidden layers
-    :param saved_model_path: path containing the model
+    :param info: hyperparameter information
     :param train_new_model: whether to train a new model or use the one saved
     """
-    rnn_setup = 'BCEwithLL'
+    saved_model_path = './saved_model_' + info + ''
     all_tags = get_all_tags(vocab_datasets)
     if train_new_model:
         train_data = read_data(train_datasets, categories)
-        learning_rate = 0.000025
         rnn = train_rnn_model(train_data, categories, all_tags,
                               rnn_setup, learning_rate,
-                              saved_model_path, 'all_losses_zhs_en_bce_cedar_2.png')
+                              saved_model_path, info)
     else:
         rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)
         rnn.load_state_dict(torch.load(saved_model_path))
         rnn.eval()
     results_file = test_nli_rnn(test_dataset_file, rnn,
-                                categories, all_tags)
-    confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL,
-                     'confusion_matrix_zhs_en_rnn_bce_cedar_2.png')
+                                categories, all_tags, info)
+    confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL, info)
 
 
 def test_nlt_rnn(test_data: pd.DataFrame, rnn: RNN, categories: List[bool],
@@ -229,9 +231,12 @@ if __name__ == "__main__":
                        'chinese_annotated_errors.csv'
         categories = ['en_ud', 'zhs_ud']
         n_hidden = 256
-        saved_model_path = './saved_model_zhs_en_bce_cedar_2.pth'
-        nli(vocab_datasets, train_datasets, test_dataset,
-            categories, n_hidden, saved_model_path, True)
+        learning_rate = 0.000025
+        rnn_setup = 'BCEwithLL'
+        info = '_'.join(categories) + '_' + str(learning_rate) + '_' + \
+            rnn_setup
+        nli(vocab_datasets, train_datasets, test_dataset, learning_rate,
+            rnn_setup, categories, n_hidden, info, True)
     else:
         n_hidden = 128
         saved_model_path = 'saved_prediction_model.pth'
