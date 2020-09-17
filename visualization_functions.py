@@ -6,15 +6,15 @@ from constant import CONFUSION_MATRIX_AXES
 from utils import create_confusion_data
 
 
-def losses(all_losses, output_filename):
+def losses(all_losses, info):
     """Plot model losses and save figure in a file."""
     plt.figure()
     plt.plot(all_losses)
-    plt.savefig('figures/' + output_filename)
+    plt.savefig('figures/all_losses_' + info + '.png')
 
 
 def confusion_matrix(dataset_file, ground_truth_column,
-                     guess_column, output_filename):
+                     guess_column, info):
     """Plot confusion matrix and save figure in a file.
     """
     confusion = create_confusion_data(dataset_file, ground_truth_column,
@@ -27,7 +27,6 @@ def confusion_matrix(dataset_file, ground_truth_column,
     for (i, j), z in np.ndenumerate(confusion):
         ax.text(j, i, '{:0.4f}'.format(z), ha='center', va='center')
 
-    
     ax.set_xticks(np.arange(2))
     ax.set_yticks(np.arange(2))
 
@@ -37,4 +36,4 @@ def confusion_matrix(dataset_file, ground_truth_column,
     plt.xlabel('Predicted')
     plt.ylabel('True')
 
-    fig.savefig('figures/' + output_filename)
+    fig.savefig('figures/confusion_matrix_' + info + '.png')
