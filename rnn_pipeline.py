@@ -225,15 +225,16 @@ if __name__ == "__main__":
             'data/training data/chinese-english_vocabs/zhs_ud_0_vocab.csv',
             'data/training data/chinese-english_vocabs/en_ud_0_vocab.csv']
         train_datasets = [
+                'data/training data/tagged_un_en-zh.csv',
                 'data/training data/tagged_wmt-news_en-zh.csv',
                 'data/training data/tagged_globalvoices_sentences.csv']
         test_dataset = 'data/testing data/annotated_FCE/' + \
                        'chinese_annotated_errors.csv'
         categories = ['en_ud', 'zhs_ud']
         n_hidden = 256
-        learning_rate = 0.000025
+        learning_rate = 0.00003
         rnn_setup = 'BCEwithLL'
-        info = '_'.join(categories) + '_' + str(learning_rate) + '_' + \
+        info = '_'.join(categories) + '_' + str(learning_rate) + '_GV+WMT+UN_' + \
             rnn_setup
         nli(vocab_datasets, train_datasets, test_dataset, learning_rate,
             rnn_setup, categories, n_hidden, info, True)
