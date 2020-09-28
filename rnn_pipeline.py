@@ -3,6 +3,8 @@ from typing import Dict, List
 import torch
 import pandas as pd
 
+from torch.optim.lr_scheduler import StepLR
+
 from constant import GROUND_TRUTH, MODEL_LABEL
 from rnn import RNN
 from rnn_data_processing import category_from_output, Data, get_all_tags, \
@@ -23,6 +25,8 @@ def run_training(rnn: RNN, data: Data, categories: List,
     :param output_model: path to save model in
     :return: stored losses
     """
+    optimizer = torch.optim.Adam(rnn.parameters(), lr=learning_rate)
+
     n_iters = data.size
     print_every = power_of_ten_value(n_iters * 0.05)
     plot_every = power_of_ten_value(n_iters * 0.01)
@@ -30,10 +34,11 @@ def run_training(rnn: RNN, data: Data, categories: List,
     current_loss = 0
     all_losses = []
     for iteration in range(1, n_iters + 1):
+
         category, sequence, category_tensor, sequence_tensor = \
             data.random_training_datapoint()
         output, loss = rnn.train_iteration(category_tensor, sequence_tensor,
-                                           learning_rate)
+                                           optimizer)
         current_loss += loss
 
         # Print iteration number, loss, name and guess
@@ -232,7 +237,7 @@ if __name__ == "__main__":
                        'chinese_annotated_errors.csv'
         categories = ['en_ud', 'zhs_ud']
         n_hidden = 256
-        learning_rate = 0.00003
+        learning_rate = 1e-4
         rnn_setup = 'BCEwithLL'
         info = '_'.join(categories) + '_' + str(learning_rate) + '_GV+WMT+UN_' + \
             rnn_setup

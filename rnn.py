@@ -30,7 +30,7 @@ class RNN(nn.Module):
         return torch.zeros(1, self.hidden_size)
 
     def train_iteration(self, category_tensor, sequence_tensor,
-                        learning_rate):
+                        optimizer):
         hidden = self.init_hidden()
 
         self.zero_grad()
@@ -39,12 +39,9 @@ class RNN(nn.Module):
             output, hidden = self(sequence_tensor[i], hidden)
 
         loss = self.criterion(output, category_tensor)
+        optimizer.zero_grad()
         loss.backward()
-
-        # Add parameters' gradients to their values,
-        # multiplied by learning rate
-        for p in self.parameters():
-            p.data.add_(p.grad.data, alpha=-learning_rate)
+        optimizer.step()
 
         return output, loss.item()
 
