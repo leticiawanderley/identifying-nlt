@@ -44,7 +44,7 @@ def select_n_gram(dataframe):
     return ud_n_grams, penn_n_grams
 
 
-merge_datasets('data/testing data/annotated_FCE',
+merge_datasets('data/testing data/annotated_FCE/FCE identified chinese errors',
                ['error_type', 'Negative transfer?',
                 'Likely reason for mistake',
                 'correct_sentence', 'correct_trigram_poss',
