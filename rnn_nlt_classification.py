@@ -57,14 +57,14 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
         learning_rate = 0.15
         rnn = train_rnn_model(data_dict, categories, all_tags,
                               rnn_setup, n_hidden, learning_rate,
-                              saved_model_path, 'all_losses_predict_nlt.png')
+                              saved_model_path, 'all_losses_predict_nlt')
     else:
         rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)
         rnn.load_state_dict(torch.load(saved_model_path))
         rnn.eval()
     results_file = test_nlt_rnn(test_data, rnn, categories, all_tags)
     confusion_matrix(results_file, GROUND_TRUTH, MODEL_LABEL,
-                     'confusion_matrix_predict_nlt.png')
+                     'confusion_matrix_predict_nlt')
 
 
 if __name__ == "__main__":
