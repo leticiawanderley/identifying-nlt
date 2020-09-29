@@ -59,12 +59,13 @@ def run_training(rnn: RNN, data: Data, categories: List,
 
 def train_rnn_model(data: Dict[str, List[List[str]]],
                     categories: List, all_tags: List[str],
-                    setup: str, learning_rate: float,
+                    setup: str, n_hidden: int, learning_rate: float,
                     output_model: str, info: str) -> RNN:
     """Train RNN model and create a losses visualization.
     :param data: training data
     :param categories: output labels
     :param setup: RNN parameters setup
+    :param n_hidden: number of hidden units
     :param all_tags: all sequence tags possible
     :param learning_rate: RNN learning rate
     :param output_model: path to save model in
@@ -154,7 +155,7 @@ def nli(vocab_datasets: List[str], train_datasets: List[str],
     if train_new_model:
         train_data = read_data(train_datasets, categories)
         rnn = train_rnn_model(train_data, categories, all_tags,
-                              rnn_setup, learning_rate,
+                              rnn_setup, n_hidden, learning_rate,
                               saved_model_path, info)
     else:
         rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)

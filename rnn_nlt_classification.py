@@ -56,7 +56,7 @@ def predict_nlt(n_hidden, saved_model_path, train_new_model=True):
                                GROUND_TRUTH)
         learning_rate = 0.15
         rnn = train_rnn_model(data_dict, categories, all_tags,
-                              rnn_setup, learning_rate,
+                              rnn_setup, n_hidden, learning_rate,
                               saved_model_path, 'all_losses_predict_nlt.png')
     else:
         rnn = RNN(len(all_tags), n_hidden, len(categories), rnn_setup)
