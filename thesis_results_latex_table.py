@@ -3,15 +3,15 @@ import pandas as pd
 
 def bold_highest(values):
     max_value = max(values)
-    indices = [i for i, x in enumerate(values) if x == max_value]
-    new_list = ['\\textbf{' + str(value) + '}' if value == max_value and max_value > 0 else str(value) for value in values]
+    new_list = ['\\textbf{' + str(value) + '}' if value == max_value and \
+                max_value > 0 else str(value) for value in values]
     return new_list
 
 
-df = pd.read_csv('error_type_table_ngram.csv')
+df = pd.read_csv('data/thesis_tables/error_type_table_ngram.csv')
 error_types = list(df['error_type'].unique())
 
-f = open('error_type_analysis_ngram.txt', 'w')
+f = open('data/thesis_tables/error_type_analysis_ngram.txt', 'w')
 
 for e in error_types:
     sub_df = df[df['error_type'] == e]

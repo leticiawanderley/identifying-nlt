@@ -2,11 +2,17 @@ import pandas as pd
 from utils import get_structural_errors
 
 
-error_meaning = pd.read_csv('data/error_type_meaning.csv')
+error_meaning = pd.read_csv('data/error_codes/error_type_meaning.csv')
 
-padded = pd.read_csv('data/metrics/metrics_kenlm_5_incorrect_ud_tags_padded.csv', index_col=[0])
-unigram = pd.read_csv('data/metrics/metrics_kenlm_5_incorrect_ud_tags_unigram.csv', index_col=[0])
-bigram = pd.read_csv('data/metrics/metrics_kenlm_5_incorrect_ud_tags_bigram.csv', index_col=[0])
+padded = pd.read_csv(
+    'data/results_metrics/metrics_kenlm_5_incorrect_ud_tags_padded.csv',
+    index_col=[0])
+unigram = pd.read_csv(
+    'data/results_metrics/metrics_kenlm_5_incorrect_ud_tags_unigram.csv',
+    index_col=[0])
+bigram = pd.read_csv(
+    'data/results_metrics/metrics_kenlm_5_incorrect_ud_tags_bigram.csv',
+    index_col=[0])
 
 
 padded['span'] = 'Padded error'
@@ -31,4 +37,4 @@ result = result.sort_values(by=['total', 'error_type'], ascending=False)
 
 print(result)
 
-result.to_csv('error_type_table_ngram.csv')
+result.to_csv('data/thesis_tables/error_type_table_ngram.csv')
