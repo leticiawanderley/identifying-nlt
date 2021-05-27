@@ -1,0 +1,9 @@
+__pycache__/
+.DS_Store
+.vscode/
+env/
+*.out
+*.err
+data/training_data/spanish_english/europarl.zip
+.ipynb_checkpoints/
+data/test_data/nlt_dataset*

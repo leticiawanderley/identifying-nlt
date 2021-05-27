@@ -1,0 +1,165 @@
+\multirow{3}{=}{Replace punctuation \break (n = 336)} & Padded error & 0.65 & 0.3 & 0.41\\ 
+& Error + unigram  & \textbf{0.69} & \textbf{0.43} & \textbf{0.53}\\ 
+& Error + bigram  & 0.62 & 0.23 & 0.34\\ \hline 
+\multirow{3}{=}{Incorrect tense of verb \break (n = 267)} & Padded error & 0.7 & 0.21 & 0.32\\ 
+& Error + unigram  & \textbf{0.78} & \textbf{0.36} & \textbf{0.49}\\ 
+& Error + bigram  & 0.73 & 0.22 & 0.33\\ \hline 
+\multirow{3}{=}{Missing determiner \break (n = 209)} & Padded error & \textbf{1.0} & \textbf{0.43} & \textbf{0.6}\\ 
+& Error + unigram  & 0.97 & 0.33 & 0.5\\ 
+& Error + bigram  & \textbf{1.0} & 0.35 & 0.52\\ \hline 
+\multirow{3}{=}{Missing punctuation \break (n = 152)} & Padded error & \textbf{0.88} & \textbf{0.37} & \textbf{0.52}\\ 
+& Error + unigram  & 0.81 & 0.18 & 0.3\\ 
+& Error + bigram  & 0.85 & 0.24 & 0.37\\ \hline 
+\multirow{3}{=}{Wrong verb form \break (n = 132)} & Padded error & 0.41 & \textbf{0.28} & \textbf{0.33}\\ 
+& Error + unigram  & \textbf{0.42} & \textbf{0.28} & \textbf{0.33}\\ 
+& Error + bigram  & \textbf{0.42} & 0.19 & 0.26\\ \hline 
+\multirow{3}{=}{Wrong noun form \break (n = 93)} & Padded error & \textbf{0.84} & 0.42 & 0.56\\ 
+& Error + unigram  & 0.73 & \textbf{0.6} & \textbf{0.66}\\ 
+& Error + bigram  & 0.78 & 0.44 & 0.56\\ \hline 
+\multirow{3}{=}{Verb agreement error \break (n = 88)} & Padded error & \textbf{0.81} & 0.24 & 0.37\\ 
+& Error + unigram  & 0.75 & \textbf{0.28} & \textbf{0.41}\\ 
+& Error + bigram  & 0.8 & 0.15 & 0.25\\ \hline 
+\multirow{3}{=}{Unnecessary determiner \break (n = 75)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Missing preposition \break (n = 75)} & Padded error & \textbf{0.93} & \textbf{0.4} & \textbf{0.56}\\ 
+& Error + unigram  & 0.76 & 0.28 & 0.41\\ 
+& Error + bigram  & 0.78 & 0.27 & 0.4\\ \hline 
+\multirow{3}{=}{Unnecessary punctuation \break (n = 65)} & Padded error & 0.15 & 0.67 & 0.25\\ 
+& Error + unigram  & \textbf{0.17} & \textbf{0.83} & \textbf{0.29}\\ 
+& Error + bigram  & 0.05 & 0.17 & 0.08\\ \hline 
+\multirow{3}{=}{Noun agreement error \break (n = 62)} & Padded error & 0.57 & 0.2 & 0.29\\ 
+& Error + unigram  & \textbf{0.58} & \textbf{0.34} & \textbf{0.43}\\ 
+& Error + bigram  & \textbf{0.58} & 0.27 & 0.37\\ \hline 
+\multirow{3}{=}{Missing anaphor \break (n = 62)} & Padded error & 0.68 & \textbf{0.32} & \textbf{0.43}\\ 
+& Error + unigram  & 0.5 & 0.12 & 0.2\\ 
+& Error + bigram  & \textbf{0.73} & 0.2 & 0.31\\ \hline 
+\multirow{3}{=}{Unnecessary preposition \break (n = 59)} & Padded error & \textbf{0.22} & 0.29 & 0.25\\ 
+& Error + unigram  & 0.2 & \textbf{0.57} & \textbf{0.3}\\ 
+& Error + bigram  & 0.2 & 0.43 & 0.27\\ \hline 
+\multirow{3}{=}{Missing error \break (n = 57)} & Padded error & 0.63 & \textbf{0.3} & \textbf{0.41}\\ 
+& Error + unigram  & 0.67 & \textbf{0.3} & \textbf{0.41}\\ 
+& Error + bigram  & \textbf{0.69} & 0.28 & 0.39\\ \hline 
+\multirow{3}{=}{Missing verb \break (n = 54)} & Padded error & 0.73 & \textbf{0.23} & \textbf{0.35}\\ 
+& Error + unigram  & 0.71 & 0.21 & 0.33\\ 
+& Error + bigram  & \textbf{0.89} & 0.17 & 0.29\\ \hline 
+\multirow{3}{=}{Derivation of adjective error \break (n = 47)} & Padded error & \textbf{1.0} & 0.51 & 0.68\\ 
+& Error + unigram  & 0.89 & \textbf{0.59} & \textbf{0.71}\\ 
+& Error + bigram  & 0.81 & 0.41 & 0.55\\ \hline 
+\multirow{3}{=}{Word order error \break (n = 44)} & Padded error & 0.67 & 0.17 & 0.27\\ 
+& Error + unigram  & 0.7 & \textbf{0.29} & \textbf{0.41}\\ 
+& Error + bigram  & \textbf{0.83} & 0.21 & 0.33\\ \hline 
+\multirow{3}{=}{Unnecessary verb \break (n = 44)} & Padded error & 0.62 & 0.31 & 0.42\\ 
+& Error + unigram  & \textbf{0.79} & \textbf{0.69} & \textbf{0.73}\\ 
+& Error + bigram  & 0.62 & 0.31 & 0.42\\ \hline 
+\multirow{3}{=}{Replace determiner \break (n = 42)} & Padded error & \textbf{0.75} & 0.17 & 0.27\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.67 & \textbf{0.22} & \textbf{0.33}\\ \hline 
+\multirow{3}{=}{Replace anaphor \break (n = 33)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Derivation of noun error \break (n = 29)} & Padded error & 0.5 & 0.1 & 0.17\\ 
+& Error + unigram  & 0.6 & \textbf{0.3} & 0.4\\ 
+& Error + bigram  & \textbf{0.75} & \textbf{0.3} & \textbf{0.43}\\ \hline 
+\multirow{3}{=}{Unnecessary error \break (n = 25)} & Padded error & \textbf{1.0} & 0.12 & 0.22\\ 
+& Error + unigram  & 0.25 & \textbf{0.25} & 0.25\\ 
+& Error + bigram  & 0.33 & \textbf{0.25} & \textbf{0.29}\\ \hline 
+\multirow{3}{=}{Derivation of anaphor error \break (n = 21)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & \textbf{0.5} & \textbf{1.0} & \textbf{0.67}\\ \hline 
+\multirow{3}{=}{Unnecessary anaphor \break (n = 20)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Missing link word \break (n = 20)} & Padded error & \textbf{1.0} & \textbf{0.53} & \textbf{0.69}\\ 
+& Error + unigram  & \textbf{1.0} & 0.47 & 0.64\\ 
+& Error + bigram  & \textbf{1.0} & 0.41 & 0.58\\ \hline 
+\multirow{3}{=}{Derivation of adverb error \break (n = 19)} & Padded error & 0.29 & 0.25 & 0.27\\ 
+& Error + unigram  & 0.36 & \textbf{0.5} & \textbf{0.42}\\ 
+& Error + bigram  & \textbf{0.4} & 0.25 & 0.31\\ \hline 
+\multirow{3}{=}{Anaphor agreement error \break (n = 19)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Unnecessary adverb \break (n = 18)} & Padded error & \textbf{0.33} & \textbf{0.5} & \textbf{0.4}\\ 
+& Error + unigram  & 0.22 & \textbf{0.5} & 0.31\\ 
+& Error + bigram  & 0.2 & 0.25 & 0.22\\ \hline 
+\multirow{3}{=}{Argument structure error \break (n = 17)} & Padded error & \textbf{0.5} & \textbf{0.17} & \textbf{0.25}\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Unnecessary link word \break (n = 14)} & Padded error & 0.2 & \textbf{1.0} & 0.33\\ 
+& Error + unigram  & \textbf{0.33} & \textbf{1.0} & \textbf{0.5}\\ 
+& Error + bigram  & 0.25 & \textbf{1.0} & 0.4\\ \hline 
+\multirow{3}{=}{Replace quantifier \break (n = 14)} & Padded error & \textbf{1.0} & \textbf{0.29} & \textbf{0.44}\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.5 & 0.14 & 0.22\\ \hline 
+\multirow{3}{=}{Missing noun \break (n = 14)} & Padded error & 0.5 & 0.17 & 0.25\\ 
+& Error + unigram  & \textbf{0.67} & \textbf{0.33} & \textbf{0.44}\\ 
+& Error + bigram  & 0.4 & \textbf{0.33} & 0.36\\ \hline 
+\multirow{3}{=}{Missing adverb \break (n = 13)} & Padded error & \textbf{1.0} & 0.25 & 0.4\\ 
+& Error + unigram  & 0.83 & \textbf{0.42} & \textbf{0.56}\\ 
+& Error + bigram  & \textbf{1.0} & 0.08 & 0.15\\ \hline 
+\multirow{3}{=}{Incorrect verb inflection \break (n = 13)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Incorrect determiner form \break (n = 13)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Derivation of determiner error \break (n = 12)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Countability of noun error \break (n = 12)} & Padded error & 0.67 & 0.4 & 0.5\\ 
+& Error + unigram  & 0.83 & 0.5 & 0.62\\ 
+& Error + bigram  & \textbf{1.0} & \textbf{0.6} & \textbf{0.75}\\ \hline 
+\multirow{3}{=}{Unnecessary noun \break (n = 9)} & Padded error & 0.83 & 0.62 & 0.71\\ 
+& Error + unigram  & 0.88 & \textbf{0.88} & \textbf{0.88}\\ 
+& Error + bigram  & \textbf{1.0} & 0.5 & 0.67\\ \hline 
+\multirow{3}{=}{Incorrect noun inflection \break (n = 9)} & Padded error & \textbf{1.0} & 0.6 & 0.75\\ 
+& Error + unigram  & 0.62 & \textbf{1.0} & \textbf{0.77}\\ 
+& Error + bigram  & 0.67 & 0.8 & 0.73\\ \hline 
+\multirow{3}{=}{Inappropriate register \break (n = 9)} & Padded error & \textbf{1.0} & \textbf{0.4} & \textbf{0.57}\\ 
+& Error + unigram  & \textbf{1.0} & 0.2 & 0.33\\ 
+& Error + bigram  & 0.5 & 0.2 & 0.29\\ \hline 
+\multirow{3}{=}{Incorrect negative formation \break (n = 8)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & \textbf{1.0} & \textbf{0.25} & \textbf{0.4}\\ \hline 
+\multirow{3}{=}{Quantifier agreement error \break (n = 7)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & \textbf{1.0} & \textbf{0.14} & \textbf{0.25}\\ \hline 
+\multirow{3}{=}{Unnecessary adjective \break (n = 6)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Derivation of verb error \break (n = 5)} & Padded error & \textbf{1.0} & 0.4 & 0.57\\ 
+& Error + unigram  & \textbf{1.0} & \textbf{0.6} & \textbf{0.75}\\ 
+& Error + bigram  & \textbf{1.0} & 0.4 & 0.57\\ \hline 
+\multirow{3}{=}{Wrong quantifier because of noun countability \break (n = 4)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Wrong adjective form \break (n = 4)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & \textbf{1.0} & \textbf{0.33} & \textbf{0.5}\\ \hline 
+\multirow{3}{=}{Missing adjective \break (n = 4)} & Padded error & \textbf{1.0} & \textbf{1.0} & \textbf{1.0}\\ 
+& Error + unigram  & 0.5 & 0.5 & 0.5\\ 
+& Error + bigram  & \textbf{1.0} & 0.5 & 0.67\\ \hline 
+\multirow{3}{=}{Determiner agreement error \break (n = 4)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Unnecessary quantifier \break (n = 3)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Missing quantifier \break (n = 3)} & Padded error & \textbf{0.5} & \textbf{0.5} & \textbf{0.5}\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Wrong anaphor form \break (n = 2)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Incorrect adjective inflection \break (n = 2)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Wrong determiner because of noun countability \break (n = 1)} & Padded error & 0.0 & 0.0 & 0.0\\ 
+& Error + unigram  & 0.0 & 0.0 & 0.0\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
+\multirow{3}{=}{Wrong adverb form \break (n = 1)} & Padded error & \textbf{1.0} & \textbf{1.0} & \textbf{1.0}\\ 
+& Error + unigram  & \textbf{1.0} & \textbf{1.0} & \textbf{1.0}\\ 
+& Error + bigram  & \textbf{1.0} & \textbf{1.0} & \textbf{1.0}\\ \hline 
+\multirow{3}{=}{Incorrect quantifier inflection \break (n = 1)} & Padded error & \textbf{1.0} & \textbf{1.0} & \textbf{1.0}\\ 
+& Error + unigram  & \textbf{1.0} & \textbf{1.0} & \textbf{1.0}\\ 
+& Error + bigram  & 0.0 & 0.0 & 0.0\\ \hline 
