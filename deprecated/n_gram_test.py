@@ -1,10 +1,10 @@
 import pandas as pd
 
-from constant import NGRAM_METHODS, INTERPOLATION, LAPLACE, UNSMOOTHED,\
-                     PENN_NGRAMS_FILES, UD_NGRAMS_FILES, UD_NGRAMS_FILES_ZH,\
-                     LEARNER_ENGLISH_FIELDS, ANNOTATED_FCE_FIELDS,\
-                     CHINESE, ENGLISH, SPANISH, UD_NGRAMS_FILES_SPLIT
-from n_gram_model import pre_process_test, process_training_data, test_ngram
+from ..constant import INTERPOLATION, LAPLACE, UNSMOOTHED,\
+                       UD_NGRAMS_FILES, UD_NGRAMS_FILES_ZH,\
+                       LEARNER_ENGLISH_FIELDS, ANNOTATED_FCE_FIELDS,\
+                       CHINESE, ENGLISH, SPANISH, UD_NGRAMS_FILES_SPLIT
+from .n_gram_model import pre_process_test, process_training_data, test_ngram
 from utils import get_structural_errors
 
 
@@ -60,8 +60,8 @@ def evaluation(train_dataset_filenames, eval_df, method, n, languages,
     df.to_csv(output_file)
 
 
-def test(train_dataset_filenames, method, n, test_df, languages, test_df_fields,
-         test_column, output_file):
+def test(train_dataset_filenames, method, n, test_df, languages,
+         test_df_fields, test_column, output_file):
     data_dict = create_dict(test_df_fields + languages)
     langs = process_training_data(train_dataset_filenames, method, n,
                                   languages)
@@ -97,19 +97,18 @@ def test(train_dataset_filenames, method, n, test_df, languages, test_df_fields,
 
 def main():
     vocab_files = UD_NGRAMS_FILES
-    language = 'Spanish'
     fields = ['student_id', 'language', 'error_type',
               'correct_trigram_penn', 'incorrect_trigram_penn',
               'correct_trigram', 'incorrect_trigram',
               'correct_sentence', 'incorrect_sentence']
     fields = LEARNER_ENGLISH_FIELDS
-    test_df = pre_process_data('data/testing data/'
+    test_df = pre_process_data('data/test_data/'
                                'parsed_learner_english_sentences_.csv',
                                fields)
     languages = [ENGLISH, SPANISH]
     method = INTERPOLATION
     test_column = 'ud'
-    output_file = 'data/results_learner_english_' + test_column + '_' +\
+    output_file = 'data/results/results_learner_english_' + test_column + '_' +\
                   method + '.csv'
     test(vocab_files, method, test_df, languages,
          fields, test_column, output_file)
@@ -118,13 +117,13 @@ def main():
 def test_fce_annotated_data():
     vocab_files = UD_NGRAMS_FILES_ZH
     fields = ANNOTATED_FCE_FIELDS
-    test_df = pre_process_data('data/testing data/fce_processed_data.csv',
+    test_df = pre_process_data('data/test_data/fce_processed_data.csv',
                                fields)
     languages = [ENGLISH, CHINESE]
     method = INTERPOLATION
     n = 2
     test_column = 'incorrect_ud_tags_bigram'
-    output_file = 'data/results_chinese_fce_' + test_column + '_' +\
+    output_file = 'data/results/results_chinese_fce_' + test_column + '_' +\
                   method + '.csv'
     test(vocab_files, method, n, test_df, languages,
          fields, test_column, output_file)
@@ -132,7 +131,7 @@ def test_fce_annotated_data():
 
 def parameter_tuning():
     vocab_files = UD_NGRAMS_FILES_SPLIT
-    eval_df = pd.read_csv('data/training data/splits/eval_split.csv')
+    eval_df = pd.read_csv('data/training_data/chinese_english_splits/eval_split.csv')
     languages = [ENGLISH, CHINESE]
     methods = [UNSMOOTHED, LAPLACE, INTERPOLATION]
     for n in range(1, 6):

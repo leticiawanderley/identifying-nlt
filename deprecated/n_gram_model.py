@@ -2,9 +2,9 @@ import argparse
 import math
 import pandas as pd
 
-from constant import INTERPOLATION, LAPLACE, UNSMOOTHED, OOV_TAG,\
-                     NGRAM_METHODS, UD_NGRAMS_FILES
-from utils import get_count
+from ..constant import INTERPOLATION, LAPLACE, UNSMOOTHED, OOV_TAG,\
+                       NGRAM_METHODS, UD_NGRAMS_FILES
+from ..utils import get_count
 
 
 def read_vocab_files(files_dict):
