@@ -41,8 +41,9 @@ def main(models, input_filename, output_filename, languages_columns,
 if __name__ == "__main__":
     l1 = CHINESE
     if l1 == SPANISH:
-        input_filename = 'data/training data/dataset_sentences.csv'
-        output_filename = ('data/training data/'
+        input_filename =
+            'data/training_data/spanish_english/dataset_sentences.csv'
+        output_filename = ('data/training_data/spanish_english/'
                            'tagged_sentences_dataset_sentences.csv')
         models = {
             ENGLISH: spacy.load("en_core_web_md"),
@@ -51,12 +52,13 @@ if __name__ == "__main__":
         new_column_names = ['english', 'spanish']
         selected_columns = ['english', 'spanish']
         languages_columns = {ENGLISH: 'english', SPANISH: 'spanish'}
-        mapping = 'data/tags/spacy_spanish_tags_.csv'
+        mapping = 'data/pos_tags/spacy_spanish_tags_.csv'
         main(models, input_filename, output_filename, languages_columns,
              new_column_names, selected_columns, mapping)
     elif l1 == CHINESE:
-        input_filename = 'data/training data/wmt-news_en-zh.csv'
-        output_filename = ('data/training data/'
+        input_filename =
+            'data/training_data/chinese_english/wmt-news_en-zh.csv'
+        output_filename = ('data/training_data/chinese_english/'
                            'tagged_wmt-news_en-zh.csv')
         models = {
             ENGLISH: spacy.load("en_core_web_lg"),

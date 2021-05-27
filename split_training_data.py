@@ -11,11 +11,11 @@ def create_splits(datasets):
     final_df = pd.concat(dfs)
     X_train, X_test, y_train, y_test = \
         train_test_split(final_df, final_df, test_size=0.2, random_state=42)
-    X_train.to_csv('./data/training data/splits/train_split.csv')
-    X_test.to_csv('./data/training data/splits/eval_split.csv')
+    X_train.to_csv('./data/training_data/chinese_english_splits/train_split.csv')
+    X_test.to_csv('./data/training_data/chinese_english_splits/eval_split.csv')
 
 
 training_datasets = [
-    'data/training data/tagged_wmt-news_en-zh.csv',
-    'data/training data/tagged_globalvoices_sentences.csv']
+    'data/training_data/chinese_english/tagged_wmt-news_en-zh.csv',
+    'data/training_data/chinese_english/tagged_globalvoices_sentences.csv']
 create_splits(training_datasets)

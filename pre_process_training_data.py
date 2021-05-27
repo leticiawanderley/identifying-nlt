@@ -32,16 +32,9 @@ if __name__ == "__main__":
         target_re = r'(?<=<target>)(.*?)(?=<\/target>)'
         source_id = '<source>'
         target_id = '<target>'
-        input_filename = 'data/training data/globalvoices.zhs-en.xliff'
-        output_filename = ('data/training data/'
+        input_filename = \
+            'data/training_data/chinese_english/globalvoices.zhs-en.xliff'
+        output_filename = ('data/training_data/chinese_english/'
                            'globalvoices_sentences.csv')
-    else:
-        source_re = r'(?<=<tuv xml:lang="zh"><seg>)(.*?)(?=<\/seg><\/tuv>)'
-        target_re = r'(?<=<tuv xml:lang="en"><seg>)(.*?)(?=<\/seg><\/tuv>)'
-        source_id = '<tuv xml:lang="zh"><seg>'
-        target_id = '<tuv xml:lang="en"><seg>'
-        input_filename = 'data/training data/UN_en-zh.tmx'
-        output_filename = ('data/training data/'
-                           'un_en-zh.csv')
     main(input_filename, output_filename, source_re, target_re,
          source_id, target_id)

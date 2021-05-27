@@ -11,40 +11,40 @@ CHINESE = 'zhs'
 ENGLISH = 'en'
 SPANISH = 'es'
 PENN_NGRAMS_FILES = {
-    'en': {0: 'data/training data/europarl_vocabs/en_penn_0_vocab.csv',
-           1: 'data/training data/europarl_vocabs/en_penn_1_vocab.csv',
-           2: 'data/training data/europarl_vocabs/en_penn_2_vocab.csv'},
-    'es': {0: 'data/training data/europarl_vocabs/es_penn_0_vocab.csv',
-           1: 'data/training data/europarl_vocabs/es_penn_1_vocab.csv',
-           2: 'data/training data/europarl_vocabs/es_penn_2_vocab.csv'}
+    'en': {0: 'data/training_data/europarl_vocabs/en_penn_0_vocab.csv',
+           1: 'data/training_data/europarl_vocabs/en_penn_1_vocab.csv',
+           2: 'data/training_data/europarl_vocabs/en_penn_2_vocab.csv'},
+    'es': {0: 'data/training_data/europarl_vocabs/es_penn_0_vocab.csv',
+           1: 'data/training_data/europarl_vocabs/es_penn_1_vocab.csv',
+           2: 'data/training_data/europarl_vocabs/es_penn_2_vocab.csv'}
 }
 UD_NGRAMS_FILES = {
-    'en': {0: 'data/training data/europarl_vocabs/en_ud_0_vocab.csv',
-           1: 'data/training data/europarl_vocabs/en_ud_1_vocab.csv',
-           2: 'data/training data/europarl_vocabs/en_ud_2_vocab.csv'},
-    'es': {0: 'data/training data/europarl_vocabs/es_ud_0_vocab.csv',
-           1: 'data/training data/europarl_vocabs/es_ud_1_vocab.csv',
-           2: 'data/training data/europarl_vocabs/es_ud_2_vocab.csv'}
+    'en': {0: 'data/training_data/europarl_vocabs/en_ud_0_vocab.csv',
+           1: 'data/training_data/europarl_vocabs/en_ud_1_vocab.csv',
+           2: 'data/training_data/europarl_vocabs/en_ud_2_vocab.csv'},
+    'es': {0: 'data/training_data/europarl_vocabs/es_ud_0_vocab.csv',
+           1: 'data/training_data/europarl_vocabs/es_ud_1_vocab.csv',
+           2: 'data/training_data/europarl_vocabs/es_ud_2_vocab.csv'}
 }
 UD_NGRAMS_FILES_ZH = {
-    'en': {0: 'data/training data/chinese-english_vocabs/en_ud_0_vocab.csv',
-           1: 'data/training data/chinese-english_vocabs/en_ud_1_vocab.csv',
-           2: 'data/training data/chinese-english_vocabs/en_ud_2_vocab.csv'},
-    'zhs': {0: 'data/training data/chinese-english_vocabs/zhs_ud_0_vocab.csv',
-            1: 'data/training data/chinese-english_vocabs/zhs_ud_1_vocab.csv',
-            2: 'data/training data/chinese-english_vocabs/zhs_ud_2_vocab.csv'}
+    'en': {0: 'data/training_data/chinese_english_vocabs/en_ud_0_vocab.csv',
+           1: 'data/training_data/chinese_english_vocabs/en_ud_1_vocab.csv',
+           2: 'data/training_data/chinese_english_vocabs/en_ud_2_vocab.csv'},
+    'zhs': {0: 'data/training_data/chinese_english_vocabs/zhs_ud_0_vocab.csv',
+            1: 'data/training_data/chinese_english_vocabs/zhs_ud_1_vocab.csv',
+            2: 'data/training_data/chinese_english_vocabs/zhs_ud_2_vocab.csv'}
 }
 UD_NGRAMS_FILES_SPLIT = {
-    'en': {0: 'data/training data/splits/en_ud_0_vocab.csv',
-           1: 'data/training data/splits/en_ud_1_vocab.csv',
-           2: 'data/training data/splits/en_ud_2_vocab.csv',
-           3: 'data/training data/splits/en_ud_3_vocab.csv',
-           4: 'data/training data/splits/en_ud_4_vocab.csv'},
-    'zhs': {0: 'data/training data/splits/zhs_ud_0_vocab.csv',
-            1: 'data/training data/splits/zhs_ud_1_vocab.csv',
-            2: 'data/training data/splits/zhs_ud_2_vocab.csv',
-            3: 'data/training data/splits/zhs_ud_3_vocab.csv',
-            4: 'data/training data/splits/zhs_ud_4_vocab.csv'}
+    'en': {0: 'data/training_data/chinese_english_splits/en_ud_0_vocab.csv',
+           1: 'data/training_data/chinese_english_splits/en_ud_1_vocab.csv',
+           2: 'data/training_data/chinese_english_splits/en_ud_2_vocab.csv',
+           3: 'data/training_data/chinese_english_splits/en_ud_3_vocab.csv',
+           4: 'data/training_data/chinese_english_splits/en_ud_4_vocab.csv'},
+    'zhs': {0: 'data/training_data/chinese_english_splits/zhs_ud_0_vocab.csv',
+            1: 'data/training_data/chinese_english_splits/zhs_ud_1_vocab.csv',
+            2: 'data/training_data/chinese_english_splits/zhs_ud_2_vocab.csv',
+            3: 'data/training_data/chinese_english_splits/zhs_ud_3_vocab.csv',
+            4: 'data/training_data/chinese_english_splits/zhs_ud_4_vocab.csv'}
 }
 LEARNER_ENGLISH_FIELDS = ['sentence', 'correct', 'error_type', 'penn',
                           'penn_trigram', 'ud', 'ud_trigram',
