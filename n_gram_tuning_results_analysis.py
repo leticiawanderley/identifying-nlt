@@ -4,7 +4,8 @@ import pandas as pd
 
 def compute_accuracy(dataset_file):
     df = pd.read_csv(dataset_file, index_col=[0])
-    lang, tagset, method, n = dataset_file.split('/')[-1].replace('.csv', '').split('_')
+    lang, tagset, method, n = \
+        dataset_file.split('/')[-1].replace('.csv', '').split('_')
     correct = 0
     for index, row in df.iterrows():
         result = ''
