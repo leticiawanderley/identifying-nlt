@@ -20,6 +20,8 @@ def hyperparameter_eval(eval_dataset, languages, model_en, model_zhs):
 
 
 def hyperparameter_tuning(n):
+    # the fist slot in the arpa template contains the language,
+    # the second the fold, and the third the n-gram length
     arpa_template = \
         'data/training_data/chinese_english_splits/n-gram_tuning/{}_{}_{}.arpa'
     tuning_results = {'n': [], 'mean': [], 'median': []}
