@@ -15,7 +15,7 @@ The network sees each training datapoint once. Its inputs are tag sequences, der
 As a result of the training process the network's losses curve are plot in a figure.
 
 ### Tuning
-The learning rate, number of hidden units, mini batch size, and loss + activation functions used to train the RNN model were selected during tuning. The tuning procedure consisted in training RNN models with different parameter combinations on [80% of the training data](data/training_data/chinese_english_splits/train_split.csv), and evaluating their source language predicton accuracy on [the held-out 20% of the training data]((data/training_data/chinese_english_splits/eval_split.csv)). The parameter combination that yielded the best accuracy was selected to train the negative language transfer detection RNN model.
+The learning rate, number of hidden units, mini batch size, and loss + activation functions used to train the RNN model were selected during tuning. The tuning procedure consisted in training RNN models with different parameter combinations on [80% of the training data](data/training_data/chinese_english_splits/train_split.csv), and evaluating their source language predicton accuracy on [the held-out 20% of the training data](data/training_data/chinese_english_splits/eval_split.csv). The parameter combination that yielded the best accuracy was selected to train the negative language transfer detection RNN model.
 
 ## Testing
 ### Test datasets
