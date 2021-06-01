@@ -17,6 +17,11 @@
 ### Test data (Chinese and English)
 - [Negative language transfer dataset](https://github.com/EdTeKLA/LanguageTransfer)
 
+## Language modelling
+Two language modelling techniques were used to create models. To learn more about the training, tuning, and testing procedures used, refer to their descriptions.
+* [N-gram baseline](./n_gram_pipeline.md)
+* [RNN approach](./rnn_pipeline.md)
+
 ## Reference
 Leticia Farias Wanderley and Carrie Demmans Epp. [Identifying negative language transfer in learner errors using POS information](https://www.aclweb.org/anthology/2021.bea-1.7/). In Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications, pages 64–74, Online, April 2021. Association for Computational Linguistics.
 
