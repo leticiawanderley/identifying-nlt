@@ -57,10 +57,10 @@ def dataset_metrics(datafile, output_file):
 
 
 file = './data/results/kenlm_5_incorrect_ud_tags_padded.csv'
-dataset_metrics(file, './data/results_metrics/metrics_kenlm_5_incorrect_ud_tags_padded.csv')
+dataset_metrics(file, './data/results/metrics/metrics_kenlm_5_incorrect_ud_tags_padded.csv')
 
 file = './data/results/kenlm_5_incorrect_ud_tags_unigram.csv'
-dataset_metrics(file, './data/results_metrics/metrics_kenlm_5_incorrect_ud_tags_unigram.csv')
+dataset_metrics(file, './data/results/metrics/metrics_kenlm_5_incorrect_ud_tags_unigram.csv')
 
 file = './data/results/kenlm_5_incorrect_ud_tags_bigram.csv'
-dataset_metrics(file, './data/results_metrics/metrics_kenlm_5_incorrect_ud_tags_bigram.csv')
+dataset_metrics(file, './data/results/metrics/metrics_kenlm_5_incorrect_ud_tags_bigram.csv')
