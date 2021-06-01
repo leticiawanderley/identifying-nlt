@@ -16,7 +16,7 @@ The training data was pre-processed into `.arpa` files using [KenLM estimation](
 The models were trained using the n-gram language model implementation from [KenLM](https://github.com/kpu/kenlm).
 
 ### Tuning
-The n-gram length used to training the models (n = 5) was selected through a process of parameter tuning. In this process, the language source prediction accuracy was computed as the mean accuracy of a 5-fold cross-validation evaluation using the training data.
+The n-gram length used to training the models (n = 5) was selected through a process of parameter tuning. In this process, the language source prediction accuracy was computed as the mean accuracy of a 5-fold cross-validation evaluation using [the training data]((data/training_data/chinese_english_splits/n-gram_tuning)).
 
 ## Testing
 ### Test datasets
