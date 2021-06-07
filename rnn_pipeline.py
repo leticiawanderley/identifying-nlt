@@ -9,7 +9,6 @@ from constant import GROUND_TRUTH, MODEL_LABEL
 from rnn import RNN
 from rnn_data_processing import category_from_output, Dataset, get_all_tags, \
                                 read_data, sequence_to_tensor
-from utils import get_structural_errors
 from visualization_functions import confusion_matrix, losses
 
 
@@ -19,8 +18,7 @@ def run_training(rnn: RNN, data_dict: Dict[str, List[List[str]]],
                  learning_rate: float, batch_size: int, output_model: str,
                  test_dataset_file: str = None, all_tags: List[str] = None,
                  test_column: str = None) -> List[float]:
-    """Train RNN model printing training example and storing loss
-    at every 5% and 1% of the data size , i.e., iteration, respectively.
+    """Train RNN model
     :param rnn: RNN object
     :param data_dict: training data
     :param eval_data_dict: evaluation data split
@@ -47,8 +45,8 @@ def run_training(rnn: RNN, data_dict: Dict[str, List[List[str]]],
             all_losses.append(loss)
         test_set_accuracy = 0.0
         if eval_data_dict:
-            test_set_accuracy = sanity_check(rnn, eval_data_dict,
-                                             categories, all_tags)
+            test_set_accuracy = tuning_evaluation(rnn, eval_data_dict,
+                                                  categories, all_tags)
         print('%.2f Accuracy on test set' % test_set_accuracy)
         if test_dataset_file:
             iter_results = test_iteration(test_dataset_file, rnn,
@@ -60,9 +58,9 @@ def run_training(rnn: RNN, data_dict: Dict[str, List[List[str]]],
     return all_losses, test_results
 
 
-def sanity_check(rnn: RNN, test_data: Dict[str, List[str]], categories: List,
-                 all_tags: List[str]) -> float:
-    """Test RNN with the test data split
+def tuning_evaluation(rnn: RNN, test_data: Dict[str, List[str]],
+                      categories: List, all_tags: List[str]) -> float:
+    """Evaluate RNN with the tuning evaluation data split
     :param rnn: RNN object
     :param test_data: test dataset
     :param categories: output labels
@@ -109,7 +107,7 @@ def train_rnn_model(data: Dict[str, List[List[str]]],
                                             test_dataset_file,
                                             all_tags, test_column)
     if test_dataset_file:
-        f = open('partial_results_10.csv', 'a')
+        f = open('partial_results.csv', 'a')
         for key in test_results:
             f.write(setup + ',' + str(n_hidden) + ',' +
                     str(learning_rate) + ',' + str(batch_size) +
@@ -152,11 +150,9 @@ def test_iteration(test_dataset_file: str, rnn: RNN, categories: List[str],
     nlt_fp = 0
     nlt_fn = 0
     nlt_tn = 0
-    structural_errors = get_structural_errors()
     for index, row in test_df.iterrows():
-        if row['error_type'] == '_' or \
-            row['error_type'] in structural_errors and \
-                isinstance(row[test_column], str) and row[test_column] != ' ':
+        if row['error_type'] == '_' and \
+           isinstance(row[test_column], str) and row[test_column] != ' ':
             guess = test_datapoint(rnn, row[test_column].split(),
                                    categories, all_tags)
             if row[GROUND_TRUTH]:
