@@ -30,7 +30,7 @@ def run_training(rnn: RNN, data_dict: Dict[str, List[List[str]]],
     :param test_dataset_file: test dataset file path
     :param all_tags: possible sequence tags
     :param test_column: column that contains test sequences
-    :return: stored losses and partial results
+    :return: losses and partial results
     """
     optimizer = torch.optim.Adam(rnn.parameters(), lr=learning_rate)
     all_losses = []
