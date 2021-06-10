@@ -20,14 +20,15 @@ def compare_results(ngram_results, rnn_results):
             c += 1
         else:
             d += 1
-    return mcnemar([[a, b], [c, d]], exact=False, correction=True)
+    return b/c, mcnemar([[a, b], [c, d]], exact=False, correction=True)
 
 
-print(compare_results('data/results/kenlm_5_incorrect_ud_tags_bigram.csv',
-                      'data/results/results_en_ud_zhs_ud_0.0001_16_NLLoss_1_incorrect_ud_tags_bigram.csv'))
+print(compare_results('data/results/kenlm_5_incorrect_ud_tags_padded.csv',
+                      'data/results/results_en_ud_zhs_ud_0.0001_16_NLLoss_1_incorrect_ud_tags_padded.csv'))
 
 print(compare_results('data/results/kenlm_5_incorrect_ud_tags_unigram.csv',
                       'data/results/results_en_ud_zhs_ud_0.0001_16_NLLoss_1_incorrect_ud_tags_unigram.csv'))
 
-print(compare_results('data/results/kenlm_5_incorrect_ud_tags_padded.csv',
-                      'data/results/results_en_ud_zhs_ud_0.0001_16_NLLoss_1_incorrect_ud_tags_padded.csv'))
+
+print(compare_results('data/results/kenlm_5_incorrect_ud_tags_bigram.csv',
+                      'data/results/results_en_ud_zhs_ud_0.0001_16_NLLoss_1_incorrect_ud_tags_bigram.csv'))
