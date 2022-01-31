@@ -1,5 +1,5 @@
-1e-05
-8
+0.01
+64
 incorrect_ud_tags_padded
 NLLoss
 32
