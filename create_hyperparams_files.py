@@ -14,7 +14,7 @@ def create_hyperparam_files(learning_rates, numbers_hidden,
 
 
 create_hyperparam_files([0.01, 0.001, 0.0001, 0.00001, 0.000001],
-                        [8],
+                        [8, 16, 32, 64, 128, 256, 512],
                         ['incorrect_ud_tags_padded'],
                         ['BCEwithLL', 'NLLoss'],
                         [1, 2, 4, 8, 16, 32])
