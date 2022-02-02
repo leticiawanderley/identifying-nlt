@@ -272,10 +272,10 @@ if __name__ == "__main__":
     vocab_datasets = [
         'data/training_data/chinese_english_vocabs/zhs_ud_0_vocab.csv',
         'data/training_data/chinese_english_vocabs/en_ud_0_vocab.csv']
-    train_datasets = [
+    train_datasets = [  # when testing, all training data should be added here
         'data/training_data/chinese_english_splits/train_split.csv',
         'data/training_data/chinese_english_splits/eval_split.csv']
-    eval_datasets = []
+    eval_datasets = []  # when tuning, add the evaluation data here
     test_dataset = 'data/test_data/zhs_structural_errors.csv'
     categories = ['en_ud', 'zhs_ud']
     args = parse_arg_list()
